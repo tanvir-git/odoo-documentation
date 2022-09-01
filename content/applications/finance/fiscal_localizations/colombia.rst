@@ -1,261 +1,276 @@
+:show-content:
+
 ========
 Colombia
 ========
 
-Webinars
-========
-
-Below you can find videos with a general description of the localization, and how to configure it.
-
-- `VIDEO WEBINAR OF A COMPLETE DEMO <https://youtu.be/BOzucXRUZDE>`_.
-
 Introduction
 ============
 
-Electronic invoicing for Colombia is available from Odoo 12 and
-requires the next modules:
+Odoo *localization for Colombia* provides accounting, fiscal and legal features in Colombia such as
+Chart of Accounts, Taxes and Electronic Invoicing.
 
-#. **l10n_co**: All the basic data to manage the accounting module,
-   contains the default setup for: chart of accounts, taxes,
-   retentions, identification document types
-#. **l10n_co_edi**: This module includes all the extra fields that are
-   required for the Integration with Carvajal and generate the
-   electronic invoice, based on the DIAN legal requirements.
+Please refer to the documentation below regarding Colombia localization configuration, workflows and
+financial reporting.
 
-Workflow
-========
+In addition, we have a series of videos covering how to start from scratch, configuration, main
+workflows, as well as special use cases.
 
-.. image:: colombia/colombia01.png
-   :align: center
+.. seealso::
+   `Odoo Colombian localization videos
+   <https://www.youtube.com/playlist?list=PL1-aSABtP6ABxZshems3snMjx7bj_7ZsZ>`_.
 
 Configuration
 =============
 
-Install the Colombian localization modules
-------------------------------------------
+Modules installation
+--------------------
 
-To :ref:`install <general/install>` the modules, go to :menuselection:`Apps`, remove the *Apps*
-filter and search for "Colombia". Then click on *Install* for the first two modules.
+:ref:`Install <general/install>` the following modules to get all the features of the Colombian
+localization:
 
-.. image:: colombia/colombia02.png
-   :align: center
+.. list-table::
+   :header-rows: 1
+   :widths: 25 25 50
+
+   * - Name
+     - Technical name
+     - Description
+   * - :guilabel:`Colombia - Accounting`
+     - `l10n_co`
+     - Default :ref:`fiscal localization package <fiscal_localizations/packages>`. This module adds
+       the base accounting features for the Colombian localization: Chart of Accounts, taxes,
+       withholdings, identification document type.
+   * - :guilabel:`Colombia - Colombian - Accounting Reports`
+     - `l10n_co_reports`
+     - Includes accounting reports for sending certifications to suppliers for withholdings applied.
+   * - :guilabel:`Colombia E-invoice Integration`
+     - `l10n_co_edi`
+     - This module includes the features that are required for the integration with Carvajal and
+       generates the electronic invoices and support document for vendor bills based on :abbr:`DIAN
+       (Dirección de Impuestos y Aduanas Nacionales)` regulations.
+   * - :guilabel:`Colombia - Colombian - Point of Sale`
+     - `l10n_co_pos`
+     - Includes Point of Sale Receipt for Colombian Localization.
+
+.. note::
+   When a database is created from scratch selecting :guilabel:`Colombia` as the country, Odoo
+   automatically installs the base module *Colombia - Accounting* and *Colombia - Accounting
+   Reports*.
+
+Configure your company
+----------------------
+
+To configure your company information, go to the :menuselection:`Contacts` app and search the name
+given to your company or activate :ref:`developer mode <developer-mode>` and go to
+:menuselection:`Company --> Contact` and then edit the contact to configure the following
+information:
+
+#. General data
+
+   - :guilabel:`Company Name`
+   - :guilabel:`Address`: Include :guilabel:`City`, :guilabel:`Department` and :guilabel:`Zip Code`.
+   - :guilabel:`Tax ID`: When it is a `NIT` it must have the *verification digit* at the end of the
+     ID followed by a hyphen.
+
+   .. image:: colombia/company-configuration.png
+      :align: center
+      :alt: Configure your company contact form in Odoo.
+
+#. :guilabel:`Fiscal Information`
+
+   On the :guilabel:`Sales \& Purchases` tab, configure the following information:
+
+   - :guilabel:`Fiscal Position`: Determines the taxes/accounts used for this contract.
+   - :guilabel:`Obligaciones y Responsabilidades`
+   - :guilabel:`Gran Contribuyente`
+   - :guilabel:`Fiscal Regimen`
+   - :guilabel:`Commercial Name`
+
+   .. image:: colombia/fiscal-information.png
+      :align: center
+      :alt: Configure the fiscal information of your company in Odoo.
 
 Configure credentials for Carvajal web service
 ----------------------------------------------
 
-Once that the modules are installed, in order to be able to connect
-with Carvajal Web Service, it's necessary to configure the user
-and credentials, this information will be provided by Carvajal.
+Once the modules are installed, the user credentials need to be configured in order to connect with
+Carvajal Web Service. First, navigate to :menuselection:`Accounting --> Configuration --> Settings`
+and look for the :guilabel:`Colombian Electronic Invoice` section. Then, fill in the required
+configuration information provided by Carvajal.
 
-Go to :menuselection:`Accounting --> Configuration --> Settings` and
-look for the *Colombian Electronic Invoice* section.
+Complete the following data:
 
-.. image:: colombia/colombia03.png
+- :guilabel:`Username` and :guilabel:`Password`: Corresponds to the username and password provided
+  by Carvajal to the company.
+- :guilabel:`Company Registry`: Company's NIT number without the verification code.
+- :guilabel:`Account ID`: Company ID followed by `_01`.
+- :guilabel:`Colombia Template Code`: Select one of the two available templates (:guilabel:`CGEN03`
+  or :guilabel:`CGNE04`) to be used in the PDF format of the electronic invoice.
+
+.. image:: colombia/carvajal-configuration.png
    :align: center
+   :alt: Configure credentials for Carvajal web service in Odoo.
 
-Using the Testing mode it is possible to connect with a Carvajal
-testing environment. This allows users to test the complete workflow
-and integration with the CEN Financiero portal, which is accessible
-here:
+Check the :guilabel:`Test mode` checkbox to connect with the Carvajal testing environment.
 
-CTS (Carvajal T&S)
-  https://cenflab.cen.biz/site/
+.. important::
+   The testing mode must be used only on replicated databases but **NOT** in the production
+   environment.
 
-CSC (Carvajal Servicios de Comunicación)
-  https://web-stage.facturacarvajal.com/
+Once Odoo and Carvajal are fully configured and ready for production, uncheck the :guilabel:`Test
+mode` checkbox to use the production database.
 
-CSC is the default for new databases.
+Configure report data
+---------------------
 
-Once that Odoo and Carvajal are fully configured and ready for
-production the testing environment can be disabled.
+Report data can be defined for the fiscal section and the bank information in the PDF as part of the
+configurable information that is sent in the XML.
 
-Configure your report data
---------------------------
+Navigate to :menuselection:`Accounting --> Configuration --> Settings` and look for the
+:guilabel:`Colombian Electronic Invoice` section.
 
-As part of the configurable information that is sent in the XML, you
-can define the data for the fiscal section and the bank information in
-the PDF.
-
-Go to :menuselection:`Accounting --> Configuration --> Settings` and
-look for the *Colombian Electronic Invoice* section.
-
-.. image:: colombia/colombia04.png
+.. image:: colombia/report-config.png
    :align: center
+   :alt: Configure the report data in Odoo.
 
-Configure data required in the XML
-----------------------------------
+.. _fiscal_localizations/colombia/configure_xml:
+
+Configure master data
+---------------------
 
 Partner
 ~~~~~~~
 
-Identification
-**************
+Configure the *identification information* and *fiscal information*.
 
-As part of the Colombian Localization, the document types defined by
-the DIAN are now available on the Partner form. Colombian partners
-have to have their identification number and document type set:
+Identification information
+**************************
 
-.. image:: colombia/colombia05.png
+As part of the Colombian Localization, the document types defined by the :abbr:`DIAN (Dirección de
+Impuestos y Aduanas Nacionales)` are now available on the partner form. Colombian partners have to
+have their :guilabel:`Identification Number` (VAT) and :guilabel:`Document Type` set:
+
+.. image:: colombia/partner-rut-doc-type.png
    :align: center
+   :alt: Identification number and the document type set in Odoo.
 
-.. tip:: When the document type is RUT the identification number needs
-   to be configured in Odoo including the verification digit, Odoo
-   will split this number when the data to the third party vendor is
-   sent.
+.. tip::
+   When the :guilabel:`Document Type` is `NIT` the :guilabel:`Identification Number` needs to be
+   configured in Odoo including the *verification digit*, Odoo will split this number when the data
+   to the third party vendor is sent.
 
-Fiscal structure (RUT)
-**********************
+Fiscal information
+******************
 
-The partner's responsibility codes (section 53 in the RUT document)
-are included as part of the electronic invoice module given that is
-part of the information required by the DIAN .
+The partner's responsibility codes (section 53 in the RUT document) are included as part of the
+electronic invoice module given it is part of the information required by the :abbr:`DIAN (Dirección
+de Impuestos y Aduanas Nacionales)`.
 
-These fields can be found in :menuselection:`Partner --> Sales &
-Purchase Tab --> Fiscal Information`
+The required fields can be found in :menuselection:`Partner --> Sales & Purchase Tab --> Fiscal
+Information`.
 
-.. image:: colombia/colombia06.png
+.. image:: colombia/partner-fiscal-information.png
    :align: center
+   :alt: The fiscal information included in the electronic invoice module in Odoo.
 
-Additionally two booleans fields were added in order to specify the
-fiscal regimen of the partner.
+Additionally, two boolean fields were added in order to specify the :guilabel:`Fiscal Regimen` of
+the partner.
+
+Products
+~~~~~~~~
+
+In addition to adding the basic information in the product form, the :guilabel:`UNSPSC Category`,
+:guilabel:`Barcode` or the :guilabel:`Internal Reference` field should be configured.
+
+.. image:: colombia/product-configuration.png
+   :align: center
+   :alt: Configuring the UNSPSC Category field in Odoo on a product form.
 
 Taxes
 ~~~~~
 
-If your sales transactions include products with taxes, it's important
-to consider that an extra field *Value Type* needs to be configured
-per tax. This option is located in the Advanced Options tab.
+If sales transactions include products with taxes, the :guilabel:`Value Type` field in the
+:guilabel:`Advanced Options` tab needs to be configured per tax.
 
-.. image:: colombia/colombia07.png
+Retention tax types (:guilabel:`ICA`, :guilabel:`IVA`, :guilabel:`Fuente`) are also included in the
+options to configure taxes. This configuration is used in order to correctly display taxes in the
+invoice PDF.
+
+.. image:: colombia/retention-tax-types.png
    :align: center
+   :alt: The ICA, IVA and Fuente fields in the Advanced Options tab in Odoo.
 
-Retention tax types (ICA, IVA, Fuente) are also included in the
-options to configure your taxes. This configuration is used in order
-to correctly display taxes in the invoice PDF.
+Sales journals
+~~~~~~~~~~~~~~
 
-.. image:: colombia/colombia08.png
+Once the :abbr:`DIAN (Dirección de Impuestos y Aduanas Nacionales)` has assigned the official
+sequence and prefix for the electronic invoice resolution, the sales journals related to the invoice
+documents need to be updated in Odoo.
+
+Navigate to :menuselection:`Accounting --> Configuration --> Journals`.
+
+.. image:: colombia/sales-journal.png
    :align: center
+   :alt: Example of a sales journal being configured in Odoo.
 
-Journals
-~~~~~~~~
+Complete the following data in the :guilabel:`Advanced Settings` tab:
 
-Once the DIAN has assigned the official sequence and prefix for the
-electronic invoice resolution, the Sales journals related to your
-invoice documents need to be updated in Odoo.  The sequence can be
-accessed using the :ref:`developer mode <developer-mode>`: :menuselection:`Accounting -->
-Settings --> Configuration Setting --> Journals`.
+- :guilabel:`Electronic invoicing`: Check :guilabel:`UBL 2.1 (Colombia)`.
+- :guilabel:`Invoicing Resolution`: Resolution number issued by :abbr:`DIAN (Dirección de Impuestos
+  y Aduanas Nacionales)` to the company.
+- :guilabel:`Resolution Date`: Initial effective date of the resolution.
+- :guilabel:`Resolution end date`: End date of the resolution's validity.
+- :guilabel:`Range of Numbering (minimum)`: First authorized invoice number.
+- :guilabel:`Range of Numbering (maximum)`: Last authorized invoice number.
 
-.. image:: colombia/colombia09.png
+.. image:: colombia/sales-journal-advanced.png
    :align: center
+   :alt: The Advanced Settings tab configuration on a sales journal in Odoo.
 
-Once that the sequence is opened, the Prefix and Next Number fields
-should be configured and synchronized with the CEN Financiero.
+.. note::
+   The sequence and resolution on the journal, should match with the one configured in Carvajal and
+   the :abbr:`DIAN (Dirección de Impuestos y Aduanas Nacionales)`.
 
-.. image:: colombia/colombia10.png
+Invoice sequence
+****************
+
+The invoice sequence and prefix must be correctly configured when the first document is created.
+
+.. image:: colombia/invoice-sequence.png
    :align: center
+   :alt: Configuring an invoice sequence and prefix in Odoo.
 
-Users
-~~~~~
+.. note::
+   Odoo will automatically assign a prefix and sequence to the following documents.
 
-The default template that is used by Odoo on the invoice PDF includes
-the job position of the salesperson, so these fields should be
-configured:
+Purchase journals
+*****************
 
-.. image:: colombia/colombia11.png
+Once the :abbr:`DIAN (Dirección de Impuestos y Aduanas Nacionales)` has assigned the official
+sequence and prefix for the support document for vendor bills, the purchase journals related to
+their supporting documents need to be updated in Odoo. The process is similar to the configuration
+of the sales journals.
+
+Chart of Accounts
+*****************
+
+The :doc:`chart of accounts
+</applications/finance/accounting/getting_started/initial_configuration/chart_of_accounts>` is
+installed by default as part of the set of data included in the localization module, the accounts
+are mapped automatically in taxes, default account payable, default account receivable. The chart of
+accounts for Colombia is based on the PUC (Plan Unico de Cuentas).
+
+.. image:: colombia/chart-of-accounts.png
    :align: center
+   :alt: Cart of Account configuration in Odoo for Colombia localization.
 
-Usage and testing
-=================
+.. seealso::
+   - :doc:`/applications/finance/fiscal_localizations/colombia/workflows`
+   - :doc:`/applications/finance/fiscal_localizations/colombia/reports`
 
-Invoice
--------
+.. toctree::
+   :titlesonly:
 
-When all your master data and credentials has been configured, it's
-possible to start testing the electronic invoice workflow.
-
-Invoice creation
-~~~~~~~~~~~~~~~~
-
-The functional workflow that takes place before an invoice validation
-doesn't change. The main changes that are introduced with the
-electronic invoice are the next fields:
-
-.. image:: colombia/colombia12.png
-   :align: center
-
-There are three types of documents:
-
-- **Factura Electronica**: This is the regular type of document and
-  its applicable for Invoices, Credit Notes and Debit Notes.
-- **Factura de Importación**: This should be selected for importation
-  transactions.
-- **Factura de contingencia**: This is an exceptional type that is
-  used as a manual backup in case that the company is not able to use
-  the ERP and it's necessary to generate the invoice manually, when
-  this invoice is added to the ERP, this invoice type should be
-  selected.
-
-Invoice validation
-~~~~~~~~~~~~~~~~~~
-
-After the invoice is validated an XML file is created and sent
-automatically to Carvajal, this file is displayed in the chatter.
-
-.. image:: colombia/colombia13.png
-   :align: center
-
-An extra field is now displayed in "Other Info" tab with the name of
-the XML file. Additionally there is a second extra field that is
-displayed with the Electronic Invoice status, with the initial value
-"In progress":
-
-.. image:: colombia/colombia14.png
-   :align: center
-
-Reception of legal XML and PDF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The electronic invoice vendor receives the XML file and proceeds to
-validate the structure and the information in it, if everything is
-correct the invoice status changes to "Validated" after using the
-"Check Carvajal Status" button in the Action dropdown. They then
-proceed to generate a Legal XML which includes a digital signature and
-a unique code (CUFE), a PDF invoice that includes a QR code and the
-CUFE is also generated.
-
-After this:
-
-- A ZIP containing the legal XML and the PDF is downloaded and
-  displayed in the invoice chatter:
-
-  .. image:: colombia/colombia15.png
-
-  .. image:: colombia/colombia16.png
-
-- The Electronic Invoice status changes to "Accepted"
-
-Common errors
-~~~~~~~~~~~~~
-
-During the XML validation the most common errors are usually related
-to missing master data. In such cases, error messages are shown in the
-chatter after updating the electronic invoice status.
-
-.. image:: colombia/colombia17.png
-   :align: center
-
-After the master data is corrected, it's possible to reprocess the XML
-with the new data and send the updated version, using the following
-button:
-
-.. image:: colombia/colombia18.png
-   :align: center
-
-.. image:: colombia/colombia19.png
-   :align: center
-
-Additional use cases
---------------------
-
-The process for credit and debit notes is exactly the same as the
-invoice, the functional workflow remains the same as well.
+   colombia/workflows
+   colombia/reports
