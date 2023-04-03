@@ -2,7 +2,9 @@
 Integrating additional costs to products (landed costs)
 =======================================================
 
-The landed cost feature in Odoo allows to include additional costs
+.. _inventory/reporting/landed_costs:
+
+The landed costs feature in Odoo allows to include additional costs
 (shipment, insurance, customs duties, etc.) into the cost of the
 product.
 
