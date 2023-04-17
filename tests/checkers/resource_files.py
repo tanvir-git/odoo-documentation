@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from PIL import Image
 import sphinxlint
 
 
@@ -28,6 +29,35 @@ def check_image_size(file):
             'image-size',
         )
 
+    if file_path.suffix == '.png':
+        mode_to_bpp = {'1':1, 'L':8, 'P':8, 'RGB':24, 'RGBA':32, 'CMYK':32, 'YCbCr':24, 'I':32, 'F':32}
+
+        data = Image.open(file)
+        bpp = mode_to_bpp[data.mode]
+        if bpp > 8:
+            log_error(
+                file_path,
+                0,
+                "File was not compressed through pngquant, bit depth is still too high.",
+                'image-size'
+            )
+
+def check_media_name_format(file_path):
+    if file_path.endswith('.rst'):
+        return
+    split = file_path.split('/')
+    if '_' in split[-1]:
+        log_error(
+            file_path,
+            0,
+            "Media name should use hyphens and not underscores",
+            'media-name-format'
+        )
+
+additional_checkers = [
+    check_image_size,
+    check_media_name_format,
+]
 
 @sphinxlint.checker('')
 def check_file_extensions(file, lines, options=None):
