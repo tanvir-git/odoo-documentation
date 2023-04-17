@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from PIL import Image
@@ -14,6 +15,8 @@ def log_error(file, line, msg, checker_name):
     """
     print(f"{file}:{line or 0}: {msg} ({checker_name})")
 
+def local_run():
+    return os.getenv('LOCAL') == '1'
 
 def check_image_size(file):
     """ Check that images are not larger than the maximum file size allowed for their extension. """
@@ -29,6 +32,9 @@ def check_image_size(file):
             'image-size',
         )
 
+    if local_run():
+        return
+
     if file_path.suffix == '.png':
         mode_to_bpp = {'1':1, 'L':8, 'P':8, 'RGB':24, 'RGBA':32, 'CMYK':32, 'YCbCr':24, 'I':32, 'F':32}
 
@@ -43,6 +49,8 @@ def check_image_size(file):
             )
 
 def check_media_name_format(file_path):
+    if local_run():
+        return
     if file_path.endswith('.rst'):
         return
     split = file_path.split('/')
