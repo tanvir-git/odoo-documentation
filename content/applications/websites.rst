@@ -9,4 +9,5 @@ Websites
 
     websites/website
     websites/ecommerce
+    websites/forum
     websites/livechat
