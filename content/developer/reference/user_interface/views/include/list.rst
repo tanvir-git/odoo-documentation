@@ -368,6 +368,9 @@ Below is a possible structure and the representation of its rendering.
 
 .. include:: views/include/component_button.rst
 
+:column_invisible:
+  same as for :ref:`list field <reference/user_interface/views/list/field>` component.
+
 Below is a possible structure and the representation of its rendering.
 
 .. container:: row
@@ -382,7 +385,9 @@ Below is a possible structure and the representation of its rendering.
           icon="fa-edit" title="Edit"/>
       <button
           type="object" name="my_method"
-          string="Button1"/>
+          string="Button1"
+          column_invisible="context.get('hide_button')"
+          invisible="amount &gt; 3"/>
       <field name="amount"/>
       <field name="currency_id"/>
       <field name="tax_id"/>
@@ -481,7 +486,8 @@ Below is a possible structure and the representation of its rendering.
     <tree>
       <header>
         <button type="object" name="to_draft"
-            string="Button1"/>
+            string="Button1"
+            invisible="context.get('hide_button')"/>
       </header>
       <field name="name"/>
       <field name="amount"/>
