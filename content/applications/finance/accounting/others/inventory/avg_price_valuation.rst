@@ -4,7 +4,7 @@ Calculate average price on returned goods
 
 .. _inventory/avg_cost/definition:
 
-Average cost valuation (AVCO) evaluates a cost based on the total cost of goods bought or produced
+Average cost valuation (AVCO) is an inventory valuation method that evaluates a cost based on the total cost of goods bought or produced
 during a period, divided by the total number of items on-hand. Inventory valuation is used to:
 
 - reflect the value of a company's assets;
@@ -41,7 +41,7 @@ Formula
 -------
 
 .. math::
-   Avg~Cost = \frac{Old~Qty \times Old~Avg~Cost + Incoming~Qty \times Purchase~Price}{Final~Qty}
+   Avg~Cost = \frac{(Old~Qty \times Old~Avg~Cost) + (Incoming~Qty \times Purchase~Price)}{Final~Qty}
 
 - **Old Qty**: product count in stock before receiving the new shipment;
 - **Old Avg Cost**: calculated average cost for a single product from the previous inventory
@@ -62,7 +62,7 @@ Configuration
 -------------
 
 To use average cost inventory valuation on a product, navigate to :menuselection:`Inventory -->
-Product Categories` and select the category that will be using :abbr:`AVCO
+Configuration --> Product Categories` and select the category that will be using :abbr:`AVCO
 (Average Cost Valuation)`. On the product category page, set :guilabel:`Costing Method` to `Average
 Cost (AVCO)` and :guilabel:`Inventory Valuation` to `Automated`.
 
@@ -75,7 +75,7 @@ Compute average cost
 --------------------
 
 To conceptualize how the average cost of a product changes each time a shipment arrives, the
-following table contains different warehouse operations and stock moves. Each is a different example
+following table contains a sequence of warehouse operations and stock moves. Each is a different example
 of how the average cost valuation is affected.
 
 +--------------------------------+---------------+-------------------+---------------+------------+
@@ -83,11 +83,11 @@ of how the average cost valuation is affected.
 +================================+===============+===================+===============+============+
 |                                |               | $0                | 0             | $0         |
 +--------------------------------+---------------+-------------------+---------------+------------+
-| 1. Receive 8 tables at $10/unit| +8*$10        | $80               | 8             | $10        |
+| 1. Receive 8 tables at $10/unit| 8 * $10        | $80               | 8             | $10        |
 +--------------------------------+---------------+-------------------+---------------+------------+
-| 2. Receive 4 tables at $16/unit| +4*$16        | $144              | 12            | $12        |
+| 2. Receive 4 tables at $16/unit| 4 * $16        | $144              | 12            | $12        |
 +--------------------------------+---------------+-------------------+---------------+------------+
-| 3. Deliver 10 tables           | -10*$12       | $24               | 2             | $12        |
+| 3. Deliver 10 tables           | -10 * $12       | $24               | 2             | $12        |
 +--------------------------------+---------------+-------------------+---------------+------------+
 
 Stock products for the first time
@@ -95,7 +95,7 @@ Stock products for the first time
 
 The initial stock is 0; therefore all values are $0.
 
-#. At the first warehouse operation, `8` tables for `$10` each are shipped into the warehouse. The
+At the first warehouse operation, `8` tables for `$10` each are shipped into the warehouse. The
    average cost is evaluated with the :ref:`formula<inventory/avg_cost/formula>`:
 
    .. math::
@@ -109,17 +109,16 @@ The initial stock is 0; therefore all values are $0.
 
 .. _inventory/avg_price/order_8:
 
-.. example::
+.. exercise::
    Verify in Odoo by ordering 8 tables for $10 each. Do this in the :guilabel:`Purchase` app and
    create a :guilabel:`Request for Quotation`. In the order form, fill in `Table` under the
    :guilabel:`Product` column and set the :guilabel:`Product Type` as `Storable`. Next, use the
    :guilabel:`-->` icon next to the :guilabel:`Product Category` field to set the :guilabel:`Costing
    Method` to `AVCO` and :guilabel:`Inventory Valuation` to `Automated`.
 
-   Exit out of the pop-ups to confirm the :abbr:`PO (Purchase Order)`. Receive the shipment from the
+   Exit out of the pop-up windows and confirm the :abbr:`PO (Purchase Order)`. Receive the shipment from the
    vendor and switch to :menuselection:`Inventory --> Reporting --> Inventory Valuation`. By
-   default, the entries are grouped by product, so select the drop-down for `Table`. Below is the
-   record that the the 8 tables in-stock are worth $80.
+   default, the entries are grouped by product, so select the drop-down for `Table`. The 8 tables in-stock are worth $80.
 
    .. image:: avg_price_valuation/inventory_val_8_tables.png
       :align: center
@@ -138,21 +137,21 @@ Receive additional products
    .. math::
       Avg~Cost = \frac{8 \times $10 + 4 \times $16}{8+4} = \frac{$144}{12} = $12
 
-   #. *Incoming quantity* of tables is `4` and new *purchase price* `$16`;
-   #. The *Old Qty* and *Old price* are `8` and `$10`, respectively;
+   #. The *incoming quantity* of tables is `4` and the new *purchase price* is `$16`;
+   #. The *old quantity* and *old price* are `8` and `$10`, respectively;
    #. Thus, the numerator is found by adding the product's old inventory value(`$80`) to
       the incoming value (`4 * $16 = $64`), `$80 + $64 = $144`;
    #. The numerator total (`$144`) is divided by the total on-hand stock, `8 + 4 = 12`;
    #. Thus, `$144 / 12 = $12` is the updated average cost per table at this time.
 
-.. example::
+.. exercise::
    Verify this operation in Odoo by creating another :abbr:`PO (Purchase Order)` for 4 tables priced
-   $16 each. Confirm the order to place it, then select :guilabel:`Validate` and :guilabel:`Receive
+   $16 each. :guilabel:`Confirm` the order to place it, then click :guilabel:`Validate` and :guilabel:`Receive
    Products`. Now that the 4 tables have entered the warehouse, return to the :guilabel:`Stock
    Valuation` screen to view how the cost of tables has changed.
 
    In :menuselection:`Inventory --> Reporting --> Inventory Valuation`, select the drop-down for
-   `Table`. Displayed are the two stock moves, and the most recent 4 tables displayed on the top.
+   `Table`. Displayed are the two stock moves, with the most recent 4 tables displayed on the top.
 
    .. image:: avg_price_valuation/inventory-val-4-tables.png
       :align: center
@@ -162,16 +161,16 @@ Receive additional products
 Deliver products to customers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-3. For outgoing shipments such as the third operation, the former average price is used as the
-   product's **purchase price**. To confirm that sending a delivery has no effect on average cost,
-   see:
+For outgoing shipments, the former average price is used as the
+   product's *purchase price*. To confirm that sending a delivery has no effect on average cost,
+   see the :ref:`formula<inventory/avg_cost/formula>`:
 
    .. math::
       Avg~Cost = \frac{12 \times $12 + -10 \times $12}{12-10} = \frac{24}{2} = $12
 
-   #. Because 10 *tables* are being sent out to customers, the *incoming quantity* is `-10`. The
+   #. Because 10 tables are being sent out to customers, the *incoming quantity* is `-10`. The
       previous average cost (`$12`) is used in lieu of a vendor's *purchase price*;
-   #. *Incoming inventory value* is `-10 * $12 = -$120`;
+   #. The *incoming inventory value* is `-10 * $12 = -$120`;
    #. The old *inventory value* (`$144`) is added to the *incoming inventory value* (`-$120`), so
       `$144 + -$120 = $24`;
    #. Only `2` tables remain after shipping out `10` tables from `12`. So the current *inventory
@@ -183,16 +182,16 @@ Deliver products to customers
    <inventory/avg_cost/definite_rule>`.
 
 .. example::
-   Although the average cost method is not recalculated, delivering `10 tables` means that the
+   Although the average cost valuation is not recalculated, delivering `10 tables` means that the
    inventory value decreases. In Odoo, sell 10 tables to a customer by going to the
-   :guilabel:`Sales` app and create a new quotation. Fill in the :guilabel:`Customer` name field and
+   :guilabel:`Sales` app and creating a new quotation. Fill in the :guilabel:`Customer` field and
    add `Table` under the :guilabel:`Product`. Save and confirm the :abbr:`SO (Sales Order)`, and
    select the :guilabel:`Delivery` smart button to prepare the 10 tables for shipment. On the
-   outgoing screen, click :guilabel:`Validate` and the tables have officially left the warehouse.
+   delivery order screen, click :guilabel:`Validate` to confirm that the tables have officially left the warehouse.
 
    In the inventory valuation report for `Table` found in :menuselection:`Inventory --> Reporting
-   --> Inventory Valuation`, the first record in white displays how delivery decreases the total
-   value of the product, table, in stock. What is not represented in this stock valuation record is
+   --> Inventory Valuation`, the first record in white displays how the delivery decreases the total
+   value of the product in stock by 10 units. What is not represented in this stock valuation record is
    the revenue made from this sale, so this decrease is not a loss to the company.
 
    .. image:: avg_price_valuation/inventory-val-send-10-tables.png
@@ -202,7 +201,7 @@ Deliver products to customers
 Return items to supplier (use case)
 ===================================
 
-Because the price paid to suppliers can differ from the price the product is valued at, Odoo handles
+Because the price paid to suppliers can differ from the price the product is valued at with the :abbr:`AVCO (Average Cost Valuation)` method, Odoo handles
 returned items in a specific way.
 
 #. Products are returned to suppliers at the original purchase price, but;
@@ -215,7 +214,7 @@ The above :ref:`table<inventory/avg_cost/math_table>` is updated as follows:
 +================================+===============+===================+===============+============+
 |                                |               | $24               | 2             | $12        |
 +--------------------------------+---------------+-------------------+---------------+------------+
-| Return 1 table bought at $10   | -1\*$12       | $12               | 1             | $12        |
+| Return 1 table bought at $10   | -1 * $12       | $12               | 1             | $12        |
 +--------------------------------+---------------+-------------------+---------------+------------+
 
 In other words, returns are perceived by Odoo as another form of a product exiting the warehouse. To
@@ -224,14 +223,13 @@ product is returned; the initial purchase price of `$10` is unrelated to the tab
 
 .. example::
    To return a table that was purchased for `$10`, go to the :guilabel:`Inventory` app and select
-   the the :guilabel:`Receipts` card in the Inventory Overview dashboard. This shows a list of all
-   incoming shipments that were processed in the warehouse. Select the entry with the
-   :guilabel:`Reference` `WH/IN/00016` to select the receipt for the 8 tables.
+   the :guilabel:`Receipts` card in the Inventory Overview dashboard. This shows a list of all
+   incoming shipments that were processed in the warehouse. Select the receipt for the 8 tables purchased in Exercise 1 [link to the Exercise box in the "Stock products for the first time" section].
 
-   Click :guilabel:`Return` and modify the quantity to `1`. This creates an outgoing shipment for
-   the table, and select :guilabel:`Validate` to confirm the outgoing shipment.
+   Then, click :guilabel:`Return` on the validated delivery order, and modify the quantity to `1` in the reverse transfer window. This creates an outgoing shipment for
+   the table. Select :guilabel:`Validate` to confirm the outgoing shipment.
 
-   Return to the Inventory Valuation page to see how the outgoing shipment decreases the inventory
+   Return to :menuselection:`Inventory --> Reporting --> Inventory Valuation` to see how the outgoing shipment decreases the inventory
    value by $12.
 
    .. image:: avg_price_valuation/inventory-valuation-return.png
@@ -243,10 +241,10 @@ product is returned; the initial purchase price of `$10` is unrelated to the tab
 Eliminate stock valuation errors in outgoing products
 -----------------------------------------------------
 
-As mentioned :ref:`previously<inventory/avg_cost/definite_rule>`, inconsistencies occur in a
+Inconsistencies occur in a
 company's inventory when the average cost valuation is recalculated on outgoing shipments.
 
-To demonstrate this error, here is a scenario where 1 table is shipped to a customer and another is
+To demonstrate this error, the table below displays a scenario in which 1 table is shipped to a customer and another is
 returned to a supplier at the purchased price.
 
 +------------------------------------------+---------------+-------------------+---------------+------------+
@@ -273,18 +271,18 @@ Anglo-Saxon accounting
 
 Companies that use **Anglo-Saxon accounting** additionally keep a holding account that tracks the
 amount to be paid to vendors. Once a vendor delivers an order, **Inventory value** increases
-because products valued at that price has entered the stock. The holding account (called **stock
+based on the vendor price of the products that have entered the stock. The holding account (called **stock
 input**) is credited and only reconciled once the vendor bill is received.
 
 .. seealso::
    - :ref:`Anglo-Saxon vs. Continental inventory valuation
      <inventory/inventory_valuation_config/accounting>`
 
-Going back to the :ref:`previous transactions<inventory/avg_cost/math_table>` involving tables, the
-chart below reflects journal entries and accounts. The *stock input* account is meant to store the
-money intended to pay vendors when the vendor bill has yet been received. To balance accounts when
+The
+table below reflects journal entries and accounts. The *stock input* account stores the
+money intended to pay vendors when the vendor bill has not yet been received. To balance accounts when
 returning products that have a price difference between the price the product is **valued at**
-and the price was bought for, a *price difference* account is created.
+and the price it was bought for, a *price difference* account is created.
 
 +-----------------------------------------+---------------+--------------+-------------------+---------------+------------+
 | Operation                               | Stock Input   | Price Diff   | Inventory Value   | Qty On Hand   | Avg Cost   |
@@ -306,7 +304,7 @@ and the price was bought for, a *price difference* account is created.
 | Receive vendor refund $10               | $0            | $2           | $12               | 1             | $12        |
 +-----------------------------------------+---------------+--------------+-------------------+---------------+------------+
 
-On product reception
+Product reception
 --------------------
 
 Summary
@@ -315,26 +313,26 @@ Summary
 At product reception, Odoo ensures companies can pay for goods that were purchased by preemptively
 moving an amount matching the price of received goods into the :doc:`liability account
 </applications/finance/accounting/getting_started/cheat_sheet>`, **Stock Input**. Then, once the
-bill has been received, the amount in the holding account is transferred to *Accounts payable*.
+bill has been received, the amount in the holding account is transferred to *Accounts Payable*.
 Transfers into this account means the bill has been paid. **Stock Input** is reconciled once the
 vendor bill is received.
 
-Inventory valuation, as discussed :ref:`previously<inventory/avg_cost/math_table>`, is a method of
-calculating how much each product is worth internally. Again, since there is a difference between
-the price the product is **valuated at** and the price the vendor **sold** the product **for**, the
-**Inventory Valuation** account is unrelated to the crediting and debiting operations the **Stock
-Input** account must record when vendor products and bills are received. To conceptualize all this,
-follow the table breakdown below.
+Inventory valuation is a method of
+calculating how much each in-stock product is worth internally. Since there is a difference between
+the price the product is **valuated at** and the price the product was actually **purchased for**, the
+**Inventory Valuation** account is unrelated to the crediting and debiting operations of the **Stock Input** account.
+
+To conceptualize all this,
+follow the breakdown below.
 
 Accounts balanced at received products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When 8 tables are received from the vendor:
+In this example, a company starts with zero units of a product, `table`, in stock. Then, 8 tables are received from the vendor:
 
-#. The **Stock Input** account stores `$80` owed to the vendor. The amount in this account is
-   unrelated to the inventory value, because the amount the table is valued at as an asset in the
-   company is separate from the price the vendor sold the product for.
-#. In summary, `$80` worth of tables came **in** (**Debit** the *Inventory Value* account `$80`),
+#. The **Stock Input** account stores `$80` of credit owed to the vendor. The amount in this account is
+   unrelated to the inventory value.
+#. `$80` worth of tables came **in** (**Debit** the *Inventory Value* account `$80`), and
 #. `$80` must be paid **out** for received goods (**Credit** the *Stock Input* account `$80`).
 
 In Odoo
@@ -342,8 +340,8 @@ In Odoo
 
 Odoo generates an accounting journal entry when shipments that use the :abbr:`AVCO (Average Cost
 Valuation)` costing method are received. Configure a :guilabel:`Price Difference Account` by
-selecting the :guilabel:`-->` icon next to the :guilabel:`Product Category` field on the product
-page for `Table`.
+selecting the :guilabel:`➡️ (arrow)` icon next to the :guilabel:`Product Category` field on the product
+page.
 
 Under :guilabel:`Account Properties`, create a new :guilabel:`Price Difference Account` and set the
 account :guilabel:`Type` as `Expenses`.
@@ -361,7 +359,7 @@ To receive the shipment, select :guilabel:`Validate` on the :ref:`Receipt
 
 Next, navigate to the :guilabel:`Accounting` app and go to the menu at the top of the screen to
 select :menuselection:`Accounting --> Journal Entries`. In the list, find the :guilabel:`Reference`
-that matches the warehouse reception operation `WH/IN/00011` for the table.
+that matches the warehouse reception operation for the relevant product.
 
 .. image:: avg_price_valuation/search-for-entry-of-tables.png
    :align: center
@@ -391,10 +389,10 @@ In Odoo
 
 Once the vendor asks for payment, navigate to the :guilabel:`Purchase` app, and on the purple
 header at the top, select :menuselection:`Orders --> Purchase` to locate the :abbr:`PO (Purchase
-Order)` used to buy the 8 tables. Inside the :abbr:`PO (Purchase Order)` `P00016`, select
+Order)` used to buy the 8 tables. Inside the :abbr:`PO (Purchase Order)`, select
 :guilabel:`Create Bill`.
 
-Select on the tab :guilabel:`Journal Items` to view how `$80` is transferred from the holding
+Click on the tab :guilabel:`Journal Items` to view how `$80` is transferred from the holding
 account, `Stock Interim (Received)` to `Accounts Payable`. :guilabel:`Confirm` the bill to record
 the payment to the vendor.
 
@@ -402,7 +400,7 @@ the payment to the vendor.
    :align: center
    :alt: Show bill linked to the purchase order for 8 tables
 
-#. Receive 4 tables from the vendor (similar to #1)
+Receive 4 tables from the vendor (similar to #1)
 
    #. **Inventory value** increases because more 4 tables with an average cost of `$12` each enters
       the warehouse as an asset.
