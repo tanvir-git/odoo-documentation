@@ -129,7 +129,7 @@ for modifier 'required'. ``<field>`` can have the following attributes:
     <field name="fname_id" domain="[('fname_a', '=', parent.fname_b)]"/>
 
 :context:
-  :ref:`python expression <user_interface/views/python_expression>` [#python_expression] that defines a dict_
+  :ref:`python expression <user_interface/views/python_expression>` that defines a dict_
 
   for relational fields only, context to pass when fetching possible values
 

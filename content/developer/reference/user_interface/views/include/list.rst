@@ -204,7 +204,7 @@ each record. Can use the following attributes:
 
   Fetches and stores the field, but doesn't display the column in the
   table. Necessary for fields which shouldn't be displayed but are
-  used by e.g. ``@colors`` or a domain.
+  used by e.g. ``@colors`` or an expression.
 
   .. code-block:: xml
 
@@ -216,7 +216,7 @@ each record. Can use the following attributes:
 
   Fetches and stores the field, but doesn't display the column in the table.
   Necessary for fields which shouldn't be displayed but are used by e.g.
-  ``@colors`` or a domain.
+  ``@colors`` or an expression.
 
   Unlike ``invisible``, if the evaluate expression is truly the entire column
   invisible and is evaluate without the subtree values.

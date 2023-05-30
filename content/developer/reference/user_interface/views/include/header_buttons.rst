@@ -1,6 +1,6 @@
 .. rst-class:: o-definition-list
 
-`<button>`
+``<button>``
   Defines custom buttons similar to :ref:`list view buttons <reference/user_interface/views/list/button>` in the control panel
   that perform an action/call a model's method. The buttons which accepts an extra attribute when placed in a `header`:
 

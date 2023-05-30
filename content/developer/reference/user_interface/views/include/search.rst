@@ -3,6 +3,18 @@
 Search
 ======
 
+.. container:: row
+
+  .. code-block:: xml
+    :class: col-xxl-6
+
+    <search>
+      ...
+    </search>
+
+  .. image:: views/search.svg
+    :class: col-xxl-6
+
 Search views are a break from previous view types in that they don't display
 *content*: although they apply to a specific model, they are used to filter
 other view's content (generally aggregated views
@@ -11,229 +23,353 @@ difference in use case, they are defined the same way.
 
 The root element of search views is ``<search>``. It takes no attributes.
 
-.. @string is not displayed anywhere, should be removed
+Possible children elements of the list view are: ``field``, ``filter``, ``separator``,
+``group`` or ``searchpanel``
 
-Possible children elements of the search view are:
+.. _reference/user_interface/views/search/field:
+
+<field>: field usable as filter
+-------------------------------
+
+.. code-block:: xml
+
+  <search>
+    <field name="FIELD_NAME"/>
+  </search>
+
+fields define domains or contexts with user-provided values. When search
+domains are generated, field domains are composed with one another and
+with filters using **AND**.
+
+Fields can have the following attributes:
+
+:name:
+  string_ :ref:`model <reference/orm/model>` field name (mandatory)
+
+  the name of the field to filter on
+
+:string:
+  string_
+
+  the field's label
+
+:operator:
+  string_
+
+  by default, fields generate domains of the form :samp:`[({name},
+  {operator}, {provided_value})]` where ``name`` is the field's name and
+  ``provided_value`` is the value provided by the user, possibly
+  filtered or transformed (e.g. a user is expected to provide the
+  *label* of a selection field's value, not the value itself).
+
+  The ``operator`` attribute allows overriding the default operator,
+  which depends on the field's type (e.g. ``=`` for float fields but
+  ``ilike`` for char fields or ``child_of`` for many2one)
+
+:filter_domain:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a :ref:`reference/orm/domains`
+
+  complete domain to use as the field's search domain, can use a
+  ``self`` variable to inject the provided value in the custom
+  domain. Can be used to generate significantly more flexible domains
+  than ``operator`` alone (e.g. searches on multiple fields at once)
+
+  If both ``operator`` and ``filter_domain`` are provided,
+  ``filter_domain`` takes precedence.
+
+:context:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a dict_
+
+  allows adding context keys, including the user-provided values (which
+  as for ``domain`` are available as a ``self`` variable, an array of
+  values e.g. ``[id_1, id_2]`` for a :class:`~odoo.fields.Many2one` field).
+  By default, fields don't generate domains.
+
+  .. note:: the domain and context are inclusive and both are generated
+            if a ``context`` is specified. To only generate context
+            values, set ``filter_domain`` to an empty list:
+            ``filter_domain="[]"``
+
+:domain:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a :ref:`reference/orm/domains`
+
+  if the field can provide an auto-completion
+  (e.g. :class:`~odoo.fields.Many2one`), filters the possible
+  completion results.
+
+:groups:
+  `Comma-separated values`_ whose choices are the :class:`~odoo.addons.base.models.res_users.Groups` reference
+
+  make the field only available to specific users
+
+:invisible:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a boolean_
+
+  standard dynamic attributes based on record values. Hide the field
+  if trully or if the evaluate expression is trully.
+
+  .. code-block:: xml
+
+    <field name="fname_a" invisible="True"/>
+    <field name="fname_b" invisible="fname_c != 3 and fname_a == parent.fname_d"/>
+
+Below is a possible structure and the representation of its rendering.
+
+.. container:: row
+
+  .. code-block:: xml
+    :class: col-xxl-6
+
+    <search>
+      <field name="name" string="My Custom Name"/>
+      <field name="amount"/>
+      <field name="company_id" invisible="1"/>
+      <field name="currency_id"/>
+      <field name="ref"/>
+    </search>
+
+  .. image:: views/search_field.svg
+    :class: col-xxl-6
+
+.. _reference/user_interface/views/search/filter:
+
+<filter>: predefined filter
+---------------------------
+
+.. code-block:: xml
+
+  <search>
+    <filter string="LABEL" domain="DOMAIN"/>
+  </search>
+
+a filter is a predefined toggle in the search view, it can only be enabled
+or disabled. Its main purposes are to add data to the search context (the
+context passed to the data view for searching/filtering), or to append new
+sections to the search filter.
+
+Filters can have the following attributes:
+
+:string:
+  string_ (mandatory)
+
+  the label of the filter
+
+:domain:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a :ref:`reference/orm/domains`
+
+  will be appended to the action's domain as part of the search domain.
+
+:date:
+  string_ :ref:`model <reference/orm/model>` field name
+
+  the name of a field of type ``date`` or ``datetime``.
+  Using this attribute has the effect to create
+  a set of filters available in a submenu
+  of the filters menu. The filters proposed are time dependent
+  but not dynamic in the sense that their domains are evaluated
+  at the time of the control panel instantiation.
+
+  Example:
+
+  .. code-block:: xml
+
+    <filter name="filter_create_date" date="create_date" string="Creation Date"/>
+
+  The example above allows to easily search for records with creation date field
+  values in one of the periods below (if the current month is August 2019).
+
+  .. code-block:: text
+
+    Create Date >
+      August
+      July
+      June
+      Q4
+      Q3
+      Q2
+      Q1
+    --------------
+      2019
+      2018
+      2017
+
+  Multi selection of options is allowed.
+
+:default_period:
+  string_  chooses from ``today``, ``this_week``, ``this_month``, ``last_month``,
+  ``antepenultimate_month``, ``fourth_quarter``, ``third_quarter``, ``second_quarter``,
+  ``first_quarter``, ``this_year``, ``last_year`` or ``antepenultimate_year``
+
+  only makes sense for a filter with non empty ``date`` attribute.
+  determines which periods are activated if the filter is in the
+  default set of filters activated at the view initialization. If not provided,
+  'this_month' is used by default.
+
+  The attribute accepts comma separated values.
+
+  Examples:
+
+  .. code-block:: xml
+
+    <filter name="filter_create_date" date="create_date" string="Creation Date" default_period="this_week"/>
+    <filter name="filter_create_date" date="create_date" string="Creation Date" default_period="this_year,last_year"/>
+
+:context:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a dict_
+
+  a Python dictionary, merged into the action's domain to generate the
+  search domain
+
+  The key ``group_by`` can be used to define a groupby available in the
+  'Group By' menu. The 'group_by' value can be a valid field name.
+
+  .. code-block:: xml
+
+      <filter name="groupby_category" string="Category" context="{'group_by': 'category_id'}"/>
+
+  The groupby defined above allows to group data by category.
+
+  When the field is of type ``date`` or ``datetime``, the filter generates a submenu of the Group By
+  menu in which the following interval options are available: day, week, month, quarter, year.
+
+  In case the filter is in the default set of filters activated at the view initialization,
+  the records are grouped by month by default. This can be changed by using the syntax
+  'date_field:interval' as in the following example.
+
+  Example:
+
+  .. code-block:: xml
+
+      <filter name="groupby_create_date" string="Creation Date" context="{'group_by': 'create_date:week'}"/>
+
+  .. note::
+      The results of read_groups grouped on a field may be influenced by its group_expand attribute,
+      allowing to display empty groups when needed.  For more information, please refer to
+      :class:`~odoo.fields.Field` attributes documentation.
+
+:name:
+  string_
+
+  logical name for the filter, can be used to :ref:`enable it by default
+  <reference/user_interface/views/search/defaults>`, can also be used as
+  :ref:`inheritance hook <reference/view_record/inheritance>`
+
+:help:
+  string_
+
+  a longer explanatory text for the filter, may be displayed as a
+  tooltip
+
+:groups:
+  `Comma-separated values`_ whose choices are the :class:`~odoo.addons.base.models.res_users.Groups` reference
+
+  make the field only available to specific users
+
+:invisible:
+  :ref:`python expression <user_interface/views/python_expression>` that defines a boolean_
+
+  standard dynamic attributes based on record values. Hide the field
+  if trully or if the evaluate expression is trully.
+
+  .. code-block:: xml
+
+    <field name="fname_a" invisible="True"/>
+    <field name="fname_b" invisible="fname_c != 3 and fname_a == parent.fname_d"/>
+
+.. note::
+
+  Sequences of filters (without non-filters separating them) are treated
+  as inclusively composited: they will be composed with ``OR`` rather
+  than the usual ``AND``, e.g.
+
+  .. code-block:: xml
+
+    <filter domain="[('state', '=', 'draft')]"/>
+    <filter domain="[('state', '=', 'done')]"/>
+
+  if both filters are selected, will select the records whose ``state``
+  is ``draft`` or ``done``, but
+
+  .. code-block:: xml
+
+    <filter domain="[('state', '=', 'draft')]"/>
+    <separator/>
+    <filter domain="[('delay', '<', 15)]"/>
+
+  if both filters are selected, will select the records whose ``state``
+  is ``draft`` **and** ``delay`` is below 15.
+
+.. _reference/user_interface/views/search/separator:
+
+<separator>: separate groups of filters
+---------------------------------------
+
+.. code-block:: xml
+
+  <search>
+    <FILTERS/>
+    <separator/>
+    <FILTERS/>
+  </search>
+
+can be used to separates groups of filters in simple search views.
+`group` is more readable.
+
+.. _reference/user_interface/views/search/group:
+
+<group>: separate groups of filters
+-----------------------------------
+
+.. code-block:: xml
+
+  <search>
+    <group expand="0" string="LABEL">
+      <FILTERS/>
+    </group>
+  </search>
+
+can be used to separate groups of filters, more readable than
+``separator`` in complex search views
+
+<searchpanel>: display a search panel
+-------------------------------------
+
+.. code-block:: xml
+
+  <search>
+    <searchpanel>
+      <FIELDS/>
+    </searchpanel>
+  </search>
+
+allows to display a search panel on the left of any multi records view.
+
+This tool allows to quickly filter data on the basis of given fields. The fields
+are specified as direct children of the ``searchpanel`` with tag name ``field``.
 
 .. rst-class:: o-definition-list
 
-``field``
-    fields define domains or contexts with user-provided values. When search
-    domains are generated, field domains are composed with one another and
-    with filters using **AND**.
+``<field>``
+  Fields in searchpanel can have the following attributes:
 
-    Fields can have the following attributes:
+  :name:
+    string_ :ref:`model <reference/orm/model>` field name (mandatory)
 
-    .. rst-class:: o-definition-list
-
-    ``name``
-        the name of the field to filter on
-    ``string``
-        the field's label
-    ``operator``
-        by default, fields generate domains of the form :samp:`[({name},
-        {operator}, {provided_value})]` where ``name`` is the field's name and
-        ``provided_value`` is the value provided by the user, possibly
-        filtered or transformed (e.g. a user is expected to provide the
-        *label* of a selection field's value, not the value itself).
-
-        The ``operator`` attribute allows overriding the default operator,
-        which depends on the field's type (e.g. ``=`` for float fields but
-        ``ilike`` for char fields)
-    ``filter_domain``
-        complete domain to use as the field's search domain, can use a
-        ``self`` variable to inject the provided value in the custom
-        domain. Can be used to generate significantly more flexible domains
-        than ``operator`` alone (e.g. searches on multiple fields at once)
-
-        If both ``operator`` and ``filter_domain`` are provided,
-        ``filter_domain`` takes precedence.
-    ``context``
-        allows adding context keys, including the user-provided values (which
-        as for ``domain`` are available as a ``self`` variable, an array of
-        values e.g. ``[id_1, id_2]`` for a :class:`~odoo.fields.Many2one` field).
-        By default, fields don't generate domains.
-
-        .. note:: the domain and context are inclusive and both are generated
-                  if a ``context`` is specified. To only generate context
-                  values, set ``filter_domain`` to an empty list:
-                  ``filter_domain="[]"``
-    ``groups``
-        make the field only available to specific users
-    ``domain``
-        if the field can provide an auto-completion
-        (e.g. :class:`~odoo.fields.Many2one`), filters the possible
-        completion results.
-
-``filter``
-    a filter is a predefined toggle in the search view, it can only be enabled
-    or disabled. Its main purposes are to add data to the search context (the
-    context passed to the data view for searching/filtering), or to append new
-    sections to the search filter.
-
-    Filters can have the following attributes:
-
-    .. rst-class:: o-definition-list
-
-    ``string`` (required)
-        the label of the filter
-    ``domain`` (optional)
-        an Odoo :ref:`domain <reference/orm/domains>`, will be appended to the
-        action's domain as part of the search domain.
-    ``date`` (optional)
-        the name of a field of type ``date`` or ``datetime``.
-        Using this attribute has the effect to create
-        a set of filters available in a submenu
-        of the filters menu. The filters proposed are time dependent
-        but not dynamic in the sense that their domains are evaluated
-        at the time of the control panel instantiation.
-
-        Example:
-
-        .. code-block:: xml
-
-          <filter name="filter_create_date" date="create_date" string="Creation Date"/>
-
-        The example above allows to easily search for records with creation date field
-        values in one of the periods below (if the current month is August 2019).
-
-        .. code-block:: text
-
-          Create Date >
-            August
-            July
-            June
-            Q4
-            Q3
-            Q2
-            Q1
-          --------------
-            2019
-            2018
-            2017
-
-        Multi selection of options is allowed.
-
-    ``default_period`` (optional)
-        only makes sense for a filter with non empty ``date`` attribute.
-        determines which periods are activated if the filter is in the
-        default set of filters activated at the view initialization. If not provided,
-        'this_month' is used by default.
-
-        To choose among the following options:
-        today, this_week, this_month, last_month, antepenultimate_month,
-        fourth_quarter, third_quarter, second_quarter, first_quarter,
-        this_year, last_year, antepenultimate_year.
-
-        The attribute accepts comma separated values.
-
-        Examples:
-
-        .. code-block:: xml
-
-          <filter name="filter_create_date" date="create_date" string="Creation Date" default_period="this_week"/>
-          <filter name="filter_create_date" date="create_date" string="Creation Date" default_period="this_year,last_year"/>
-
-    ``context``
-        a Python dictionary, merged into the action's domain to generate the
-        search domain
-
-        The key ``group_by`` can be used to define a groupby available in the
-        'Group By' menu. The 'group_by' value can be a valid field name.
-
-        .. code-block:: xml
-
-           <filter name="groupby_category" string="Category" context="{'group_by': 'category_id'}"/>
-
-        The groupby defined above allows to group data by category.
-
-        When the field is of type ``date`` or ``datetime``, the filter generates a submenu of the Group By
-        menu in which the following interval options are available: day, week, month, quarter, year.
-
-        In case the filter is in the default set of filters activated at the view initialization,
-        the records are grouped by month by default. This can be changed by using the syntax
-        'date_field:interval' as in the following example.
-
-        Example:
-
-        .. code-block:: xml
-
-           <filter name="groupby_create_date" string="Creation Date" context="{'group_by': 'create_date:week'}"/>
-
-        .. note::
-           The results of read_groups grouped on a field may be influenced by its group_expand attribute,
-           allowing to display empty groups when needed.  For more information, please refer to
-           :class:`~odoo.fields.Field` attributes documentation.
-
-    ``name``
-        logical name for the filter, can be used to :ref:`enable it by default
-        <reference/user_interface/views/search/defaults>`, can also be used as
-        :ref:`inheritance hook <reference/view_record/inheritance>`
-    ``help``
-        a longer explanatory text for the filter, may be displayed as a
-        tooltip
-    ``groups``
-        makes a filter only available to specific users
-
-    .. tip::
-
-       .. versionadded:: 7.0
-
-       Sequences of filters (without non-filters separating them) are treated
-       as inclusively composited: they will be composed with ``OR`` rather
-       than the usual ``AND``, e.g.
-
-       ::
-
-          <filter domain="[('state', '=', 'draft')]"/>
-          <filter domain="[('state', '=', 'done')]"/>
-
-       if both filters are selected, will select the records whose ``state``
-       is ``draft`` or ``done``, but
-
-       ::
-
-          <filter domain="[('state', '=', 'draft')]"/>
-          <separator/>
-          <filter domain="[('delay', '<', 15)]"/>
-
-       if both filters are selected, will select the records whose ``state``
-       is ``draft`` **and** ``delay`` is below 15.
-
-``separator``
-    can be used to separates groups of filters in simple search views
-
-``group``
-    can be used to separate groups of filters, more readable than
-    ``separator`` in complex search views
-
-``searchpanel``
-  allows to display a search panel on the left of any multi records view.
-  By default, the list and kanban views have the searchpanel enabled.
-  The search panel can be activated on other views with the attribute:
-
-  .. rst-class:: o-definition-list
-
-  ``view_types``
-    a comma separated list of view types on which to enable the search panel
-    default: 'tree,kanban'
-
-  This tool allows to quickly filter data on the basis of given fields. The fields
-  are specified as direct children of the ``searchpanel`` with tag name ``field``,
-  and the following attributes:
-
-  .. rst-class:: o-definition-list
-
-  ``name`` (mandatory)
     the name of the field to filter on
 
-  ``select``
-    determines the behavior and display. Possible values are
+  :select:
+    string_  chooses from ``one``, ``multi``, ``groups``, ``string``, ``icon`` or ``color``
 
-    * ``one`` (default) at most one value can be selected. Supported field types are
+    determines the behavior and display.
+
+    .. rst-class:: o-definition-list
+
+    ``one`` (default)
+      at most one value can be selected. Supported field types are
       many2one and selection.
 
-    * ``multi`` several values can be selected (checkboxes). Supported field
+    ``multi``
+      several values can be selected (checkboxes). Supported field
       types are many2one, many2many and selection.
 
     ``groups``
@@ -289,22 +425,25 @@ Possible children elements of the search view are:
       ``domain``:
         determines conditions that the comodel records have to satisfy.
 
-  A domain might be used to express a dependency on another field (with select="one")
-  of the search panel. Consider
-  /!\ This attribute is incompatible with a select="one" with enabled counters; if a select="multi"
-  has a `domain` attribute, all select="one" will have their counters disabled.
+    A domain might be used to express a dependency on another field (with select="one")
+    of the search panel. Consider
+    /!\ This attribute is incompatible with a select="one" with enabled counters; if a select="multi"
+    has a `domain` attribute, all select="one" will have their counters disabled.
 
-  .. code-block:: xml
+    .. code-block:: xml
 
-    <searchpanel>
-      <field name="department_id"/>
-      <field name="manager_id" select="multi" domain="[('department_id', '=', department_id)]"/>
-    </searchpanel>
+      <searchpanel>
+        <field name="department_id"/>
+        <field name="manager_id" select="multi" domain="[('department_id', '=', department_id)]"/>
+      </searchpanel>
 
-  In the above example, the range of values for manager_id (manager names) available at screen
-  will depend on the value currently selected for the field ``department_id``.
+    In the above example, the range of values for manager_id (manager names) available at screen
+    will depend on the value currently selected for the field ``department_id``.
 
-  * ``groupby``: field name of the comodel (only available for many2one and many2many fields). Values will be grouped by that field.
+  :groupby:
+    string_ :ref:`model <reference/orm/model>` field name
+
+    field name of the comodel (only available for many2one and many2many fields). Values will be grouped by that field.
 
 .. _reference/user_interface/views/search/defaults:
 
@@ -337,3 +476,12 @@ For instance if ``foo`` and ``bar`` refer to two groupbys
   }
 
 has the effect to activate first ``bar`` then ``foo``.
+
+
+.. _attributes: https://en.wikipedia.org/wiki/HTML_attribute
+.. _bootstrap contextual color: https://getbootstrap.com/docs/3.3/components/#available-variations
+.. _`Comma-separated values`: https://en.wikipedia.org/wiki/Comma-separated_values
+.. _integer: https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
+.. _string: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+.. _boolean: https://docs.python.org/3/library/stdtypes.html#boolean-values
+.. _dict: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
