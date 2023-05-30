@@ -28,11 +28,11 @@
     <rect x="0" y="0" rx="5" ry="5" width="50" height="25" fill="#cccccc" stroke-width="1"/>
     <text x="8" y="17" fill="#495057">New</text>
 
-    <rect x="60" y="0" rx="5" ry="5" width="66" height="25" stroke-width="1" stroke-dasharray="1 4"/>
-    <text x="66" y="17" fill="#000000">Button1</text>
-
     <rect x="150" y="0" rx="5" ry="5" width="83" height="25" fill="url(#diagonalHatch)" stroke-width="1"/>
     <text x="154" y="17" fill="#888888">3 selected</text>
+
+    <rect x="240" y="0" rx="5" ry="5" width="66" height="25" stroke-width="1" stroke-dasharray="1 4"/>
+    <text x="246" y="17" fill="#000000">Button1</text>
   </g>
 
   <g transform="translate(10 46)">
