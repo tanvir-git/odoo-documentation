@@ -76,7 +76,6 @@ root can have the following attributes_:
 :default_group_by:
   string_ :ref:`model <reference/orm/model>` field name
 
-
   whether the list view should be grouped if no grouping is specified via the action or
   the current search. Should be the name of the field to group by when no grouping is
   otherwise specified
@@ -469,7 +468,6 @@ group the record by the selected.
   <tree>
     <header>
       <BUTTONS/>
-      <FIELDS/>
     </header>
     ...
   </tree>

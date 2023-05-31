@@ -125,7 +125,7 @@ Below is a possible structure and the representation of its rendering.
       <field name="amount"/>
       <field name="company_id" invisible="1"/>
       <field name="currency_id"/>
-      <field name="ref"/>
+      <field name="ref" filter_domain="[('name', 'like', self)]"/>
     </search>
 
   .. image:: views/search_field.svg
@@ -298,6 +298,22 @@ Filters can have the following attributes:
 
   if both filters are selected, will select the records whose ``state``
   is ``draft`` **and** ``delay`` is below 15.
+
+Below is a possible structure and the representation of its rendering.
+
+.. container:: row
+
+  .. code-block:: xml
+    :class: col-xxl-6
+
+    <search>
+      <filter string="name" string="My Custom Name" domain="[('name', 'ilike', 'AAA')]"/>
+      <filter string="My filter" domain="[('user_id', '=', uid)]"/>
+      <filter string="Category" context="{'group_by': 'category_id'}"/>
+    </search>
+
+  .. image:: views/search_field.svg
+    :class: col-xxl-6
 
 .. _reference/user_interface/views/search/separator:
 
