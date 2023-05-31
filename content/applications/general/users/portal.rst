@@ -2,6 +2,8 @@
 Portal access
 =============
 
+.. _portal/main:
+
 Portal access is given to users who need the ability to view certain documents or information
 within an Odoo database.
 
@@ -63,3 +65,102 @@ user for that Odoo database.
    At any time, portal access can be revoked by navigating to the contact, clicking
    :menuselection:`Action --> Grant portal access`, and then unselecting the checkbox under the
    :guilabel:`In Portal` column and clicking :guilabel:`Apply`.
+
+.. _portal/login:
+
+Change portal username
+======================
+
+There may be times when a portal user will want to change their user login. This can be done by any
+user in the database that has administrator access rights. The following process outlines the steps
+that need to be taken in order to change the portal user login.
+
+.. seealso::
+   :doc:`See the documentation on setting access rights.<access_rights>`
+
+First navigate to :menuselection:`Settings app --> Users`. Then under :guilabel:`Filters` select
+:guilabel:`Portal Users` or add a custom filter with the following configuration:
+:menuselection:`Groups --> contains --> "portal"`. After making this selection, search for and open
+the *portal user* that needs to be edited.
+
+Next, click :guilabel:`Edit` if necessary, and then click into the :guilabel:`Email Address` field.
+Make any necessary changes to this field. The :guilabel:`Email Address` field is used to log into
+the Odoo portal.
+
+.. note::
+   Changing the :guilabel:`Email Address` or login will only change the *username* on the customer's
+   portal login. In order to change the contact email, this change needs to take place on the
+   :guilabel:`Contact template` in the *Contacts app*. Alternatively the customer can change their
+   email directly from the portal (but the login cannot be changed). :ref:`See Change customer info
+   <portal/custinfo>`.
+
+Customer changes on portal
+==========================
+
+There may be times when the customer would like to make changes to their contact information,
+password/security, or payment information attached to the portal account. This can be performed by
+the customer from their portal. The following process is how a customer can change their contact
+information.
+
+.. _portal/custinfo:
+
+Change customer info
+--------------------
+
+First login into the portal user account from the database login page. A portal dashboard will
+appear upon successfully logging in. Portal documents from the various installed Odoo applications
+will appear with the number count of each.
+
+.. seealso::
+   :ref:`Portal documentation available <portal/main>`.
+
+Next, navigate to the upper right corner of the portal and click on the :guilabel:`Edit` button next
+to the :menuselection:`Details` section. Change the pertinent information and :guilabel:`Confirm`.
+
+Change password
+---------------
+
+First login into the portal user account from the database login page. A portal dashboard will
+appear upon successfully logging in.
+
+If the customer would like to change their password for portal access, click on the :guilabel:`Edit
+Security Settings` link below the :menuselection:`Account Security` section. Make the necessary
+changes by typing in the current :guilabel:`Password`, :guilabel:`New Password` and verifying the
+new password. Click on :guilabel:`Change Password` to complete the password change.
+
+.. note::
+   If the customer would like to change the login as documented above. Then contact the Odoo
+   database point-of-contact. :ref:`See above documentation on changing the portal username
+   <portal/login>`.
+
+.. note::
+   Passwords for portal users and Odoo.com users remain separate even if the same email address is
+   used.
+
+Add two-factor authentication
+-----------------------------
+
+First login into the portal user account from the database login page. A portal dashboard will
+appear upon successfully logging in.
+
+If the customer would like to turn on two-factor authentication (2FA) for portal access, click on the
+:guilabel:`Edit Security Settings` link below the :menuselection:`Account Security` section.
+
+Click on :guilabel:`Enable two-factor authentication` to turn on :abbr:`2FA (two-factor
+authentication)`. Confirm the current portal password in the :guilabel:`Password` field. Then click
+on :guilabel:`Confirm Password`. Activate :abbr:`2FA (two-factor authentication)` in a :abbr:`2FA
+(two-factor authentication)` app by scanning the :guilabel:`QR code` or entering a
+:guilabel:`Verification Code`.
+
+Finally, click on :guilabel:`Enable two-factor authentication` to complete the setup.
+
+
+Change payment info
+-------------------
+
+First login into the portal user account from the database login page. A portal dashboard will
+appear upon successfully logging in.
+
+If the customer would like to manage payment options, navigate to the :guilabel:`Manage
+payment methods` in the right menu. Add the new payment information and select :guilabel:`Add new
+card`.
