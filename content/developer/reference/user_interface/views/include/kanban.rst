@@ -144,6 +144,24 @@ Fields can use the following attributes:
 
   the name of the field to fetch
 
+.. container:: row
+
+  .. code-block:: xml
+    :class: col-xxl-6
+
+    <kanban>
+      <templates>
+        <t t-name="kanban-box">
+          <div>
+            <field name="name"/>
+          </div>
+        </t>
+      </templates>
+    </kanban>
+
+  .. image:: views/kanban_field.svg
+    :class: col-xxl-6
+
 .. _reference/user_interface/views/kanban/header:
 
 <header>: custom buttons in control panel
@@ -199,6 +217,23 @@ Possible attributes are:
   the name of the field whose column's records' values will be summed and
   displayed next to the progressbar (if omitted, displays the total number of
   records)
+
+.. container:: row
+
+  .. code-block:: xml
+    :class: col-xxl-6
+
+    <kanban>
+      <progressbar field="activity_state"
+          colors="{'planned': 'success', 'today': 'warning', 'overdue': 'danger'}"
+          sum_field="expected_revenue"/>
+      <templates>
+        ...
+      </templates>
+    </kanban>
+
+  .. image:: views/kanban_progressbar.svg
+    :class: col-xxl-6
 
 .. _reference/user_interface/views/kanban/templates:
 

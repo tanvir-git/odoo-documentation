@@ -307,9 +307,12 @@ Below is a possible structure and the representation of its rendering.
     :class: col-xxl-6
 
     <search>
-      <filter string="name" string="My Custom Name" domain="[('name', 'ilike', 'AAA')]"/>
-      <filter string="My orders" domain="[('user_id', '=', uid)]"/>
-      <filter string="Category" context="{'group_by': 'category_id'}"/>
+      <filter string="My Custom Name"
+          domain="[('name', 'ilike', 'AAA')]"/>
+      <filter string="My orders"
+          domain="[('user_id', '=', uid)]"/>
+      <filter string="Category"
+          context="{'group_by': 'category_id'}"/>
     </search>
 
   .. image:: views/search_filter.svg
