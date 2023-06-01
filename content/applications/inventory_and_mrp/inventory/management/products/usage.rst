@@ -9,12 +9,12 @@ flows, allowing for a variety of configurations for products as they enter and l
 Units of measure
 ================
 
-*Units of measure (UoM)* refers to different measurable quantities used to handle products, such as
-units, weight, time, or size. Different :abbr:`UoMs (Units of Measure)` for weight can be kilos,
-pounds, ounces, grams, etc.
+A *unit of measure (UoM)* refers to any of the different standards used to measure and handle a
+quanitifiable amount of products, such a units, weight, time, or size. Different :abbr:`UoMs (Units
+of Measure)` for weight, for example, can be kilos, pounds, ounces, grams, and so on.
 
 In Odoo, stock management and purchasing from suppliers are streamlined by specifying different
-:abbr:`UoM (Units of Measure)` for both buying and selling products.
+:abbr:`UoMs (Units of Measure)` for both buying and selling products.
 
 .. image:: usage/uom-on-product-form.png
    :align: center
@@ -33,8 +33,8 @@ length, etc.).
    - :guilabel:`Unit of Measure` in `ft` (feet), and
    - :guilabel:`Purchase Unit of Measure` in `cm` (centimeters).
 
-   Because the vendor sells rope in `cm`, the purchase :guilabel:`UoM ` is used to represent the
-   quantity on the :abbr:`PO (Purchase Order)`.
+   Because the vendor sells rope in `cm`, the purchase :guilabel:`UoM` is used to represent the
+   quantity on the :abbr:`PO (Purchase Order)`, which is also in centimeters.
 
    .. image:: usage/purchase-rope-in-cm.png
       :align: center
@@ -47,8 +47,8 @@ button, the quantity in :guilabel:`Done` is automatically adjusted to match the 
 column.
 
 .. example::
-   On the receipt for `Rope`, the quantities are automatically converted from `500 cm` to
-   `16.40 ft`— the :guilabel:`Unit of Measure`.
+   On the *receipt* for `Rope`, the quantities are automatically converted from `500 cm` to
+   `16.40 ft` to match the internal/stock :guilabel:`Unit of Measure` value.
 
    .. image:: usage/receive-rope-in-ft.png
       :align: center
@@ -84,7 +84,7 @@ To use this method, ensure the :guilabel:`Packages` option is enabled, by naviga
 :menuselection:`Inventory app --> Configuration --> Settings --> Operations`. Click the
 :guilabel:`Packages` check box, and then :guilabel:`Save` to activate the feature.
 
-On a :abbr:`(Delivery Order)`, assign which package to use by clicking on the :guilabel:`≣ (Detailed
+On a delivery order, assign which package to use by clicking on the :guilabel:`≣ (Detailed
 Operations)` icon to the right of each product in the :guilabel:`Operations` tab.
 
 .. image:: usage/detailed-operations-icon.png
@@ -100,8 +100,8 @@ Here, the warehouse location the product is coming from can be modified, in addi
 product(s) will be packaged into.
 
 Click :guilabel:`Add a line` to include each additional package used. Enter the desired amount in
-the :guilabel:`Done` field to specify the amount of products go into the :guilabel:`Destination
-Package`.
+the :guilabel:`Done` field to specify the amount of products that will go into the
+:guilabel:`Destination Package`.
 
 Multiple packages in a single delivery
 --------------------------------------
@@ -142,9 +142,9 @@ for each package. When the :guilabel:`Done` amount matches the :guilabel:`Demand
 .. tip::
    The :guilabel:`Put In Pack` button is intended to quickly package all products in the :abbr:`DO
    (Delivery Order)` into one new package. The option to rename the package, or modify its contents,
-   are available in the :guilabel:`Detailed Operations` pop-up.
+   is available in the :guilabel:`Detailed Operations` pop-up.
 
-Clicking on the :guilabel:`Packages` smart button in the upper-right of the delivery order reveals a
+Clicking on the :guilabel:`Packages` smart button in the upper-right corner of the delivery order reveals a
 separate page, showing all the packages used in that :abbr:`DO (Delivery Order)`.
 
 Packagings
@@ -223,7 +223,7 @@ that have been created for all products. On this page, create new packagings by 
 Apply packagings
 ----------------
 
-Then, when creating a sales order in the :menuselection:`Sales` app, specify the packagings that
+When creating a sales order in the :menuselection:`Sales` app, specify the packagings that
 should be used for the product(s). The chosen packaging is displayed on the :abbr:`SO (Sales Order)`
 under the :guilabel:`Package` field.
 
