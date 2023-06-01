@@ -16,11 +16,13 @@
   <rect x="50" y="14" width="144" height="25" fill="#dddddd" stroke-width="1"/>
   <text x="54" y="31" fill="#888888" style="font-weight: bold;">My Custom Name</text>
   <rect x="194" y="14" width="160" height="25" fill="url(#diagonalHatch)" stroke-width="1"/>
-  <text x="200" y="31" fill="#888888">Default name search</text>
+  <text x="200" y="31" fill="#888888">Default value search</text>
+
+  <text x="370" y="31" fill="#888888">aaa</text>
+  <text x="396" y="31" fill="#333333">|</text>
+  <text x="620" y="32" fill="#888888">▼</text>
 
   <g>
-    <text x="370" y="31" fill="#888888">aaa</text>
-    <text x="396" y="31" fill="#333333">|</text>
     <rect x="10" y="50" width="636" height="100" stroke-width="1"/>
 
     <text x="30" y="76" fill="#888888">Search</text>

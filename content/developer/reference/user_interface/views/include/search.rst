@@ -133,8 +133,8 @@ Below is a possible structure and the representation of its rendering.
 
 .. _reference/user_interface/views/search/filter:
 
-<filter>: predefined filter
----------------------------
+<filter>: predefined Filters
+----------------------------
 
 .. code-block:: xml
 
@@ -308,11 +308,11 @@ Below is a possible structure and the representation of its rendering.
 
     <search>
       <filter string="name" string="My Custom Name" domain="[('name', 'ilike', 'AAA')]"/>
-      <filter string="My filter" domain="[('user_id', '=', uid)]"/>
+      <filter string="My orders" domain="[('user_id', '=', uid)]"/>
       <filter string="Category" context="{'group_by': 'category_id'}"/>
     </search>
 
-  .. image:: views/search_field.svg
+  .. image:: views/search_filter.svg
     :class: col-xxl-6
 
 .. _reference/user_interface/views/search/separator:
@@ -328,10 +328,10 @@ Below is a possible structure and the representation of its rendering.
     <FILTERS/>
   </search>
 
-can be used to separates groups of filters in simple search views.
+can be used to separates groups of :ref:`filters <reference/user_interface/views/search/filter>` in simple search views.
 `group` is more readable.
 
-.. _reference/user_interface/views/search/group:
+.. user_interface/views/search/group:
 
 <group>: separate groups of filters
 -----------------------------------
@@ -344,7 +344,7 @@ can be used to separates groups of filters in simple search views.
     </group>
   </search>
 
-can be used to separate groups of filters, more readable than
+can be used to separate groups of :ref:`filters <reference/user_interface/views/search/filter>`, more readable than
 ``separator`` in complex search views
 
 <searchpanel>: display a search panel
