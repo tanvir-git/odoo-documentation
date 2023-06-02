@@ -72,6 +72,11 @@ From there, several conditions can be activated:
    :alt: Example of a fiscal position automatic application settings
 
 .. note::
+   If the :doc:`Verify VAT Numbers <vat_validation>` feature is enabled, any fiscal positions with
+   :guilabel:`VAT required` enabled will require Intra-Community valid VAT numbers to apply
+   automatically.
+
+.. note::
    Taxes on **eCommerce orders** are automatically updated once the customer has logged in or filled
    out their billing details.
 

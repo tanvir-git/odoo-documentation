@@ -1,43 +1,44 @@
-===========================
-VIES VAT numbers validation
-===========================
+===============================
+VAT numbers verification (VIES)
+===============================
 
-**VAT Information Exchange System** - abbreviated **VIES** - is a tool provided by the European
-Commission that allows you to check the validity of VAT numbers of companies registered in the
-European Union.
+`VAT Information Exchange System <https://ec.europa.eu/taxation_customs/vies/#/vat-validation>`_, or
+**VIES**, is a tool provided by the European Commission that allows you to check the validity of VAT
+numbers for companies registered in the European Union.
 
-Odoo provides a feature to **Verify VAT Numbers** when you save a contact. This helps you make sure
-that your contacts provided you with a valid VAT number without leaving Odoo interface.
+Odoo uses this tool to verify your contacts' VAT numbers directly from Odoo's interface.
 
-Configuration
-=============
-
-To enable this feature, go to :menuselection:`Accounting --> Configuration --> Settings --> Taxes`,
-enable the **Verify VAT Numbers** feature, and click on *Save*.
-
-.. image:: vat_validation/vat-validation-configuration.png
-   :align: center
-   :alt: Enable "Verify VAT Numbers" in Odoo Accounting
-
-VAT Number validation
-=====================
-
-Whenever you create or modify a contact, make sure to fill out the **Country** and **VAT** fields.
-
-.. image:: vat_validation/vat-validation-contact-form.png
-   :align: center
-   :alt: Fill out the contact form with the country and VAT number before clicking on *Save*
-
-When you click on *Save*, Odoo runs a VIES VAT number check, and displays an error message if the
-VAT number is invalid.
-
-.. image:: vat_validation/vat-validation-error.png
-   :align: center
-   :alt: Odoo displays an error message instead of saving when the VAT number is invalid
-
-.. important::
-   This tool checks the VAT number's validity but does not check the other fields' validity.
+.. note::
+   Regardless of whether or not the Verify VAT Numbers feature is enabled, Odoo checks the format of
+   a contact's VAT against the expected format of VAT numbers from that country.
 
 .. seealso::
+   `VAT identification number formats <https://en.wikipedia.org/wiki/VAT_identification_number>`_
 
-   - `European Commission: VIES search engine <https://ec.europa.eu/taxation_customs/vies/vatRequest.html>`__
+VIES VAT number validation
+==========================
+
+To activate this feature, go to the :guilabel:`Taxes` section in :menuselection:`Accounting -->
+Configuration --> Settings`, enable the :guilabel:`Verify VAT Numbers` feature, and click on
+:guilabel:`Save`.
+
+Once the :guilabel:`Verify VAT Numbers` feature is enabled, if the :guilabel:`Tax ID` field is
+populated *and* the contact's country is different from your company's country, Odoo displays an
+:guilabel:`Intra-Community Valid` checkbox. Odoo tests the VAT number through the VIES and
+automatically checks or unchecks the :guilabel:`Intra-Community Valid` checkbox depending on the
+validity of the VAT number.
+
+.. image:: vat_validation/intra-community-valid.png
+   :alt: Intra-community valid checkbox on the contact record
+
+.. note::
+   It is possible to manually override the :guilabel:`Intra-Community Valid` field on a contact in
+   case the automatic VIES check is incorrect (for example, if the company was recently created and
+   its VAT is not yet in the VIES). This change is logged in the chatter for transparency.
+
+Automatically applying fiscal positions
+=======================================
+
+Odoo can :ref:`automatically apply fiscal positions <fiscal_positions/automatic>`. If the Verify VAT
+Numbers feature is enabled, any fiscal positions with VAT required enabled will require
+Intra-Community valid VAT numbers to apply automatically.
