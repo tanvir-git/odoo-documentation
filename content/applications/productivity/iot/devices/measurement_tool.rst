@@ -3,7 +3,7 @@ Connect measurement tool
 ========================
 
 With Odoo's :abbr:`IoT (Internet of Things)` box, it is possible to connect measurement tools to the
-Odoo database for use in the *Quality app* on a quality control point/quality check, or for use in a
+Odoo database for use in the *Quality* app on a quality control point/quality check, or for use in a
 work center during the manufacturing process.
 
 Find the list of supported devices here: `Supported devices
@@ -36,7 +36,7 @@ Here is an example of what it should look like:
 Link measurement tool to quality control point in manufacturing process
 =======================================================================
 
-In the *Quality app*, a device can be set up on a quality control point. To do that, navigate to
+In the *Quality* app, a device can be set up on a quality control point. To do that, navigate to
 :menuselection:`Quality app --> Quality Control --> Control Points`, and open the desired control
 point to which the measurement tool should be linked.
 
@@ -65,8 +65,8 @@ usually needs to be changed manually, is automatically updated while the tool is
    :menuselection:`Quality app --> Quality Control --> Quality Checks --> New`.
 
 .. seealso::
-   - :doc:`../../../inventory_and_mrp/manufacturing/quality_control/quality_control_points`
-   - :doc:`../../../inventory_and_mrp/manufacturing/quality_control/quality_alerts`
+   - :doc:`/applications/inventory_and_mrp/manufacturing/quality_control/quality_control_points`
+   - :doc:`/applications/inventory_and_mrp/manufacturing/quality_control/quality_alerts`
 
 Link measurement tool to work center in manufacturing app
 =========================================================
@@ -89,4 +89,4 @@ be added to trigger the action.
    correctly connected to the measurement tool.
 
 .. seealso::
-   :ref:`workcenter_iot`
+   :ref:`manufacturing/management/workcenter_iot`

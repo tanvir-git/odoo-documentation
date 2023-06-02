@@ -55,12 +55,12 @@ unsecured connection.
 
 In addition, a firewall can also prevent the :abbr:`HTTPS (Hypertext Transfer Protocol Secure)`
 certificate from generating correctly. In this case, deactivate the firewall until the certificate
-is successfully generated. It should also be noted that certain devices, such as a router that has
-a built-in firewall, can prevent the :abbr:`HTTPS (Hypertext Transfer Protocol Secure)` certificate
+is successfully generated. It should also be noted that certain devices, such as a router that has a
+built-in firewall, can prevent the :abbr:`HTTPS (Hypertext Transfer Protocol Secure)` certificate
 from generating.
 
 .. seealso::
-   :doc:`HTTPS certificate (IoT) <https_certificate_iot>`
+   :doc:`HTTPS certificate (IoT) </applications/productivity/iot/config/https_certificate_iot>`
 
 Printer
 =======
@@ -89,7 +89,8 @@ printer might print random characters.
 The solution is to manually select the corresponding driver. On the :abbr:`IoT (Internet of Things)`
 box homepage, click on :guilabel:`Printers Server`, go to the :guilabel:`Printers` tab and select
 the printer in the list. In the :guilabel:`Administration` dropdown, click on :guilabel:`Modify
-Printer`. Follow the steps and select the *make* and *model* corresponding to the printer.
+Printer`. Follow the steps and select the :guilabel:`Make` and :guilabel:`Model` corresponding to
+the printer.
 
 .. image:: troubleshooting/modify-printer.png
    :align: center
@@ -139,7 +140,7 @@ The barcode scanner is detected as a keyboard
    instead, and will not be recognized by the :abbr:`IoT (Internet of Things)` box.
 
 The device type can be manually changed by going to its form view (:menuselection:`IoT App -->
-Devices --> Barcode Device`) and activating the :guilabel:`Is scanner` option.
+Devices --> Barcode Device`) and activating the :guilabel:`Is Scanner` option.
 
 .. image:: troubleshooting/barcode-scanner-settings.png
    :align: center
@@ -153,5 +154,5 @@ The cash drawer does not open
 
 The cash drawer should be connected to the printer and the :guilabel:`Cash drawer` checkbox should
 be ticked in the :abbr:`PoS (Point of Sale)` configuration. To do so, navigate to
-:menuselection:`POS app --> 3-Dot Menu on the POS --> IoT Box section --> Edit --> Receipt Printer
+:menuselection:`P0S app --> 3-Dot menu on the PoS --> IoT Box section --> Edit --> Receipt Printer
 --> Cashdrawer checkbox`.

@@ -10,10 +10,10 @@ Upgrade from the IoT box home page
 ==================================
 
 Go to the :abbr:`IoT (Internet of Things)` box homepage by navigating to :menuselection:`IoT app -->
-IoT Boxes` and clicking on the :guilabel:`IP address` of the :abbr:`IoT (Internet of Things)` box.
-Then click on :guilabel:`Update` (next to the version number).
+IoT Boxes` and clicking on the :abbr:`IP (Internet Protocol)` address of the :abbr:`IoT (Internet of
+Things)` box. Then click on :guilabel:`Update` (next to the version number).
 
-If a new version of the :abbr:`IoT (Internet of Things)` Box image is available, an
+If a new version of the :abbr:`IoT (Internet of Things)` box image is available, an
 :guilabel:`Upgrade to _xx.xx_` button will appear at the bottom of the page. Click this button to
 upgrade the unit and the :abbr:`IoT (Internet of Things)` box will then flash itself to the new
 version. All of the previous configurations will be saved.
@@ -22,15 +22,15 @@ version. All of the previous configurations will be saved.
    This process can take more than 30 minutes. Do not turn off or unplug the :abbr:`IoT (Internet of
    Things)` box as it would leave it in an inconsistent state. This means that the :abbr:`IoT
    (Internet of Things)` box will need to be re-flashed with a new image. See
-   :ref:`flash_sdcard/etcher`.
+   :ref:`iot/config/flash_sdcard_etcher`.
 
 .. image:: flash_sdcard/flash-upgrade.png
    :align: center
    :alt: IoT box software upgrade in the IoT Box Home Page.
 
-.. _flash_sdcard/etcher:
+.. _iot/config/flash_sdcard_etcher:
 
-Upgrade with Etcher Software
+Upgrade with Etcher software
 ============================
 
 .. note::
@@ -47,10 +47,17 @@ Then download the version-specific :abbr:`IoT (Internet of Things)` image from `
 The following are image versions on the `nightly <http://nightly.odoo.com/master/iotbox/>`_ website
 with their corresponding Odoo database version:
 
-- Odoo V16 --> iotbox-latest.zip
-- Odoo V15 --> iotboxv21_10.zip
-- Odoo V14 --> iotboxv21_04.zip
-- Odoo V13 --> iotboxv20_10.zip
++------------------+---------------------------+
+| Database Version | Image Version             |
++==================+===========================+
+| Odoo 16          | :file:`iotbox-latest.zip` |
++------------------+---------------------------+
+| Odoo V15         | :file:`iotboxv21_10.zip`  |
++------------------+---------------------------+
+| Odoo V14         | :file:`iotboxv21_04.zip`  |
++------------------+---------------------------+
+| Odoo V13         | :file:`iotboxv20_10.zip`  |
++------------------+---------------------------+
 
 The images should be downloaded and extracted to a convenient file location.
 

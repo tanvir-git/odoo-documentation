@@ -8,7 +8,7 @@ footswitch.
 
 In fact, with a footswitch, the operator is able to go from one screen to another, and perform
 actions using their foot. This can be configured in just a few steps in the work center on the
-:menuselection:`Manufacturing app`.
+:menuselection:`Manufacturing` app.
 
 Connection
 ==========
@@ -32,7 +32,7 @@ To link a footswitch to an action, it first needs to be configured on a work cen
 :guilabel:`IoT Triggers` tab, under the :guilabel:`Device` column, by selecting :guilabel:`Add a
 Line`. Doing so means the footswitch can be linked to an option in the :guilabel:`Action` column
 drop-down, and optionally, a key can be added to trigger it. An example of an :guilabel:`Action` in
-the *Manufacturing app* could be the :guilabel:`Validate` or :guilabel:`Mark as Done` buttons on a
+the *Manufacturing* app could be the :guilabel:`Validate` or :guilabel:`Mark as Done` buttons on a
 manufacturing work order.
 
 .. image:: footswitch/footswitch-example.png
@@ -49,4 +49,4 @@ manufacturing work order.
    correctly connected to the footswitch.
 
 .. seealso::
-   :ref:`workcenter_iot`
+   :ref:`manufacturing/management/workcenter_iot`

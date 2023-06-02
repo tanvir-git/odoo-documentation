@@ -26,12 +26,13 @@ on the model.
 
       Connect up to two screens with Micro-HDMI cables on the side of the :abbr:`IoT (Internet of
       Things)` box. If two screens are connected, they can display distinct content (see
-      :ref:`Screen Usage <iot/usage_screen>`). :ref:`See the Raspberry Pi Schema <connect/schema>`.
+      :ref:`Screen Usage <iot/devices/usage_screen>`). :ref:`See the Raspberry Pi Schema
+      <iot/config/connect_schema>`.
 
    .. tab:: IoT Box model 3
 
       Connect the screen with an HDMI cable on the side of the :abbr:`IoT (Internet of Things)` box.
-      :ref:`See the Raspberry Pi Schema <connect/schema>`.
+      :ref:`See the Raspberry Pi Schema <iot/config/connect_schema>`.
 
 .. important::
    Screen(s) should be connected before the :abbr:`IoT (Internet of Things)` box is switched on. If
@@ -66,7 +67,7 @@ Things)` box homepage. Alternatively, the display can be seen by accessing :menu
        :align: center
        :alt: The "Distant Display" screen name will be used if no screen is detected.
 
-.. _iot/usage_screen:
+.. _iot/devices/usage_screen:
 
 Usage
 =====
@@ -74,9 +75,9 @@ Usage
 Show Point of Sale orders to customers
 --------------------------------------
 
-To use the screen in the *Point of Sale app*, go to :menuselection:`Point of Sale -->
-Configuration --> Point of Sale`, select a :abbr:`PoS (Point of Sale)`, click :guilabel:`Edit` if
-necessary, and enable the :guilabel:`IoT Box` feature.
+To use the screen in the *Point of Sale* app, go to :menuselection:`Point of Sale --> Configuration
+--> Point of Sale`, select a :abbr:`PoS (Point of Sale)`, click :guilabel:`Edit` if necessary, and
+enable the :guilabel:`IoT Box` feature.
 
 Next, select the screen from the :guilabel:`Customer Display` drop-down menu. Then click
 :guilabel:`Save`, if required.
@@ -85,8 +86,8 @@ Next, select the screen from the :guilabel:`Customer Display` drop-down menu. Th
    :align: center
    :alt: Connect the screen display to the Point of Sale app.
 
-The screen is now available for :abbr:`PoS (Point of Sale)` sessions. A screen icon will appear in
-the menu at the top of the screen to indicate the screen's connection status.
+The screen is now available for :abbr:`PoS (Point of Sale)` sessions. A :guilabel:`💻 (screen)` icon
+will appear in the menu at the top of the screen to indicate the screen's connection status.
 
 .. image:: screen/screen-pos-icon.png
    :align: center

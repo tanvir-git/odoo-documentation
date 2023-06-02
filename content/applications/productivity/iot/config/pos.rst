@@ -26,7 +26,7 @@ Setup
 
 To connect hardware to the :abbr:`PoS (Point of Sale)`, the first step is to connect an :abbr:`IoT
 (Internet of Things)` box to the database. To do this, follow these instructions: :doc:`Connect an
-Internet of Things (IoT) box to the Odoo database <connect>`.
+Internet of Things (IoT) box to the Odoo database </applications/productivity/iot/config/connect>`.
 
 Then, connect the peripheral devices to the :abbr:`IoT (Internet of Things)` box.
 
@@ -55,10 +55,10 @@ Then, connect the peripheral devices to the :abbr:`IoT (Internet of Things)` box
      - The connection process depends on the terminal. Refer to the :doc:`payment terminals
        documentation </applications/sales/point_of_sale/payment_methods>`.
 
-Once this is completed, connect the :abbr:`IoT (Internet of Things)` box to the :menuselection:`PoS`
-application. To do this, go to :menuselection:`Point of Sale --> Configuration --> PoS`, tick
-:guilabel:`IoT Box`, and select the devices to be used in this :abbr:`PoS (Point of Sale)`.
-:guilabel:`Save` the changes.
+Once this is completed, connect the :abbr:`IoT (Internet of Things)` box to the *PoS* application.
+To do this, go to :menuselection:`Point of Sale --> Configuration --> PoS`, tick :guilabel:`IoT
+Box`, and select the devices to be used in this :abbr:`PoS (Point of Sale)`. :guilabel:`Save` the
+changes.
 
 .. image:: pos/iot-connected-devices.png
    :align: center

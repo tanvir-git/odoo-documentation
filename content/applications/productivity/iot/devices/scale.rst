@@ -3,7 +3,7 @@ Connect a scale
 ===============
 
 A scale can be connected to the :abbr:`IoT (Internet of Things)` box on an Odoo database.
-Configuring one can be done in a few steps. After setup, the *Point of Sale app* can be used to
+Configuring one can be done in a few steps. After setup, the *Point of Sale* app can be used to
 weigh products, which is helpful if their prices are calculated based on weight.
 
 Connection
@@ -37,7 +37,7 @@ will need to be used.
 Use a scale in point of sale
 ============================
 
-To use the scale in the *Point of Sale app*, go to :menuselection:`PoS app --> 3-Dot Menu on the PoS
+To use the scale in the *Point of Sale* app, go to :menuselection:`PoS app --> 3-Dot Menu on the PoS
 --> Settings`, then enable the :abbr:`IoT (Internet of Things)` box feature. After this is complete,
 the scale device can be set.
 

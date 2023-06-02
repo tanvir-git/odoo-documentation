@@ -21,7 +21,7 @@ Serial Bus)`, network connection, or Bluetooth. `Supported printers
    :alt: The printer as it would appear in the IoT app devices list.
 
 .. note::
-   The printer can take up to two minutes to appear in the *IoT app* devices list.
+   The printer can take up to two minutes to appear in the *IoT* app devices list.
 
 Link printer
 ============
@@ -29,10 +29,10 @@ Link printer
 Link printer to work orders
 ---------------------------
 
-*Work Orders* can be linked to printers, via a quality control point, to print labels for
-manufactured products.
+Work orders can be linked to printers, via a quality control point, to print labels for manufactured
+products.
 
-In the *Quality app*, a device can be set up on a quality control point. To do that, go to the
+In the *Quality* app, a device can be set up on a quality control point. To do that, go to the
 :menuselection:`Quality app --> Quality Control --> Control Points`, and open the desired control
 point to which the printer will be linked.
 
@@ -56,9 +56,10 @@ specific product.
 
 .. image:: printer/printer-prompt.png
    :align: center
+   :alt: Printer prompt button stating Print Labels.
 
 .. note::
-   Quality control points can also be accessed by navigating to :menuselection:`IoT App -->
+   Quality control points can also be accessed by navigating to :menuselection:`IoT app -->
    Devices`, then select the device. There is a :guilabel:`Quality Control Points` tab, where they
    can be added with the device.
 
@@ -68,8 +69,8 @@ specific product.
    --> Quality Control --> Quality Checks --> New`.
 
 .. seealso::
-   - :doc:`../../../inventory_and_mrp/manufacturing/quality_control/quality_control_points`
-   - :doc:`../../../inventory_and_mrp/manufacturing/quality_control/quality_alerts`
+   - :doc:`/applications/inventory_and_mrp/manufacturing/quality_control/quality_control_points`
+   - :doc:`/applications/inventory_and_mrp/manufacturing/quality_control/quality_alerts`
 
 Link printer to work center in manufacturing app
 ------------------------------------------------
@@ -93,13 +94,13 @@ Slip`. A key can also be added to trigger the action.
    correctly connected to the printer.
 
 .. seealso::
-   :ref:`workcenter_iot`
+   :ref:`manufacturing/management/workcenter_iot`
 
 Link printer to reports
 -----------------------
 
-It's also possible to link a type of report to a certain printer. In the *IoT app*, go to the
-:guilabel:`Devices` menu, and select the desired printer that needs to be configured.
+It's also possible to link a type of report to a certain printer. In the :menuselection:`IoT` app,
+go to the :guilabel:`Devices` menu, and select the desired printer that needs to be configured.
 
 From here, click :guilabel:`Edit`, go to the :guilabel:`Printer Reports` tab, and select
 :guilabel:`Add a line`. In the window that appears, check all the types of :guilabel:`Reports` that
@@ -113,10 +114,10 @@ Now, each time :guilabel:`Print` is selected in the control panel, instead of do
 Odoo sends the report to the selected printer, and automatically prints it.
 
 .. seealso::
-   :doc:`POS Order Printing <../../../sales/point_of_sale/restaurant/kitchen_printing>`
+   :doc:`POS Order Printing </applications/sales/point_of_sale/restaurant/kitchen_printing>`
 
 .. note::
    Reports can also be configured in the :guilabel:`Technical Menu` while in :ref:`debug mode
-   <developer-mode>`. To do that, navigate to :menuselection:`Settings App --> Technical Menu -->
+   <developer-mode>`. To do that, navigate to :menuselection:`Settings app --> Technical Menu -->
    Actions --> Reports`. From here, the individual report can be found in this list, where the
    :guilabel:`IoT Device` can be set on the report.

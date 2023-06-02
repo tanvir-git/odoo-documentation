@@ -75,7 +75,7 @@ to a work center. The following information will be displayed for each piece of 
     :guilabel:`MTBF`, :guilabel:`MTTR`, and :guilabel:`Est. Next Failure` are all calculated
     automatically based on past failure data, if any exists.
 
-.. _workcenter_iot:
+.. _manufacturing/management/workcenter_iot:
 
 Integrate IoT devices
 ---------------------

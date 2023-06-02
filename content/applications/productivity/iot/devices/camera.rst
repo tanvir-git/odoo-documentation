@@ -24,9 +24,9 @@ anything, as it'll be detected as soon as it's connected.
 Link camera to quality control point in manufacturing process
 =============================================================
 
-In the :menuselection:`Quality app`, a device can be set up on a :guilabel:`Quality Control Point`.
-To do that, navigate to the :menuselection:`Quality app --> Quality Control --> Control Points` and
-open the desired :guilabel:`Control Point` that'll be linked to the camera.
+In the *Quality* app, a device can be set up on a quality control point. To do that, navigate to the
+:menuselection:`Quality app --> Quality Control --> Control Points` and open the desired
+:guilabel:`Control Point` that'll be linked to the camera.
 
 On the control point form, edit the control point by selecting the :guilabel:`Type` field, and
 clicking on :guilabel:`Take a Picture` from the drop-down menu. Doing so reveals a field called
@@ -37,8 +37,8 @@ required.
    :align: center
    :alt: Setting up the device on the quality control point.
 
-The camera is now useable with the selected quality control point. When the quality control point
-is reached during the manufacturing process, the database prompts the operator to take a picture.
+The camera is now useable with the selected quality control point. When the quality control point is
+reached during the manufacturing process, the database prompts the operator to take a picture.
 
 .. image:: camera/serial-number-picture.png
    :align: center
@@ -55,8 +55,8 @@ is reached during the manufacturing process, the database prompts the operator t
    to create a new quality check from the :guilabel:`Quality Checks` page.
 
 .. seealso::
-   - :doc:`../../../inventory_and_mrp/manufacturing/quality_control/quality_control_points`
-   - :doc:`../../../inventory_and_mrp/manufacturing/quality_control/quality_alerts`
+   - :doc:`/applications/inventory_and_mrp/manufacturing/quality_control/quality_control_points`
+   - :doc:`/applications/inventory_and_mrp/manufacturing/quality_control/quality_alerts`
 
 Link camera to work center in manufacturing app
 ===============================================
@@ -79,4 +79,4 @@ Now, the camera device can be linked to the :guilabel:`Action` column drop-down 
    correctly connected to the camera.
 
 .. seealso::
-   :ref:`workcenter_iot`
+   :ref:`manufacturing/management/workcenter_iot`
