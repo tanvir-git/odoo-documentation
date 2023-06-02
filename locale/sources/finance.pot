@@ -8,7 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo saas-16.1\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2023-04-13 08:42+0000\n"
+||||||| parent of 4417b2f3e (temp)
+"POT-Creation-Date: 2023-05-30 12:32+0000\n"
+=======
+"POT-Creation-Date: 2023-06-02 08:43+0000\n"
+>>>>>>> 4417b2f3e (temp)
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,8 +50,561 @@ msgstr ""
 msgid "Bank and cash"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/accounting/bank/bank_synchronization.rst:5
 msgid "Bank synchronization"
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/accounting/bank.rst:7
+msgid "You can manage as many bank or cash accounts as needed on your database. Configuring them well allows you to have all your banking data up-to-date and ready for :doc:`reconciliation <bank/reconciliation>` with your journal entries."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:11
+msgid "In Odoo Accounting, each bank account has a dedicated journal set to post all entries in a dedicated account. Both the journal and the account are automatically created and configured whenever you add a bank account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:16
+msgid "Cash journals and accounts must be configured manually."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:18
+msgid "Bank journals are displayed by default on the :guilabel:`Accounting Dashboard` in the form of cards which include action buttons."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Bank journals are displayed on the Accounting Dashboard and contain action buttons"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:27
+msgid "Manage your bank and cash accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:30
+msgid "Connect your bank for automatic synchronization"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:32
+msgid "To connect your bank account to your database, go to :menuselection:`Accounting --> Configuration --> Banks: Add a Bank Account`, select your bank in the list, click on :guilabel:`Connect`, and follow the instructions."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:37
+#: ../../content/applications/finance/accounting/bank.rst:133
+#: ../../content/applications/finance/accounting/get_started.rst:188
+msgid ":doc:`bank/bank_synchronization`"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:40
+msgid "Create a bank account"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:42
+msgid "If your banking institution is not available in Odoo, or if you don't want to connect your bank account to your database, you can configure your bank account manually."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:45
+msgid "To manually add a bank account, go to :menuselection:`Accounting --> Configuration --> Banks: Add a Bank Account`, click on :guilabel:`Create it` (at the bottom right), and fill out the form."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:49
+msgid "Odoo automatically detects the bank account type (e.g., IBAN) and enables some features accordingly."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:51
+msgid "A default bank journal is available and can be used to configure your bank account by going to :menuselection:`Accounting --> Configuration --> Accounting: Journals --> Bank`. Open it and edit the different fields to match your bank account information."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:56
+msgid "Create a cash journal"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:58
+msgid "To create a new cash journal, go to :menuselection:`Accounting --> Configuration --> Accounting: Journals`, click on :guilabel:`Create` and select :guilabel:`Cash` in the :guilabel:`Type` field."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:61
+msgid "For more information on the accounting information fields, read the :ref:`bank_accounts/configuration` section of this page."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:65
+msgid "A default cash journal is available and can be used straight away. You can review it by going to :menuselection:`Accounting --> Configuration --> Accounting: Journals --> Cash`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:69
+msgid "Edit an existing bank or cash journal"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:71
+msgid "To edit an existing bank journal, go to :menuselection:`Accounting --> Configuration --> Accounting: Journals` and select the journal you want to modify."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:77
+#: ../../content/applications/finance/accounting/bank/bank_synchronization.rst:28
+#: ../../content/applications/finance/accounting/bank/bank_synchronization/enablebanking.rst:21
+#: ../../content/applications/finance/accounting/bank/bank_synchronization/ponto.rst:24
+#: ../../content/applications/finance/accounting/bank/bank_synchronization/saltedge.rst:22
+#: ../../content/applications/finance/accounting/bank/cash_register.rst:9
+#: ../../content/applications/finance/accounting/bank/foreign_currency.rst:16
+#: ../../content/applications/finance/accounting/bank/reconciliation.rst:16
+#: ../../content/applications/finance/accounting/bank/reconciliation_models.rst:69
+#: ../../content/applications/finance/accounting/customer_invoices/cash_discounts.rst:23
+#: ../../content/applications/finance/accounting/customer_invoices/cash_rounding.rst:14
+#: ../../content/applications/finance/accounting/customer_invoices/electronic_invoicing.rst:61
+#: ../../content/applications/finance/accounting/customer_invoices/epc_qr_code.rst:21
+#: ../../content/applications/finance/accounting/customer_invoices/payment_terms.rst:46
+#: ../../content/applications/finance/accounting/customer_invoices/snailmail.rst:12
+#: ../../content/applications/finance/accounting/get_started/multi_currency.rst:15
+#: ../../content/applications/finance/accounting/get_started/vat_units.rst:22
+#: ../../content/applications/finance/accounting/payments/batch.rst:11
+#: ../../content/applications/finance/accounting/payments/batch_sdd.rst:20
+#: ../../content/applications/finance/accounting/payments/checks.rst:39
+#: ../../content/applications/finance/accounting/payments/checks.rst:102
+#: ../../content/applications/finance/accounting/payments/follow_up.rst:14
+#: ../../content/applications/finance/accounting/payments/internal_transfers.rst:9
+#: ../../content/applications/finance/accounting/payments/online.rst:21
+#: ../../content/applications/finance/accounting/payments/pay_checks.rst:10
+#: ../../content/applications/finance/accounting/payments/pay_sepa.rst:45
+#: ../../content/applications/finance/accounting/reporting/analytic_accounting.rst:10
+#: ../../content/applications/finance/accounting/reporting/budget.rst:11
+#: ../../content/applications/finance/accounting/reporting/silverfin.rst:11
+#: ../../content/applications/finance/accounting/taxes.rst:53
+#: ../../content/applications/finance/accounting/taxes/B2B_B2C.rst:60
+#: ../../content/applications/finance/accounting/taxes/cash_basis.rst:14
+#: ../../content/applications/finance/accounting/taxes/eu_distance_selling.rst:30
+#: ../../content/applications/finance/accounting/taxes/fiscal_positions.rst:20
+#: ../../content/applications/finance/accounting/taxes/retention.rst:23
+#: ../../content/applications/finance/accounting/taxes/vat_validation.rst:13
+#: ../../content/applications/finance/accounting/vendor_bills/invoice_digitization.rst:18
+#: ../../content/applications/finance/documents.rst:17
+#: ../../content/applications/finance/fiscal_localizations.rst:21
+#: ../../content/applications/finance/fiscal_localizations/argentina.rst:14
+#: ../../content/applications/finance/fiscal_localizations/belgium.rst:104
+#: ../../content/applications/finance/fiscal_localizations/chile.rst:29
+#: ../../content/applications/finance/fiscal_localizations/chile.rst:290
+#: ../../content/applications/finance/fiscal_localizations/chile.rst:332
+#: ../../content/applications/finance/fiscal_localizations/colombia.rst:32
+#: ../../content/applications/finance/fiscal_localizations/ecuador.rst:30
+#: ../../content/applications/finance/fiscal_localizations/germany.rst:58
+#: ../../content/applications/finance/fiscal_localizations/italy.rst:8
+#: ../../content/applications/finance/fiscal_localizations/kenya.rst:8
+#: ../../content/applications/finance/fiscal_localizations/luxembourg.rst:6
+#: ../../content/applications/finance/fiscal_localizations/mexico.rst:78
+#: ../../content/applications/finance/fiscal_localizations/peru.rst:25
+#: ../../content/applications/finance/fiscal_localizations/united_kingdom.rst:6
+#: ../../content/applications/finance/payment_providers.rst:303
+#: ../../content/applications/finance/payment_providers/adyen.rst:17
+#: ../../content/applications/finance/payment_providers/alipay.rst:12
+#: ../../content/applications/finance/payment_providers/authorize.rst:9
+#: ../../content/applications/finance/payment_providers/demo.rst:9
+#: ../../content/applications/finance/payment_providers/mollie.rst:8
+#: ../../content/applications/finance/payment_providers/paypal.rst:122
+#: ../../content/applications/finance/payment_providers/sips.rst:9
+msgid "Configuration"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:79
+msgid "You can edit the accounting information and bank account number according to your needs."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Manually configure your bank information"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:85
+#: ../../content/applications/finance/accounting/bank.rst:107
+msgid ":doc:`get_started/multi_currency`"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:86
+#: ../../content/applications/finance/accounting/bank.rst:134
+msgid ":doc:`bank/transactions`"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:89
+msgid "Suspense account"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:91
+msgid "Bank statement transactions are posted on the :guilabel:`Suspense Account` until the final reconciliation allows finding the right account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:95
+msgid "Profit and loss accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:97
+msgid "The :guilabel:`Profit Account` is used to register a profit when the ending balance of a cash register differs from what the system computes, while the :guilabel:`Loss Account` is used to register a loss when the ending balance of a cash register differs from what the system computes."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:102
+msgid "Currency"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:104
+msgid "You can edit the currency used to enter the statements."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:110
+msgid "Account number"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:112
+msgid "If you need to **edit your bank account details**, click on the external link arrow next to your :guilabel:`Account Number`. On the new page, click on the external link arrow next to your :guilabel:`Bank` and update your bank information accordingly. These details are used when registering payments."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Edit your bank information"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:121
+msgid "Bank feeds"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:123
+msgid ":guilabel:`Bank Feeds` defines how the bank statements are registered. Three options are available:"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:125
+msgid ":guilabel:`Undefined yet`, which should be selected when you don’t know yet if you will synchronize your bank account with your database or not."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:127
+msgid ":guilabel:`Import (CAMT, CODA, CSV, OFX, QIF)`, which should be selected if you want to import your bank statement using a different format."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:129
+msgid ":guilabel:`Automated Bank Synchronization`, which should be selected if your bank is synchronized with your database."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:139
+msgid "Outstanding accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:141
+msgid "By default, payments are registered through transitory accounts named **outstanding accounts**, before being recorded in your bank account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:144
+msgid "An **outstanding payments account** is where outgoing payments are posted until they are linked with a withdrawal from your bank statement."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:146
+msgid "An **outstanding receipts account** is where incoming payments are posted until they are linked with a deposit from your bank statement."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:149
+msgid "These accounts should be of :ref:`type <chart-of-account/type>` :guilabel:`Current Assets`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:152
+msgid "The movement from an outstanding account to a bank account is done automatically when you reconcile the bank account with a bank statement."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:156
+msgid "Default accounts configuration"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:158
+msgid "The outstanding accounts are defined by default. If necessary, you can update them by going to :menuselection:`Accounting --> Configuration --> Settings --> Default Accounts` and update your :guilabel:`Outstanding Receipts Account` and :guilabel:`Outstanding Payments Account`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:163
+msgid "Bank and cash journals configuration"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:165
+msgid "You can also set specific outstanding accounts for any journal with the :ref:`type <chart-of-account/type>` :guilabel:`Bank` or :guilabel:`Cash`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:168
+msgid "From your :guilabel:`Accounting Dashboard`, click on the menu selection ⋮ of the journal you want to configure, and click on :guilabel:`Configuration`, then open the :guilabel:`Incoming/Outgoing Payments` tab. To display the outstanding accounts column, click on the toggle button and check the :guilabel:`Outstanding Receipts/Payments accounts`, then update the account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Select the toggle button and click on outstanding Accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:178
+msgid "If you do not specify an outstanding payments account or an outstanding receipts account for a specific journal, Odoo uses the default outstanding accounts."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:180
+msgid "If your main bank account is added as an outstanding receipts account or outstanding payments account, when a payment is registered, the invoice or bill's status is directly set to :guilabel:`Paid`."
+=======
+#: ../../content/applications/finance/accounting/bank.rst:7
+msgid "You can manage as many bank or cash accounts as needed on your database. Configuring them well allows you to have all your banking data up-to-date and ready for :doc:`reconciliation <bank/reconciliation>` with your journal entries."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:11
+msgid "In Odoo Accounting, each bank account has a dedicated journal set to post all entries in a dedicated account. Both the journal and the account are automatically created and configured whenever you add a bank account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:16
+msgid "Cash journals and accounts must be configured manually."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:18
+msgid "Bank journals are displayed by default on the :guilabel:`Accounting Dashboard` in the form of cards which include action buttons."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Bank journals are displayed on the Accounting Dashboard and contain action buttons"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:27
+msgid "Manage your bank and cash accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:30
+msgid "Connect your bank for automatic synchronization"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:32
+msgid "To connect your bank account to your database, go to :menuselection:`Accounting --> Configuration --> Banks: Add a Bank Account`, select your bank in the list, click on :guilabel:`Connect`, and follow the instructions."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:37
+#: ../../content/applications/finance/accounting/bank.rst:133
+#: ../../content/applications/finance/accounting/get_started.rst:188
+msgid ":doc:`bank/bank_synchronization`"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:40
+msgid "Create a bank account"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:42
+msgid "If your banking institution is not available in Odoo, or if you don't want to connect your bank account to your database, you can configure your bank account manually."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:45
+msgid "To manually add a bank account, go to :menuselection:`Accounting --> Configuration --> Banks: Add a Bank Account`, click on :guilabel:`Create it` (at the bottom right), and fill out the form."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:49
+msgid "Odoo automatically detects the bank account type (e.g., IBAN) and enables some features accordingly."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:51
+msgid "A default bank journal is available and can be used to configure your bank account by going to :menuselection:`Accounting --> Configuration --> Accounting: Journals --> Bank`. Open it and edit the different fields to match your bank account information."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:56
+msgid "Create a cash journal"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:58
+msgid "To create a new cash journal, go to :menuselection:`Accounting --> Configuration --> Accounting: Journals`, click on :guilabel:`Create` and select :guilabel:`Cash` in the :guilabel:`Type` field."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:61
+msgid "For more information on the accounting information fields, read the :ref:`bank_accounts/configuration` section of this page."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:65
+msgid "A default cash journal is available and can be used straight away. You can review it by going to :menuselection:`Accounting --> Configuration --> Accounting: Journals --> Cash`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:69
+msgid "Edit an existing bank or cash journal"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:71
+msgid "To edit an existing bank journal, go to :menuselection:`Accounting --> Configuration --> Accounting: Journals` and select the journal you want to modify."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:77
+#: ../../content/applications/finance/accounting/bank/bank_synchronization.rst:28
+#: ../../content/applications/finance/accounting/bank/bank_synchronization/enablebanking.rst:21
+#: ../../content/applications/finance/accounting/bank/bank_synchronization/ponto.rst:24
+#: ../../content/applications/finance/accounting/bank/bank_synchronization/saltedge.rst:22
+#: ../../content/applications/finance/accounting/bank/cash_register.rst:9
+#: ../../content/applications/finance/accounting/bank/foreign_currency.rst:16
+#: ../../content/applications/finance/accounting/bank/reconciliation.rst:16
+#: ../../content/applications/finance/accounting/bank/reconciliation_models.rst:69
+#: ../../content/applications/finance/accounting/customer_invoices/cash_discounts.rst:23
+#: ../../content/applications/finance/accounting/customer_invoices/cash_rounding.rst:14
+#: ../../content/applications/finance/accounting/customer_invoices/electronic_invoicing.rst:61
+#: ../../content/applications/finance/accounting/customer_invoices/epc_qr_code.rst:21
+#: ../../content/applications/finance/accounting/customer_invoices/payment_terms.rst:46
+#: ../../content/applications/finance/accounting/customer_invoices/snailmail.rst:12
+#: ../../content/applications/finance/accounting/get_started/multi_currency.rst:15
+#: ../../content/applications/finance/accounting/get_started/vat_units.rst:22
+#: ../../content/applications/finance/accounting/payments/batch.rst:11
+#: ../../content/applications/finance/accounting/payments/batch_sdd.rst:20
+#: ../../content/applications/finance/accounting/payments/checks.rst:39
+#: ../../content/applications/finance/accounting/payments/checks.rst:102
+#: ../../content/applications/finance/accounting/payments/follow_up.rst:14
+#: ../../content/applications/finance/accounting/payments/internal_transfers.rst:9
+#: ../../content/applications/finance/accounting/payments/online.rst:21
+#: ../../content/applications/finance/accounting/payments/pay_checks.rst:10
+#: ../../content/applications/finance/accounting/payments/pay_sepa.rst:45
+#: ../../content/applications/finance/accounting/reporting/analytic_accounting.rst:10
+#: ../../content/applications/finance/accounting/reporting/budget.rst:11
+#: ../../content/applications/finance/accounting/reporting/silverfin.rst:11
+#: ../../content/applications/finance/accounting/taxes.rst:53
+#: ../../content/applications/finance/accounting/taxes/B2B_B2C.rst:60
+#: ../../content/applications/finance/accounting/taxes/cash_basis.rst:14
+#: ../../content/applications/finance/accounting/taxes/eu_distance_selling.rst:30
+#: ../../content/applications/finance/accounting/taxes/fiscal_positions.rst:20
+#: ../../content/applications/finance/accounting/taxes/retention.rst:23
+#: ../../content/applications/finance/accounting/taxes/vat_validation.rst:13
+#: ../../content/applications/finance/accounting/vendor_bills/invoice_digitization.rst:18
+#: ../../content/applications/finance/documents.rst:17
+#: ../../content/applications/finance/fiscal_localizations.rst:21
+#: ../../content/applications/finance/fiscal_localizations/argentina.rst:14
+#: ../../content/applications/finance/fiscal_localizations/belgium.rst:104
+#: ../../content/applications/finance/fiscal_localizations/chile.rst:29
+#: ../../content/applications/finance/fiscal_localizations/chile.rst:290
+#: ../../content/applications/finance/fiscal_localizations/chile.rst:332
+#: ../../content/applications/finance/fiscal_localizations/colombia.rst:32
+#: ../../content/applications/finance/fiscal_localizations/ecuador.rst:30
+#: ../../content/applications/finance/fiscal_localizations/germany.rst:58
+#: ../../content/applications/finance/fiscal_localizations/italy.rst:8
+#: ../../content/applications/finance/fiscal_localizations/kenya.rst:8
+#: ../../content/applications/finance/fiscal_localizations/luxembourg.rst:6
+#: ../../content/applications/finance/fiscal_localizations/mexico.rst:78
+#: ../../content/applications/finance/fiscal_localizations/peru.rst:25
+#: ../../content/applications/finance/fiscal_localizations/united_kingdom.rst:6
+#: ../../content/applications/finance/payment_providers.rst:302
+#: ../../content/applications/finance/payment_providers/adyen.rst:17
+#: ../../content/applications/finance/payment_providers/alipay.rst:12
+#: ../../content/applications/finance/payment_providers/authorize.rst:9
+#: ../../content/applications/finance/payment_providers/demo.rst:9
+#: ../../content/applications/finance/payment_providers/mollie.rst:8
+#: ../../content/applications/finance/payment_providers/paypal.rst:122
+#: ../../content/applications/finance/payment_providers/sips.rst:9
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:30
+msgid "Configuration"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:79
+msgid "You can edit the accounting information and bank account number according to your needs."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Manually configure your bank information"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:85
+#: ../../content/applications/finance/accounting/bank.rst:107
+msgid ":doc:`get_started/multi_currency`"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:86
+#: ../../content/applications/finance/accounting/bank.rst:134
+msgid ":doc:`bank/transactions`"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:89
+msgid "Suspense account"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:91
+msgid "Bank statement transactions are posted on the :guilabel:`Suspense Account` until the final reconciliation allows finding the right account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:95
+msgid "Profit and loss accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:97
+msgid "The :guilabel:`Profit Account` is used to register a profit when the ending balance of a cash register differs from what the system computes, while the :guilabel:`Loss Account` is used to register a loss when the ending balance of a cash register differs from what the system computes."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:102
+msgid "Currency"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:104
+msgid "You can edit the currency used to enter the statements."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:110
+msgid "Account number"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:112
+msgid "If you need to **edit your bank account details**, click on the external link arrow next to your :guilabel:`Account Number`. On the new page, click on the external link arrow next to your :guilabel:`Bank` and update your bank information accordingly. These details are used when registering payments."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Edit your bank information"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:121
+msgid "Bank feeds"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:123
+msgid ":guilabel:`Bank Feeds` defines how the bank statements are registered. Three options are available:"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:125
+msgid ":guilabel:`Undefined yet`, which should be selected when you don’t know yet if you will synchronize your bank account with your database or not."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:127
+msgid ":guilabel:`Import (CAMT, CODA, CSV, OFX, QIF)`, which should be selected if you want to import your bank statement using a different format."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:129
+msgid ":guilabel:`Automated Bank Synchronization`, which should be selected if your bank is synchronized with your database."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:139
+msgid "Outstanding accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:141
+msgid "By default, payments are registered through transitory accounts named **outstanding accounts**, before being recorded in your bank account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:144
+msgid "An **outstanding payments account** is where outgoing payments are posted until they are linked with a withdrawal from your bank statement."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:146
+msgid "An **outstanding receipts account** is where incoming payments are posted until they are linked with a deposit from your bank statement."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:149
+msgid "These accounts should be of :ref:`type <chart-of-account/type>` :guilabel:`Current Assets`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:152
+msgid "The movement from an outstanding account to a bank account is done automatically when you reconcile the bank account with a bank statement."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:156
+msgid "Default accounts configuration"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:158
+msgid "The outstanding accounts are defined by default. If necessary, you can update them by going to :menuselection:`Accounting --> Configuration --> Settings --> Default Accounts` and update your :guilabel:`Outstanding Receipts Account` and :guilabel:`Outstanding Payments Account`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:163
+msgid "Bank and cash journals configuration"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:165
+msgid "You can also set specific outstanding accounts for any journal with the :ref:`type <chart-of-account/type>` :guilabel:`Bank` or :guilabel:`Cash`."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:168
+msgid "From your :guilabel:`Accounting Dashboard`, click on the menu selection ⋮ of the journal you want to configure, and click on :guilabel:`Configuration`, then open the :guilabel:`Incoming/Outgoing Payments` tab. To display the outstanding accounts column, click on the toggle button and check the :guilabel:`Outstanding Receipts/Payments accounts`, then update the account."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:-1
+msgid "Select the toggle button and click on outstanding Accounts"
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:178
+msgid "If you do not specify an outstanding payments account or an outstanding receipts account for a specific journal, Odoo uses the default outstanding accounts."
+msgstr ""
+
+#: ../../content/applications/finance/accounting/bank.rst:180
+msgid "If your main bank account is added as an outstanding receipts account or outstanding payments account, when a payment is registered, the invoice or bill's status is directly set to :guilabel:`Paid`."
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
 #: ../../content/applications/finance/accounting/bank/bank_synchronization.rst:7
@@ -20859,138 +21418,144 @@ msgid "When selected, Odoo displays your payment information with a payment refe
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers.rst:0
-msgid "SEPA Direct Debit"
+msgid ":doc:`SEPA Direct Debit <../finance/accounting/payments/batch_sdd>`"
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers.rst:0
+<<<<<<< HEAD
 msgid "Your customers can sign a SEPA Direct Debit mandate online and get their bank account charged directly. :doc:`Click here <../finance/accounting/receivables/customer_payments/batch_sdd>` for more information about this payment method."
+||||||| parent of 4417b2f3e (temp)
+msgid "Your customers can sign a SEPA Direct Debit mandate online and get their bank account charged directly. :doc:`Click here <../finance/accounting/payments/batch_sdd>` for more information about this payment method."
+=======
+msgid "Your customers can sign a SEPA Direct Debit mandate online and get their bank account charged directly."
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:189
+#: ../../content/applications/finance/payment_providers.rst:188
 msgid "Additional features"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:191
+#: ../../content/applications/finance/payment_providers.rst:190
 msgid "Some payment providers support additional features for the payment flow. Refer to the :ref:`table above <payment_providers/online_providers>` to check if your payment provider supports these features."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:198
+#: ../../content/applications/finance/payment_providers.rst:197
 msgid "Tokenization"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:200
+#: ../../content/applications/finance/payment_providers.rst:199
 msgid "If your payment provider supports this feature, customers can choose to save their card for later. A **payment token** is created in Odoo and can be used as a payment method for subsequent payments without having to enter the card details again. This is particularly useful for the eCommerce conversion rate and for subscriptions that use recurring payments."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:205
+#: ../../content/applications/finance/payment_providers.rst:204
 msgid "Enable this feature by navigating to the :guilabel:`Configuration` tab from your payment provider and by ticking the :guilabel:`Allow Saving Payment Methods` checkbox."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:209
+#: ../../content/applications/finance/payment_providers.rst:208
 msgid "You remain fully PCI-compliant when you enable this feature because Odoo does not store the card details directly. Instead, it creates a payment token that only holds a reference to the card details stored on the payment provider's server."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:216
+#: ../../content/applications/finance/payment_providers.rst:215
 msgid "Manual capture"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:218
+#: ../../content/applications/finance/payment_providers.rst:217
 msgid "If your payment provider supports this feature, you can authorize and capture payments in two steps instead of one. When you authorize a payment, the funds are reserved on the customer's payment method but they are not immediately charged. The charge is only made when you manually capture the payment later on. You can also void the authorization to release the reserved funds; this is equivalent to a regular cancellation. Capturing payments manually can prove itself useful in many situations:"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:225
+#: ../../content/applications/finance/payment_providers.rst:224
 msgid "Receive the payment confirmation and wait until the order is shipped to capture the payment."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:226
+#: ../../content/applications/finance/payment_providers.rst:225
 msgid "Review and verify that orders are legitimate before the payment is completed and the fulfillment process starts."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:228
+#: ../../content/applications/finance/payment_providers.rst:227
 msgid "Avoid potentially high processing fees for cancelled payments: payment providers will not charge you for voiding an authorization."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:230
+#: ../../content/applications/finance/payment_providers.rst:229
 msgid "Hold a security deposit to return later, minus any deductions (e.g., after a damage)."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:232
+#: ../../content/applications/finance/payment_providers.rst:231
 msgid "Enable this feature by navigating to the :guilabel:`Configuration` tab from your payment provider and by ticking the :guilabel:`Capture Amount Manually` checkbox."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:235
+#: ../../content/applications/finance/payment_providers.rst:234
 msgid "To capture the payment after it was authorized, go to the related sales order or invoice and click on the :guilabel:`CAPTURE TRANSACTION` button. To release the funds, click on the :guilabel:`VOID TRANSACTION` button."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:240
+#: ../../content/applications/finance/payment_providers.rst:239
 msgid "Some payment providers support capturing only part of the authorized amount. The remaining amount can then be either captured or voided. These providers have the value **Full and partial** in the :ref:`table above <payment_providers/online_providers>`. The providers that only support capturing or voiding the full amount have the value **Full only**."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:244
+#: ../../content/applications/finance/payment_providers.rst:243
 msgid "The funds are likely not reserved forever. After a certain time, they may be automatically released back to the customer's payment method. Refer to your payment provider's documentation for the exact reservation duration."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:247
+#: ../../content/applications/finance/payment_providers.rst:246
 msgid "Odoo does not support this feature for all payment providers but some allow the manual capture from their website interface."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:253
+#: ../../content/applications/finance/payment_providers.rst:252
 msgid "Refunds"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:255
+#: ../../content/applications/finance/payment_providers.rst:254
 msgid "If your payment provider supports this feature, you can refund payments directly from Odoo. It does not need to be enabled first. To refund a customer payment, navigate to it and click on the :guilabel:`REFUND` button."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:260
+#: ../../content/applications/finance/payment_providers.rst:259
 msgid "Some payment providers support refunding only part of the amount. The remaining amount can then optionally be refunded too. These providers have the value **Full and partial** in the :ref:`table above <payment_providers/online_providers>`. The providers that only support refunding the full amount have the value **Full only**."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:264
+#: ../../content/applications/finance/payment_providers.rst:263
 msgid "Odoo does not support this feature for all payment providers but some allow to refund payments from their website interface."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:270
+#: ../../content/applications/finance/payment_providers.rst:269
 msgid "Express checkout"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:272
+#: ../../content/applications/finance/payment_providers.rst:271
 msgid "If your payment provider supports this feature, customers can use the **Google Pay** and **Apple Pay** buttons to pay their eCommerce orders in one click without filling the contact form. Using one of those buttons, customers go straight from the cart to the confirmation page, stopping by the payment form of Google or Apple to validate the payment."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:277
+#: ../../content/applications/finance/payment_providers.rst:276
 msgid "Enable this feature by navigating to the :guilabel:`Configuration` tab from your payment provider and by ticking the :guilabel:`Allow Express Checkout` checkbox."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:281
+#: ../../content/applications/finance/payment_providers.rst:280
 msgid "All prices shown in the express checkout payment form are always taxes included."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:286
+#: ../../content/applications/finance/payment_providers.rst:285
 msgid "Extra Fees"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:288
+#: ../../content/applications/finance/payment_providers.rst:287
 msgid "If supported by the payment provider, you can add **extra fees** to online transactions. Fees can be configured either as **fixed** amounts and percentages, **variable** amounts and percentages, or *both* simultaneously. These can be applied according to **domestic** or **international** geolocation."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:293
+#: ../../content/applications/finance/payment_providers.rst:292
 msgid "To enable fees, from the *eCommerce* or *Accounting* app, head to :menuselection:`Configuration --> Payment Providers` and select the desired supported provider. Click on the :guilabel:`Fees` tab and check the :guilabel:`Add Extra Fees` box. Configure the settings to your needs."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:298
+#: ../../content/applications/finance/payment_providers.rst:297
 msgid "Fees are calculated on the tax-included price."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:306
+#: ../../content/applications/finance/payment_providers.rst:305
 msgid "Each provider has its specific configuration flow, depending on :ref:`which feature is available <payment_providers/online_providers>`."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:312
+#: ../../content/applications/finance/payment_providers.rst:311
 msgid "Add a new payment provider"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:314
+#: ../../content/applications/finance/payment_providers.rst:313
 msgid "To add a new payment provider and make it available to your customers, go to :menuselection:`Accounting --> Configuration --> Payment Providers`, look for your payment provider, install the related module, and activate it. To do so, open the payment provider and change its state from *Disabled* to *Enabled*."
 msgstr ""
 
@@ -20998,11 +21563,11 @@ msgstr ""
 msgid "Click on install, then on activate to make the payment provider available on Odoo."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:324
+#: ../../content/applications/finance/payment_providers.rst:323
 msgid "We recommend using the *Test Mode* on a duplicated database or a test database. The Test Mode is meant to be used with your test/sandbox credentials, but Odoo generates Sales Orders and Invoices as usual. It isn't always possible to cancel an invoice, and this could create some issues with your invoices numbering if you were to test your payment providers on your main database."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:332
+#: ../../content/applications/finance/payment_providers.rst:331
 #: ../../content/applications/finance/payment_providers/adyen.rst:23
 #: ../../content/applications/finance/payment_providers/alipay.rst:18
 #: ../../content/applications/finance/payment_providers/authorize.rst:15
@@ -21013,60 +21578,141 @@ msgstr ""
 msgid "Credentials tab"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:334
+#: ../../content/applications/finance/payment_providers.rst:333
 msgid "If not done yet, go to the online payment provider website, create an account, and make sure to have the credentials required for third-party use. Odoo requires these credentials to communicate with the payment provider."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:338
+#: ../../content/applications/finance/payment_providers.rst:337
 msgid "The form in this section is specific to the payment provider you are configuring. Please refer to the related documentation for more information."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:344
+#: ../../content/applications/finance/payment_providers.rst:343
 #: ../../content/applications/finance/payment_providers/authorize.rst:40
 #: ../../content/applications/finance/payment_providers/stripe.rst:118
 msgid "Configuration tab"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:346
+#: ../../content/applications/finance/payment_providers.rst:345
 msgid "You can change the payment provider's front-end appearance by modifying its name under the **Displayed as** field and which credit card icons to display under the **Supported Payment Icons** field."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:353
 msgid "Currencies"
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:353
+msgid "Countries"
+=======
+#: ../../content/applications/finance/payment_providers.rst:352
+msgid "Countries"
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:355
 msgid "All payment providers have a different list of available currencies. They are preconfigured and available in the :guilabel:`Configuration` tab. They serve as a first filter during payment operations, i.e. the payment provider is not displayed as available for payment if the currency is not in the supported list."
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:355
+msgid "Restrict the use of the payment provider to a selection of countries. Leave this field blank to make the payment provider available in all countries."
+=======
+#: ../../content/applications/finance/payment_providers.rst:354
+msgid "Restrict the use of the payment provider to a selection of countries. Leave this field blank to make the payment provider available in all countries."
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:361
 msgid "As there might be errors, updates, and unknowns in the lists of available currencies, it is possible to add or remove currencies."
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:361
+msgid "Maximum Amount"
+=======
+#: ../../content/applications/finance/payment_providers.rst:358
+msgid "Maximum Amount"
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:364
 msgid "If the list of supported currencies is empty, it either means the list is too long to be displayed, or Odoo does not have information on that payment provider. The payment provider remains available, even though it is possible the payment will be refused at a later stage should the currency not be supported. This field is required if the user needs to select a currency when setting up their payment provider account."
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:363
+msgid "Restrict the maximum amount that can be paid with the selected provider. Leave this field to `0.00` to make the payment provider available regardless of the payment amount."
+=======
+#: ../../content/applications/finance/payment_providers.rst:360
+msgid "Restrict the maximum amount that can be paid with the selected provider. Leave this field to `0.00` to make the payment provider available regardless of the payment amount."
+>>>>>>> 4417b2f3e (temp)
+msgstr ""
+
+<<<<<<< HEAD
+#: ../../content/applications/finance/payment_providers.rst:373
+msgid "Countries"
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:367
+msgid "This feature is not intended to work on pages which allow the customer to update the payment amount. For example, the **Donation** snippet of the Website app, and the **Checkout** page of the **eCommerce** app when paid delivery methods are enabled."
+=======
+#: ../../content/applications/finance/payment_providers.rst:364
+msgid "This feature is not intended to work on pages which allow the customer to update the payment amount. For example, the **Donation** snippet of the Website app, and the **Checkout** page of the **eCommerce** app when paid delivery methods are enabled."
+>>>>>>> 4417b2f3e (temp)
+msgstr ""
+
+<<<<<<< HEAD
+#: ../../content/applications/finance/payment_providers.rst:375
+msgid "Restrict the use of the payment provider to a selection of countries. Leave this field blank to make the payment provider available in all countries."
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:372
+msgid "Payment journal"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers.rst:374
+msgid "The **Payment journal** selected for your payment provider must be a *Bank* journal."
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers.rst:379
+msgid "Publish on the website"
+=======
+#: ../../content/applications/finance/payment_providers.rst:371
+msgid "Payment journal"
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers.rst:373
-msgid "Countries"
+msgid "The **Payment journal** selected for your payment provider must be a *Bank* journal."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers.rst:375
-msgid "Restrict the use of the payment provider to a selection of countries. Leave this field blank to make the payment provider available in all countries."
+#: ../../content/applications/finance/payment_providers.rst:378
+msgid "Publish on the website"
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:381
 msgid "Maximum Amount"
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers.rst:383
 msgid "Restrict the maximum amount that can be paid with the selected provider. Leave this field to `0.00` to make the payment provider available regardless of the payment amount."
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:381
+msgid "By default, payment providers are *unpublished*, which means that only internal users can see them on the website. Your customers cannot make payments through an unpublished provider but they can still manage :dfn:`(delete and assign to a subscription)` their already existing tokens linked to such an provider. This conveniently allows you to test an provider while preventing making payments and registering new tokens."
+=======
+#: ../../content/applications/finance/payment_providers.rst:380
+msgid "By default, payment providers are *unpublished*, which means that only internal users can see them on the website. Your customers cannot make payments through an unpublished provider but they can still manage :dfn:`(delete and assign to a subscription)` their already existing tokens linked to such an provider. This conveniently allows you to test an provider while preventing making payments and registering new tokens."
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:387
 msgid "This feature is not intended to work on pages which allow the customer to update the payment amount. For example, the **Donation** snippet of the Website app, and the **Checkout** page of the **eCommerce** app when paid delivery methods are enabled."
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:387
+msgid "Click on the :guilabel:`Publish` button located in the top right corner of the provider's form to publish it on the website and make it available to your customers. Click on the :guilabel:`Unpublish` button to unpublish it."
+=======
+#: ../../content/applications/finance/payment_providers.rst:386
+msgid "Click on the :guilabel:`Publish` button located in the top right corner of the provider's form to publish it on the website and make it available to your customers. Click on the :guilabel:`Unpublish` button to unpublish it."
+>>>>>>> 4417b2f3e (temp)
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:392
 msgid "Payment journal"
 msgstr ""
@@ -21088,30 +21734,71 @@ msgid "Click on the :guilabel:`Publish` button located in the top right corner o
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers.rst:412
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:392
+=======
+#: ../../content/applications/finance/payment_providers.rst:391
+>>>>>>> 4417b2f3e (temp)
 msgid "Payment providers are automatically published and unpublished when you respectively change their state to `enabled` and `test`."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:418
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:398
+=======
+#: ../../content/applications/finance/payment_providers.rst:397
+>>>>>>> 4417b2f3e (temp)
 msgid "Accounting perspective"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:420
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:400
+=======
+#: ../../content/applications/finance/payment_providers.rst:399
+>>>>>>> 4417b2f3e (temp)
 msgid "The **Bank Payments** that go directly to one of your bank accounts follow their usual reconciliation workflows. However, payments recorded with **Online Payment Providers** require you to consider how you want to record your payments' journal entries. We recommend you to ask your accountant for advice."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:425
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:405
+=======
+#: ../../content/applications/finance/payment_providers.rst:404
+>>>>>>> 4417b2f3e (temp)
 msgid "You need to select a *Payment Journal* on your provider configuration to record the payments, on a **Outstanding Account**. The Journal's **type** must be *Bank Journal*."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:428
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:408
+=======
+#: ../../content/applications/finance/payment_providers.rst:407
+>>>>>>> 4417b2f3e (temp)
 msgid "You can use a single journal for many payment methods. And for each payment method, you can either:"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:430
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:410
+=======
+#: ../../content/applications/finance/payment_providers.rst:409
+>>>>>>> 4417b2f3e (temp)
 msgid "Define an **Accounting Account** to separate these payments from another payment method."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:431
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:411
+=======
+#: ../../content/applications/finance/payment_providers.rst:410
+>>>>>>> 4417b2f3e (temp)
 msgid "Leave blank to fallback on the default account, which you can see or change in the settings."
 msgstr ""
 
@@ -21119,67 +21806,163 @@ msgstr ""
 msgid "A bank journal in the \"Incoming Payments Tab\"."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:437
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:417
+=======
+#: ../../content/applications/finance/payment_providers.rst:416
+>>>>>>> 4417b2f3e (temp)
 msgid "You can have the same bank account for the whole company, or for some journals only, or a single payment method... What best suit your needs."
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:441
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:421
+=======
+#: ../../content/applications/finance/payment_providers.rst:420
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/wire_transfer`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:442
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:422
+=======
+#: ../../content/applications/finance/payment_providers.rst:421
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/adyen`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:443
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:423
+=======
+#: ../../content/applications/finance/payment_providers.rst:422
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/alipay`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:444
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:424
+=======
+#: ../../content/applications/finance/payment_providers.rst:423
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/authorize`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:445
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:425
+=======
+#: ../../content/applications/finance/payment_providers.rst:424
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/asiapay`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:446
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:426
+=======
+#: ../../content/applications/finance/payment_providers.rst:425
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/buckaroo`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:447
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:427
+=======
+#: ../../content/applications/finance/payment_providers.rst:426
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/demo`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:448
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:428
+=======
+#: ../../content/applications/finance/payment_providers.rst:427
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/mercado_pago`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:449
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:429
+=======
+#: ../../content/applications/finance/payment_providers.rst:428
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/mollie`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:450
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:430
+=======
+#: ../../content/applications/finance/payment_providers.rst:429
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/ogone`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:451
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:431
+=======
+#: ../../content/applications/finance/payment_providers.rst:430
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/paypal`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:452
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:432
+=======
+#: ../../content/applications/finance/payment_providers.rst:431
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/razorpay`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:453
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:433
+=======
+#: ../../content/applications/finance/payment_providers.rst:432
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/sips`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:454
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:434
+=======
+#: ../../content/applications/finance/payment_providers.rst:433
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`payment_providers/stripe`"
 msgstr ""
 
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers.rst:455
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers.rst:435
+=======
+#: ../../content/applications/finance/payment_providers.rst:434
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`../websites/ecommerce/checkout_payment_shipping/payments`"
 msgstr ""
 
@@ -21217,8 +22000,15 @@ msgstr ""
 #: ../../content/applications/finance/payment_providers/paypal.rst:141
 #: ../../content/applications/finance/payment_providers/razorpay.rst:46
 #: ../../content/applications/finance/payment_providers/sips.rst:32
+<<<<<<< HEAD
 #: ../../content/applications/finance/payment_providers/stripe.rst:141
 #: ../../content/applications/finance/payment_providers/wire_transfer.rst:39
+||||||| parent of 4417b2f3e (temp)
+#: ../../content/applications/finance/payment_providers/stripe.rst:142
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:39
+=======
+#: ../../content/applications/finance/payment_providers/stripe.rst:142
+>>>>>>> 4417b2f3e (temp)
 msgid ":doc:`../payment_providers`"
 msgstr ""
 
@@ -22430,39 +23220,75 @@ msgid "This operation must be repeated whenever your web domain changes."
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers/wire_transfer.rst:3
-msgid "How to get paid with wire transfers"
+msgid "Wire transfers"
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers/wire_transfer.rst:5
-msgid "**Wire Transfer** is the default payment method available. The aim is providing your customers with your bank details so they can pay on their own. This is very easy to start with but slow and inefficient process-wise. Opt for payment providers as soon as you can!"
+msgid "The **Wire transfer** payment method allows you to provide payment instructions to your customers, such as the bank details and communication. They are displayed:"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers/wire_transfer.rst:10
-msgid "How to provide customers with payment instructions"
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:8
+msgid "at the end of the checkout process, once the customer has selected :guilabel:`Wire transfer` as a payment method and clicked the :guilabel:`Pay now` button:"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers/wire_transfer.rst:12
-msgid "Put your payment instructions in the **Thanks Message** of your payment method."
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:0
+msgid "Payment instructions at checkout"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers/wire_transfer.rst:17
-msgid "They will appear to the customers when they place an order."
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:14
+msgid "on the customer portal:"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers/wire_transfer.rst:23
-msgid "How to manage an order once you get paid"
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:0
+msgid "Payment instructions on the customer portal"
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers/wire_transfer.rst:25
-msgid "Whenever a customer pays by wire transfer, the order stays in an intermediary stage **Quotation Sent** (i.e. unpaid order). When you get paid, you confirm the order manually to launch the delivery."
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:20
+msgid "While this method is very accessible and requires minimal setup, it is very inefficient process-wise. We recommend setting up a :doc:`payment provider <../payment_providers>` instead."
 msgstr ""
 
-#: ../../content/applications/finance/payment_providers/wire_transfer.rst:30
-msgid "How to create other manual payment methods"
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:22
+msgid "Online orders remain in the :guilabel:`Quotation sent` (i.e., unpaid order) stage until you receive the payment and :guilabel:`Confirm` the order."
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:26
+msgid "**Wire transfer** can be used as a template for other payment methods that are processed manually, such as checks, by renaming or duplicating it."
 msgstr ""
 
 #: ../../content/applications/finance/payment_providers/wire_transfer.rst:32
-msgid "If you manage a B2B business, you can create other manually-processed payment methods like paying by check. To do so, just rename *Wire Transfer* or duplicate it."
+msgid "To configure **Wire Transfer**, go to :menuselection:`Accounting / Website --> Configuration --> Payment Providers`, and open the :guilabel:`Wire Transfer` card. Then, in the :guilabel:`Configuration` tab:"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:36
+msgid "Select the :guilabel:`Communication` to be used;"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:38
+msgid ":guilabel:`Based on Document Reference`: sales order or invoice number"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:39
+msgid ":guilabel:`Based on Customer ID`: customer identifier"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:41
+msgid "Tick the :guilabel:`Enable QR codes` check box to activate :doc:`QR code payments <../accounting/customer_invoices/epc_qr_code>`."
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:44
+msgid "Define the payment instructions in the :guilabel:`Messages` tab:"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:-1
+msgid "Define payment instructions"
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:49
+msgid "If you have already defined :doc:`a bank account <../accounting/bank>`, the account number will be automatically added to the default message generated by Odoo."
+msgstr ""
+
+#: ../../content/applications/finance/payment_providers/wire_transfer.rst:53
+msgid ":ref:`payment_providers/journal`"
 msgstr ""
 
 #: ../../content/applications/finance/sign.rst:3
