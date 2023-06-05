@@ -2,7 +2,10 @@
 Default terms and conditions (T&C)
 ==================================
 
-Add default terms and conditions at the bottom of all customer invoices, sales orders, and
+Specifying terms and conditions is essential to establish important contractual points, such as
+payment terms, limitations of liability, and delivery terms between customers and sellers.
+
+You can add default terms and conditions at the bottom of all customer invoices, sales orders, and
 quotations, either as text or a link to a web page.
 
 .. seealso::
@@ -20,6 +23,9 @@ the terms and conditions in the text box below.
 .. image:: terms_conditions/terms-note.png
    :alt: Example of terms and conditions as a note
 
+.. tip::
+   Add the terms and conditions as an attachment when sending the document via email.
+
 Alternatively, to display the terms and conditions on a web page, select the :guilabel:`Add a link
 to a Web Page` option and click :guilabel:`Save`. Click :guilabel:`Update Terms`, edit the
 content, and click :guilabel:`Save`. The link to that page is then added as a note in your document.
@@ -31,3 +37,9 @@ content, and click :guilabel:`Save`. The link to that page is then added as a no
 
 .. image:: terms_conditions/terms-webpage.png
    :alt: Example of terms and conditions as a web page
+
+.. tip::
+   This terms and conditions page can be displayed in the footer of all documents. To do so, open
+   the database :guilabel:`Settings` and click :guilabel:`Configure Document Layout` under the
+   :guilabel:`Companies` section. Add the link to the web page under the :guilabel:`Footer` field
+   and :guilabel:`Save`.

@@ -2,7 +2,8 @@
 Quotation templates
 ===================
 
-Use quotation templates to speed up the quotation creation process.
+Using quotation templates speeds up their creation by filling in most quotation fields automatically
+by simply selecting a template.
 
 Configuration
 =============
