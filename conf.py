@@ -254,7 +254,8 @@ html_theme_path = ['extensions']
 
 # The name of an image file (within the static path) to use as favicon of the docs.
 # This file should be a Windows icon file (.ico) being 16x16 or 32x32 pixels large.
-html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'favicon.ico') #TODO
+# html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'favicon.ico')
+html_favicon = os.path.join(html_theme_path[0], html_theme, 'static', 'img', 'logos', 'favicon.ico')
 
 # The paths that contain custom static files, relative to this directory.
 # They are copied after the builtin static files, so a file named "default.css" will overwrite the
