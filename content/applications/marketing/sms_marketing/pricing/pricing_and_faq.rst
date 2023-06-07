@@ -113,4 +113,4 @@ More common questions
 #. | **Can I use my own SMS provider?**
    | Yes, but it is not possible out-of-the-box. Odoo experts can help customize a database to allow
      for the use of a personal SMS provider. Please check our success packs `here
-     <https://www.odoo.com/pricing-packs>`_.
+     <https://coqui.cloud/pricing-packs>`_.

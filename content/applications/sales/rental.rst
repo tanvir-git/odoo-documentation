@@ -8,8 +8,8 @@ From a single view, you can send out quotations, confirm orders, schedule rental
 products are picked up and returned, and invoice your customers.
 
 .. seealso::
-   - `Odoo Rental: product page <https://www.odoo.com/app/rental>`_
-   - `Odoo Tutorials: Rental <https://www.odoo.com/slides/rental-48>`_
+   - `Odoo Rental: product page <https://coqui.cloud/app/rental>`_
+   - `Odoo Tutorials: Rental <https://coqui.cloud/slides/rental-48>`_
 
 .. _rental/pricing:
 
@@ -86,7 +86,7 @@ and click on *Sign Now* to start the signing process with your customer. Once th
 completed, click on *Validate & Send Completed Document*.
 
 .. seealso::
-   - `Odoo Tutorials: Sign <https://www.odoo.com/slides/sign-61>`_
+   - `Odoo Tutorials: Sign <https://coqui.cloud/slides/sign-61>`_
 
 .. _rental/pickup-return:
 

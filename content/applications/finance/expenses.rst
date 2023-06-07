@@ -8,7 +8,7 @@ Expenses
 managers can approve them; accountants can record them and process the payments.
 
 .. seealso::
-   - `Odoo Expenses: product page <https://www.odoo.com/app/expenses>`_
+   - `Odoo Expenses: product page <https://coqui.cloud/app/expenses>`_
 
 How to set expense types
 ========================

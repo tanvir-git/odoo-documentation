@@ -12,7 +12,7 @@ accurate forecasts. Keep opportunities organized with the pipeline and manage yo
 activities with meetings and next activities.
 
 .. seealso::
-   - `Odoo Tutorials: CRM <https://www.odoo.com/slides/crm-16>`_
+   - `Odoo Tutorials: CRM <https://coqui.cloud/slides/crm-16>`_
 
 .. toctree::
    :titlesonly:

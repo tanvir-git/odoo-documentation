@@ -40,7 +40,7 @@ payment dates defined beforehand by the seller.
 
 .. seealso::
    - :doc:`cash_discounts`
-   - `Odoo Tutorials: Payment Terms <https://www.odoo.com/slides/slide/payment-terms-1679>`_
+   - `Odoo Tutorials: Payment Terms <https://coqui.cloud/slides/slide/payment-terms-1679>`_
 
 Configuration
 =============

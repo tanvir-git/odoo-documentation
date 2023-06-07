@@ -18,7 +18,7 @@ amounts to reduce unpaid invoices/bills.
    - :doc:`Internal transfers <payments/internal_transfers>`
    - :doc:`bank/reconciliation`
    - `Odoo Tutorials: Bank Configuration
-     <https://www.odoo.com/slides/slide/bank-configuration-1880>`_
+     <https://coqui.cloud/slides/slide/bank-configuration-1880>`_
 
 Registering payment from an invoice or bill
 ===========================================

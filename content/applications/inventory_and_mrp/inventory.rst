@@ -12,8 +12,8 @@ advanced barcode scanner app. Learn how to manage lead times, automate replenish
 advanced routes like drop-shipping, cross-docks, etc.
 
 .. seealso::
-   - `Odoo Tutorials: Inventory <https://www.odoo.com/slides/inventory-24>`_
-   - `Odoo Tutorials: Barcode Scanner <https://www.odoo.com/slides/barcode-30>`_
+   - `Odoo Tutorials: Inventory <https://coqui.cloud/slides/inventory-24>`_
+   - `Odoo Tutorials: Barcode Scanner <https://coqui.cloud/slides/barcode-30>`_
 
 .. toctree::
    :titlesonly:

@@ -28,4 +28,4 @@ can, on any app, add or modify:
 Or you can :doc:`build an app from scratch <studio/models_modules_apps>`.
 
 .. seealso::
-   - `Odoo Tutorials: Studio <https://www.odoo.com/slides/studio-31>`_
+   - `Odoo Tutorials: Studio <https://coqui.cloud/slides/studio-31>`_

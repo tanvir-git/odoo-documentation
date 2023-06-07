@@ -210,7 +210,7 @@ Odoo relies on generic email aliases to fetch incoming messages.
   catchall alias (`catchall@mycompany.odoo.com`). The catchall address, however, does not have
   another action attached to it like other aliases might, it is only used to collect replies.
 * **Bounced messages** are used as a Return-Path. One example this is especially
-  useful for is in `Odoo Email Marketing <https://www.odoo.com/page/email-marketing>`__. In this
+  useful for is in `Odoo Email Marketing <https://coqui.cloud/page/email-marketing>`__. In this
   case bounces are opt-out based on if the email bounced too many times (5) in the last month and
   the bounces are separated by one week. This is done to avoid blacklisting someone because of a
   mail server error. If these circumstances are met then the email is considered invalid and is
@@ -223,12 +223,12 @@ Odoo relies on generic email aliases to fetch incoming messages.
 * **Original messages**: several business objects have their own alias to create new records in Odoo
   from incoming emails:
 
-   * Sales channel (to create *Leads* or *Opportunities* in `Odoo CRM <https://www.odoo.com/page/
+   * Sales channel (to create *Leads* or *Opportunities* in `Odoo CRM <https://coqui.cloud/page/
      crm>`_)
-   * Support channel (to create *Tickets* in `Odoo Helpdesk <https://www.odoo.com/page/helpdesk>`_)
-   * Projects (to create new *Tasks* in `Odoo Project <https://www.odoo.com/page
+   * Support channel (to create *Tickets* in `Odoo Helpdesk <https://coqui.cloud/page/helpdesk>`_)
+   * Projects (to create new *Tasks* in `Odoo Project <https://coqui.cloud/page
      /project-management>`_)
-   * Job positions (to create *Applicants* in `Odoo Recruitment <https://www.odoo.com/page
+   * Job positions (to create *Applicants* in `Odoo Recruitment <https://coqui.cloud/page
      /recruitment>`_)
 
 Depending on the mail server, there might be several methods to fetch emails. The easiest and most

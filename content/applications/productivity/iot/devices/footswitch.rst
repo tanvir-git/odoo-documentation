@@ -16,7 +16,7 @@ Connecting the footswitch to the *IoT Box* is easy, you just have to
 connect the two by cable.
 
 If your footswitch is a `supported
-one <https://www.odoo.com/page/iot-hardware>`__, there is no need to
+one <https://coqui.cloud/page/iot-hardware>`__, there is no need to
 set up anything since it will be automatically detected when connected.
 
 .. image:: footswitch/footswitch_01.png

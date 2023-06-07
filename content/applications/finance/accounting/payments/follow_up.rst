@@ -8,7 +8,7 @@ that trigger automatically one or more actions according to the number of overdu
 your follow-ups via different means such as email, post, or SMS.
 
 .. seealso::
-   - `Odoo Tutorials: Payment Follow-up <https://www.odoo.com/slides/slide/payment-follow-up-1682>`_
+   - `Odoo Tutorials: Payment Follow-up <https://coqui.cloud/slides/slide/payment-follow-up-1682>`_
 
 Configuration
 =============

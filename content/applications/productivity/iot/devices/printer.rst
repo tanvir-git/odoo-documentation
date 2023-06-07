@@ -11,7 +11,7 @@ Connection
 ==========
 
 The IoT Box supports printers connected through USB, network or Bluetooth.
-`Supported printers <https://www.odoo.com/page/iot-hardware>`__ will be
+`Supported printers <https://coqui.cloud/page/iot-hardware>`__ will be
 detected automatically and will appear in the *Devices* list of your IoT app.
 
 .. note::

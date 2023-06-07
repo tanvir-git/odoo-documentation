@@ -202,7 +202,7 @@ Install Odoo as a local proxy on your computer
 
 An Odoo local server works as a bridge between your computer and your Odoo database hosted online.
 
-Download the Odoo Community installer from the page https://www.odoo.com/page/download and start the
+Download the Odoo Community installer from the page https://coqui.cloud/page/download and start the
 installation on your computer.
 
 Select :guilabel:`Local Proxy Mode` as the type of install.
@@ -219,7 +219,7 @@ Once the installation is complete, the installer displays your **access token** 
 Proxy. Copy the token and save it in a safe place for later use.
 
 .. seealso::
-   - `Odoo: Download Odoo <https://www.odoo.com/page/download>`_
+   - `Odoo: Download Odoo <https://coqui.cloud/page/download>`_
    - :doc:`/administration/install/install`
 
 .. _egypt/e-invoicing-usb-configuration:

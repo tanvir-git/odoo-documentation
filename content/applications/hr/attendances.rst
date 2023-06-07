@@ -11,7 +11,7 @@ Attendances
 managers can see who is available at any given time.
 
 .. seealso::
-   `Odoo Tutorials: Attendances <https://www.odoo.com/slides/slide/attendances-684>`_
+   `Odoo Tutorials: Attendances <https://coqui.cloud/slides/slide/attendances-684>`_
 
 .. toctree::
    :titlesonly:

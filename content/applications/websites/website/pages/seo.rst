@@ -62,7 +62,7 @@ modules to help you build your website content:
 
 - **Odoo Slides**: publish all your Powerpoint or PDF presentations.
   Their content is automatically indexed on the web page. Example:
-  `odoo.com/slides/public-channel-1 <https://www.odoo.com/slides/public-channel-1>`_
+  `odoo.com/slides/public-channel-1 <https://coqui.cloud/slides/public-channel-1>`_
 
 - **Odoo Forum**: let your community create contents for you. Example:
   `odoo.com/forum/1 <https://odoo.com/forum/1>`_
@@ -70,7 +70,7 @@ modules to help you build your website content:
 
 - **Odoo Mailing List Archive**: publish mailing list archives on your
   website. Example:
-  `odoo.com/groups/community-59 <https://www.odoo.com/groups/community-59>`_
+  `odoo.com/groups/community-59 <https://coqui.cloud/groups/community-59>`_
   (1000 pages created per month)
 
 .. note::
@@ -182,7 +182,7 @@ an example, the following URLs all do a 301 redirect to the above URL:
 Some URLs have several dynamic parts, like this one (a blog category and
 a post):
 
--  https://www.odoo.com/blog/company-news-5/post/the-odoo-story-56
+-  https://coqui.cloud/blog/company-news-5/post/the-odoo-story-56
 
 In the above example:
 
@@ -194,7 +194,7 @@ When an Odoo page has a pager, the page number is set directly in the
 URL (does not have a GET argument). This allows every page to be indexed
 by search engines. Example:
 
--  https://www.odoo.com/blog/page/3
+-  https://coqui.cloud/blog/page/3
 
 Changes in URLs & Titles
 ------------------------
@@ -388,7 +388,7 @@ cached (server-side and browser-side). The result:
 
 **Pre-processed:** The CSS framework used by Odoo is Bootstrap.
 Although a theme might use another framework, most of `Odoo
-themes <https://www.odoo.com/apps/themes>`__ extend and customize
+themes <https://coqui.cloud/apps/themes>`__ extend and customize
 Bootstrap directly. Since Odoo supports Less and Sass, you can modify
 CSS rules instead of overwriting them through extra CSS lines,
 resulting in a smaller file.
@@ -626,7 +626,7 @@ general indexing rules of the ``/robots.txt`` file (allowed robots,
 sitemap path, etc.). Odoo automatically creates it. Its content is:
 
 User-agent: \*
-Sitemap: https://www.odoo.com/sitemap.xml
+Sitemap: https://coqui.cloud/sitemap.xml
 
 It means that all robots are allowed to index your website
 and there is no other indexing rule than specified in the sitemap

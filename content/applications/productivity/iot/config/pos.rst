@@ -24,7 +24,7 @@ Before starting, make sure you have the following:
 -  Any of the supported hardware (receipt printer, barcode scanner,
    cash drawer, payment terminal, scale, customer display, etc.).
    The list of supported hardware can be found on the `POS Hardware
-   page <https://www.odoo.com/page/point-of-sale-hardware>`__
+   page <https://coqui.cloud/page/point-of-sale-hardware>`__
 
 Set Up
 ======

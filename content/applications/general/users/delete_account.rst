@@ -4,7 +4,7 @@ Deleting an Odoo.com Account
 
 To delete your Odoo.com account, access the delete option by clicking on the user icon. The delete
 option can be accessed by going to :menuselection:`My Account --> Edit Security Settings --> Delete
-Account`. It can also be accessed by going to https://www.odoo.com/my/home.
+Account`. It can also be accessed by going to https://coqui.cloud/my/home.
 
 .. danger::
    Deleting an Odoo account is irreversible. Take caution when performing this action as the

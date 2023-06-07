@@ -12,7 +12,7 @@ development with features such as AI-powered invoice recognition, synchronizatio
 accounts, smart matching suggestions, etc.
 
 .. seealso::
-   `Odoo Tutorials: Accounting <https://www.odoo.com/slides/accounting-19>`_
+   `Odoo Tutorials: Accounting <https://coqui.cloud/slides/accounting-19>`_
 
 .. cards::
 

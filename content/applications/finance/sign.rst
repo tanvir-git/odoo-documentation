@@ -8,8 +8,8 @@ You can upload any PDF file and add drag-and-dropping fields on it. These fields
 filled out with the user's detail if they are logged in.
 
 .. seealso::
-   - `Odoo Sign: product page <https://www.odoo.com/app/sign>`_
-   - `Odoo Tutorials: Sign <https://www.odoo.com/slides/sign-61>`_
+   - `Odoo Sign: product page <https://coqui.cloud/app/sign>`_
+   - `Odoo Tutorials: Sign <https://coqui.cloud/slides/sign-61>`_
 
 .. _sign/validity:
 

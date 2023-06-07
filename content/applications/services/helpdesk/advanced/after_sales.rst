@@ -64,4 +64,4 @@ same way as if you were on the *Field Service* application.
    :height: 300
 
 .. seealso::
-   - `Coupons <https://www.odoo.com/slides/slide/coupon-programs-640?fullscreen=1>`_
+   - `Coupons <https://coqui.cloud/slides/slide/coupon-programs-640?fullscreen=1>`_

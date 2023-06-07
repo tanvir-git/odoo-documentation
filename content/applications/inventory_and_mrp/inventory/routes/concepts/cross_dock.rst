@@ -12,7 +12,7 @@ to reorganize products and load another truck.
 .. note::
    For more information on how to organize your warehouse, read our blog: `What is cross-docking and
    is it for me?
-   <https://www.odoo.com/blog/business-hacks-1/post/what-is-cross-docking-and-is-it-for-me-270>`_
+   <https://coqui.cloud/blog/business-hacks-1/post/what-is-cross-docking-and-is-it-for-me-270>`_
 
 Configuration
 =============

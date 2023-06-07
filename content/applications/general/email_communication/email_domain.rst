@@ -22,7 +22,7 @@ inbox. It is also possible to add the Odoo database domain onto a safe senders l
 on the receiving domain.
 
 If an Odoo email server appears on a blacklist, notify Odoo via a `new help ticket
-<https://www.odoo.com/help>`_ and the support team will work to get the servers removed from the
+<https://coqui.cloud/help>`_ and the support team will work to get the servers removed from the
 blacklist.
 
 Should the Odoo database be using a custom domain for sending emails from Odoo there are three

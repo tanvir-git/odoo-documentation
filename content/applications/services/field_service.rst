@@ -8,7 +8,7 @@ Field Service
 =============
 
 .. seealso::
-   - `Odoo Tutorials: Field Service <https://www.odoo.com/slides/field-service-49>`_
+   - `Odoo Tutorials: Field Service <https://coqui.cloud/slides/field-service-49>`_
 
 .. toctree::
    :titlesonly:

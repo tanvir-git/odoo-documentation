@@ -38,7 +38,7 @@ accessory products suggested to the customer.
 
 .. seealso::
    `Odoo Tutorials: Alternative, Accessory, and Optional Products
-   <https://www.odoo.com/slides/slide/alternative-accessory-and-optional-products-637>`_.
+   <https://coqui.cloud/slides/slide/alternative-accessory-and-optional-products-637>`_.
 
 .. _cross_selling/optional:
 

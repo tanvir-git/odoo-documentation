@@ -17,8 +17,8 @@ convert visitors into leads or revenues.
 
 
 .. seealso::
-   - `Odoo Tutorials: Website <https://www.odoo.com/slides/website-25>`_
-   - `Odoo Tutorials: eCommerce <https://www.odoo.com/slides/ecommerce-26>`_
+   - `Odoo Tutorials: Website <https://coqui.cloud/slides/website-25>`_
+   - `Odoo Tutorials: eCommerce <https://coqui.cloud/slides/ecommerce-26>`_
 
 .. toctree::
    :titlesonly:

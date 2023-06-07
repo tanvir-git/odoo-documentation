@@ -38,7 +38,7 @@ How to obtain a Hypertext Transfer Protocol Secure (HTTPS) certificate
 
 The generation of the :abbr:`HTTPS (Hypertext Transfer Protocol Secure)` certificate is automatic.
 
-The :abbr:`IoT (Internet of Things)` Box will send a specific request to `<https://www.odoo.com>`_
+The :abbr:`IoT (Internet of Things)` Box will send a specific request to `<https://coqui.cloud>`_
 which will send back the :abbr:`HTTPS (Hypertext Transfer Protocol Secure)` certificate if the
 :abbr:`IoT (Internet of Things)` box and database are eligible.
 
@@ -54,7 +54,7 @@ Internet of Things (IoT) eligibility
      - Have an :guilabel:`IoT Box Subscription` line.
      - :guilabel:`Status` must be :guilabel:`In Progress`.
 
-    If the subscription is linked to a `<https://www.odoo.com>`_ portal user check the information
+    If the subscription is linked to a `<https://coqui.cloud>`_ portal user check the information
     on the portal subscription page.
 
     .. figure:: https_certificate_iot/sub-example-in-progress.png
@@ -118,12 +118,12 @@ Solution:
 
 Reason:
     An unexpected error happened when the :abbr:`IoT (Internet of Things)` box tried to reach
-    `<https://www.odoo.com>`_. The causes are likely due to the network
+    `<https://coqui.cloud>`_. The causes are likely due to the network
     infrastructure/configuration:
 
      - The :abbr:`IoT (Internet of Things)` box does not have access to internet.
      - The network does not allow the :abbr:`IoT (Internet of Things)` box to communicate with
-       `<https://www.odoo.com>`_. This may be due to network devices preventing the communication
+       `<https://coqui.cloud>`_. This may be due to network devices preventing the communication
        (firewalls, etc.) or the network configuration (:abbr:`VPN (Virtual Private Network)`,
        etc.).
 
@@ -141,7 +141,7 @@ Solution:
 -----------------------------------
 
 Reason:
-    The IoT-box was able to reach `<https://www.odoo.com>`_ but received an unusual
+    The IoT-box was able to reach `<https://coqui.cloud>`_ but received an unusual
     `HTTP response (status codes)
     <https://developer.mozilla.org/en-US/docs/Web/HTTP/Status>`_.
 
@@ -150,20 +150,20 @@ Reason:
     the "Page Not Found" code.
 
 Solution:
-    Check if `<https://www.odoo.com>`_ is down using a web browser, as it's possible that it is down
+    Check if `<https://coqui.cloud>`_ is down using a web browser, as it's possible that it is down
     due to maintenance.
 
-     - If `<https://www.odoo.com>`_ is down due to maintenance, unfortunately there is nothing that
+     - If `<https://coqui.cloud>`_ is down due to maintenance, unfortunately there is nothing that
        can be done but instead wait for it to recover.
-     - If `<https://www.odoo.com>`_ is not down due to maintenance, open a `support ticket
-       <https://www.odoo.com/help>`_ on the matter. Ensure that the 3 digits status code next to the
+     - If `<https://coqui.cloud>`_ is not down due to maintenance, open a `support ticket
+       <https://coqui.cloud/help>`_ on the matter. Ensure that the 3 digits status code next to the
        code error is included in the support ticket.
 
 `ERR_IOT_HTTPS_LOAD_REQUEST_NO_RESULT`
 --------------------------------------
 
 Reason:
-    The :abbr:`IoT (Internet of Things)` box was able to reach `<https://www.odoo.com>`_ but it
+    The :abbr:`IoT (Internet of Things)` box was able to reach `<https://coqui.cloud>`_ but it
     refused to deliver the :abbr:`HTTPS (Hypertext Transfer Protocol Secure)` certificate.
 
 Solution:

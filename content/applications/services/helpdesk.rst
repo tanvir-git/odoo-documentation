@@ -8,7 +8,7 @@ Helpdesk
 ========
 
 .. seealso::
-   - `Odoo Tutorials: Helpdesk <https://www.odoo.com/slides/helpdesk-51>`_
+   - `Odoo Tutorials: Helpdesk <https://coqui.cloud/slides/helpdesk-51>`_
 
 .. toctree::
    :titlesonly:

@@ -61,7 +61,7 @@ users and the internet is required.
 Installing the proxy server on a Windows device
 -----------------------------------------------
 
-Go to `odoo.com/download <https://www.odoo.com/page/download>`_, fill out the required information
+Go to `odoo.com/download <https://coqui.cloud/page/download>`_, fill out the required information
 and click :guilabel:`Download`.
 
 .. image:: kenya/download.png

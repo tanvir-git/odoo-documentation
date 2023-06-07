@@ -40,7 +40,7 @@ the user. The user must click on it to accept the invitation and create a login.
 
 .. note::
    Remember that subscription prices follow the number of users. Refer to our
-   `pricing page <https://www.odoo.com/pricing>`_
+   `pricing page <https://coqui.cloud/pricing>`_
    for more information.
 
 With the :ref:`developer mode <developer-mode>` activated, *User Types* can be selected.

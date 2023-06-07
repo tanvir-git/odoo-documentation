@@ -15,7 +15,7 @@ potentially make for payment issues.
 
 .. seealso::
    - :doc:`../bank`
-   - `Odoo Academy: QR Code on Invoices for European Customers <https://www.odoo.com/r/VuU>`_
+   - `Odoo Academy: QR Code on Invoices for European Customers <https://coqui.cloud/r/VuU>`_
 
 Configuration
 =============

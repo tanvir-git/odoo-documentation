@@ -10,7 +10,7 @@ a web browser, even if you are temporarily offline. Product moves are automatica
 your stock, you get real-time statistics, and your data is consolidated across all shops.
 
 .. seealso::
-   - `Odoo Tutorials: Point of Sale Tutorials <https://www.odoo.com/slides/point-of-sale-28>`_
+   - `Odoo Tutorials: Point of Sale Tutorials <https://coqui.cloud/slides/point-of-sale-28>`_
    - :doc:`IoT Boxes Documentations </applications/productivity/iot>`
 
 .. _pos/session-start:

@@ -10,7 +10,7 @@ and it is accessible and convenient, as your customers can keep doing what they 
 interacting with you. Remember: your customers want to talk to you, so let's make it easy.
 
 .. seealso::
-   - `Live Chat: product page <https://www.odoo.com/app/live-chat>`_
+   - `Live Chat: product page <https://coqui.cloud/app/live-chat>`_
    - :doc:`livechat/ratings`
    - :doc:`livechat/responses`
 

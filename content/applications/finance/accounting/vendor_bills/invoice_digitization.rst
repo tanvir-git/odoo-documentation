@@ -10,10 +10,10 @@ recognize the content of the documents. Vendor bills and customer invoices forms
 created and populated based on the scanned invoices.
 
 .. seealso::
-   - `Test Odoo's invoice digitization <https://www.odoo.com/app/invoice-automation>`_
+   - `Test Odoo's invoice digitization <https://coqui.cloud/app/invoice-automation>`_
    - :doc:`/applications/general/in_app_purchase`.
    - `Odoo Tutorials: Invoice Digitization with OCR
-     <https://www.odoo.com/slides/slide/digitize-bills-with-ocr-1712>`_.
+     <https://coqui.cloud/slides/slide/digitize-bills-with-ocr-1712>`_.
 
 .. note::
    - The more documents you scan, the better the system identifies the correct data.

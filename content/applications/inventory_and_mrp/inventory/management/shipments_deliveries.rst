@@ -12,9 +12,9 @@ when coming in and out of the warehouse can vary a lot. Different settings can b
 receipts and deliveries; they do not have to be configured to have the same number of steps.
 
 .. seealso::
-   - `Using Routes (eLearning Tutorial) <https://www.odoo.com/slides/slide/using-routes-1018>`_
+   - `Using Routes (eLearning Tutorial) <https://coqui.cloud/slides/slide/using-routes-1018>`_
    - `Push & Pull Rules (eLearning Tutorial)
-     <https://www.odoo.com/slides/slide/push-pull-rules-1024>`_
+     <https://coqui.cloud/slides/slide/push-pull-rules-1024>`_
 
 Choosing the right inventory flow to handle receipts and deliveries
 ===================================================================

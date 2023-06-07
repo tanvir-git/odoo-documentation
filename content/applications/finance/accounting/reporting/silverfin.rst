@@ -56,9 +56,9 @@ One key for multiple databases (fiduciaries)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To create a new API key valid for all the databases of a single user **(the easiest for
-fiduciaries)**, navigate to `Odoo's website <https://www.odoo.com>`_  and sign in with your
+fiduciaries)**, navigate to `Odoo's website <https://coqui.cloud>`_  and sign in with your
 administrator account. Next, open `your account security settings in developer mode
-<https://www.odoo.com/my/security?debug=1>`_, click on :guilabel:`New API Key`, confirm your
+<https://coqui.cloud/my/security?debug=1>`_, click on :guilabel:`New API Key`, confirm your
 password, give a descriptive name to your new key, and copy the new API key.
 
 .. image:: silverfin/api-key-user.png

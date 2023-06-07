@@ -55,7 +55,7 @@ In case you hit the limit, you can:
   - Which apps are installed,
   - Your bounce rate: the percentage of email addresses that did not receive your emails because
     it was returned by a mail server on its way to the final recipient. You can contact the `support
-    <https://www.odoo.com/help>`_.
+    <https://coqui.cloud/help>`_.
 
 - Use your own outgoing email server to be independent of Odoo’s mail limit (please refer
   to :doc:`the corresponding documentation </applications/general/email_communication/email_servers>`),
@@ -89,7 +89,7 @@ providers implement a personalized policy of the bounce emails and it is not alw
 for Odoo to interpret it correctly.
 
 If you have this problem on a recurring basis with the same client or the same domain, please
-do not hesitate to contact `Odoo Support <https://www.odoo.com/help>`_ for help in finding a reason.
+do not hesitate to contact `Odoo Support <https://coqui.cloud/help>`_ for help in finding a reason.
 
 Note: in such case, one of the most common reasons is related to :ref:`SPF <email_communication/spf_compliant>`
 and/or :ref:`DKIM <email_communication/DKIM_compliant>` configuration.
@@ -136,7 +136,7 @@ Depending on the platform you are using:
   ``zgrep`` (for the compressed ones) to search through the files.
 
 - **Odoo Online** users won’t have access to their logs. However you can still contact
-  `Odoo Support <https://www.odoo.com/help>`_ , if you have a recurring issue
+  `Odoo Support <https://coqui.cloud/help>`_ , if you have a recurring issue
   with the same client or domain.
 
 Get help from support

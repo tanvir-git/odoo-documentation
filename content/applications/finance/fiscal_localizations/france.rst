@@ -366,7 +366,7 @@ Getting compliant with Odoo is very easy.
 Your company is requested by the tax administration to deliver a certificate
 of conformity testifying that your software complies with the anti-fraud
 legislation. This certificate is granted by Odoo SA to Odoo Enterprise users
-`here <https://www.odoo.com/my/contract/french-certification/>`_.
+`here <https://coqui.cloud/my/contract/french-certification/>`_.
 If you use Odoo Community, you should :doc:`upgrade to Odoo Enterprise
 </administration/maintain/enterprise>` or contact your Odoo service provider.
 
@@ -382,7 +382,7 @@ To get the certification, just follow the following steps:
   encrypted for the inalterability check. To edit your company’s data,
   go to :menuselection:`Settings --> Users & Companies --> Companies`.
   Select a country from the list; Do not create a new country.
-- Download the mandatory certificate of conformity delivered by Odoo SA `here <https://www.odoo.com/my/contract/french-certification/>`__.
+- Download the mandatory certificate of conformity delivered by Odoo SA `here <https://coqui.cloud/my/contract/french-certification/>`__.
 
 .. note::
 

@@ -9,7 +9,7 @@ Timesheets
 
 .. seealso::
    - `Odoo Tutorials: Project and Timesheets
-     <https://www.odoo.com/slides/project-and-timesheets-21>`_
+     <https://coqui.cloud/slides/project-and-timesheets-21>`_
 
 .. toctree::
    :titlesonly:

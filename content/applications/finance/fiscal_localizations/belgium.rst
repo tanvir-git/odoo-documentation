@@ -148,7 +148,7 @@ IoT Box
 *******
 
 In order to use a Fiscal Data Module, you need a registered IoT Box. To register your IoT box, you
-must contact us through our `support contact form <https://www.odoo.com/help>`_ and provide the
+must contact us through our `support contact form <https://coqui.cloud/help>`_ and provide the
 following information:
 
 - your VAT number;

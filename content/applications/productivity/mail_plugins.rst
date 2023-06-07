@@ -54,4 +54,4 @@ select a package.
 
 .. seealso::
    - :doc:`../general/in_app_purchase`
-   - `Odoo Tutorials: Lead Enrichment <https://www.odoo.com/r/p73>`_
+   - `Odoo Tutorials: Lead Enrichment <https://coqui.cloud/r/p73>`_

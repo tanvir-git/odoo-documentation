@@ -8,7 +8,7 @@ Odoo can synchronize directly with your bank institution to get all bank stateme
 automatically into your database.
 
 To check if your bank is compatible with Odoo, go to `Odoo Accounting Features
-<https://www.odoo.com/page/accounting-features>`_, and click on
+<https://coqui.cloud/page/accounting-features>`_, and click on
 :guilabel:`See list of supported institutions`.
 
 Odoo supports more than 25,000 institutions around the world.
@@ -95,7 +95,7 @@ Issues
 Synchronization in error
 ------------------------
 
-To report a connection error to the `Odoo support <https://www.odoo.com/help>`_, go to
+To report a connection error to the `Odoo support <https://coqui.cloud/help>`_, go to
 :menuselection:`Accounting Dashboard--> Configuration --> Accounting: Online Synchronization`,
 select the connection that failed, and copy the error description and the reference.
 
@@ -107,7 +107,7 @@ If your connection with the proxy is disconnected, you can reconnect with the pr
 
 .. note::
    This disconnection can be caused by the Odoo support. In this case, please contact the `support
-   <https://www.odoo.com/help>`_ directly with your client id or the reference of the error listed
+   <https://coqui.cloud/help>`_ directly with your client id or the reference of the error listed
    in the chatter.
 
 .. _MigrationOnlineSync:
@@ -192,7 +192,7 @@ click on the :guilabel:`Fetch Account` button on the connection.
 There may also be no new transactions.
 
 If your bank account is properly linked to a journal and posted transactions are not visible in your
-database, please `submit a support ticket <https://www.odoo.com/help>`_.
+database, please `submit a support ticket <https://coqui.cloud/help>`_.
 
 How can I update my bank credentials?
 -------------------------------------

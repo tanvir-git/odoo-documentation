@@ -17,8 +17,8 @@ products and increase your average cart sizes.
 
 .. seealso::
    - :doc:`Website Documentation <website>`
-   - `Odoo Tutorials: Website <https://www.odoo.com/slides/website-25>`_
-   - `Odoo Tutorials: eCommerce <https://www.odoo.com/slides/ecommerce-26>`_
+   - `Odoo Tutorials: Website <https://coqui.cloud/slides/website-25>`_
+   - `Odoo Tutorials: eCommerce <https://coqui.cloud/slides/ecommerce-26>`_
 
 .. toctree::
    :titlesonly:
