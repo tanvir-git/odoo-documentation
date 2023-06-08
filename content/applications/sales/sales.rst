@@ -7,11 +7,11 @@
 Sales
 =====
 
-**Odoo Sales** is the application to run your sales process (from quotation to sales order) and
+**CoquiAPPs Sales** is the application to run your sales process (from quotation to sales order) and
 deliver and invoice what has been sold.
 
 .. seealso::
-   - `Odoo Tutorials: Sales Tutorials <https://coqui.cloud/slides/sales-17>`_
+   - `CoquiAPPs Tutorials: Sales Tutorials <https://coqui.cloud/slides/sales-17>`_
 
 .. toctree::
    :titlesonly:

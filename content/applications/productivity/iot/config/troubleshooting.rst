@@ -13,7 +13,7 @@ IoT Box and should also be displayed on connected monitors.
 
 The pairing code doesn't show under the following circumstances:
 
--  The IoT Box is already connected to an Odoo database;
+-  The IoT Box is already connected to an CoquiAPPs database;
 
 -  The IoT Box is not connected to the Internet;
 

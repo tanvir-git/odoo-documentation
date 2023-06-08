@@ -2,11 +2,11 @@
 Log in with employee
 ====================
 
-With Odoo *Point of Sale*, you can manage multiple cashiers. This
+With CoquiAPPs *Point of Sale*, you can manage multiple cashiers. This
 feature allows you to keep track of who is working, when and how much
 each cashier made for that session.
 
-There are three ways to switch cashiers in Odoo: by *selecting the
+There are three ways to switch cashiers in CoquiAPPs: by *selecting the
 cashier*, by *entering a PIN code* or by *scanning a barcode*.
 
 .. note::

@@ -4,7 +4,7 @@ Invoice based on delivered or ordered quantities
 
 Different business policies might require different options for invoicing:
 
-- The **Invoice what is ordered** rule is used as **default mode** in Odoo Sales, which means that
+- The **Invoice what is ordered** rule is used as **default mode** in CoquiAPPs Sales, which means that
   customers will be invoiced once the sales order is confirmed.
 
 - The **Invoice what is delivered** rule will invoice customers once the delivery is done. This rule
@@ -24,7 +24,7 @@ the rule you want to apply.
 .. image:: invoicing_policy/invoicing_policy_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to choose your invoicing policy on Odoo Sales?
+   :alt: How to choose your invoicing policy on CoquiAPPs Sales?
 
 .. important::
    If you decide to choose the **Invoice what is delivered** rule, you will not be able to
@@ -40,12 +40,12 @@ manually changed.
 .. image:: invoicing_policy/invoicing_policy_5.png
    :align: center
    :class: img-thumbnail
-   :alt: How to change your invoicing policy on a product form on Odoo Sales?
+   :alt: How to change your invoicing policy on a product form on CoquiAPPs Sales?
 
 Impact on sales flow
 ====================
 
-On Odoo Sales, the basic sales flow will be to create a quotation, send it to your customer,
+On CoquiAPPs Sales, the basic sales flow will be to create a quotation, send it to your customer,
 wait for confirmation, confirm the sales order and create an invoice.
 
 - **Invoice what is ordered**: No impact on this basic sales flow. Indeed, you can invoice as soon
@@ -59,7 +59,7 @@ wait for confirmation, confirm the sales order and create an invoice.
 
   .. image:: invoicing_policy/invoicing_policy_3.png
      :class: img-thumbnail
-     :alt: How the choice of your invoicing policy impacts your sales flow on Odoo Sales?
+     :alt: How the choice of your invoicing policy impacts your sales flow on CoquiAPPs Sales?
 
 .. note::
    Once the quotation is confirmed and that the status went from **Quotation sent** to
@@ -69,9 +69,9 @@ wait for confirmation, confirm the sales order and create an invoice.
    .. image:: invoicing_policy/invoicing_policy_4.png
       :align: center
       :class: img-thumbnail
-      :alt: How to see your delivered and invoiced quantities on Odoo Sales?
+      :alt: How to see your delivered and invoiced quantities on CoquiAPPs Sales?
 
-   Odoo will automatically add the quantities to the invoice (even if it is a partial delivery).
+   CoquiAPPs will automatically add the quantities to the invoice (even if it is a partial delivery).
 
 Finally, to create an invoice, you will have different possibilities: regular invoice or down
 payment (percentage or fixed amount).

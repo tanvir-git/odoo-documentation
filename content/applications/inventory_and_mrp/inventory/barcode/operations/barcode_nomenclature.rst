@@ -12,7 +12,7 @@ price accordingly.
 Create a Barcode Nomenclature
 =============================
 
-Odoo supports Barcode Nomenclatures, which determine the mapping and
+CoquiAPPs supports Barcode Nomenclatures, which determine the mapping and
 interpretation of the encoded information. You can configure your barcode nomenclature being in
 :ref:`developer mode <developer-mode>`.
 To do so, go to :menuselection:`Inventory --> Configuration --> Barcode Nomenclature`.
@@ -58,7 +58,7 @@ Configure your Product
 
 In case you weight 1,5 Kg of pasta, the balance will print you the
 following barcode 2112345015002. If you scan this barcode in your POS or
-when receiving products in your barcode application, Odoo will
+when receiving products in your barcode application, CoquiAPPs will
 automatically create a new line for the Pasta product for a quantity of
 1.5 Kg. For the point of sale, a price depending on the quantity will
 also be computed.

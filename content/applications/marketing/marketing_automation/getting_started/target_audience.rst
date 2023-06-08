@@ -3,7 +3,7 @@ Target an audience
 ==================
 
 Delivering marketing campaigns to the *right* audience is paramount when trying to grow a business.
-The :guilabel:`Odoo Marketing Automation` application helps marketers to do just that by providing
+The :guilabel:`CoquiAPPs Marketing Automation` application helps marketers to do just that by providing
 filtering tools, that can be as simple or as complex as necessary, to reach the right customers at
 the right time.
 
@@ -75,12 +75,12 @@ the default :guilabel:`ID` from the first portion of the second filter equation,
 Once again, leave the second portion of the filter equation on :guilabel:`= (equal sign)`.
 
 Lastly, highlight the default value in the third (and final) portion of the second filter equation
-and type in :guilabel:`New`. With that completed, Odoo will only target opportunities that are in
+and type in :guilabel:`New`. With that completed, CoquiAPPs will only target opportunities that are in
 the "New" stage of the pipeline.
 
 .. image:: target_audience/filters-opportunities.png
    :align: center
-   :alt: A standard scenario using filters in the Odoo Marketing Automation app.
+   :alt: A standard scenario using filters in the CoquiAPPs Marketing Automation app.
 
 Scenario #2: Narrow the target down to the event attendees that purchased a specific ticket
 -------------------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ Click the the default :guilabel:`= (equal sign)` in the second portion of the fi
 This reveals a drop-down menu. On this menu, select :guilabel:`contains`.
 
 In the third (and final) empty portion of the filter equation, type in the name of the event(s)
-that you would like Odoo to consider for this campaign filter.
+that you would like CoquiAPPs to consider for this campaign filter.
 
 Add another node to this filter by clicking the :guilabel:`+ (plus sign)` to the right of the
 equation.
@@ -118,4 +118,4 @@ in the name of the ticket type that should be used for the filter. In this case,
 
 .. image:: target_audience/filters-event-ticket.png
    :align: center
-   :alt: An event ticket filter in the Odoo Marketing Automation application.
+   :alt: An event ticket filter in the CoquiAPPs Marketing Automation application.

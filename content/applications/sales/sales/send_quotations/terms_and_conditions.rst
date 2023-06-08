@@ -5,7 +5,7 @@ Add terms & conditions
 Specifying terms and conditions is essential to set out important contractual points such as payment
 terms, limitation of liability and delivery terms between customers and sellers. Every seller must
 declare all formal information concerning products and company policy. On the other hand, each
-customer must take note of all these conditions before committing to anything. With Odoo Sales, it
+customer must take note of all these conditions before committing to anything. With CoquiAPPs Sales, it
 is very easy to include your default terms and conditions on every quotation, sales order, and
 invoice that you manage.
 
@@ -21,7 +21,7 @@ Go to :menuselection:`Accounting --> Configuration --> Settings` and activate
 .. image:: terms_and_conditions/terms_conditions_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable Default Terms & Conditions on Odoo Sales?
+   :alt: How to enable Default Terms & Conditions on CoquiAPPs Sales?
 
 .. note::
    Please note that this feature is activated via the settings of the **Invoicing App** and **not**
@@ -37,7 +37,7 @@ and conditions.
 .. image:: terms_and_conditions/terms_conditions_2.png
    :align: center
    :class: img-thumbnail
-   :alt: Default Terms & Conditions on quotation on Odoo Sales
+   :alt: Default Terms & Conditions on quotation on CoquiAPPs Sales
 
 They appear subsequently on every quotation, sales order, and invoice.
 
@@ -50,7 +50,7 @@ templates. This is interesting if you have different terms and conditions within
 .. image:: terms_and_conditions/terms_conditions_3.png
    :align: center
    :class: img-thumbnail
-   :alt: Add Default Terms & Conditions to your quotation templates on Odoo Sales
+   :alt: Add Default Terms & Conditions to your quotation templates on CoquiAPPs Sales
 
 .. important::
    Be sure to check out our documentation about quotation templates: :doc:`quote_template`,
@@ -63,7 +63,7 @@ GT&C on your website
 --------------------
 
 Use the **Website App** and create your own general terms and conditions page. For example, here is
-the Odoo terms and conditions page:
+the CoquiAPPs terms and conditions page:
 
 .. image:: terms_and_conditions/terms_conditions_4.png
    :align: center
@@ -72,7 +72,7 @@ the Odoo terms and conditions page:
 
 You can refer to this page in the footer of all your documents. The layout is available in the
 **General Settings** under the **Business Documents** category. For example, this footer appears
-in every document from Odoo.
+in every document from CoquiAPPs.
 
 .. image:: terms_and_conditions/terms_conditions_7.png
    :align: center
@@ -109,7 +109,7 @@ There, you can put your general terms & conditions.
    To customize your email templates, activate the **developer mode** and
    go to :menuselection:`Settings --> Technical --> Email --> Templates`.
 
-With Odoo Sales it is now very simple to deal with terms & conditions.
+With CoquiAPPs Sales it is now very simple to deal with terms & conditions.
 
 .. seealso::
    - :doc:`quote_template`

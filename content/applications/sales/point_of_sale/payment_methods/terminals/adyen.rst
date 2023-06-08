@@ -43,7 +43,7 @@ your **Adyen account**.
 Then, go to :menuselection:`Developers --> API credentials`. Create a new credential or click on an
 existing one.
 
-Click on :guilabel:`Generate an API key` and copy-paste that key onto the Odoo mandatory field.
+Click on :guilabel:`Generate an API key` and copy-paste that key onto the CoquiAPPs mandatory field.
 
 .. seealso::
    - `Adyen Docs - API credentials
@@ -56,13 +56,13 @@ The **Adyen Terminal Identifier** is your terminal's serial number, which is use
 hardware.
 
 To find this number, go to your **Adyen account**. Then, go to :menuselection:`Point of Sale
---> Terminals`, select the terminal to link, and copy-paste its serial number onto the Odoo
+--> Terminals`, select the terminal to link, and copy-paste its serial number onto the CoquiAPPs
 mandatory field.
 
 Set the Event URLs
 ~~~~~~~~~~~~~~~~~~
 
-For Odoo to know when a payment is made, you must set the terminal **Event URLs**. To do so,
+For CoquiAPPs to know when a payment is made, you must set the terminal **Event URLs**. To do so,
 
 #. log in to `Adyen's website <https://www.adyen.com/>`_;
 #. go to :menuselection:`Adyen's dashboard --> Point of Sale --> Terminals` and select the connected
@@ -88,7 +88,7 @@ click on :guilabel:`Send`. Once the payment is successful, the status changes to
 Successful`.
 
 .. note::
-   - | In case of connection issues between Odoo and the payment terminal, force the payment by
+   - | In case of connection issues between CoquiAPPs and the payment terminal, force the payment by
        clicking on :guilabel:`Force Done`, which allows you to validate the order.
      | This option is only available after receiving an error message informing you that the
        connection failed.

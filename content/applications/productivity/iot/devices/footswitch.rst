@@ -3,7 +3,7 @@ Connect a Footswitch
 ====================
 
 When working, it is always better to have your two hands available.
-Using Odoo’s *IoT Box* and a footswitch will allow it.
+Using CoquiAPPs’s *IoT Box* and a footswitch will allow it.
 
 In fact, you will be able to go from one screen to another and perform
 actions by using your foot and the footswitch. Really convenient, it

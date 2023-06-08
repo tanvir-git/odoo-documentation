@@ -26,7 +26,7 @@ localization:
 
 .. image:: luxembourg/modules.png
    :align: center
-   :alt: The three modules for the Luxembourgish Fiscal Localization Package on Odoo
+   :alt: The three modules for the Luxembourgish Fiscal Localization Package on CoquiAPPs
 
 .. tip::
    Installing the module :guilabel:`Luxembourg - Accounting Reports` installs all three modules at
@@ -35,7 +35,7 @@ localization:
 Standard Chart of Accounts - PCN 2020
 =====================================
 
-Odoo's :ref:`fiscal localization package <fiscal_localizations/packages>` for Luxembourg includes
+CoquiAPPs's :ref:`fiscal localization package <fiscal_localizations/packages>` for Luxembourg includes
 the current **Standard Chart of Accounts (PCN 2020)**, effective since January 2020.
 
 eCDF tax return
@@ -63,7 +63,7 @@ the fields to get a **complete annual declaration**.
 
 .. image:: luxembourg/annual-tax-report.png
    :align: center
-   :alt: Odoo Accounting (Luxembourg localization) generates an annual tax declaration.
+   :alt: CoquiAPPs Accounting (Luxembourg localization) generates an annual tax declaration.
 
 To help you complete it, you can use the information provided on the :guilabel:`Tax Report`. To do
 so, go to :menuselection:`Accounting --> Report --> Audit Reports --> Tax Report`, then click on the
@@ -85,7 +85,7 @@ FAIA (SAF-T)
 the exchange of information between the taxpayers' accounting system and the tax office. It is the
 Luxembourgish version of the OECD-recommended SAF-T (Standard Audit File for Tax).
 
-Odoo can generate an XML file that contains all the content of an accounting period according to the
+CoquiAPPs can generate an XML file that contains all the content of an accounting period according to the
 rules imposed by the Luxembourg tax authorities on digital audit files.
 
 .. note::

@@ -22,7 +22,7 @@ One situation where this would be useful is when using either a :abbr:`FIFO (Fir
 where the products that are being picked need to be selected based on their receipt date or
 expiration date.
 
-Odoo is configured by default to :ref:`receive and deliver goods in one step
+CoquiAPPs is configured by default to :ref:`receive and deliver goods in one step
 <inventory/receipts_delivery_one_step>`, so the settings need to be changed in order to utilize
 two-step receipts and deliveries. Incoming and outgoing shipments do not need to be set to have the
 same steps. For example, products can be received in two steps, but shipped in one step. In the
@@ -182,7 +182,7 @@ delivery order will only change to :guilabel:`Ready` once the picking has been m
    :alt: Ready status for the pick operation while the delivery operation is Waiting Another
          Operation.
 
-Click on the picking delivery order to begin processing it. If the product is in stock, Odoo will
+Click on the picking delivery order to begin processing it. If the product is in stock, CoquiAPPs will
 automatically reserve the product. Click :guilabel:`Validate` to mark the picking as
 :guilabel:`Done`, then the delivery order will be ready for processing. Since the documents are
 linked, the products which have been previously picked are automatically reserved on the delivery

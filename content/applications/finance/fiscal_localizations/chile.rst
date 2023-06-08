@@ -13,7 +13,7 @@ Below you can find videos with a general description of the localization, and ho
 Introduction
 ============
 
-The Chilean localization has been improved and extended in Odoo v13. In this version, the next
+The Chilean localization has been improved and extended in CoquiAPPs v13. In this version, the next
 modules are available:
 
 - **l10n_cl:** Adds accounting features for the Chilean localization, which represent the minimal
@@ -33,14 +33,14 @@ Install the Chilean localization modules
 
 For this, go to *Apps* and search for Chile. Then click *Install* in the module **Chile
 E-invoicing**. This module has a dependency with **Chile - Accounting**. In case this last
-one is not installed, Odoo installs it automatically with E-invoicing.
+one is not installed, CoquiAPPs installs it automatically with E-invoicing.
 
 .. image:: chile/Chile01.png
    :align: center
-   :alt: Chilean module to install on Odoo.
+   :alt: Chilean module to install on CoquiAPPs.
 
 .. note::
-   When you install a database from scratch selecting Chile as country, Odoo will automatically
+   When you install a database from scratch selecting Chile as country, CoquiAPPs will automatically
    install the base module: Chile - Accounting.
 
 
@@ -53,13 +53,13 @@ Invoice, the easiest way to configure it is in
 :menuselection:`Accounting --> Settings --> Chilean Localization`.
 
 .. important::
-   All the following configuration and functionality is only available in Odoo if your
+   All the following configuration and functionality is only available in CoquiAPPs if your
    company already passed the `Certification process <https://www.sii.cl/factura_electronica/
    factura_mercado/proceso_certificacion.htm>`_
    in the SII - Sistema de Facturación de Mercado, this certification enables you to
    generate electronic invoices from your ERP and send them automatically to the SII.
    If your company has not passed this certification yet, make sure you communicate this
-   to your Account Manager as a special process outside Odoo is required in order to complete
+   to your Account Manager as a special process outside CoquiAPPs is required in order to complete
    this certification.
 
 Fiscal Information
@@ -95,7 +95,7 @@ crucial to define the DTE incoming email server, considering this configuration:
 
 .. tip::
    For your Go-live make sure you archive/remove from your inbox all the emails
-   related to vendor bills that are not required to be processed in Odoo.
+   related to vendor bills that are not required to be processed in CoquiAPPs.
 
 Certificate
 ~~~~~~~~~~~
@@ -217,7 +217,7 @@ Fiscal Positions
 ~~~~~~~~~~~~~~~~
 
 Based on the purchase transactions, the VAT can have different affections. This will be done
-in Odoo using the default purchase fiscal positions.
+in CoquiAPPs using the default purchase fiscal positions.
 
 
 Document Types
@@ -264,7 +264,7 @@ Usage
 Sales
 *****
 
-Sales Journals in Odoo usually represent a business unit or location, example:
+Sales Journals in CoquiAPPs usually represent a business unit or location, example:
 
 - Ventas Santiago.
 - Ventas Valparaiso.
@@ -331,7 +331,7 @@ detail on how to acquire the CAF.
 Configuration
 ~~~~~~~~~~~~~
 
-Once you have the CAF files you need to associate them with a document type in Odoo,
+Once you have the CAF files you need to associate them with a document type in CoquiAPPs,
 in order to add a CAF, just follow these steps:
 
 1. Access to :menuselection:`Accounting --> Settings --> CAF`
@@ -398,7 +398,7 @@ from a sales order, proceed to validate the invoice. After the invoice is posted
      :align: center
      :alt: DTE XML File displayed in chatter.
 
-The DTE Status is updated automatically by Odoo with a scheduled action that runs every day
+The DTE Status is updated automatically by CoquiAPPs with a scheduled action that runs every day
 at night, if you need to get the response from the SII immediately you can do it manually as well.
 The DTE status workflow is as follows:
 
@@ -412,7 +412,7 @@ The DTE status workflow is as follows:
    check the details the SII sent back by email. The DTE status is updated to Ask for Status.
 
 
-2. Once the SII response is received Odoo updates the DTE Status, in case you want to do it
+2. Once the SII response is received CoquiAPPs updates the DTE Status, in case you want to do it
    manually just click on the button: Verify on SII. The result can either be Accepted, Accepted
    With Objection or Rejected.
 
@@ -444,7 +444,7 @@ The DTE status workflow is as follows:
 
    **Rejected:** Indicates the information in the invoice is incorrect and needs to be corrected,
    the detail of the issue is received in the emails you registered in the SII, if it is properly
-   configured in Odoo, the details are also retrieved in the chatter once the email server is
+   configured in CoquiAPPs, the details are also retrieved in the chatter once the email server is
    processed.
 
    If the invoice is Rejected please follow this steps:
@@ -464,7 +464,7 @@ Crossed references
 When the Invoice is created as a result of another fiscal document, the information related to the
 originator document must be registered in the Tab Cross Reference, which is commonly used for
 credit or debit notes, but in some cases can be used on Customer Invoices as well. In the case of
-the credit and debit notes, they are set automatically by Odoo:
+the credit and debit notes, they are set automatically by CoquiAPPs:
 
 .. image:: chile/Chile21.png
    :align: center
@@ -481,7 +481,7 @@ fiscal elements that indicate that the document is fiscally valid:
    :alt: Barcode and fiscal elements in the invoice report.
 
 .. important::
-   If you are hosted in Odoo SH or On-Premise, you should manually install the ``pdf417gen``
+   If you are hosted in CoquiAPPs SH or On-Premise, you should manually install the ``pdf417gen``
    library. Use the following command to install it: ``pip install pdf417gen``.
 
 Commercial Validation
@@ -503,7 +503,7 @@ Once the invoice has been sent to the customer:
 Processed for Claimed invoices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once the invoice has been Accepted by the SII **it can not be cancelled in Odoo**. In case you get
+Once the invoice has been Accepted by the SII **it can not be cancelled in CoquiAPPs**. In case you get
 a Claim for your customer the correct way to proceed is with a Credit Note to either cancel the
 Invoice or correct it. Please refer to the :ref:`chile/credit-notes` section for more details.
 
@@ -545,7 +545,7 @@ you might have and which is the related solution.
   *Hint:* This error indicates that most likely, your company has not passed the `Certification
   process <https://www.sii.cl/factura_electronica/factura_mercado/proceso_certificacion.htm>`_ in
   the SII - Sistema de Facturación de Mercado. If this is the case, please contact your Account
-  Manager or Customer Support as this certification is not part of the the Odoo services, but we
+  Manager or Customer Support as this certification is not part of the the CoquiAPPs services, but we
   can give you some alternatives.
 
 .. _chile/credit-notes:
@@ -590,7 +590,7 @@ the SII reference Code is automatically set to: Corrige el monto del Documento d
    :align: center
    :alt: Partial refund to correct text including the corrected value.
 
-Odoo creates a Credit Note with the corrected text in an invoice and price 0.
+CoquiAPPs creates a Credit Note with the corrected text in an invoice and price 0.
 
 .. image:: chile/Chile28.png
    :align: center
@@ -632,7 +632,7 @@ need to select option 3 in the field Reference code SII:
    :alt: Debit note for partial refund to crrect amounts, using the SII reference code 3.
 
 
-In this case Odoo automatically includes the source invoice in the cross reference section:
+In this case CoquiAPPs automatically includes the source invoice in the cross reference section:
 
 .. image:: chile/Chile32.png
    :align: center
@@ -706,7 +706,7 @@ Guide`.
 
 .. note::
    *Chile - E-Invoicing Delivery Guide* has a dependency with *Chile - Facturación Electrónica*.
-   Odoo will install the dependency automatically when the Delivery Guide module is installed.
+   CoquiAPPs will install the dependency automatically when the Delivery Guide module is installed.
 
 The Delivery Guide module includes sending the DTE to SII and the stamp in PDF reports for
 deliveries.
@@ -724,7 +724,7 @@ Verify the following important information in the *Price for the Delivery Guide*
 
 - :guilabel:`From Sales Order`: Delivery Guide takes the product price from the Sales Order and
   shows it on the document.
-- :guilabel:`From Product Template`: Odoo takes the price configured in the product template and
+- :guilabel:`From Product Template`: CoquiAPPs takes the price configured in the product template and
   shows it on the document.
 - :guilabel:`No show price`: no price is shown in the Delivery Guide.
 
@@ -746,11 +746,11 @@ showing the following:
 
 .. image:: chile/chile44.png
    :align: center
-   :alt: An example sequence error when creating a Delivery Guide in Odoo
+   :alt: An example sequence error when creating a Delivery Guide in CoquiAPPs
 
-This warning message means the user needs to indicate the next sequence number Odoo has to take to
+This warning message means the user needs to indicate the next sequence number CoquiAPPs has to take to
 generate the Delivery Guide, and only only happens the *first time* a Delivery Guide is created in
-Odoo. After the first document has been correctly generated, Odoo takes the CAFs next available
+CoquiAPPs. After the first document has been correctly generated, CoquiAPPs takes the CAFs next available
 number to generate the following Delivery Guide and so on.
 
 After the Delivery Guide is created:
@@ -762,7 +762,7 @@ After the Delivery Guide is created:
    :align: center
    :alt: DTE Status in SII and creation of DTE/XML
 
-The DTE Status is automatically updated by Odoo with a scheduled action that runs every day at
+The DTE Status is automatically updated by CoquiAPPs with a scheduled action that runs every day at
 night. To get a response from the SII immediately, press the :guilabel:`Send now to SII` button.
 
 Once the Delivery Guide is sent, it may then be printed by clicking on the :guilabel:`Print
@@ -780,7 +780,7 @@ To install the Electronic Receipt module, go to :menuselection:`Apps` and search
 Electronic Receipt`.
 
 .. note::
-   *Chile - Electronic Receipt* has a dependency with *Chile - Facturación Electrónica*. Odoo will
+   *Chile - Electronic Receipt* has a dependency with *Chile - Facturación Electrónica*. CoquiAPPs will
    install the dependency automatically when the E-invoicing Delivery Guide module is installed.
 
 This module contains the electronic receipt and daily sales report, which are automatically sent to
@@ -826,7 +826,7 @@ After the receipt is posted:
    :align: center
    :alt: DTE status in SII and creation of DTE/XML
 
-The DTE Status is automatically updated by Odoo with a scheduled action that runs every day at
+The DTE Status is automatically updated by CoquiAPPs with a scheduled action that runs every day at
 night. To get a response from the SII immediately, press the :guilabel:`Send now to SII` button.
 
 Please refer to the :ref:`DTE Workflow <chile/electronic-invoice-validation>` for Electronic
@@ -862,10 +862,10 @@ receipts in it. The report will also have an answer from the SII if it was accep
    the Electronic Receipt.
 
    If a Daily Sales Report has already been created for a specific day in another system, the daily
-   report in Odoo will be rejected due to the sequence number used. If that is the case, the user
+   report in CoquiAPPs will be rejected due to the sequence number used. If that is the case, the user
    has to manually click on :guilabel:`Retry` in order for a new sequence number to be generated
-   (this action is automatically done by Odoo). Afterwards, users can manually verify report status
-   with SII or wait for Odoo to update status later at night.
+   (this action is automatically done by CoquiAPPs). Afterwards, users can manually verify report status
+   with SII or wait for CoquiAPPs to update status later at night.
 
 Financial Reports
 =================

@@ -5,7 +5,7 @@ Silverfin integration
 `Silverfin <https://www.silverfin.com>`_ is a third-party service provider that offers a cloud
 platform for accountants.
 
-Odoo and Silverfin provide an integration to automate the synchronization of data.
+CoquiAPPs and Silverfin provide an integration to automate the synchronization of data.
 
 Configuration
 =============
@@ -13,18 +13,18 @@ Configuration
 To configure this integration, you need to input the following data into your Silverfin account:
 
 - user's email address
-- :ref:`Odoo API key <silverfin/api-key>`
-- URL of the Odoo database
-- name of your Odoo database
+- :ref:`CoquiAPPs API key <silverfin/api-key>`
+- URL of the CoquiAPPs database
+- name of your CoquiAPPs database
 
 .. _silverfin/api-key:
 
-Odoo API key
+CoquiAPPs API key
 ------------
 
-You can create Odoo external API keys either :ref:`for a single database <silverfin/api-singledb>`
-(hosting: Odoo Online, On-premise, and Odoo.sh) or :ref:`for multiple databases managed by a user
-<silverfin/api-multipledb>` (hosting: Odoo Online).
+You can create CoquiAPPs external API keys either :ref:`for a single database <silverfin/api-singledb>`
+(hosting: CoquiAPPs Online, On-premise, and CoquiAPPs.sh) or :ref:`for multiple databases managed by a user
+<silverfin/api-multipledb>` (hosting: CoquiAPPs Online).
 
 .. important::
    - These API keys are personal and provide full access to your user account. Store it securely.
@@ -45,7 +45,7 @@ key`, confirm your password, give a descriptive name to your new key, and copy t
 
 .. image:: silverfin/api-key-db.png
    :align: center
-   :alt: creation of an Odoo external API key for a database
+   :alt: creation of an CoquiAPPs external API key for a database
 
 .. seealso::
    :ref:`api/external_api/keys`
@@ -56,11 +56,11 @@ One key for multiple databases (fiduciaries)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To create a new API key valid for all the databases of a single user **(the easiest for
-fiduciaries)**, navigate to `Odoo's website <https://coqui.cloud>`_  and sign in with your
+fiduciaries)**, navigate to `CoquiAPPs's website <https://coqui.cloud>`_  and sign in with your
 administrator account. Next, open `your account security settings in developer mode
 <https://coqui.cloud/my/security?debug=1>`_, click on :guilabel:`New API Key`, confirm your
 password, give a descriptive name to your new key, and copy the new API key.
 
 .. image:: silverfin/api-key-user.png
    :align: center
-   :alt: creation of an Odoo external API key for an Odoo user
+   :alt: creation of an CoquiAPPs external API key for an CoquiAPPs user

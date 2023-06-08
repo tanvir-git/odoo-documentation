@@ -12,7 +12,7 @@ Below you can find videos with a general description of the localization, and ho
 Introduction
 ============
 
-Electronic invoicing for Colombia is available from Odoo 12 and
+Electronic invoicing for Colombia is available from CoquiAPPs 12 and
 requires the next modules:
 
 #. **l10n_co**: All the basic data to manage the accounting module,
@@ -66,7 +66,7 @@ CSC (Carvajal Servicios de Comunicación)
 
 CSC is the default for new databases.
 
-Once that Odoo and Carvajal are fully configured and ready for
+Once that CoquiAPPs and Carvajal are fully configured and ready for
 production the testing environment can be disabled.
 
 Configure your report data
@@ -99,7 +99,7 @@ have to have their identification number and document type set:
    :align: center
 
 .. tip:: When the document type is RUT the identification number needs
-   to be configured in Odoo including the verification digit, Odoo
+   to be configured in CoquiAPPs including the verification digit, CoquiAPPs
    will split this number when the data to the third party vendor is
    sent.
 
@@ -141,7 +141,7 @@ Journals
 
 Once the DIAN has assigned the official sequence and prefix for the
 electronic invoice resolution, the Sales journals related to your
-invoice documents need to be updated in Odoo.  The sequence can be
+invoice documents need to be updated in CoquiAPPs.  The sequence can be
 accessed using the :ref:`developer mode <developer-mode>`: :menuselection:`Accounting -->
 Settings --> Configuration Setting --> Journals`.
 
@@ -157,7 +157,7 @@ should be configured and synchronized with the CEN Financiero.
 Users
 ~~~~~
 
-The default template that is used by Odoo on the invoice PDF includes
+The default template that is used by CoquiAPPs on the invoice PDF includes
 the job position of the salesperson, so these fields should be
 configured:
 

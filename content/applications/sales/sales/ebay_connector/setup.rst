@@ -1,5 +1,5 @@
 ==============================
-How to configure eBay in Odoo?
+How to configure eBay in CoquiAPPs?
 ==============================
 
 Create eBay tokens
@@ -16,9 +16,9 @@ by clicking on the adequate buttons.
 After the creation of the keys, you can get the user token. To do so, click on
 the **Get a User Token** link in the bottom of the page. Go through the form,
 log in with you eBay account and you will get the keys and token needed to
-configure the module in Odoo.
+configure the module in CoquiAPPs.
 
-Set up tokens in Odoo?
+Set up tokens in CoquiAPPs?
 ======================
 
 To set up the eBay integration, go to :menuselection:`Sales --> Configuration --> Settings`.
@@ -43,7 +43,7 @@ Since September 2021, **eBay requires supporting customer account deletion/closu
 As such, when eBay receives an account request for deletion, all eBay partners must confirm the
 reception of the request and take further action if necessary.
 
-Odoo has a notification endpoint to receive those notifications, confirm the reception of the
+CoquiAPPs has a notification endpoint to receive those notifications, confirm the reception of the
 request, and handle the first set of actions to anonymize the account details in **Contacts** and
 remove the customer's access to the portal.
 
@@ -54,7 +54,7 @@ remove the customer's access to the portal.
 
 .. _ebay/retrieve-endpoint-details:
 
-Retrieve endpoint details from Odoo
+Retrieve endpoint details from CoquiAPPs
 -----------------------------------
 
 The endpoint details can be found in :menuselection:`Sales --> Configuration --> Settings --> eBay`.
@@ -62,7 +62,7 @@ Click on *Generate Token* to retrieve your **Verification Token**.
 
 .. image:: setup/verification-token.png
    :align: center
-   :alt: Button to generate an eBay verification token in Odoo
+   :alt: Button to generate an eBay verification token in CoquiAPPs
 
 .. _ebay/subscribe-account-deletion-notifications:
 
@@ -81,7 +81,7 @@ To subscribe to deletion/closure notifications, eBay needs a few details:
 - An **email address** to send notifications to if the endpoint is unreachable.
 - The **endpoint details**:
 
-  - The URL to Odoo's account deletion notification endpoint
+  - The URL to CoquiAPPs's account deletion notification endpoint
   - A verification token
 
 .. image:: setup/ebay-notification-endpoint.png

@@ -5,8 +5,8 @@ Invoice Time Spent on Tickets (Postpaid Support Services)
 The :guilabel:`Timesheets` integration provides more control and transparency over how clients are
 charged, and what they're specifically billed for.
 
-In Odoo, the Helpdesk agent can use the ticket to record timesheets. Once a ticket is solved, the
-client can be billed for the time spent on the ticket. Odoo will pull from the ticket's timesheet
+In CoquiAPPs, the Helpdesk agent can use the ticket to record timesheets. Once a ticket is solved, the
+client can be billed for the time spent on the ticket. CoquiAPPs will pull from the ticket's timesheet
 to accurately bill the client.
 
 Configuration
@@ -19,7 +19,7 @@ these changes to the Helpdesk team settings.
 
 Once the :guilabel:`Timesheets` feature is enabled, a :guilabel:`Project` drop-down option will
 appear below :guilabel:`Timesheets`. The :guilabel:`Project` drop-down option will automatically
-be set to a project that Odoo created for the Helpdesk team. The tickets' timesheets
+be set to a project that CoquiAPPs created for the Helpdesk team. The tickets' timesheets
 will be stored in the selected project.
 
 Create a sales order
@@ -65,7 +65,7 @@ Link the Helpdesk ticket to the SO
 
 To link the :guilabel:`Sales Order` to the ticket, start on the ticket form and click
 :guilabel:`Edit`. Next, select the :guilabel:`Sales Order` that was created earlier from the
-:guilabel:`Sales Order Item` drop-down menu. Odoo will automatically filter the options to only
+:guilabel:`Sales Order Item` drop-down menu. CoquiAPPs will automatically filter the options to only
 show sales orders that are connected to the ticket's customer. Lastly, click :guilabel:`Save` to
 connect the ticket and the :guilabel:`Sales Order Item`.
 
@@ -96,7 +96,7 @@ When the Helpdesk ticket is completed and the client is ready to be billed for t
 clicking the :guilabel:`Sales Order` smart button on the ticket form to navigate to the sales
 order. The :guilabel:`Delivered` column should match the number of hours recorded on the ticket's
 timesheet. After checking and filling out the relevant information, click :guilabel:`Create
-Invoice` to bill the client for the time spent on the ticket. Odoo will automatically generate an
+Invoice` to bill the client for the time spent on the ticket. CoquiAPPs will automatically generate an
 invoice to send to the client and the Helpdesk ticket can officially be closed.
 
 .. seealso::

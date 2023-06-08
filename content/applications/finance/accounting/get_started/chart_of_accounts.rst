@@ -24,7 +24,7 @@ also group them by :guilabel:`Account Type`.
 
 .. image:: chart_of_accounts/chart-of-accounts.png
    :align: center
-   :alt: Group the accounts by type in Odoo Accounting
+   :alt: Group the accounts by type in CoquiAPPs Accounting
 
 Configuration of an account
 ===========================
@@ -159,7 +159,7 @@ app-->Reporting-->Trial Balance`, then open the :guilabel:`Options` menu and sel
 
 .. image:: chart_of_accounts/trial-balance.png
    :align: center
-   :alt: Account Groups in the Trial Balance in Odoo Accounting
+   :alt: Account Groups in the Trial Balance in CoquiAPPs Accounting
 
 Allow reconciliation
 --------------------

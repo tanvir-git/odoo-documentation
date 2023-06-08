@@ -28,7 +28,7 @@ Install the Peruvian localization modules
 -----------------------------------------
 
 Go to *Apps* and search for Peru, then click Install in the module Peru EDI. This module has a
-dependency with *Peru - Accounting*. In case this last one is not installed, Odoo installs it
+dependency with *Peru - Accounting*. In case this last one is not installed, CoquiAPPs installs it
 automatically within EDI.
 
 .. image:: peru/peru-modules.png
@@ -36,7 +36,7 @@ automatically within EDI.
    :alt: The "Module" filter is set on "Peru"
 
 .. note::
-   When you install a database from scratch selecting Peru as country, Odoo automatically
+   When you install a database from scratch selecting Peru as country, CoquiAPPs automatically
    installs the base module: Peru - Accounting.
 
 Configure your company
@@ -100,15 +100,15 @@ Signature Provider
 
 As part of  the requirements for Electronic Invoice in Peru, your company needs to select a
 Signature Provider that will take care of the document signing process and manage the SUNAT
-validation response. Odoo offers three options:
+validation response. CoquiAPPs offers three options:
 
-#. IAP (Odoo In-App Purchase)
+#. IAP (CoquiAPPs In-App Purchase)
 #. Digiflow
 #. SUNAT
 
 Please refer to the sections below to check the details and considerations for each option.
 
-IAP (Odoo In-App Purchase)
+IAP (CoquiAPPs In-App Purchase)
 **************************
 
 This is the default and the suggested option, considering the digital ceritificate is included as
@@ -121,7 +121,7 @@ part of the service.
 What is the IAP?
 ^^^^^^^^^^^^^^^^
 
-This is a signature service offered directly by Odoo, the service takes care of the next process:
+This is a signature service offered directly by CoquiAPPs, the service takes care of the next process:
 
 #. Provides the Electronic invoice Certificate, so you do not need to acquire one by yourself.
 #. Send the document to the OSE, in this case, Digiflow.
@@ -130,7 +130,7 @@ This is a signature service offered directly by Odoo, the service takes care of 
 How does it work?
 ^^^^^^^^^^^^^^^^^
 
-The service requires Credits in order to process your electronic documents. Odoo provides 1000
+The service requires Credits in order to process your electronic documents. CoquiAPPs provides 1000
 credits for free in new databases. After these credits are consumed, you need to buy a Credit
 Package.
 
@@ -156,7 +156,7 @@ The credits are consumed per each document that is sent to the OSE.
 What do you need to do?
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-- In Odoo, once your enterprise contract is activated and you start working in Production, you
+- In CoquiAPPs, once your enterprise contract is activated and you start working in Production, you
   need to buy credits once the first 1000 are consumed.
 - As Digiflow is the OSE used in the IAP, you need to affiliate it as the official OSE for your
   company on the SUNAT website. This is a simple process. For more information, please check
@@ -202,7 +202,7 @@ in your configuration. In this case you need to consider:
 Testing environment
 ~~~~~~~~~~~~~~~~~~~
 
-Odoo provides a testing environment that can be activated before your company goes into production.
+CoquiAPPs provides a testing environment that can be activated before your company goes into production.
 
 When using the testing environment and the IAP signature, you don’t need to buy testing credits
 for your transactions as all of them are validated by default.
@@ -214,7 +214,7 @@ for your transactions as all of them are validated by default.
 Certificate
 ~~~~~~~~~~~
 
-In case you don’t use Odoo IAP, in order to generate the electronic invoice signature, a digital
+In case you don’t use CoquiAPPs IAP, in order to generate the electronic invoice signature, a digital
 certificate with the extension ``.pfx`` is required. Proceed to this section and load your file and
 password.
 
@@ -225,7 +225,7 @@ password.
 Multicurrency
 ~~~~~~~~~~~~~
 
-The official currency exchange rate in Peru is provided by the Bank of Peru. Odoo can connect
+The official currency exchange rate in Peru is provided by the Bank of Peru. CoquiAPPs can connect
 directly to its services and get the currency rate either automatically or manually.
 
 .. image:: peru/peru-multicurrency.png
@@ -398,7 +398,7 @@ Electronic Invoice Status
 *************************
 
 **To be Sent**: To be sent: Indicates the document is ready to be sent to the OSE, this can be
-done either automatically by Odoo with a *cron* that runs every hour, or the user can send it
+done either automatically by CoquiAPPs with a *cron* that runs every hour, or the user can send it
 immediately by clicking on the button “Sent now”.
 
 .. image:: peru/peru-sent-manual.png
@@ -424,7 +424,7 @@ corrections can be made and the invoice can be sent again.
 Common Errors
 ~~~~~~~~~~~~~
 
-There are multiple reasons behind a rejection from the OSE or the SUNAT, when this happens Odoo
+There are multiple reasons behind a rejection from the OSE or the SUNAT, when this happens CoquiAPPs
 sends a message at the top of the invoice indicating the error details and in the most common
 cases a hint to fix the issue.
 
@@ -458,7 +458,7 @@ The report includes a QR code, indicating the invoice is a valid fiscal document
 IAP Credits
 ~~~~~~~~~~~
 
-Odoo’s Electronic IAP offers 1000 credits for free, after these credits are consumed in your
+CoquiAPPs’s Electronic IAP offers 1000 credits for free, after these credits are consumed in your
 production database, your company must buy new credits in order to process your transactions.
 
 Once you run out of credits a red label is displayed at the top of the invoice indicating that
@@ -492,7 +492,7 @@ Electronic Invoice Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **To Cancel**:  Indicates the cancellation request is ready to be sent to the OSE, this can be done
-either automatically by Odoo with a *cron* that runs every hour, or the user can send it
+either automatically by CoquiAPPs with a *cron* that runs every hour, or the user can send it
 immediately by clicking on the button “Send now”. Once it is sent, a cancellation ticket is
 created, as a result the next message and CDR File are logged in the chatter:
 

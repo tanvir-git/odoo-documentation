@@ -2,7 +2,7 @@
 Marketing Automation
 ====================
 
-The Odoo Marketing Automation app automates a variety of marketing tasks by combining specific
+The CoquiAPPs Marketing Automation app automates a variety of marketing tasks by combining specific
 rules and filters to generate timed actions. Instead of manually having to build each stage of a
 campaign (such as a series of timed massmails), the Marketing Automation app allows marketers to
 build the entire campaign, and all of its stages, in one place on one dashboard.
@@ -16,7 +16,7 @@ and fields:
 
 .. image:: first_campaign/marketing-template-sample.png
    :align: center
-   :alt: A dashboard showing the creation of a new marketing automation campaign in Odoo.
+   :alt: A dashboard showing the creation of a new marketing automation campaign in CoquiAPPs.
 
 - :guilabel:`Templates`: represents the number of pre-configured mail templates being used in this
   particular campaign. (Templates can always be created on-the-fly as well).
@@ -32,12 +32,12 @@ Campaign filters
 ================
 
 To add a filter to the target audience, click :guilabel:`Add Filter`, and a node field will
-appear. In the node field, a custom equation can be configured for Odoo to use when filtering who
+appear. In the node field, a custom equation can be configured for CoquiAPPs to use when filtering who
 to include (and exclude) in this specific marketing campaign.
 
 .. image:: first_campaign/filter-node.png
    :align: center
-   :alt: A filter node in Odoo Marketing Automation.
+   :alt: A filter node in CoquiAPPs Marketing Automation.
 
 When the first field of the node is clicked, a nested drop-down menu of options appears on the
 screen where specific criteria is chosen based on needs of the campaign. The remaining fields on

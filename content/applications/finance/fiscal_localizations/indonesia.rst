@@ -18,7 +18,7 @@ NPWP/NIK settings
 
 - | **Your Company**
   | This information is used in the FAPR line in the effect file format. You need to set a VAT
-    number on the related partner of your Odoo company. If you don't, it won't be possible to create
+    number on the related partner of your CoquiAPPs company. If you don't, it won't be possible to create
     an e-Faktur from an invoice.
 - | **Your Clients**
   | You need to set the checkbox *ID PKP* to generate e-fakturs for a customer. You can use the VAT
@@ -45,7 +45,7 @@ Generate Tax Invoice Serial Number
    invoices list and click on *Action*, then on *Download e-Faktur*.
 #. After receiving new serial numbers from the Indonesian Revenue Department, you can create a set
    of tax invoice serial numbers group through this list view. You only have to specify the Min and
-   Max of each serial numbers' group and Odoo will format the number automatically to a 13-digits
+   Max of each serial numbers' group and CoquiAPPs will format the number automatically to a 13-digits
    number, as requested by the Indonesia Tax Revenue Department.
 #. There is a counter to inform you how many unused numbers are left in that group.
 
@@ -58,7 +58,7 @@ Generate e-faktur csv for a single invoice or a batch invoices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Create an invoice from :menuselection:`Accounting --> Customers --> Invoices`. If the invoice
-   customer's country is Indonesia and the customer is set as *ID PKP*, Odoo will allow you to
+   customer's country is Indonesia and the customer is set as *ID PKP*, CoquiAPPs will allow you to
    create an e-Faktur.
 #. Set a Kode Transaksi for the e-Faktur. There are constraints related to the Kode transaksi and
    the type of VAT applied to invoice lines.
@@ -66,7 +66,7 @@ Generate e-faktur csv for a single invoice or a batch invoices
    .. image:: indonesia/indonesia-kode-transaksi.png
       :align: center
 
-#. Odoo will automatically pick the next available serial number from the e-Faktur number table (see
+#. CoquiAPPs will automatically pick the next available serial number from the e-Faktur number table (see
    the :ref:`section above <localization_indonesia/tax_invoice_sn>`) and generate the e-faktur
    number as a concatenation of Kode Transaksi and serial number. You can see this from the invoice
    form view under the page *Extra Info* in the box *Electronic Tax*.
@@ -102,11 +102,11 @@ The following codes are available when generating an e-Faktur.
 Correct an invoice that has been posted and downloaded: Replace Invoice feature
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Cancel the original wrong invoice in Odoo. For instance, we will change the Kode Transakski from 01
+#. Cancel the original wrong invoice in CoquiAPPs. For instance, we will change the Kode Transakski from 01
    to 03 for the INV/2020/0001.
 #. Create a new invoice and set the canceled invoice in the *Replace Invoice* field. In this field,
    we can only select invoices in *Cancel* state from the same customer.
-#. As you validate, Odoo will automatically use the same e-Faktur serial number as the canceled and
+#. As you validate, CoquiAPPs will automatically use the same e-Faktur serial number as the canceled and
    replaced invoice replacing the third digit of the original serial number with *1* (as requested
    to upload a replacement invoice in the e-Faktur app).
 

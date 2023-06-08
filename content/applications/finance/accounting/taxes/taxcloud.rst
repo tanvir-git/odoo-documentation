@@ -33,7 +33,7 @@ Enable TaxCloud
 
    .. image:: taxcloud/taxcloud-settings.png
       :align: center
-      :alt: Filling in TaxCloud API Keys in Odoo
+      :alt: Filling in TaxCloud API Keys in CoquiAPPs
 
 Set TaxCloud categories on products
 ===================================
@@ -47,7 +47,7 @@ If you want to configure multiple products simultaneously, ensure they share the
 
 .. note::
    If you set a :guilabel:`TaxCloud Category` on a product and another on its :guilabel:`Product
-   Category`, Odoo only considers the :guilabel:`TaxCloud Category` found on the product itself.
+   Category`, CoquiAPPs only considers the :guilabel:`TaxCloud Category` found on the product itself.
 
    A :guilabel:`TaxCloud Category` set on a **parent product category** does not apply to its
    **child product categories**. For example, if you set :guilabel:`TaxCloud Category` on the *All*
@@ -108,10 +108,10 @@ click :guilabel:`Save`.
 Automatically detect the fiscal position
 ========================================
 
-Sales taxes are calculated in Odoo based on :doc:`fiscal positions <fiscal_positions>`. A fiscal
+Sales taxes are calculated in CoquiAPPs based on :doc:`fiscal positions <fiscal_positions>`. A fiscal
 position for the United States is created when enabling TaxCloud.
 
-You can configure Odoo to automatically detect to which customers the fiscal position should be
+You can configure CoquiAPPs to automatically detect to which customers the fiscal position should be
 applied. To do so, go to :menuselection:`Accounting Dashboard --> Configuration --> Accounting:
 Fiscal Positions` and select :guilabel:`Automatic Tax Mapping (TaxCloud)`. Enable :guilabel:`Detect
 Automatically` and then :guilabel:`Save`.
@@ -143,7 +143,7 @@ of the lines it impacts.
 Another unexpected behavior is possible. For example, you sell a product for which you have a
 promotion program that provides a 50% discount. If the product's tax rate is 7%, the tax rate
 computed from the TaxCloud integration displays 3.5%. This happens because the discount is included
-in the price sent to TaxCloud. However, in Odoo, the discount is on another line entirely. Still,
+in the price sent to TaxCloud. However, in CoquiAPPs, the discount is on another line entirely. Still,
 the tax computation is correct. Indeed, a 3.5% tax on the full price is the equivalent of a 7% tax
 on half the price, but this might be unexpected from a user point of view.
 

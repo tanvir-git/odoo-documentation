@@ -2,24 +2,24 @@
 Create a second warehouse
 =========================
 
-A *warehouse* is a physical building or space where items are stored. In Odoo, it is possible to set
+A *warehouse* is a physical building or space where items are stored. In CoquiAPPs, it is possible to set
 up multiple warehouses and transfer stored items between them.
 
-By default, the Odoo platform has one warehouse that is already configured, with the address set as
+By default, the CoquiAPPs platform has one warehouse that is already configured, with the address set as
 the company's address. To create a second warehouse, select :menuselection:`Configuration -->
 Warehouses`, then click :guilabel:`Create` and configure the form as follows:
 
 - :guilabel:`Warehouse`: the full name of the warehouse
 - :guilabel:`Short Name`: the abbreviated code by which the warehouse is referred to; the short name
-  for the default warehouse in Odoo is **WH**
+  for the default warehouse in CoquiAPPs is **WH**
 - :guilabel:`Company`: the company that owns the warehouse; this can be set as the company that owns
-  the Odoo database or the company of a customer or vendor
+  the CoquiAPPs database or the company of a customer or vendor
 - :guilabel:`Address`: the address where the warehouse is located
 
 .. important::
    The options below will only appear if the :guilabel:`Multi-Step Routes` checkbox is enabled in
    :menuselection:`Configuration --> Settings` under the :guilabel:`Warehouse` heading. For more
-   information about routes and how they work in Odoo, see :ref:`Using Routes and Pull/Push Rules
+   information about routes and how they work in CoquiAPPs, see :ref:`Using Routes and Pull/Push Rules
    <use-routes>`.
 
 - :guilabel:`Incoming/Outgoing Shipments`: select the routes that incoming and outgoing shipments
@@ -49,7 +49,7 @@ Add inventory to a new warehouse
 ================================
 
 If a new warehouse is created that has existing inventory in it, the inventory counts should be
-added to Odoo so that the stock listed in the Odoo database reflects what is in the physical
+added to CoquiAPPs so that the stock listed in the CoquiAPPs database reflects what is in the physical
 warehouse. To add inventory to a new warehouse, navigate to :menuselection:`Inventory -->
 Operations --> Inventory Adjustments`, and then click :guilabel:`Create`. The inventory adjustment
 form can then be filled out as follows:

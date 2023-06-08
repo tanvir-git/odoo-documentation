@@ -2,7 +2,7 @@
 Add quality controls
 ====================
 
-Use **Odoo Quality** to control the quality of products before they are registered into stock,
+Use **CoquiAPPs Quality** to control the quality of products before they are registered into stock,
 during picking operations, and when leaving the warehouse for a delivery order. By creating
 *quality control points*, manufacturers can set up quality checks that automatically trigger at
 specific points during production.
@@ -24,7 +24,7 @@ Create`. Then, fill in the following form fields, accordingly:
   Assembly`, :guilabel:`Packing`, :guilabel:`Assembly`, :guilabel:`Testing` or :guilabel:`Long time
   assembly`
 - :guilabel:`Company`: add the company that will implement the quality control point. Usually this
-  will be the company that owns the Odoo database. However, a multi-company or vendor profile can
+  will be the company that owns the CoquiAPPs database. However, a multi-company or vendor profile can
   be selected, as well, for cases where there are multiple manufacturing or engineering locations
 - :guilabel:`Control Type`: using the drop-down menu, choose from :guilabel:`All Operations`,
   :guilabel:`Randomly` or :guilabel:`Periodically` to determine how often the control point should

@@ -46,7 +46,7 @@ to your needs.
 .. important::
    - Always keep at least one **receivable account** and one **payable account** active.
    - It is also advised to **keep the accounts below active**, as they are used either as transitory
-     accounts by Odoo or are specific to the **UAE localization package**.
+     accounts by CoquiAPPs or are specific to the **UAE localization package**.
 
      .. list-table::
         :header-rows: 1
@@ -124,7 +124,7 @@ tax group, as other groups do not need closing. To do so, enable the :doc:`devel
 :guilabel:`Advance Tax payment account` for the **5%** group.
 
 .. note::
-   The :abbr:`RCM (Reverse Charge Mechanism)` is supported by Odoo.
+   The :abbr:`RCM (Reverse Charge Mechanism)` is supported by CoquiAPPs.
 
 .. image:: united_arab_emirates/uae-localization-taxes.png
    :align: center

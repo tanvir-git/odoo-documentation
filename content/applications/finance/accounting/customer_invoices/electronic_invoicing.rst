@@ -13,7 +13,7 @@ some governments for fiscal control or to facilitate the administration.
 Electronic invoicing of your documents such as customer invoices, credit notes or vendor bills is
 one of the application of EDI.
 
-Odoo supports, among others, the following formats.
+CoquiAPPs supports, among others, the following formats.
 
 .. list-table::
    :header-rows: 1
@@ -21,7 +21,7 @@ Odoo supports, among others, the following formats.
    * - Format Name
      - Applicability
    * - Factur-X (CII)
-     - Default format on Odoo (enabled by default)
+     - Default format on CoquiAPPs (enabled by default)
    * - Peppol BIS Billing 3.0 (UBL)
      - For companies whose countries are part of the `EAS list
        <https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/>`_
@@ -76,7 +76,7 @@ visible in the attachment section, or embedded in the PDF.
      automatically included in the PDF document that is sent.
    - The formats available depend on the country registered in your company's :guilabel:`General
      Information`.
-   - Odoo supports the **Peppol BIS Billing 3.0** format that can be used via existing access
+   - CoquiAPPs supports the **Peppol BIS Billing 3.0** format that can be used via existing access
      points.
 
 Add new formats to a database created before July 2022

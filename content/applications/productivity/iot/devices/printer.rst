@@ -2,10 +2,10 @@
 Connect a Printer
 =================
 
-When using your *IoT Box* in Odoo, you could need to use a printer.
+When using your *IoT Box* in CoquiAPPs, you could need to use a printer.
 Doing so is easy and convenient as it can be done in a few steps. Then,
 you can use it to print receipts, orders or even reports in different
-Odoo apps.
+CoquiAPPs apps.
 
 Connection
 ==========

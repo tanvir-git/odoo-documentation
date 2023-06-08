@@ -27,7 +27,7 @@ To access the ticket or lead created from the chat, click on the shortcut link.
 
 .. image:: responses/create_ticket.png
    :align: center
-   :alt: View of the chat window with a helpdesk ticket created in Odoo Live Chat
+   :alt: View of the chat window with a helpdesk ticket created in CoquiAPPs Live Chat
 
 .. tip::
    Helpdesk tickets created from the chat automatically add the conversation as a description of
@@ -42,7 +42,7 @@ Send canned responses
 
 .. image:: responses/canned_response.png
    :align: center
-   :alt: View of a chat window and the use of a canned response in Odoo Live Chat
+   :alt: View of a chat window and the use of a canned response in CoquiAPPs Live Chat
 
 .. seealso::
    - :doc:`ratings`

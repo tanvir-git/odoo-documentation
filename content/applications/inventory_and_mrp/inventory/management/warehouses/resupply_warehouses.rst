@@ -4,7 +4,7 @@ Resupply from another warehouse
 
 A common use case for multiple warehouses is to have one central warehouse that resupplies multiple
 shops, and in this case, each shop is considered a local warehouse. When a shop wants to replenish
-a product, the product is ordered to the central warehouse. Odoo allows the user to easily set
+a product, the product is ordered to the central warehouse. CoquiAPPs allows the user to easily set
 which warehouse(s) can resupply another warehouse.
 
 Configuration
@@ -29,7 +29,7 @@ resupplied by the second warehouse. Then, click :guilabel:`Edit`. In the :guilab
 Configuration` tab, locate the :guilabel:`Resupply From` field, and check the box next to the
 second warehouse's name. If the warehouse can be resupplied by more than one warehouse, make sure
 to check those warehouses' boxes too. Finally, click :guilabel:`Save` to apply the setting. Now,
-Odoo knows which warehouses can resupply this warehouse.
+CoquiAPPs knows which warehouses can resupply this warehouse.
 
 .. image:: resupply_warehouses/resupply-from-second-warehouse.png
    :align: center
@@ -49,12 +49,12 @@ the product from one warehouse to another.
    :alt: Route setting which enables a product to resupplied from a second warehouse.
 
 When a product's reordering rule is triggered and the product has the :guilabel:`Supply Product
-from [Warehouse Name]` route set, Odoo automatically creates two pickings. One picking is a
+from [Warehouse Name]` route set, CoquiAPPs automatically creates two pickings. One picking is a
 *delivery order* from the second warehouse, which contains all the necessary products, and the
 second picking is a *receipt* with the same products for the main warehouse. The product move from
-the second warehouse to the main warehouse is fully tracked in Odoo.
+the second warehouse to the main warehouse is fully tracked in CoquiAPPs.
 
-On the picking/transfer records created by Odoo, the :guilabel:`Source Document` is the product's
+On the picking/transfer records created by CoquiAPPs, the :guilabel:`Source Document` is the product's
 reordering rule. The location between the delivery order and the receipt is a transit location.
 
 .. image:: resupply_warehouses/resupply-receipts-from-reordering-rule.png

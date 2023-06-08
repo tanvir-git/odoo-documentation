@@ -48,7 +48,7 @@ Payment Method.
 
 .. image:: batch/batch-register-payment.png
    :align: center
-   :alt: Registering a customer payment as part of a Batch Deposit in Odoo Accounting
+   :alt: Registering a customer payment as part of a Batch Deposit in CoquiAPPs Accounting
 
 Do this step for all checks or payments you want to process in batch.
 
@@ -64,7 +64,7 @@ line*.
 
 .. image:: batch/batch-new-inbound.png
    :align: center
-   :alt: Filling out a new Inbound Batch Payment form on Odoo Accounting
+   :alt: Filling out a new Inbound Batch Payment form on CoquiAPPs Accounting
 
 Select all payments to include in the current Batch Deposit and click on *Select*. You can also
 record a new payment and add it to the list by clicking on *Create*.

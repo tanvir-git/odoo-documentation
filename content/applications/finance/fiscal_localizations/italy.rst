@@ -73,21 +73,21 @@ enables to send and receive electronic invoices to and from customers. The docum
 format and formally validated by the system before being delivered.
 
 To be able to receive invoices and notifications, the :abbr:`SdI (Sistema di Interscambio)` service
-must be notified that the user's files are to be sent to **Odoo** and processed on their behalf. To
-so, you must set up Odoo's :guilabel:`Codice Destinatario` on the **Agenzia Delle Entrate**
+must be notified that the user's files are to be sent to **CoquiAPPs** and processed on their behalf. To
+so, you must set up CoquiAPPs's :guilabel:`Codice Destinatario` on the **Agenzia Delle Entrate**
 portal.
 
 #. Go to https://ivaservizi.agenziaentrate.gov.it/portale/ and authenticate;
 #. Go to section :menuselection:`Fatture e Corrispettivi`;
 #. Set the user as Legal Party for the VAT number you wish to configure the electronic address;
 #. In :menuselection:`Servizi Disponibili --> Fatturazione Elettronica --> Registrazione
-   dell’indirizzo telematico dove ricevere tutte le fatture elettroniche`, insert Odoo's
+   dell’indirizzo telematico dove ricevere tutte le fatture elettroniche`, insert CoquiAPPs's
    :guilabel:`Codice Destinatario` `K95IV18`, and confirm.
 
 Electronic Data Interchange (EDI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Odoo uses the **FatturaPA** :abbr:`EDI (Electronic Data Interchange)` format for the Italian
+CoquiAPPs uses the **FatturaPA** :abbr:`EDI (Electronic Data Interchange)` format for the Italian
 localization and is enabled on the default journals when installed. When the **file processing
 authorization** has been set, all **invoices** and **bills** are automatically sent.
 
@@ -105,11 +105,11 @@ XML file can be found in the **chatter** of the invoice.
 .. seealso::
    :doc:`../accounting/customer_invoices/electronic_invoicing`
 
-File processing authorization (Odoo)
+File processing authorization (CoquiAPPs)
 ------------------------------------
 
-Since the files are transmitted through Odoo's server before being sent to the :abbr:`SdI (Sistema
-di Interscambio)` or received by your database, you need to authorize Odoo to process your files
+Since the files are transmitted through CoquiAPPs's server before being sent to the :abbr:`SdI (Sistema
+di Interscambio)` or received by your database, you need to authorize CoquiAPPs to process your files
 from your database. To do so, go to :menuselection:`Accounting --> Configuration --> Settings -->
 Electronic Document Invoicing`.
 
@@ -127,7 +127,7 @@ There are **three** modes available:
   This is a production mode that sends your invoices directly to the **Agenzia delle Entrate**.
 
 Once a mode is selected, you need to accept the **terms and conditions** by ticking :guilabel:`Allow
-Odoo to process invoices`, and then :guilabel:`Save`. You can now record your transactions in Odoo
+CoquiAPPs to process invoices`, and then :guilabel:`Save`. You can now record your transactions in CoquiAPPs
 Accounting.
 
 .. warning::
@@ -149,7 +149,7 @@ Accounting.
 Taxes configuration
 ===================
 
-Many of the e-invoicing features are implemented using Odoo's tax system. As such, it is very
+Many of the e-invoicing features are implemented using CoquiAPPs's tax system. As such, it is very
 important that taxes are properly configured in order to generate invoices correctly and handle
 other billing use cases. For example, specific configurations are required for the **reverse
 charge** type of taxes. In case of a **reverse charge** tax, the seller does *not* charge the
@@ -202,7 +202,7 @@ the following **additional info** by opening the **XML** file of the issued invo
   recognizable identifier is valid.
 
 .. note::
-   Odoo does not support sending user-modified XML files.
+   CoquiAPPs does not support sending user-modified XML files.
 
 For **invoices**, multiple configurations are technically identified by a :guilabel:`Tipo Documento`
 code:
@@ -223,7 +223,7 @@ code:
       code `TDO2` than regular invoices. Upon import of the invoice, it creates a regular vendor
       bill.
 
-      Odoo exports moves as `TD02` if the following conditions are met:
+      CoquiAPPs exports moves as `TD02` if the following conditions are met:
 
      - Is an invoice;
      - All invoice lines are related to **sales order lines** that have the flag `is_downpayment`
@@ -246,7 +246,7 @@ code:
       - :guilabel:`VAT`: the **buyer**'s VAT/TIN number (on their profile card);
       - :guilabel:`Total`: the total **amount** (VAT included) of the invoice.
 
-      In the :abbr:`EDI (Electronic Data Interchange)`, Odoo exports invoices as simplified if:
+      In the :abbr:`EDI (Electronic Data Interchange)`, CoquiAPPs exports invoices as simplified if:
 
       - It is a **domestic** transaction (i.e., the partner is from Italy);
       - The buyer's data is **insufficient** for a regular invoice;
@@ -281,7 +281,7 @@ code:
          :ref:`module <italy/modules>`. In this case, a dedicated :guilabel:`Tipo Documento` `TD24`
          is used in the e-invoice.
 
-      Odoo exports moves as `TD24` if the following conditions are met:
+      CoquiAPPs exports moves as `TD24` if the following conditions are met:
 
       - Is an invoice;
       - Is associated to deliveries whose **DDTs** have a **different** date than the issuance date
@@ -328,7 +328,7 @@ For **vendor bills**, **three** types of configurations are technically identifi
         due in Italy (i.e., **vendor bill tax integration**);
       - Non-EU: the *buyer* sends themselves an invoice (i.e., **self-billing**).
 
-      Odoo exports a transaction as `TD17` if the following conditions are met:
+      CoquiAPPs exports a transaction as `TD17` if the following conditions are met:
 
       - Is a vendor bill;
       - At least one tax on the invoice lines targets the tax grids :ref:`VJ <italy/grids>`;
@@ -342,7 +342,7 @@ For **vendor bills**, **three** types of configurations are technically identifi
      Invoices issued within the EU follow a **standard format**, therefore only an integration of
      the existing invoice is required.
 
-     Odoo exports a transaction as `TD18` if the following conditions are met:
+     CoquiAPPs exports a transaction as `TD18` if the following conditions are met:
 
      - Is a vendor bill;
      - At least one tax on the invoice lines targets the tax grids :ref:`VJ <italy/grids>`;
@@ -358,7 +358,7 @@ For **vendor bills**, **three** types of configurations are technically identifi
        Italy (i.e., **vendor bill tax integration**);
      - Non-EU: the *buyer* sends an invoice to *themselves* (i.e., **self-billing**).
 
-     Odoo exports a move as a `TD19` if the following conditions are met:
+     CoquiAPPs exports a move as a `TD19` if the following conditions are met:
 
      - Is a vendor bill;
      - At least one tax on the invoice lines targets the tax grid :ref:`VJ3 <italy/grids>`;
@@ -366,7 +366,7 @@ For **vendor bills**, **three** types of configurations are technically identifi
        :guilabel:`Goods` as tax scope.
 
 .. warning::
-   Odoo does not offer the
+   CoquiAPPs does not offer the
    `Conservazione Sostitutiva <https://www.agid.gov.it/index.php/it/piattaforme/conservazione>`_
    requirements. Other providers and **Agenzia delle Entrate** supply free and certified storage to
    meet the requested conditions.
@@ -377,7 +377,7 @@ Internal reverse charge
 -----------------------
 
 .. warning::
-   Odoo currently does not support domestic **internal reverse charge** processes.
+   CoquiAPPs currently does not support domestic **internal reverse charge** processes.
 
 .. _italy/grids:
 
@@ -399,7 +399,7 @@ Invoices
 --------
 
 San Marino and Italy have special agreements on e-invoicing operations. As such, **invoices** follow
-the regular **reverse charge** rules. Additional requirements are not enforced by Odoo, however, the
+the regular **reverse charge** rules. Additional requirements are not enforced by CoquiAPPs, however, the
 user is requested by the **State** to:
 
 - Select a tax with the option :guilabel:`Has exoneration of tax (Italy)` ticked, and the
@@ -418,7 +418,7 @@ the special value `TD28`.
 
    .. tab:: `TD28`
 
-      Odoo exports a move as `TD28` if the following conditions are met:
+      CoquiAPPs exports a move as `TD28` if the following conditions are met:
 
       - Is a vendor bill;
       - At least one tax on the invoice lines targets the tax grids :ref:`VJ <italy/grids>`;
@@ -428,7 +428,7 @@ Pubblica amministrazione (B2G)
 ==============================
 
 .. warning::
-   Odoo does **not** send invoices directly to the government as they need to be signed. If we see
+   CoquiAPPs does **not** send invoices directly to the government as they need to be signed. If we see
    that the codice destinatario is 6 digits, then it is not sent to the PA automatically, but you
    can download the XML, sign it with an external program and send it through the portal.
 

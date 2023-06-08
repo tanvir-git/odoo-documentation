@@ -2,11 +2,11 @@
 Control and know when vendor bills should be paid
 =================================================
 
-With Odoo, you can define how your vendor bills are controlled. For each purchase order, you can
+With CoquiAPPs, you can define how your vendor bills are controlled. For each purchase order, you can
 decide when the related vendor bill should be paid: either before or after you have received your
 products. You can also check at a glance what is the billing status of each purchase order.
 
-With the 3-way matching feature, Odoo compares the information appearing on the *Purchase Order*,
+With the 3-way matching feature, CoquiAPPs compares the information appearing on the *Purchase Order*,
 the *Vendor Bill* and the *Receipt*, and lets you know if you should pay the bill. This way you can
 avoid paying incorrect or fraudulent vendor bills.
 
@@ -18,7 +18,7 @@ the default bill control policy for all the products created onwards.
 
 .. image:: control_bills/control-bills-quantities-default-setting.png
    :align: center
-   :alt: Vendor bills default control setting for new products in Odoo Purchase
+   :alt: Vendor bills default control setting for new products in CoquiAPPs Purchase
 
 By selecting *On ordered quantities*, you can create a vendor bill as soon as you confirm an order.
 The quantities mentioned in the purchase order are used to generate the draft bill.
@@ -30,7 +30,7 @@ error message.
 
 .. image:: control_bills/control-bills-no-invoiceable-line.png
    :align: center
-   :alt: No invoiceable line error message in Odoo Purchase
+   :alt: No invoiceable line error message in CoquiAPPs Purchase
 
 Change a specific product's control policy
 ------------------------------------------
@@ -41,7 +41,7 @@ default bill control policy.
 
 .. image:: control_bills/control-bills-quantities-on-product.png
    :align: center
-   :alt: Vendor bills default control setting for new products in Odoo Purchase
+   :alt: Vendor bills default control setting for new products in CoquiAPPs Purchase
 
 View a purchase order's billing status
 ======================================
@@ -51,7 +51,7 @@ tab.
 
 .. image:: control_bills/control-bills-billing-status.png
    :align: center
-   :alt: Purchase order billing status in Odoo Purchase
+   :alt: Purchase order billing status in CoquiAPPs Purchase
 
 Below you can find a list of the different *Billing Status*, and when they are displayed, depending
 on the products' bill control policy.
@@ -75,7 +75,7 @@ First, go to :menuselection:`Configuration --> Settings` and activate *3-way mat
 
 .. image:: control_bills/control-bills-3-way-matching-setting.png
    :align: center
-   :alt: 3-way-matching setting in Odoo Purchase
+   :alt: 3-way-matching setting in CoquiAPPs Purchase
 
 .. note::
    3-way matching is intended to work with the bill control policy set to *On received quantities*.
@@ -88,14 +88,14 @@ With the feature activated, your vendor bills now display the *Should Be Paid* f
 
 .. image:: control_bills/control-bills-should-be-paid.png
    :align: center
-   :alt: Should Be Paid field under a vendor bill in Odoo Purchase
+   :alt: Should Be Paid field under a vendor bill in CoquiAPPs Purchase
 
 As you can't create a bill until you have received your products - and if you haven't received all
-of them, Odoo only includes the products you have received in the draft bill - the *Should Be Paid*
+of them, CoquiAPPs only includes the products you have received in the draft bill - the *Should Be Paid*
 status is set to *Yes* when you create one.
 
 If you edit a draft bill to increase the billed quantity, change the price, or add other products,
-the *Should Be Paid* status is set to *Exception*. It means Odoo notices the discrepancy, but that
+the *Should Be Paid* status is set to *Exception*. It means CoquiAPPs notices the discrepancy, but that
 you might have a valid reason to have done so.
 
 Once the payment has been registered and mentions *Paid*, the *Should Be Paid* status is set to
@@ -103,8 +103,8 @@ Once the payment has been registered and mentions *Paid*, the *Should Be Paid* s
 
 .. image:: control_bills/control-bills-paid-status.png
    :align: center
-   :alt: Paid bill in Odoo Purchase
+   :alt: Paid bill in CoquiAPPs Purchase
 
 .. tip::
-   The *Should Be Paid* status is set automatically by Odoo. However, you can change the status
+   The *Should Be Paid* status is set automatically by CoquiAPPs. However, you can change the status
    manually when you are viewing a bill in edit mode.

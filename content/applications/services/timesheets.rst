@@ -8,7 +8,7 @@ Timesheets
 ==========
 
 .. seealso::
-   - `Odoo Tutorials: Project and Timesheets
+   - `CoquiAPPs Tutorials: Project and Timesheets
      <https://coqui.cloud/slides/project-and-timesheets-21>`_
 
 .. toctree::

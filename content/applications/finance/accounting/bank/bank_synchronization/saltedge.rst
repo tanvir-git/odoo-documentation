@@ -11,7 +11,7 @@ countries.
    :width: 50%
    :alt: Salt Edge Logo
 
-Odoo can synchronize directly with your bank to get all bank statements imported
+CoquiAPPs can synchronize directly with your bank to get all bank statements imported
 automatically into your database.
 
 .. seealso::
@@ -21,7 +21,7 @@ automatically into your database.
 Configuration
 =============
 
-Link your bank accounts with Odoo
+Link your bank accounts with CoquiAPPs
 ---------------------------------
 
 #. Start synchronization by clicking on :menuselection:`Accounting --> Configuration
@@ -62,7 +62,7 @@ To do so, go to :menuselection:`Accounting --> Configuration --> Online Synchron
 select the institution you want to update credentials. Click on the *Update Credentials* button
 to start the flow and follow the steps.
 
-Don't forget to check the consent checkbox. Otherwise, Odoo may not be able to access
+Don't forget to check the consent checkbox. Otherwise, CoquiAPPs may not be able to access
 your information.
 
 Fetch new accounts
@@ -74,21 +74,21 @@ To do so, go to :menuselection:`Accounting --> Configuration --> Online Synchron
 select the institution to fetch the new accounts. Click on the *Fetch Accounts* button
 to start the flow and follow the steps.
 
-Don't forget to check the consent checkbox. Otherwise, Odoo may not be able to access
+Don't forget to check the consent checkbox. Otherwise, CoquiAPPs may not be able to access
 your information.
 
 FAQ
 ===
 
-I have an error when I try to delete my synchronization within Odoo
+I have an error when I try to delete my synchronization within CoquiAPPs
 -------------------------------------------------------------------
 
-Odoo can't permanently delete the connection you have created with the banking institution. However,
-it can revoke the consent you gave so that Odoo won't be able to access your account anymore. The
+CoquiAPPs can't permanently delete the connection you have created with the banking institution. However,
+it can revoke the consent you gave so that CoquiAPPs won't be able to access your account anymore. The
 error you are seeing is probably a message telling you that the consent was revoked, but the record
 could not be deleted as it still exists within Salt edge. If you want to remove the connection
 completely, please connect to your `Salt Edge account <https://www.saltedge.com/dashboard>`_
-and manually delete your synchronization. Once this is done, you can go back to Odoo to delete the
+and manually delete your synchronization. Once this is done, you can go back to CoquiAPPs to delete the
 record.
 
 I have an error saying that I have already synchronized this account
@@ -99,10 +99,10 @@ You have probably already synchronized your bank account with Salt Edge, please 
 credentials.
 
 In case you already have a synchronization with the same credentials present on your Salt Edge
-dashboard and this synchronization has not been created with Odoo, please delete it and create it
-from your Odoo database.
+dashboard and this synchronization has not been created with CoquiAPPs, please delete it and create it
+from your CoquiAPPs database.
 
 In case you already have a connection with the same credentials present on your Salt Edge dashboard
-and this synchronization was created with Odoo, you will normally be able to find it by going to
+and this synchronization was created with CoquiAPPs, you will normally be able to find it by going to
 :menuselection:`Accounting --> Configuration --> Online Synchronization`. Please make sure to do an
 *Update Credentials* to reactivate the connection.

@@ -5,7 +5,7 @@ Germany
 German Chart of Accounts
 ========================
 
-The chart of accounts SKR03 and SKR04 are both supported in Odoo. You can choose the
+The chart of accounts SKR03 and SKR04 are both supported in CoquiAPPs. You can choose the
 one you want by going in :menuselection:`Accounting --> Configuration` then choose the
 package you want in the Fiscal Localization section.
 
@@ -13,23 +13,23 @@ Be careful, you can only change the accounting package as long as you have not c
 
 .. tip::
 
-    When you create a new Odoo Online database, the SKR03 is installed by default.
+    When you create a new CoquiAPPs Online database, the SKR03 is installed by default.
 
 German Accounting Reports
 =========================
 
-Here is the list of German-specific reports available on Odoo Enterprise:
+Here is the list of German-specific reports available on CoquiAPPs Enterprise:
 
 - Balance Sheet
 - Profit & Loss
 - Tax Report (Umsatzsteuervoranmeldung)
 - Partner VAT Intra
 
-Export from Odoo to Datev
+Export from CoquiAPPs to Datev
 =========================
 
-It is possible to export your accounting entries from Odoo to Datev. To be able to use this
-feature, the german accounting localization needs to be installed on your Odoo Enterprise database.
+It is possible to export your accounting entries from CoquiAPPs to Datev. To be able to use this
+feature, the german accounting localization needs to be installed on your CoquiAPPs Enterprise database.
 Then you can go in :menuselection:`Accounting --> Reporting --> General Ledger` then click on the
 **Export Datev (csv)** button.
 
@@ -43,7 +43,7 @@ requires that electronic record-keeping systems - including the :doc:`point of s
 </applications/sales/point_of_sale>` systems - must be equipped with a **Technical Security System**
 (also called **TSS** or **TSE**).
 
-Odoo offers a service that is compliant with the help of `fiskaly <https://fiskaly.com>`_, a
+CoquiAPPs offers a service that is compliant with the help of `fiskaly <https://fiskaly.com>`_, a
 *cloud-based solution*.
 
 .. important::
@@ -71,7 +71,7 @@ Modules installation
 
 .. image:: germany/pos-upgrade.png
    :align: center
-   :alt: Upgrading Odoo Point of Sale from the Apps dashboard
+   :alt: Upgrading CoquiAPPs Point of Sale from the Apps dashboard
 
 Register your company at the financial authority
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,7 +92,7 @@ the *fiskaly Registration* button.
 
 .. image:: germany/fiskaly-registration.png
    :align: center
-   :alt: Button to register a company through fiskaly in Odoo
+   :alt: Button to register a company through fiskaly in CoquiAPPs
 
 .. tip::
    If you do not see the *fiskaly Registration* button, make sure that you *saved* your company
@@ -106,7 +106,7 @@ Once the registration has been finalized, new fields appear:
 
 .. image:: germany/fiskaly-keys.png
    :align: center
-   :alt: fiskaly keys as displayed on Odoo
+   :alt: fiskaly keys as displayed on CoquiAPPs
 
 .. note::
    It is possible to request new credentials if there is any issue with the current ones.
@@ -126,7 +126,7 @@ of sale you want to edit, then check the box next to **Create TSS** and *Save*.
 
 .. image:: germany/tss-ids.png
    :align: right
-   :alt: Example of TSS ID and Client ID from fiskaly in Odoo Point of Sale
+   :alt: Example of TSS ID and Client ID from fiskaly in CoquiAPPs Point of Sale
 
 Once the creation of the TSS is successful, you can find your **TSS ID** and **Client ID** under the
 *fiskaly API* section.
@@ -160,14 +160,14 @@ The creation of a DSFinV-K export triggers on export at fiskaly's side.
 
 .. image:: germany/dsfinv-k-export-fields.png
    :align: center
-   :alt: Pending DSFinV-K export on Odoo
+   :alt: Pending DSFinV-K export on CoquiAPPs
 
 As you can see, the **State** is *Pending*. This means that the export has been successfully
 triggered and is being processed. You have to click on *Refresh State* to check if it is ready.
 
 .. _germany/gobd:
 
-German Tax Accounting Standards: Odoo's guide to GoBD Compliance
+German Tax Accounting Standards: CoquiAPPs's guide to GoBD Compliance
 ================================================================
 
 **GoBD** stands for `Grundsätze zur ordnungsmäßigen Führung und Aufbewahrung von Büchern,
@@ -184,7 +184,7 @@ January 2020 to specify some of the content and due to the development of digita
 hosting, paperless companies, etc.).
 
 .. important::
-   Odoo gives you **the means to be compliant with GoBD**.
+   CoquiAPPs gives you **the means to be compliant with GoBD**.
 
 What do you need to know about GoBD when relying on accounting software?
 ------------------------------------------------------------------------
@@ -224,11 +224,11 @@ accordance with the GoBD guidelines.
 Once bookings have been finally posted, they can no longer be changed or deleted via the
 application.
 
-- If Odoo is used in the cloud, regular backups are part of the Odoo Online service. In addition,
+- If CoquiAPPs is used in the cloud, regular backups are part of the CoquiAPPs Online service. In addition,
   regular backups can be downloaded and backed up on external systems.
 
   .. seealso::
-     `Odoo Cloud Hosting - Service Level Agreement <https://www.odooo.com/cloud-sla>`_
+     `CoquiAPPs Cloud Hosting - Service Level Agreement <https://www.CoquiAPPso.com/cloud-sla>`_
 
 - If the server is operated locally, it is the responsibility of the user to create the necessary
   backup infrastructure.
@@ -245,41 +245,41 @@ editor can by no means be held responsible for the accurate and compliant docume
 transactional data of their users**. It can  merely provide the necessary tools for the  user to
 respect the software related guidelines described in the GoBD.
 
-How can Odoo help you achieve Compliance?
+How can CoquiAPPs help you achieve Compliance?
 -----------------------------------------
 
 The key words, when it comes to GoBD, are: **traceable, verifiable, true, clear, and continuous**.
-In short, you need to have audit-proof archiving in place and Odoo provides you with the means to
+In short, you need to have audit-proof archiving in place and CoquiAPPs provides you with the means to
 achieve all of these objectives:
 
 #. | **Traceability and verifiability**
-   | Each record in Odoo is stamped with the creator of the document, the creation date, the
+   | Each record in CoquiAPPs is stamped with the creator of the document, the creation date, the
      modification date, and who modified it. In addition, relevant fields are tracked thus it can be
      seen which value was changed by whom in the chatter of the relevant object.
 #. | **Completeness**
-   | All financial data must be recorded in the system, and there can be no gaps. Odoo ensures that
+   | All financial data must be recorded in the system, and there can be no gaps. CoquiAPPs ensures that
      there is no gap in the numbering of the financial transactions. It is the responsibility of the
-     user to encode all financial data in  the system. As most financial data in  Odoo is generated
+     user to encode all financial data in  the system. As most financial data in  CoquiAPPs is generated
      automatically, it remains the responsibility of the user to encode all vendor bills and
      miscellaneous operations completely.
 #. | **Accuracy**
-   | Odoo ensures with the correct configuration that the  correct accounts are used. In addition,
+   | CoquiAPPs ensures with the correct configuration that the  correct accounts are used. In addition,
      the control mechanisms between purchase orders and sales orders and their respective invoices
      reflect the business reality. It is the  responsibility of the user to scan and  attach the
-     paper-based vendor bill to the respective record in Odoo. *Odoo Document helps you automate
+     paper-based vendor bill to the respective record in CoquiAPPs. *CoquiAPPs Document helps you automate
      this task*.
 #. | **Timely booking and record-keeping**
-   | As most financial data in Odoo is generated by the transactional objects (for example, the
-     invoice is booked at confirmation), Odoo ensures out-of-the-box timely record-keeping. It is
+   | As most financial data in CoquiAPPs is generated by the transactional objects (for example, the
+     invoice is booked at confirmation), CoquiAPPs ensures out-of-the-box timely record-keeping. It is
      the responsibility of the user to encode all incoming vendor bills in a timely manner, as well
      as the miscellaneous operations.
 #. | **Order**
-   | Financial data stored in Odoo is per definition ordered and can be reordered according to most
+   | Financial data stored in CoquiAPPs is per definition ordered and can be reordered according to most
      fields present in the model. A specific ordering is not enforced by the GoBD, but the system
      must ensure that a given financial transaction can be quickly found by a third-party expert.
-     Odoo ensures this out-of-the-box.
+     CoquiAPPs ensures this out-of-the-box.
 #. | **Inalterability**
-   | With the German Odoo localization, Odoo is in standard configured in such a way that the
+   | With the German CoquiAPPs localization, CoquiAPPs is in standard configured in such a way that the
      inalterability clause can be adhered to without any further customization.
 
 Do you need a GoBD-Export?
@@ -291,7 +291,7 @@ handover of the financial data on a storage device.
 
 In case of a handover of the financial data on a storage device, the format is **not** enforced by
 the GoBD. It can be, for example, in XLS, CSV, XML, Lotus 123, SAP-format, AS/400-format, or else.
-Odoo supports the CSV and XLS-export of financial data out-of-the-box. The GoBD **recommends** the
+CoquiAPPs supports the CSV and XLS-export of financial data out-of-the-box. The GoBD **recommends** the
 export in a specific XML-based GoBD-format (see "Ergänzende Informationen zur
 Datenntträgerüberlassung" §3) but it is not binding.
 

@@ -10,7 +10,7 @@ to the ePOS printer.
 
 .. note::
    These `Epson ePOS printers
-   <https://c4b.epson-biz.com/modules/community/index.php?content_id=91>`_ are compatible with Odoo:
+   <https://c4b.epson-biz.com/modules/community/index.php?content_id=91>`_ are compatible with CoquiAPPs:
 
    - TM-H6000IV-DT (Receipt printer only)
    - TM-T70II-DT
@@ -29,7 +29,7 @@ to the ePOS printer.
    - TM-P60II (Peeler: Wi-Fi® model)
    - TM-P80 (Wi-Fi® model)
 
-To work with Odoo, some models that can be used without an
+To work with CoquiAPPs, some models that can be used without an
 :doc:`IoT box <../../../productivity/iot/config/connect>` may require :doc:`the HTTPS protocol
 <https>` to establish a secure connection between the browser and the printer. However, trying to
 reach the printer's IP address using HTTPS leads to a warning page on most web browsers.
@@ -42,7 +42,7 @@ reach the printer's IP address using HTTPS leads to a warning page on most web b
 
 In that case, you can temporarily force the connection by clicking :guilabel:`Advanced` and
 :guilabel:`Proceed to [IP address] (unsafe)`. Doing so allows you to reach the page in HTTPS and use
-the ePOS printer in Odoo as long as the browser window stays open.
+the ePOS printer in CoquiAPPs as long as the browser window stays open.
 
 .. note::
    The previous instructions apply to Google Chrome but are similar to other browsers.

@@ -2,7 +2,7 @@
 Track and manage talks
 ======================
 
-With Odoo Events, it's possible to provide attendees with the power to propose presenters to speak
+With CoquiAPPs Events, it's possible to provide attendees with the power to propose presenters to speak
 at events.
 
 Configuration
@@ -40,7 +40,7 @@ calendar/time-slot format.
 
 .. image:: track_manage_talks/events-talk-proposal-header.png
    :align: center
-   :alt: View of the published website and the talks, talk proposals, and agenda in Odoo Events
+   :alt: View of the published website and the talks, talk proposals, and agenda in CoquiAPPs Events
 
 Manage talk proposals
 =====================
@@ -54,7 +54,7 @@ is instantly created in the back end for the event.
 
 .. image:: track_manage_talks/events-tracks-kanban.png
    :align: center
-   :alt: View of the talks' proposals page emphasizing the column proposal in Odoo Events.
+   :alt: View of the talks' proposals page emphasizing the column proposal in CoquiAPPs Events.
 
 If a proposal is accepted, move the :guilabel:`Event Track` to the appropriate stage in the Kanban
 view (e.g. `Confirmed`, etc.). Then, go to that particular event's template form, and click the
@@ -68,7 +68,7 @@ and the talk is instantly accessible on the website.
 
 .. image:: track_manage_talks/events-tracks-publish.png
    :align: center
-   :alt: View of the website page to publish a proposed talk for Odoo Events.
+   :alt: View of the website page to publish a proposed talk for CoquiAPPs Events.
 
 Attendees list and attendance
 -----------------------------
@@ -83,9 +83,9 @@ form, or :menuselection:`Reporting --> Attendees` and sorted by event.
 
 .. image:: track_manage_talks/events-attendees-smartbutton.png
    :align: center
-   :alt: Overview of events with the kanban view in Odoo Events.
+   :alt: Overview of events with the kanban view in CoquiAPPs Events.
 
-When analyzing an :guilabel:`Attendees list`, Odoo provides different ways to view the information.
+When analyzing an :guilabel:`Attendees list`, CoquiAPPs provides different ways to view the information.
 Each view option presents the same information, but in a slightly different layout. To change the
 view, click on the icons in the upper right hand of the screen.
 
@@ -113,7 +113,7 @@ dates.
 Manage registrations
 --------------------
 
-Upon selecting an attendee, Odoo reveals that specific attendee's detail form.
+Upon selecting an attendee, CoquiAPPs reveals that specific attendee's detail form.
 
 From here, event badges can be sent manually, by selecting :guilabel:`Send By Email`. The
 :guilabel:`Attendee` can also be marked as :guilabel:`Attended`, or the registration can be
@@ -121,13 +121,13 @@ canceled altogether via the :guilabel:`Cancel Registration` button.
 
 .. image:: track_manage_talks/events-send-email-button.png
    :align: center
-   :alt: View of an attendee form emphasizing the send by email and cancel registration in Odoo
+   :alt: View of an attendee form emphasizing the send by email and cancel registration in CoquiAPPs
          Events.
 
 Lead Generation Rules
 ---------------------
 
-With Odoo, leads can be generated from events.
+With CoquiAPPs, leads can be generated from events.
 
 To create and configure a :guilabel:`Lead Generation Rule` related to events, navigate to
 :menuselection:`Events app --> Configuration --> Lead Generation`.
@@ -137,14 +137,14 @@ can be found, along with pertinent data related to those rules.
 
 .. image:: track_manage_talks/events-lead-generation-rule-page.png
    :align: center
-   :alt: How the Lead Generation Rule page looks in Odoo Events.
+   :alt: How the Lead Generation Rule page looks in CoquiAPPs Events.
 
 To create a new :guilabel:`Lead Generation Rule`, click :guilabel:`Create`, and fill out the
 :guilabel:`Lead Generation Rule` form.
 
 .. image:: track_manage_talks/events-lead-generation-rule-template.png
    :align: center
-   :alt: How the Lead Generation Rule template looks in Odoo Events.
+   :alt: How the Lead Generation Rule template looks in CoquiAPPs Events.
 
 After naming the rule, configure *how* the lead should be created (either :guilabel:`Per Attendee`
 or :guilabel:`Per Order`), and *when* they should be created, (when

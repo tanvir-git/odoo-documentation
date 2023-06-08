@@ -2,7 +2,7 @@
 Deliver and invoice to different addresses
 ==========================================
 
-With Odoo Sales, you can configure different addresses for delivery and invoicing. For some
+With CoquiAPPs Sales, you can configure different addresses for delivery and invoicing. For some
 customers, it will be very practical to define specific billing and shipping addresses. Indeed, not
 everyone will have the same delivery location as the invoicing location.
 
@@ -15,7 +15,7 @@ feature.
 .. image:: different_addresses/addresses_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable different customer addresses on Odoo Sales?
+   :alt: How to enable different customer addresses on CoquiAPPs Sales?
 
 Add addresses from a quotation
 ==============================
@@ -29,10 +29,10 @@ delete and modify invoice and delivery addresses.
 .. image:: different_addresses/addresses_2.png
    :align: center
    :class: img-thumbnail
-   :alt: How to add addresses from a quotation on Odoo Sales?
+   :alt: How to add addresses from a quotation on CoquiAPPs Sales?
 
 .. note::
-   If you select a customer with defined invoice and delivery addresses, Odoo will automatically use
+   If you select a customer with defined invoice and delivery addresses, CoquiAPPs will automatically use
    them to fill in the fields. Now, if you want to change it instantly, it is possible to do so
    directly from the quotation or the sales order.
 
@@ -48,7 +48,7 @@ quotation.
 .. image:: different_addresses/addresses_3.png
    :align: center
    :class: img-thumbnail
-   :alt: How to add addresses from a contact form on Odoo Sales?
+   :alt: How to add addresses from a contact form on CoquiAPPs Sales?
 
 Deal with different addresses
 =============================
@@ -60,7 +60,7 @@ and shipping addresses under the **Contacts & Addresses** tab.
 .. image:: different_addresses/addresses_4.png
    :align: center
    :class: img-thumbnail
-   :alt: How to manage different customer addresses on Odoo Sales?
+   :alt: How to manage different customer addresses on CoquiAPPs Sales?
 
 Once done, you can return to your Sales dashboard and create a new quotation. Now, if you enter
 your new customer, you will see that the other fields will fill in by themself with the information
@@ -69,7 +69,7 @@ previously saved for billing and shipping addresses.
 .. image:: different_addresses/addresses_5.png
    :align: center
    :class: img-thumbnail
-   :alt: Automatic quotation fields filling on Odoo Sales
+   :alt: Automatic quotation fields filling on CoquiAPPs Sales
 
-With Odoo Sales, it is now very convenient to play with various addresses in terms of invoice and
+With CoquiAPPs Sales, it is now very convenient to play with various addresses in terms of invoice and
 delivery features.

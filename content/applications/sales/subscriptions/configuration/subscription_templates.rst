@@ -24,23 +24,23 @@ The subscription business model is becoming more popular. Are you wondering why?
    Higher customer retention. Opportunities for marketing. Business consistency. Better cash flow
    management.</b> </div>
 
-**Odoo Subscriptions** help you save time and money. Subscription templates can help you generate
-recurring invoices and manage renewals at a fast pace. With Odoo you have the possibility to create,
+**CoquiAPPs Subscriptions** help you save time and money. Subscription templates can help you generate
+recurring invoices and manage renewals at a fast pace. With CoquiAPPs you have the possibility to create,
 edit, and manage your own subscription templates.
 
 Configuration
 =============
 
-Go to :menuselection:`Subscriptions --> Configuration --> Subscription templates`. By default, Odoo
+Go to :menuselection:`Subscriptions --> Configuration --> Subscription templates`. By default, CoquiAPPs
 suggests you two types of subscription (MON - Monthly subscription *vs* YEA - Yearly subscription).
 You can also create your own ones.
 
 .. image:: subscription_templates/default-subscription-templates.png
   :align: center
-  :alt: Default subscription templates on Odoo Subscriptions
+  :alt: Default subscription templates on CoquiAPPs Subscriptions
 
 .. important::
-   The **Odoo Subscriptions** application automatically installs **Odoo Sales** and **Odoo Invoicing**
+   The **CoquiAPPs Subscriptions** application automatically installs **CoquiAPPs Sales** and **CoquiAPPs Invoicing**
    as they work integrated.
 
 Create your first template
@@ -56,7 +56,7 @@ invoice email template to your subscription templates.
 
 .. image:: subscription_templates/creation-of-subscription-templates.png
   :align: center
-  :alt: Create your own subscription templates on Odoo Subscriptions
+  :alt: Create your own subscription templates on CoquiAPPs Subscriptions
 
 For each template, you can also choose if you want your customers to be able to close their
 subscriptions or not. If enabled, you can set an *Automatic closing* limit and specify the
@@ -69,7 +69,7 @@ subscriptions or not. If enabled, you can set an *Automatic closing* limit and s
 
    .. image:: subscription_templates/terms-and-conditions-on-subscription-templates.png
      :align: center
-     :alt: Terms & conditions on Odoo Subscriptions
+     :alt: Terms & conditions on CoquiAPPs Subscriptions
 
    Finally, if you want to know the basic running health status of your subscriptions, you also have
    access to a specific tab called **Health Check**. There, you can edit and create your own
@@ -79,7 +79,7 @@ subscriptions or not. If enabled, you can set an *Automatic closing* limit and s
 
    .. image:: subscription_templates/health-check-on-subscription-templates.png
      :align: center
-     :alt: Health check on Odoo Subscriptions
+     :alt: Health check on CoquiAPPs Subscriptions
 
 .. important::
    After creating your own subscription templates, be sure to check out our documentation on how to

@@ -10,13 +10,13 @@ profitable for you.
 Set a deadline
 ==============
 
-With Odoo Sales, it is possible to instantly add an **Expiration Date** from the quotation or the
+With CoquiAPPs Sales, it is possible to instantly add an **Expiration Date** from the quotation or the
 sales order.
 
 .. image:: deadline/quotation_deadlines_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to configure deadlines on Odoo Sales?
+   :alt: How to configure deadlines on CoquiAPPs Sales?
 
 Use deadline in your quotation templates
 ========================================
@@ -28,7 +28,7 @@ sure to check out our documentation about :doc:`quote_template` to excel in thei
 .. image:: deadline/quotation_deadlines_2.png
    :align: center
    :class: img-thumbnail
-   :alt: How to use deadline in a quotation template on Odoo Sales?
+   :alt: How to use deadline in a quotation template on CoquiAPPs Sales?
 
 .. tip::
    By clicking on the **Customer Preview** button, you will be able to see when the offer expires.
@@ -38,7 +38,7 @@ sure to check out our documentation about :doc:`quote_template` to excel in thei
    .. image:: deadline/quotation_deadlines_3.png
       :align: center
       :class: img-thumbnail
-      :alt: How customers will see deadlines on Odoo Sales?
+      :alt: How customers will see deadlines on CoquiAPPs Sales?
 
 .. seealso::
    - :doc:`quote_template`

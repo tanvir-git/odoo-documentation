@@ -2,7 +2,7 @@
 Scoring surveys
 ===============
 
-To measure a survey participant's performance, knowledge, or overall satisfaction, Odoo ascribes
+To measure a survey participant's performance, knowledge, or overall satisfaction, CoquiAPPs ascribes
 points to survey answers. At the end of the survey, these points are summed up, resulting in the
 participant's final score.
 

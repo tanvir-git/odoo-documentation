@@ -25,7 +25,7 @@ Start offering the cash discount
 ================================
 
 Now, you can create a customer invoice and select the cash discount
-payment term you added. Once the invoice is validated, Odoo will
+payment term you added. Once the invoice is validated, CoquiAPPs will
 automatically split the account receivables part of the journal entry
 into two installments having different due dates. Since the discounted
 price is already calculated, your payment controls will be simplified.

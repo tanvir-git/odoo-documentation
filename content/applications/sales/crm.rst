@@ -7,12 +7,12 @@
 CRM
 ===
 
-**Odoo CRM** helps you organize your sales activities: track leads, close opportunities and get
+**CoquiAPPs CRM** helps you organize your sales activities: track leads, close opportunities and get
 accurate forecasts. Keep opportunities organized with the pipeline and manage your day-to-day
 activities with meetings and next activities.
 
 .. seealso::
-   - `Odoo Tutorials: CRM <https://coqui.cloud/slides/crm-16>`_
+   - `CoquiAPPs Tutorials: CRM <https://coqui.cloud/slides/crm-16>`_
 
 .. toctree::
    :titlesonly:

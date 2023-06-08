@@ -2,14 +2,14 @@
 Integrating additional costs to products (landed costs)
 =======================================================
 
-The landed cost feature in Odoo allows the user to include additional costs (shipment, insurance,
+The landed cost feature in CoquiAPPs allows the user to include additional costs (shipment, insurance,
 customs duties, etc.) into the cost of the product.
 
 Configuration
 =============
 
 First, go to :menuselection:`Inventory --> Configuration --> Settings --> Valuation` and activate
-the :guilabel:`Landed Costs` feature. Odoo also gives the option to set a :guilabel:`Default
+the :guilabel:`Landed Costs` feature. CoquiAPPs also gives the option to set a :guilabel:`Default
 Journal` in which the landed costs accounting entries will be recorded.
 
 .. image:: integrating_landed_costs/landed-costs-setting.png
@@ -23,14 +23,14 @@ Receive the vendor bill
 -----------------------
 
 After a vendor fulfills a purchase order and sends a bill, click :guilabel:`Create Bill` on the
-purchase order to create a vendor bill in Odoo. If the vendor bill includes landed costs, such as
+purchase order to create a vendor bill in CoquiAPPs. If the vendor bill includes landed costs, such as
 custom duties, tick the box in the :guilabel:`Landed Costs` column on the vendor bill invoice line.
 
 .. image:: integrating_landed_costs/landed-costs-field-vendor-bill.png
    :align: center
    :alt: Enable Landed Costs option on vendor bill line.
 
-For charges that are always landed costs, create a landed cost product in Odoo. That way, the
+For charges that are always landed costs, create a landed cost product in CoquiAPPs. That way, the
 landed cost product can be quickly added to the vendor bill as an invoice line instead of manually
 entering the landed cost information every time a vendor bill comes in.
 
@@ -49,7 +49,7 @@ tick the box on each vendor bill.
 
 Once the landed cost is added to the vendor bill (either by checking the :guilabel:`Landed Cost`
 option on the invoice line or adding a landed cost product to the bill), click the
-:guilabel:`Create Landed Costs` button at the top of the bill. Odoo automatically creates a landed
+:guilabel:`Create Landed Costs` button at the top of the bill. CoquiAPPs automatically creates a landed
 cost record with the set landed cost pre-filled in the :guilabel:`Additional Costs` product lines.
 From here, decide which picking the additional costs apply to by clicking :guilabel:`Edit` and
 selecting the picking reference number from the :guilabel:`Transfers` drop-down menu. Finally,

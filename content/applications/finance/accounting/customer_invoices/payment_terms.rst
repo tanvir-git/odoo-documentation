@@ -40,7 +40,7 @@ payment dates defined beforehand by the seller.
 
 .. seealso::
    - :doc:`cash_discounts`
-   - `Odoo Tutorials: Payment Terms <https://coqui.cloud/slides/slide/payment-terms-1679>`_
+   - `CoquiAPPs Tutorials: Payment Terms <https://coqui.cloud/slides/slide/payment-terms-1679>`_
 
 Configuration
 =============
@@ -96,7 +96,7 @@ Journal Entries
 Invoices with specific Payment Terms generate different *Journal Entries*, with one *Journal Item*
 for every computed *Due Date*.
 
-This makes for easier *Follow-ups* and *Reconciliation* since Odoo takes each due date into account,
+This makes for easier *Follow-ups* and *Reconciliation* since CoquiAPPs takes each due date into account,
 rather than just the balance due date. It also helps to get an accurate *Aged Receivable report*.
 
 .. image:: payment_terms/journal-entry.png

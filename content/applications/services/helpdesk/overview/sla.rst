@@ -17,7 +17,7 @@ Create your policies
 .. image:: sla/new_sla.png
    :align: center
    :height: 340
-   :alt: View of an SLA form in Odoo Helpdesk
+   :alt: View of an SLA form in CoquiAPPs Helpdesk
 
 | Choose to which **Team** the policy is relevant and the **Minimum Priority** a ticket needs to
   have for the policy to be applied.
@@ -31,7 +31,7 @@ Create your policies
 .. image:: sla/ticket_green_tag.png
    :align: center
    :height: 330
-   :alt: View of a ticket’s form emphasizing a satisfied SLA in Odoo Helpdesk
+   :alt: View of a ticket’s form emphasizing a satisfied SLA in CoquiAPPs Helpdesk
 
 SLA Analysis
 ============
@@ -41,7 +41,7 @@ Go to :menuselection:`Helpdesk --> Reporting --> SLA Status Analysis`. Apply *Fi
 
 .. image:: sla/sla_analysis.png
    :align: center
-   :alt: View of the SLA status analysis page emphasizing the group by option in Odoo Helpdesk
+   :alt: View of the SLA status analysis page emphasizing the group by option in CoquiAPPs Helpdesk
 
 .. seealso::
    - :doc:`../advanced/close_tickets`

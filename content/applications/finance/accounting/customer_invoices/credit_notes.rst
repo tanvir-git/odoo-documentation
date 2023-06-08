@@ -45,7 +45,7 @@ You can choose between three options:
 Partial Refund
 --------------
 
-Odoo creates a draft credit note already prefilled with all the
+CoquiAPPs creates a draft credit note already prefilled with all the
 necessary information from the original invoice.
 
 This is the option to choose to do a partial refund, or if you
@@ -57,7 +57,7 @@ want to modify any detail on the credit note.
 Full Refund
 -----------
 
-Odoo creates a credit note, automatically validates it, and
+CoquiAPPs creates a credit note, automatically validates it, and
 reconciles the original invoice with it.
 
 .. image:: credit_notes/credit_notes02.png
@@ -69,7 +69,7 @@ a validated invoice.
 Full refund and new draft invoice
 ---------------------------------
 
-Odoo creates a credit note, automatically validates it, reconciles
+CoquiAPPs creates a credit note, automatically validates it, reconciles
 the original invoice with it, and open a new draft invoice
 prefilled with the same details from the original invoice.
 

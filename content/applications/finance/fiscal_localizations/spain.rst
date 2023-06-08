@@ -5,7 +5,7 @@ Spain
 Spanish Chart of Accounts
 =========================
 
-In Odoo, there are several Spanish Chart of Accounts that are available by default:
+In CoquiAPPs, there are several Spanish Chart of Accounts that are available by default:
 
 - PGCE PYMEs 2008
 - PGCE Completo 2008
@@ -17,7 +17,7 @@ then choose the package you want in the **Fiscal Localization** section.
 Be careful, you can only change the accounting package as long as you have not created any accounting entry.
 
 .. tip::
-    When you create a new Odoo Online database, the PGCE PYMEs 2008 is installed by default.
+    When you create a new CoquiAPPs Online database, the PGCE PYMEs 2008 is installed by default.
 
 Spanish Accounting Reports
 ==========================

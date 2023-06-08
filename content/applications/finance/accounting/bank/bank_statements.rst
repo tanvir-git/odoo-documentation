@@ -3,7 +3,7 @@ Bank statements
 ===============
 
 Importing your bank statements allows you to keep track of your bank account transactions and
-reconcile them with the ones recorded in Odoo.
+reconcile them with the ones recorded in CoquiAPPs.
 
 We recommend using :doc:`the bank synchronization feature <bank_synchronization>` for more
 efficiency. However, if you do not want to use it or if your bank is not yet supported, other
@@ -15,7 +15,7 @@ options exist:
 Import bank statements files
 ============================
 
-Odoo supports multiple file formats to import bank statements:
+CoquiAPPs supports multiple file formats to import bank statements:
 
 - SEPA recommended Cash Management format (CAMT.053);
 - Comma-separated values (.CSV);
@@ -29,7 +29,7 @@ the :guilabel:`Bank` window, or click on the drop-down menu (:guilabel:`⋮`) bu
 
 .. image:: bank_statements/bank-overview.png
    :align: center
-   :alt: Import a bank statement file in Odoo Accounting
+   :alt: Import a bank statement file in CoquiAPPs Accounting
 
 Next, select the file you want to import and click on :guilabel:`Upload`.
 
@@ -39,7 +39,7 @@ importing it to your database.
 
 .. image:: bank_statements/import-bank-statement.png
    :align: center
-   :alt: Register bank statements manually in Odoo Accounting
+   :alt: Register bank statements manually in CoquiAPPs Accounting
 
 Register bank statements manually
 =================================
@@ -55,7 +55,7 @@ transaction written on the original bank statement.
 
 .. image:: bank_statements/bank-statements-03.png
    :align: center
-   :alt: Register bank statements manually in Odoo Accounting
+   :alt: Register bank statements manually in CoquiAPPs Accounting
 
 .. note::
    The **Ending Balance** and the **Computed Balance** should have the same amount. If this is not

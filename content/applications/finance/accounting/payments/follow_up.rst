@@ -2,13 +2,13 @@
 Follow-up on invoices
 =====================
 
-A follow-up message can be sent to customers when a payment is overdue. Odoo helps you identify late
+A follow-up message can be sent to customers when a payment is overdue. CoquiAPPs helps you identify late
 payments and allows you to schedule and send the appropriate reminders using **follow-up actions**
 that trigger automatically one or more actions according to the number of overdue days. You can send
 your follow-ups via different means such as email, post, or SMS.
 
 .. seealso::
-   - `Odoo Tutorials: Payment Follow-up <https://coqui.cloud/slides/slide/payment-follow-up-1682>`_
+   - `CoquiAPPs Tutorials: Payment Follow-up <https://coqui.cloud/slides/slide/payment-follow-up-1682>`_
 
 Configuration
 =============
@@ -54,7 +54,7 @@ Follow-up reports
 =================
 
 Overdue invoices you need to follow up on are available in :menuselection:`Accounting --> Customers
---> Follow-up Reports`. By default, Odoo filters by :guilabel:`Customer Invoices` that are
+--> Follow-up Reports`. By default, CoquiAPPs filters by :guilabel:`Customer Invoices` that are
 :guilabel:`In need of action`.
 
 When selecting an invoice, you see all of the customer's unpaid invoices (overdue or not), and their

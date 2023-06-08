@@ -8,8 +8,8 @@ KeyPay Australian Payroll
 =========================
 
 The KeyPay Module synchronizes payslip accounting entries (e.g., expenses, social charges,
-liabilities, taxes) from KeyPay to Odoo automatically. Payroll administration is still done in
-KeyPay. We only record the journal entries in Odoo.
+liabilities, taxes) from KeyPay to CoquiAPPs automatically. Payroll administration is still done in
+KeyPay. We only record the journal entries in CoquiAPPs.
 
 Configuration Steps
 -------------------
@@ -20,13 +20,13 @@ Configuration Steps
 
    .. image:: australia/australia-keypay-api.png
       :align: center
-      :alt: Odoo Accounting settings includes a section for the Australian Loclization
+      :alt: CoquiAPPs Accounting settings includes a section for the Australian Loclization
 
 #. More fields become visible after clicking on *Enable KeyPay Integration*.
 
    .. image:: australia/australia-keypay-integration.png
       :align: center
-      :alt: Enabling KeyPay Integration in Odoo Accounting displays new fields in the settings
+      :alt: Enabling KeyPay Integration in CoquiAPPs Accounting displays new fields in the settings
 
 #. You can find the API Key in the *My Account* section of the KeyPay platform.
 
@@ -42,28 +42,28 @@ Configuration Steps
       :align: center
       :alt: The KeyPay "Business ID" number is in the URL
 
-#. You can choose any Odoo journal to post the payslip entries.
+#. You can choose any CoquiAPPs journal to post the payslip entries.
 
 How does the API work?
 ----------------------
 
-The API syncs the journal entries from KeyPay to Odoo and leaves them in draft mode. The reference
+The API syncs the journal entries from KeyPay to CoquiAPPs and leaves them in draft mode. The reference
 includes the KeyPay payslip entry ID in brackets for the user to easily retrieve the same record in
-KeyPay and Odoo.
+KeyPay and CoquiAPPs.
 
 .. image:: australia/australia-keypay-journal-entry.png
    :align: center
-   :alt: Example of a KeyPay Journal Entry in Odoo Accounting (Australia)
+   :alt: Example of a KeyPay Journal Entry in CoquiAPPs Accounting (Australia)
 
 .. note::
    The API sync is triggered by scheduled actions.
 
    .. image:: australia/australia-keypay-scheduled-actions.png
       :align: center
-      :alt: Scheduled Actions settings for KeyPay Payroll in Odoo (debug mode)
+      :alt: Scheduled Actions settings for KeyPay Payroll in CoquiAPPs (debug mode)
 
 KeyPay payslip entries also work based on double-entry bookkeeping. Debit must equal credit (like in
-Odoo).
+CoquiAPPs).
 
 The accounts used by KeyPay are defined in the section **Payroll settings**.
 
@@ -72,5 +72,5 @@ The accounts used by KeyPay are defined in the section **Payroll settings**.
    :alt: Chart of Accounts menu in KeyPay
 
 For the API to work, you need to create the same accounts as the default accounts of your KeyPay
-business (**same name and same code**) in Odoo. You also need to choose the correct account types in
-Odoo to generate accurate financial reports.
+business (**same name and same code**) in CoquiAPPs. You also need to choose the correct account types in
+CoquiAPPs to generate accurate financial reports.

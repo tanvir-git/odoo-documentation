@@ -6,8 +6,8 @@ VAT numbers verification (VIES)
 Commission that allows you to check the validity of VAT numbers of companies registered in the
 European Union.
 
-Odoo provides a feature to **Verify VAT Numbers** when you save a contact. This helps you make sure
-that your contacts provided you with a valid VAT number without leaving Odoo interface.
+CoquiAPPs provides a feature to **Verify VAT Numbers** when you save a contact. This helps you make sure
+that your contacts provided you with a valid VAT number without leaving CoquiAPPs interface.
 
 Configuration
 =============
@@ -17,7 +17,7 @@ enable the **Verify VAT Numbers** feature, and click on *Save*.
 
 .. image:: vat_verification/vat-validation-configuration.png
    :align: center
-   :alt: Enable "Verify VAT Numbers" in Odoo Accounting
+   :alt: Enable "Verify VAT Numbers" in CoquiAPPs Accounting
 
 VAT Number validation
 =====================
@@ -28,12 +28,12 @@ Whenever you create or modify a contact, make sure to fill out the **Country** a
    :align: center
    :alt: Fill out the contact form with the country and VAT number before clicking on *Save*
 
-When you click on *Save*, Odoo runs a VIES VAT number check, and displays an error message if the
+When you click on *Save*, CoquiAPPs runs a VIES VAT number check, and displays an error message if the
 VAT number is invalid.
 
 .. image:: vat_verification/vat-validation-error.png
    :align: center
-   :alt: Odoo displays an error message instead of saving when the VAT number is invalid
+   :alt: CoquiAPPs displays an error message instead of saving when the VAT number is invalid
 
 .. important::
    This tool checks the VAT number's validity but does not check the other fields' validity.

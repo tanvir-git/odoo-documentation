@@ -5,7 +5,7 @@ Custom reports
 Overview
 ========
 
-Odoo 13 comes with a powerful and easy-to-use reporting framework.
+CoquiAPPs 13 comes with a powerful and easy-to-use reporting framework.
 Creating new reports (such as a tax report or a balance sheet or
 income statement with specific groupings and layout ) to suit your
 needs is now easier than ever.
@@ -66,7 +66,7 @@ You have several objects available in the formula :
    ``.amount_residual``)
 
 A line can also be based on the sum of account move lines on a selected
-domain. In which case you need to fill the domain field with an Odoo
+domain. In which case you need to fill the domain field with an CoquiAPPs
 domain on the account move line object. Then an extra object is
 available in the formulas field, namely ``sum``, the sum of the account
 move lines in the domain. You can also use the group by field to group

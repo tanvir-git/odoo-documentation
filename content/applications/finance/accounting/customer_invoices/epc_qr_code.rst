@@ -15,7 +15,7 @@ potentially make for payment issues.
 
 .. seealso::
    - :doc:`../bank`
-   - `Odoo Academy: QR Code on Invoices for European Customers <https://coqui.cloud/r/VuU>`_
+   - `CoquiAPPs Academy: QR Code on Invoices for European Customers <https://coqui.cloud/r/VuU>`_
 
 Configuration
 =============
@@ -26,7 +26,7 @@ Codes` feature in the :guilabel:`Customer Payments` section.
 Configure your bank account's journal
 -------------------------------------
 
-Make sure that your :guilabel:`Bank Account` is correctly configured in Odoo with your IBAN and BIC.
+Make sure that your :guilabel:`Bank Account` is correctly configured in CoquiAPPs with your IBAN and BIC.
 
 To do so, go to :menuselection:`Accounting --> Configuration --> Journals`, open your bank journal,
 then fill out the :guilabel:`Account Number` and :guilabel:`Bank` under the :guilabel:`Bank Account
@@ -43,12 +43,12 @@ via EPC QR codes will be able to scan the code and pay the invoice.
 
 Go to :menuselection:`Accounting --> Customers --> Invoices`, and create a new invoice.
 
-Before posting it, open the :guilabel:`Other Info` tab. Odoo automatically fills out the
+Before posting it, open the :guilabel:`Other Info` tab. CoquiAPPs automatically fills out the
 :guilabel:`Recipient Bank` field with your IBAN.
 
 .. note::
    In the :guilabel:`Other Info` tab, the account indicated in the :guilabel:`Recipient Bank` field
-   is used to receive your customer's payment. Odoo automatically populates this field with your
+   is used to receive your customer's payment. CoquiAPPs automatically populates this field with your
    IBAN by default and uses it to generate the EPC QR code.
 
 When the invoice is printed or previewed, the QR code is included at the bottom.

@@ -4,7 +4,7 @@ Get paid to confirm an order
 
 In general, online payments are considered as a fast and secure alternative to traditional payment
 methods. It is generally cheaper, easier and faster than other payment methods. It is particularly
-useful and efficient for international transactions. With Odoo Sales, you can use online payments
+useful and efficient for international transactions. With CoquiAPPs Sales, you can use online payments
 to get automatic orders confirmation. Online payments are made instantly, so it's very convenient
 and saves lots of time in a basic sales process.
 
@@ -17,7 +17,7 @@ feature.
 .. image:: get_paid_to_validate/get_paid_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable online payment on Odoo Sales?
+   :alt: How to enable online payment on CoquiAPPs Sales?
 
 There, you will have direct access to the **Payment Acquirers** page. It will allow you to select
 and configure your acquirers of choice. Before creating or modifying a payment acquirer, be sure to
@@ -40,7 +40,7 @@ possibilities to make their online payments. For example:
 .. image:: get_paid_to_validate/get_paid_2.png
    :align: center
    :class: img-thumbnail
-   :alt: How to register a payment on Odoo Sales?
+   :alt: How to register a payment on CoquiAPPs Sales?
 
 .. tip::
    By clicking on the **Customer Preview** button, you will be able to see what your customers

@@ -10,7 +10,7 @@ storing data.
    :align: center
    :alt:   Enable Banking logo
 
-**Odoo** synchronizes directly with banks to get access to all bank transactions and automatically
+**CoquiAPPs** synchronizes directly with banks to get access to all bank transactions and automatically
 import them into your database.
 
 .. seealso::
@@ -20,13 +20,13 @@ import them into your database.
 Configuration
 =============
 
-Link bank accounts with Odoo
+Link bank accounts with CoquiAPPs
 ----------------------------
 
 #. Start synchronization by clicking on :menuselection:`Accounting --> Configuration -->
    Add a Bank Account`;
 #. Select your bank;
-#. Make sure you give your consent to share your account information with Odoo by clicking
+#. Make sure you give your consent to share your account information with CoquiAPPs by clicking
    :guilabel:`Continue authentication`;
 
    .. image:: enablebanking/enablebankingauth.png

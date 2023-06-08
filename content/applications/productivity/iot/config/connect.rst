@@ -2,7 +2,7 @@
 Connect an IoT Box to your database
 ===================================
 
-Install the Internet of Things (IoT) App on your Odoo Database.
+Install the Internet of Things (IoT) App on your CoquiAPPs Database.
 
 .. image:: connect/connect01.png
    :align: center
@@ -59,9 +59,9 @@ WiFi Connection
    .. tip::
       If you are on Runbot, do not forget to add the -all or -base in the
       token (e.g. this token
-      **http://375228-saas-11-5-iot-f3f920.runbot16.odoo.com\|4957098401**
+      **http://375228-saas-11-5-iot-f3f920.runbot16.CoquiAPPs.com\|4957098401**
       should become
-      **http://375228-saas-11-5-iot-f3f920-all.runbot16.odoo.com\|4957098401**).
+      **http://375228-saas-11-5-iot-f3f920-all.runbot16.CoquiAPPs.com\|4957098401**).
 
 #. Choose the WiFi network you want to connect with (enter the password
    if there is one) and click on Submit. Wait a few seconds before being

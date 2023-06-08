@@ -4,7 +4,7 @@ Quality Control
 
 Whether you want to control the quality of your production, or the production
 of your subcontractor, before registering the products into your stock, you can
-rely on Odoo's Quality module.
+rely on CoquiAPPs's Quality module.
 
 
 To control the quality of your production, you need to set a *Quality Control Point*

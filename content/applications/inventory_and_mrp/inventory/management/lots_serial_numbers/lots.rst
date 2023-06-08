@@ -2,7 +2,7 @@
 Use lots to manage groups of products
 =====================================
 
-*Lots* are one of the two ways to identify and track products in Odoo. A lot usually indicates a
+*Lots* are one of the two ways to identify and track products in CoquiAPPs. A lot usually indicates a
 specific batch of an item that was received, is currently stored, or was shipped from a warehouse,
 but can also pertain to a batch of products manufactured in-house, as well.
 
@@ -59,7 +59,7 @@ the :menuselection:`Inventory app --> Products --> Lots/Serial Numbers`, and cli
 generated automatically.
 
 .. tip::
-   While Odoo automatically generates a new :guilabel:`Lot/Serial Number` to follow the most recent
+   While CoquiAPPs automatically generates a new :guilabel:`Lot/Serial Number` to follow the most recent
    number, it can be edited and changed to any desired number, by clicking the line under the
    :guilabel:`Lot/Serial Number` field, and changing the generated number.
 
@@ -150,7 +150,7 @@ There are two ways to assign lot numbers: **manually** and **copy/paste**.
 
 - **Copy/paste lot numbers from a spreadsheet**: Populate a spreadsheet with all of the lot numbers
   received from the supplier (or manually chosen to assign upon receipt). Then, copy and paste them
-  in the :guilabel:`Lot/Serial Number Name` column. Odoo will automatically create the necessary
+  in the :guilabel:`Lot/Serial Number Name` column. CoquiAPPs will automatically create the necessary
   number of lines based on the amount of numbers pasted in the column. From here, the :guilabel:`To`
   locations and :guilabel:`Done` quantities can be manually entered in each of the lot number lines.
 
@@ -227,7 +227,7 @@ previous purchase order, if the product quantities shared the same lot number.
 Manage lots for different operations types
 ==========================================
 
-In Odoo, the creation of new lots is only allowed upon **receiving** products from a purchase order,
+In CoquiAPPs, the creation of new lots is only allowed upon **receiving** products from a purchase order,
 by default. **Existing** lot numbers cannot be used.
 
 For sales orders, the opposite is true: new lot numbers cannot be created on the delivery order,

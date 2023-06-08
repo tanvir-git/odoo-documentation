@@ -5,7 +5,7 @@ Surveys
 =======
 
 .. seealso::
-   - `Odoo Tutorials: Surveys <https://coqui.cloud/slides/surveys-62>`_
+   - `CoquiAPPs Tutorials: Surveys <https://coqui.cloud/slides/surveys-62>`_
 
 .. toctree::
    :titlesonly:

@@ -5,7 +5,7 @@ Colombia (ES)
 Introducción
 ============
 
-La Facturación Electrónica para Colombia está disponible en Odoo 12 y
+La Facturación Electrónica para Colombia está disponible en CoquiAPPs 12 y
 requiere los siguientes Módulos:
 
 #. **l10n_co**: Contiene los datos básicos para manejar el módulo de
@@ -67,7 +67,7 @@ CSC (Carvajal Servicios de Comunicación)
 
 CSC es el predeterminado para nuevas bases de datos.
 
-Una vez que el ambiente de producción está listo en Odoo y en Carvajal
+Una vez que el ambiente de producción está listo en CoquiAPPs y en Carvajal
 el ambiente de pruebas debe ser deshabilitado para poder enviar la
 información al ambiente de producción de Carvajal.
 
@@ -103,7 +103,7 @@ identificación asociado al tipo de documento correspondiente.
   :align: center
 
 Nota: Cuando el tipo de documento es RUT la identificación necesita ser
-ingresada en Odoo incluyendo el Dígito de Verificación. Odoo separará
+ingresada en CoquiAPPs incluyendo el Dígito de Verificación. CoquiAPPs separará
 este número cuando la información sea enviada a los proveedores
 terceros.
 
@@ -153,7 +153,7 @@ Diarios
 Una vez que la DIAN ha asignado la secuencia y prefijo oficiales para la
 resolución de la Facturación Electrónica, los Diarios de Ventas
 relacionados con tus documentos de facturación necesitan ser
-actualizados en Odoo.
+actualizados en CoquiAPPs.
 
 La secuencia es configurada usando el modo de desarrollador en la
 siguiente ruta: :menuselection:`Contabilidad --> Configuración --> Diarios
@@ -172,7 +172,7 @@ Número deben ser configurados y sincronizados con el CEN Financiero.
 Usuarios
 ~~~~~~~~
 
-La plantilla por defecto que es usada por Odoo en la representación
+La plantilla por defecto que es usada por CoquiAPPs en la representación
 gráfica incluye el nombre del Vendedor, así que estos campos deben ser
 considerados:
 
@@ -248,7 +248,7 @@ Recepción del XML y PDF Legal
   digital y un código único (CUFE) y generan el PDF de la Factura (el
   cual incluye un código QR) y el CUFE.
 
-| Odoo envía una petición de actualización automáticamente para
+| CoquiAPPs envía una petición de actualización automáticamente para
   verificar que el XML fue creado. Si este es el caso, las siguientes
   acciones son hechas automáticamente:
 
@@ -348,10 +348,10 @@ cuales dependen de los siguientes factores:
    .. image:: colombia_ES/colombia-es-calendario-permanente.png
       :align: center
 
-Requerimientos en Odoo
+Requerimientos en CoquiAPPs
 ----------------------
 
-Con la finalidad de facilitar el proceso de preparación de las bases de Odoo estándar V12 y v13,
+Con la finalidad de facilitar el proceso de preparación de las bases de CoquiAPPs estándar V12 y v13,
 únicamente será necesario que los administradores actualicen algunos módulos y creen los datos
 maestros relacionados a los nuevos procesos.
 
@@ -405,7 +405,7 @@ nombre de este registro genérico.
 Es importante coordinar y definir los casos de uso en los que dependiendo de su empresa se tendrá
 permitido utilizar este registro genérico.
 
-Dentro de Odoo se tendrá que crear un contacto con las siguientes características, es importante que
+Dentro de CoquiAPPs se tendrá que crear un contacto con las siguientes características, es importante que
 se defina de esta manera debido a que son los parámetros definidos por la DIAN.
 
 - **Tipo de contacto:** Individuo
@@ -427,7 +427,7 @@ IVA Excluido - Bienes Cubiertos
 
 Para reportar las transacciones realizadas mediante Bienes Cubiertos para los tres días sin IVA,
 será necesario crear un nuevo Impuesto al cual se le debe de asociar un grupo de impuestos
-específico que será utilizado por Odoo para agregar la sección requerida en el XML de factura
+específico que será utilizado por CoquiAPPs para agregar la sección requerida en el XML de factura
 electrónica.
 
 Para el crear el impuesto accederemos a Contabilidad dentro del menú :menuselection:`Configuración
@@ -500,7 +500,7 @@ Consumidor Final
 Una vez que resgistro de Consumidor final ha sido creado este deberá ser utilizado a demanda,
 generalmente será utilizado en las transacciones de facturación del punto de punto de venta.
 
-- El proceso de validación de la Factura será realizado de forma convencional en Odoo y la factura
+- El proceso de validación de la Factura será realizado de forma convencional en CoquiAPPs y la factura
   será generada de la misma manera. Al detectar que el número de identificación corresponde a
   consumidor Final, el XML que se envía a Carvajal será generado con las consideraciones y secciones
   correspondientes.
@@ -529,7 +529,7 @@ Condiciones
 ***********
 
 Debido a que estas transacciones serán generadas de forma excepcional y que se tiene una combinación
-de varios factores y condiciones, los productores debera ser actualizados de forma manual en Odoo
+de varios factores y condiciones, los productores debera ser actualizados de forma manual en CoquiAPPs
 asignados temporalmente el impuesto de venta *IVA exento - Bienes cubierto* en cada empresa según
 corresponda.
 
@@ -566,7 +566,7 @@ las empresas deben de verificar todos los detalles en el `Decreto 682
 
   - Cada cliente puede adquirir únicamente 3 unidades como máximo de cada producto.
 
-Medidas en Odoo
+Medidas en CoquiAPPs
 ***************
 
 - **Preparación de datos**
@@ -574,7 +574,7 @@ Medidas en Odoo
   - Crear el Impuesto para Bienes cubiertos de acuerdo a lo indicado en este punto: Datos maestros.
   - Identificar los productos y transacciones a los cuales les aplicará la Exclusión de IVA de
     acuerdo a las condiciones establecidas en el decreto 682. En caso de ser un porcentaje
-    significativo de productos, se recomienda actualizar el impuesto de forma temporal en Odoo.
+    significativo de productos, se recomienda actualizar el impuesto de forma temporal en CoquiAPPs.
   - Exportar un listado con los productos que serán afectados incluyendo el campo IVA Venta el cual
     será sustituido temporalmente por el IVA de Bienes Cubiertos.
   - Al finalizar las operaciones del día anterior a las fechas establecidas de día sin IVA, se debe

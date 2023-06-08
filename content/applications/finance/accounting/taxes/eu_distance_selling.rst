@@ -35,7 +35,7 @@ and *Save*.
 
 .. image:: eu_distance_selling/enable-feature.png
    :align: center
-   :alt: EU intra-community Distance Selling feature in Odoo Accounting settings
+   :alt: EU intra-community Distance Selling feature in CoquiAPPs Accounting settings
 
 .. important::
    Please :ref:`upgrade the module <general/upgrade>` `l10n_eu_service` if you already installed it

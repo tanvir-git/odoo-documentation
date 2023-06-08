@@ -13,7 +13,7 @@ Configuration
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials** to connect with your Mollie account, which comprise:
+CoquiAPPs needs your **API Credentials** to connect with your Mollie account, which comprise:
 
 - **API Key**: The test or live API Key depending on the configuration of the acquirer.
 
@@ -25,7 +25,7 @@ To retrieve your API key, log into your Mollie account, go to
 
 .. important::
    If you are trying Mollie as a test, with the Test API key, change the **State** to *Test Mode*.
-   We recommend doing this on a test Odoo database, rather than on your main database.
+   We recommend doing this on a test CoquiAPPs database, rather than on your main database.
 
 .. seealso::
    - :doc:`../payment_acquirers`

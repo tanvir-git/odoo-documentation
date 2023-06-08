@@ -5,7 +5,7 @@ Multiple websites
 .. image:: multi_website/multi_website04.png
   :align: center
 
-Odoo’s Multi-Websites opens up broad possibilities of diversification and
+CoquiAPPs’s Multi-Websites opens up broad possibilities of diversification and
 customer segmentation for your business. A multiplied audience and
 boosted revenue are now just a few clicks away!
 
@@ -27,7 +27,7 @@ The button, *Create a new website*, lays in the first section.
 
 In the upcoming prompt, set a name for your new website and a specific
 domain name. Leave empty to publish the new website under the default
-domain of your Odoo database. You can later set some country groups to
+domain of your CoquiAPPs database. You can later set some country groups to
 redirect visitors to it using Geo IP.
 
 .. image:: multi_website/multi_website01.png
@@ -45,8 +45,8 @@ website. Follow the purple drops; they will help you in the first steps.
 
 
 .. note::
-   If you run Odoo Online, don’t forget to redirect any new domain name to your Odoo database
-   (``CNAME``) and to authorize it Odoo-side. See :ref:`domain-name/existing`.
+   If you run CoquiAPPs Online, don’t forget to redirect any new domain name to your CoquiAPPs database
+   (``CNAME``) and to authorize it CoquiAPPs-side. See :ref:`domain-name/existing`.
 
 Create the menu
 ===============
@@ -119,7 +119,7 @@ be redirected to the right website using GeoIP.
   :align: center
 
 .. note::
-  Geo IP is installed by default in Odoo Online. If you run Odoo
+  Geo IP is installed by default in CoquiAPPs Online. If you run CoquiAPPs
   on-premise, don’t forget to install *GeoIP* library.
   See :doc:`on-premise_geo-ip-installation`
 
@@ -130,7 +130,7 @@ If you setup an extra website and specify the domain name you will have to
 do three things to get this feature to work:
 
 #. Setup an A-record in the DNS configuration of your hosting provider so
-   that "www.mywebsite2.ext" is redirected to the IP of your Odoo instance.
+   that "www.mywebsite2.ext" is redirected to the IP of your CoquiAPPs instance.
 #. Create an extra Nginx ``server`` block in which you set the
    ``server_name`` that you've set in the :guilabel:`Website domain` field.
 #. Reload and restart your Nginx instance to use the new ``server`` block.
@@ -219,7 +219,7 @@ website (products, jobs, events, etc.).
 
 Website editors can only view and edit the pages of the records they
 have access to, typically the ones belonging to their current company
-(and to their subsidiaries, or child companies in Odoo language). And so
+(and to their subsidiaries, or child companies in CoquiAPPs language). And so
 is it for visitors.
 
 .. note::

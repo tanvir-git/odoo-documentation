@@ -6,11 +6,11 @@ The **Purchase** application allows you to manage your purchase orders,
 incoming products, and vendor bills all seamlessly in one place.
 
 If you want to set up a vendor bill control process, the first thing you
-need to do is to have purchase data in Odoo. Knowing what has been
+need to do is to have purchase data in CoquiAPPs. Knowing what has been
 purchased and received is the first step towards understanding your
 purchase management processes.
 
-Here is the standard work flow in Odoo:
+Here is the standard work flow in CoquiAPPs:
 
 1. You begin with a **Request for Quotation (RFQ)** to send out to your
    vendor(s).
@@ -40,8 +40,8 @@ automatically install the **Inventory** and **Accounting** applications.
 Creating products
 -----------------
 
-Creating products in Odoo is essential for quick and efficient
-purchasing within Odoo. Simply navigate to the Products submenu under
+Creating products in CoquiAPPs is essential for quick and efficient
+purchasing within CoquiAPPs. Simply navigate to the Products submenu under
 Purchase and click create.
 
 .. image:: manage/manage01.png
@@ -130,7 +130,7 @@ The first thing you will need to do upon creating a vendor bill is to
 select the appropriate vendor, since doing so will also pull up any associated
 accounting or pricelist information. From there, you can choose to
 specify one or multiple Purchase Orders to populate the Vendor Bill
-with. When you select a Purchase Order from the list, Odoo will pull any
+with. When you select a Purchase Order from the list, CoquiAPPs will pull any
 uninvoiced products associated to that Purchase Order and automatically
 populate that information below. If you are having a hard time finding
 the appropriate vendor bill, you may search through the list by
@@ -150,7 +150,7 @@ prices).
    #. Your vendor is in back-order and is sending you invoices as they ship the products.
    #. Your vendor is sending you a partial bill or asking for a deposit.
 
-Every time you record a new vendor bill, Odoo will automatically
+Every time you record a new vendor bill, CoquiAPPs will automatically
 populate the product quantities based on what has been received from the
 vendor. If this value is showing a zero, this means that you have not
 yet received this product and simply serves as a reminder that the
@@ -165,7 +165,7 @@ What to do if your vendor bill does not match what you received
 ---------------------------------------------------------------
 
 If the bill you receive from the vendor has quantities that do not match
-the quantities automatically populated by Odoo, this could be due to
+the quantities automatically populated by CoquiAPPs, this could be due to
 several reasons:
 
 - The vendor is incorrectly charging you for products and/or services
@@ -221,7 +221,7 @@ Batch Billing
 -------------
 
 When creating a vendor bill and selecting the appropriate purchase
-order, you may continue to select additional purchase orders. Odoo
+order, you may continue to select additional purchase orders. CoquiAPPs
 will add the additional line items from the purchase orders you select. If you
 have not deleted the previous line items from the first purchase order,
 the bill will be linked to all the appropriate purchase orders.

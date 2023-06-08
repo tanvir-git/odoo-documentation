@@ -2,7 +2,7 @@
 Manage orders paid with Payment Acquirers
 =========================================
 
-The moment a payment is officially authorized by a Payment Acquirer, Odoo *automatically* confirms
+The moment a payment is officially authorized by a Payment Acquirer, CoquiAPPs *automatically* confirms
 the order, which triggers the delivery. And, if you invoice based on ordered quantities, you are
 requested to invoice the order, as well.
 
@@ -30,7 +30,7 @@ transaction, along with a link to the related Journal Entry.
    :alt: page with details surrounding the specific transaction
 
 .. note:: Specific messages are provided to your customers for every
-   payment status whenever they are redirected to Odoo after the transaction.
+   payment status whenever they are redirected to CoquiAPPs after the transaction.
    To edit these messages, go to the *Messages* tab of the payment
    method.
 

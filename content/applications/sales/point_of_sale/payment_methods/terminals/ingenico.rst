@@ -14,7 +14,7 @@ Configuration
 Connect an IoT Box
 ------------------
 
-Connecting an Ingenico Payment Terminal to Odoo is a feature that
+Connecting an Ingenico Payment Terminal to CoquiAPPs is a feature that
 requires an IoT Box. For more information on how to connect an IoT Box
 to your database, please refer to the :doc:`IoT documentation </applications/productivity/iot/config/connect>`.
 
@@ -27,7 +27,7 @@ Click on the F button of the terminal, then go in the
 Now, click on connection change and TCP/IP. Type the IP of your *IoT
 Box* (you can find it on the form view of your IoT Box). Then, enter
 9000 as port. The terminal will restart. Once it is done, go on your
-*IoT Box* form in Odoo and verify that the terminal has been found.
+*IoT Box* form in CoquiAPPs and verify that the terminal has been found.
 
 .. image:: ingenico/payment_terminal_02.png
    :align: center
@@ -66,7 +66,7 @@ still retry to send the payment request.
 
 If there is any issue with the payment terminal, you can still force the
 payment using the *Force Done*. This will allow you to validate the
-order in Odoo even if the connection between the terminal and Odoo has
+order in CoquiAPPs even if the connection between the terminal and CoquiAPPs has
 issues.
 
 .. note::

@@ -12,10 +12,10 @@ following customizable fields:
 
 .. image:: workflow_activities/activity-template.png
    :align: center
-   :alt: An activity template in Odoo Marketing Automation.
+   :alt: An activity template in CoquiAPPs Marketing Automation.
 
 - :guilabel:`Activity Name`: the title of the activity.
-- :guilabel:`Activity Type`: choose between Email, Server Action (internal Odoo operation), or SMS.
+- :guilabel:`Activity Type`: choose between Email, Server Action (internal CoquiAPPs operation), or SMS.
 - :guilabel:`Mail Template`: choose from pre-configured templates (or create a new one on-the-fly).
 - :guilabel:`Trigger`: choose when this activity should be triggered.
 - :guilabel:`Expiry Duration`: configure to stop the actions after a specific amount of time (after
@@ -33,7 +33,7 @@ creating the activity.
 Workflow activity
 =================
 
-Once saved, the :guilabel:`Workflow Activity` will appear in Odoo, where each activity will be
+Once saved, the :guilabel:`Workflow Activity` will appear in CoquiAPPs, where each activity will be
 shown as a graph by default. The configured trigger time for that activity can be found to the left
 of the :guilabel:`Workflow Activity` card.
 
@@ -43,7 +43,7 @@ in the graph for easy reference (in green and red, respectively).
 
 .. image:: workflow_activities/workflow-activity.png
    :align: center
-   :alt: Typical workflow activity in Odoo Marketing Automation.
+   :alt: Typical workflow activity in CoquiAPPs Marketing Automation.
 
 .. tip::
    If the :guilabel:`Activity Type` of the activity is set to :guilabel:`Email`, there are more
@@ -54,11 +54,11 @@ in the graph for easy reference (in green and red, respectively).
 Child activities
 ================
 
-Odoo also has the option to :guilabel:`Add Child Activity`. *Child Activities* are sub-activities
+CoquiAPPs also has the option to :guilabel:`Add Child Activity`. *Child Activities* are sub-activities
 that are connected to (and triggered by) the activity above it, which is also known as its *Parent
 Activity*.
 
-Odoo provides a number of triggering options to launch a :guilabel:`Child Activity` - all of which
+CoquiAPPs provides a number of triggering options to launch a :guilabel:`Child Activity` - all of which
 depend on the trigger configurations related to the parent activity. Under the desired parent
 activity, hover over :guilabel:`Add child activity`, and select the trigger:
 

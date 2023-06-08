@@ -13,7 +13,7 @@ open the *Barcode* app. Then, from the application, click on
          If you want to fully work with barcodes, you can download the sheet
          *Commands for Inventory*.
 
-Once you have clicked on *Inventory Adjustments*, Odoo will
+Once you have clicked on *Inventory Adjustments*, CoquiAPPs will
 automatically create one. Note that, if you work with multi-location,
 you first need to specify in which location the inventory adjustment
 takes place.

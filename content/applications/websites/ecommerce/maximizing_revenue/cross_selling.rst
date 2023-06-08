@@ -37,7 +37,7 @@ accessory products suggested to the customer.
    :alt: See of payment view and accessory product suggestion.
 
 .. seealso::
-   `Odoo Tutorials: Alternative, Accessory, and Optional Products
+   `CoquiAPPs Tutorials: Alternative, Accessory, and Optional Products
    <https://coqui.cloud/slides/slide/alternative-accessory-and-optional-products-637>`_.
 
 .. _cross_selling/optional:

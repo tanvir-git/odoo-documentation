@@ -19,7 +19,7 @@ receipts and deliveries; they do not have to be configured to have the same numb
 Choosing the right inventory flow to handle receipts and deliveries
 ===================================================================
 
-By default, Odoo handles shipping and receiving in three different ways: in one, two, or three
+By default, CoquiAPPs handles shipping and receiving in three different ways: in one, two, or three
 steps. The simplest configuration is one step, which is the default. Each additional step required
 for a warehouse for either the receiving or shipping process will add an additional layer of
 operations to perform before a product is either received or shipped. These configurations depend

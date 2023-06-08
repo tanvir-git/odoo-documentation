@@ -14,7 +14,7 @@ Configuration
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials** to connect with your Alipay account, which comprise:
+CoquiAPPs needs your **API Credentials** to connect with your Alipay account, which comprise:
 
 - **Account**: Depending on where you are situated
   - `Express Checkout` if your are a Chinese Merchant.
@@ -30,7 +30,7 @@ To retrieve them, log into your Alipay account, they are on the front page.
 
 .. important::
    If you are trying Alipay as a test, in the *sandbox*, change the **State** to *Test Mode*. We
-   recommend doing this on a test Odoo database, rather than on your main database.
+   recommend doing this on a test CoquiAPPs database, rather than on your main database.
 
 .. seealso::
    - :doc:`../payment_acquirers`

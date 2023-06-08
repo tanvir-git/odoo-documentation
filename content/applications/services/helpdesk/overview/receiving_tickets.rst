@@ -15,7 +15,7 @@ features as you want them to be available to your users.
 
 .. image:: receiving_tickets/channels_options.png
    :align: center
-   :alt: View of a helpdesk teams setting page emphasizing the channels options in Odoo Helpdesk
+   :alt: View of a helpdesk teams setting page emphasizing the channels options in CoquiAPPs Helpdesk
 
 Email Alias
 -----------
@@ -29,10 +29,10 @@ Email Alias
    :align: center
    :height: 250
    :alt: View of the settings page of a helpdesk team emphasizing the email alias feature
-         in Odoo Helpdesk
+         in CoquiAPPs Helpdesk
 
 .. note::
-   Using your own email server is required to send and receive emails in Odoo Community and
+   Using your own email server is required to send and receive emails in CoquiAPPs Community and
    Enterprise. Online users benefit from a ready-to-use email server.
 
 Website Form
@@ -44,13 +44,13 @@ Website Form
 .. image:: receiving_tickets/go_to_website.png
    :align: center
    :alt: View of the settings page of a helpdesk team emphasizing the Go to Website button in
-         Odoo Helpdesk
+         CoquiAPPs Helpdesk
 
 From the website page customize the form as you like. Then, publish it by clicking on *Unpublished*.
 
 .. image:: receiving_tickets/submit_a_ticket_form.png
    :align: center
-   :alt: View of the website form to submit a ticket for Odoo Helpdesk
+   :alt: View of the website form to submit a ticket for CoquiAPPs Helpdesk
 
 Live Chat
 ---------
@@ -63,7 +63,7 @@ Live Chat
 .. image:: receiving_tickets/live_chat.png
    :align: center
    :alt: View of the settings page of a helpdesk team emphasizing the live chat features and links
-         in Odoo Helpdesk
+         in CoquiAPPs Helpdesk
 
 Now, your operators can create tickets by using the
 :doc:`command </applications/websites/livechat/responses>` */helpdesk (subject_of_ticket)*.
@@ -81,7 +81,7 @@ the Kanban view.
 .. image:: receiving_tickets/kanban_view_prioritize.png
    :align: center
    :height: 330
-   :alt: View of a team’s kanban view and the prioritized tasks in Odoo Helpdesk
+   :alt: View of a team’s kanban view and the prioritized tasks in CoquiAPPs Helpdesk
 
 .. seealso::
    - :doc:`sla`

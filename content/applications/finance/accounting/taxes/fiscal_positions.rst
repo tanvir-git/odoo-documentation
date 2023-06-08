@@ -11,7 +11,7 @@ accounts used for a transaction.
 
 .. image:: fiscal_positions/fiscal-positions-intra-community.png
    :align: center
-   :alt: Example: Belgian to Intra-Community tax mapping with Fiscal Positions in Odoo Accounting
+   :alt: Example: Belgian to Intra-Community tax mapping with Fiscal Positions in CoquiAPPs Accounting
 
 They can be applied in various ways:
 
@@ -90,7 +90,7 @@ Position** field, and click on *Save*.
 
 .. image:: fiscal_positions/fiscal-positions-partner.png
    :align: center
-   :alt: Selection of a Fiscal Position on a Sales Order / Invoice / Bill in Odoo Accounting
+   :alt: Selection of a Fiscal Position on a Sales Order / Invoice / Bill in CoquiAPPs Accounting
 
 .. _fiscal_positions/transaction:
 
@@ -102,7 +102,7 @@ To manually select which Fiscal Position to use for a new Sales Order, Invoice, 
 
 .. image:: fiscal_positions/fiscal-positions-transaction.png
    :align: center
-   :alt: Selection of a Fiscal Position on a Sales Order / Invoice / Bill in Odoo Accounting
+   :alt: Selection of a Fiscal Position on a Sales Order / Invoice / Bill in CoquiAPPs Accounting
 
 .. seealso::
 

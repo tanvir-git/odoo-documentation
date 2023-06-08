@@ -2,7 +2,7 @@
 Checks
 ======
 
-There are two ways to handle payments received by checks. Odoo support
+There are two ways to handle payments received by checks. CoquiAPPs support
 both approaches so that you can use the one that better fits your
 habits.
 
@@ -24,7 +24,7 @@ We recommend the first approach as it is more accurate (your bank
 account balance is accurate, taking into accounts checks that have not
 been cashed yet). Both approaches require the same effort.
 
-Even if the first method is cleaner, Odoo support the second approach
+Even if the first method is cleaner, CoquiAPPs support the second approach
 because some accountants are used to it (quickbooks and peachtree
 users).
 

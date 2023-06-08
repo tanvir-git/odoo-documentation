@@ -17,7 +17,7 @@ request by the tax authorities for audit purposes.
 FEC Import
 ----------
 
-To make the onboarding of new users easier, Odoo Enterprise's French :ref:`fiscal localization
+To make the onboarding of new users easier, CoquiAPPs Enterprise's French :ref:`fiscal localization
 package <fiscal_localizations/packages>` includes the **FEC Import** feature (module name:
 ``l10n_fr_fec_import``), which enables the import of existing FEC files from older software.
 
@@ -31,7 +31,7 @@ click on *Import*.
 
     | Importing FEC files from different year takes no particular action or computation.
     | Should multiple files contain any "Reports à Nouveaux" (RAN) with the starting balance of the
-      year, you might need to cancel those entries in the User Interface. Odoo makes those entries
+      year, you might need to cancel those entries in the User Interface. CoquiAPPs makes those entries
       (RAN) useless.
 
 File formats
@@ -142,15 +142,15 @@ Code matching
 Should a similar account code already be present in the system, the existing one is used instead of
 creating a new one.
 
-Accounts in Odoo generally have a number of digits that are default for the fiscal localization. As
+Accounts in CoquiAPPs generally have a number of digits that are default for the fiscal localization. As
 the FEC module is related to the French localization, the default number of relevant digits is 6.
 
 This means that the account codes the trailing zeroes are right-trimmed, and that the comparison
-between the account codes in the FEC file and the ones already existing in Odoo is performed only on
+between the account codes in the FEC file and the ones already existing in CoquiAPPs is performed only on
 the first six digits of the codes.
 
 .. example::
-   The account code `65800000` in the file is matched against an existing `658000` account in Odoo,
+   The account code `65800000` in the file is matched against an existing `658000` account in CoquiAPPs,
    and that account is used instead of creating a new one.
 
 Reconcilable flag
@@ -193,7 +193,7 @@ The type of the account is then flagged as *payable* and *reconcilable* as per t
 Journals
 ********
 
-Journals are also checked against those already existing in Odoo to avoid duplicates, also in the
+Journals are also checked against those already existing in CoquiAPPs to avoid duplicates, also in the
 case of multiple FEC files imports.
 
 Should a similar journal code already be present in the system, the existing one is used instead of
@@ -337,20 +337,20 @@ specific to France:
 - Compte de résultats
 - Plan de Taxes France
 
-Get the VAT anti-fraud certification with Odoo
+Get the VAT anti-fraud certification with CoquiAPPs
 ==============================================
 
 As of January 1st 2018, a new anti-fraud legislation comes into effect
 in France and DOM-TOM. This new legislation stipulates certain criteria
 concerning the inalterability, security, storage and archiving of sales data.
-These legal requirements are implemented in Odoo, version 9 onward,
+These legal requirements are implemented in CoquiAPPs, version 9 onward,
 through a module and a certificate of conformity to download.
 
 Is my company required to use anti-fraud software?
 --------------------------------------------------
 
 Your company is required to use an anti-fraud cash register software like
-Odoo (CGI art. 286, I. 3° bis) if:
+CoquiAPPs (CGI art. 286, I. 3° bis) if:
 
 - You are taxable (not VAT exempt) in France or any DOM-TOM,
 - Some of your customers are private individuals (B2C).
@@ -358,23 +358,23 @@ Odoo (CGI art. 286, I. 3° bis) if:
 This rule applies to any company size. Auto-entrepreneurs are exempted from
 VAT and therefore are not affected.
 
-Get certified with Odoo
+Get certified with CoquiAPPs
 -----------------------
 
-Getting compliant with Odoo is very easy.
+Getting compliant with CoquiAPPs is very easy.
 
 Your company is requested by the tax administration to deliver a certificate
 of conformity testifying that your software complies with the anti-fraud
-legislation. This certificate is granted by Odoo SA to Odoo Enterprise users
+legislation. This certificate is granted by CoquiAPPs SA to CoquiAPPs Enterprise users
 `here <https://coqui.cloud/my/contract/french-certification/>`_.
-If you use Odoo Community, you should :doc:`upgrade to Odoo Enterprise
-</administration/maintain/enterprise>` or contact your Odoo service provider.
+If you use CoquiAPPs Community, you should :doc:`upgrade to CoquiAPPs Enterprise
+</administration/maintain/enterprise>` or contact your CoquiAPPs service provider.
 
 In case of non-conformity, your company risks a fine of €7,500.
 
 To get the certification, just follow the following steps:
 
-- If you use **Odoo Point of Sale**, :ref:`install <general/install>` the **France - VAT Anti-Fraud
+- If you use **CoquiAPPs Point of Sale**, :ref:`install <general/install>` the **France - VAT Anti-Fraud
   Certification for Point of Sale (CGI 286 I-3 bis)** module by going to :menuselection:`Apps`,
   removing the *Apps* filter, then searching for *l10n_fr_pos_cert*, and installing the module.
 
@@ -382,7 +382,7 @@ To get the certification, just follow the following steps:
   encrypted for the inalterability check. To edit your company’s data,
   go to :menuselection:`Settings --> Users & Companies --> Companies`.
   Select a country from the list; Do not create a new country.
-- Download the mandatory certificate of conformity delivered by Odoo SA `here <https://coqui.cloud/my/contract/french-certification/>`__.
+- Download the mandatory certificate of conformity delivered by CoquiAPPs SA `here <https://coqui.cloud/my/contract/french-certification/>`__.
 
 .. note::
 
@@ -390,7 +390,7 @@ To get the certification, just follow the following steps:
       December 18th 2017, you should update the modules list.
       To do so, activate the :ref:`developer mode <developer-mode>`.
       Then go to the *Apps* menu and press *Update Modules List* in the top-menu.
-    - In case you run Odoo on-premise, you need to update your installation
+    - In case you run CoquiAPPs on-premise, you need to update your installation
       and restart your server beforehand.
     - If you have installed the initial version of the anti-fraud module
       (prior to December 18th 2017), you need to update it.
@@ -483,12 +483,12 @@ Responsibilities
 Do not uninstall the module! If you do so, the hashes will be reset and none
 of your past data will be longer guaranteed as being inalterable.
 
-Users remain responsible for their Odoo instance and must use it with
+Users remain responsible for their CoquiAPPs instance and must use it with
 due diligence. It is not permitted to modify the source code which guarantees
 the inalterability of data.
 
-Odoo absolves itself of all and any responsibility in case of changes
-in the module’s functions caused by 3rd party applications not certified by Odoo.
+CoquiAPPs absolves itself of all and any responsibility in case of changes
+in the module’s functions caused by 3rd party applications not certified by CoquiAPPs.
 
 More Information
 ----------------

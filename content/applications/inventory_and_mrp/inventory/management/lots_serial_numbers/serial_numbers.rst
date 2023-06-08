@@ -2,7 +2,7 @@
 Use serial numbers to track products
 ====================================
 
-*Serial numbers* are one of the two ways to identify and track products in Odoo. A serial number is
+*Serial numbers* are one of the two ways to identify and track products in CoquiAPPs. A serial number is
 a unique identifier assigned incrementally (or sequentially) to an item or product, used to
 distinguish it from other items and products.
 
@@ -60,7 +60,7 @@ do this, go to :menuselection:`Inventory --> Products --> Lots/Serial Numbers`, 
 :guilabel:`Lot/Serial Number` is generated automatically.
 
 .. tip::
-   While Odoo automatically generates a new lot/serial number to follow the most recent number, it
+   While CoquiAPPs automatically generates a new lot/serial number to follow the most recent number, it
    can be edited and changed to any desired number, by clicking the line under the
    :guilabel:`Lot/Serial Number` field, and changing the generated number.
 
@@ -154,7 +154,7 @@ the :guilabel:`Quantity Done` field displays the correct (matching) number of pr
 Assign serial numbers automatically
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If a large quantity of products need individual serial numbers assigned to them, Odoo can
+If a large quantity of products need individual serial numbers assigned to them, CoquiAPPs can
 automatically generate and assign serial numbers to each of the individual products.
 
 To accomplish this, start with the :guilabel:`First SN` field in the :guilabel:`Detailed Operations`
@@ -175,7 +175,7 @@ Copy/paste serial numbers from a spreadsheet
 
 To copy and paste serial numbers from an existing spreadsheet, first populate a spreadsheet with all
 of the serial numbers received from the supplier (or manually chosen upon receipt). Then, copy and
-paste them in the :guilabel:`Lot/Serial Number Name` column. Odoo will automatically create the
+paste them in the :guilabel:`Lot/Serial Number Name` column. CoquiAPPs will automatically create the
 necessary number of lines based on the amount of numbers pasted in the column.
 
 From here, the :guilabel:`To` locations and :guilabel:`Done` quantities can be manually entered in
@@ -255,7 +255,7 @@ during receipt of that specific :abbr:`PO (purchase order)`.
 Manage serial numbers for different operations types
 ====================================================
 
-By default in Odoo, the creation of new serial numbers is only allowed upon **receiving** products
+By default in CoquiAPPs, the creation of new serial numbers is only allowed upon **receiving** products
 from a purchase order. **Existing** serial numbers cannot be used. For sales orders, the opposite is
 true: new serial numbers cannot be created on the delivery order, only existing serial numbers can
 be used.

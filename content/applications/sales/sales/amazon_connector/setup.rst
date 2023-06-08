@@ -1,13 +1,13 @@
 ==================================
-Configure Amazon Connector in Odoo
+Configure Amazon Connector in CoquiAPPs
 ==================================
 
-Register your Amazon account in Odoo
+Register your Amazon account in CoquiAPPs
 ====================================
 
 .. _amazon/setup:
 
-To register your seller account in Odoo, navigate to :menuselection:`Sales --> Configuration
+To register your seller account in CoquiAPPs, navigate to :menuselection:`Sales --> Configuration
 --> Settings --> Connectors --> Amazon Sync --> Amazon Accounts` and click on :guilabel:`CREATE`.
 
 #. Choose a meaningful name for your account (e.g. `Europe`), and select your :guilabel:`Sign-up
@@ -16,9 +16,9 @@ To register your seller account in Odoo, navigate to :menuselection:`Sales --> C
 
 #. Upon saving, a button to :guilabel:`link with Amazon` appears. Click on it to be redirected to
    the Amazon login page, or directly to the consent page if you are already logged in. There,
-   confirm that you want Amazon to give Odoo access to your account and related data.
+   confirm that you want Amazon to give CoquiAPPs access to your account and related data.
 
-#. Amazon redirects you to Odoo, with your account registered.
+#. Amazon redirects you to CoquiAPPs, with your account registered.
 
 Once the account is registered, the marketplaces available to this account are synchronized and
 listed under the :guilabel:`Marketplaces` tab. If you wish, you can remove some items from the list
@@ -27,7 +27,7 @@ of synchronized marketplaces to disable their synchronization.
 Match database products in Amazon
 =================================
 
-When an Amazon order is synchronized, up to three sales order items are created in Odoo for each
+When an Amazon order is synchronized, up to three sales order items are created in CoquiAPPs for each
 product sold on Amazon: one for the marketplace product, one for the shipping charges (if any) and
 one for the gift wrapping charges (if any).
 
@@ -60,15 +60,15 @@ code, a default database product **Amazon Sale** is used. The same is done with 
 Configure taxes of products
 ===========================
 
-To allow for tax reporting of Amazon sales with Odoo, the taxes applied to the sales order items are
+To allow for tax reporting of Amazon sales with CoquiAPPs, the taxes applied to the sales order items are
 those set on the product or determined by the fiscal position. Make sure to have set the correct
-taxes on your products in Odoo or to have it done by a fiscal position, to avoid discrepancies in
-the subtotals between Seller Central and Odoo.
+taxes on your products in CoquiAPPs or to have it done by a fiscal position, to avoid discrepancies in
+the subtotals between Seller Central and CoquiAPPs.
 
 .. note::
-   As Amazon does not necessarily apply the same taxes as those configured in Odoo, it may happen
+   As Amazon does not necessarily apply the same taxes as those configured in CoquiAPPs, it may happen
    that order totals differ by a few cents from that on Seller Central. Those differences can be
-   resolved with a write-off when reconciling the payments in Odoo.
+   resolved with a write-off when reconciling the payments in CoquiAPPs.
 
 .. _amazon/add-unsupported-marketplace:
 
@@ -76,7 +76,7 @@ Add an unsupported marketplace
 ==============================
 
 Some Amazon Marketplaces, such as Amazon Brazil, are not created by default as they are not
-officially supported by Odoo but might be compatible with your seller account. These marketplaces
+officially supported by CoquiAPPs but might be compatible with your seller account. These marketplaces
 can be added manually should you wish to use them. See :ref:`here <amazon/supported-marketplaces>`
 for the exhaustive list of natively supported marketplaces.
 
@@ -110,8 +110,8 @@ the list of synchronized marketplaces. If the new marketplace is not added to th
 that it is either incompatible or unavailable for your seller account.
 
 .. important::
-   As manually added marketplaces are not officially supported by Odoo, there is no guarantee that
-   adding one as described above will work, nor can this be considered as a bug when contacting Odoo
+   As manually added marketplaces are not officially supported by CoquiAPPs, there is no guarantee that
+   adding one as described above will work, nor can this be considered as a bug when contacting CoquiAPPs
    Support.
 
 .. seealso::

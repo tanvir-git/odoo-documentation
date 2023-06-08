@@ -2,7 +2,7 @@
 Connect a Scale
 ===============
 
-When using your **IoT Box** in Odoo, you could need to use a scale. Doing so is easy and convenient
+When using your **IoT Box** in CoquiAPPs, you could need to use a scale. Doing so is easy and convenient
 as it can be done in a few steps. Then, you can use it in your **Point of Sale app** to weigh your
 products, which is helpful if their price are based on it.
 
@@ -14,7 +14,7 @@ To link the scale to the **IoT Box**, connect them with a cable.
 .. note::
    In some cases, a serial to USB adapter may be needed.
 
-If your scale is `compatible with Odoo IoT Box <https://coqui.cloud/page/iot-hardware>`_, there
+If your scale is `compatible with CoquiAPPs IoT Box <https://coqui.cloud/page/iot-hardware>`_, there
 is no need to set up anything because it will be automatically detected as soon as it is connected.
 
 .. image:: scale/iot-choice.png

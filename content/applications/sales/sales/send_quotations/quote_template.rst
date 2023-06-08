@@ -14,16 +14,16 @@ To enable this feature, go to :menuselection:`Sales --> Configuration --> Settin
 .. image:: quote_template/quotations_templates_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable quotation templates on Odoo Sales?
+   :alt: How to enable quotation templates on CoquiAPPs Sales?
 
 For even more convenience, it is also recommended to add the **Quotation Builder** feature which
 will help you design your quotation templates very easily. This option will automatically install
-the Odoo Website App.
+the CoquiAPPs Website App.
 
 .. image:: quote_template/quotations_templates_2.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable quotation builder on Odoo Sales?
+   :alt: How to enable quotation builder on CoquiAPPs Sales?
 
 Create your first template
 ==========================
@@ -36,7 +36,7 @@ products and quantities as well as the expiration time of the quotation.
 .. image:: quote_template/quotations_templates_3.png
    :align: center
    :class: img-thumbnail
-   :alt: Create a new quotation template on Odoo Sales
+   :alt: Create a new quotation template on CoquiAPPs Sales
 
 Design your template
 ====================
@@ -49,7 +49,7 @@ be able to describe your company, your services and your products. To do so, you
 .. image:: quote_template/quotations_templates_4.png
    :align: center
    :class: img-thumbnail
-   :alt: Design your quotation template on Odoo Sales
+   :alt: Design your quotation template on CoquiAPPs Sales
 
 You can easily edit the content of your template by dragging & dropping different building blocks
 to organize your quotation. For example, you can add a content block to describe your products.
@@ -57,7 +57,7 @@ to organize your quotation. For example, you can add a content block to describe
 .. image:: quote_template/quotations_templates_5.png
    :align: center
    :class: img-thumbnail
-   :alt: Drag & drop building blocks to create your quotation template on Odoo Sales
+   :alt: Drag & drop building blocks to create your quotation template on CoquiAPPs Sales
 
 Use a quotation template
 ========================
@@ -67,7 +67,7 @@ When creating a quotation, you can choose a specific template.
 .. image:: quote_template/quotations_templates_6.png
    :align: center
    :class: img-thumbnail
-   :alt: Select a specific template on Odoo Sales
+   :alt: Select a specific template on CoquiAPPs Sales
 
 .. tip::
    You can select any template of your choice and suggest it as the default template in
@@ -82,7 +82,7 @@ pay online. You can activate these two options directly in the quotation templat
 .. image:: quote_template/quotations_templates_7.png
    :align: center
    :class: img-thumbnail
-   :alt: Allow your customers to sign electronically or to pay online on Odoo Sales
+   :alt: Allow your customers to sign electronically or to pay online on CoquiAPPs Sales
 
 .. note::
    Every quotation will now have this setting. Of course you can always change it and make it

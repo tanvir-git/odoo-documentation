@@ -6,7 +6,7 @@ In many companies, products have expiration dates and they should be managed bas
 In the food industry, for example, tracking and managing product stock based on expiration dates is
 mandatory to avoid selling expired products to customers.
 
-With Odoo, you can track and manage your products based on their expiration dates, even if they are
+With CoquiAPPs, you can track and manage your products based on their expiration dates, even if they are
 already tracked by lots or serial numbers.
 
 Configuration

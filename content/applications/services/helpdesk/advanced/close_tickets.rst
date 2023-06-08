@@ -14,7 +14,7 @@ the appropriate team. Then click :guilabel:`Edit` and enable :guilabel:`Ticket c
 checking the field box.
 
 .. image:: close_tickets/close-ticket-settings.png
-   :alt: Ticket closing feature in Odoo Helpdesk.
+   :alt: Ticket closing feature in CoquiAPPs Helpdesk.
 
 To designate which stage the ticket migrates to once it is closed, navigate to the ticket pipeline
 by going to :menuselection:`Helpdesk --> Overview` and clicking :guilabel:`Tickets` on the team's
@@ -34,7 +34,7 @@ With the ticket closing settings now complete, customers can now view the option
 :guilabel:`Close this ticket` when they log into their portal.
 
 .. image:: close_tickets/customer-view-close-ticket.png
-   :alt: Customer view of ticket closing in Odoo Helpdesk.
+   :alt: Customer view of ticket closing in CoquiAPPs Helpdesk.
 
 Get reports on tickets closed by customers
 ==========================================
@@ -45,4 +45,4 @@ Custom filter`. Next, set the custom filter parameters to :guilabel:`Closed by p
 :guilabel:`is true`. Finally, click :guilabel:`Apply`.
 
 .. image:: close_tickets/closed-by-search-filter.png
-   :alt: Filter for tickets closed by customers on Odoo Helpdesk's reporting page.
+   :alt: Filter for tickets closed by customers on CoquiAPPs Helpdesk's reporting page.

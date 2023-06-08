@@ -15,7 +15,7 @@ First time you request a down payment
 
 When a sales order is confirmed, you then have the possibility to create an invoice. Invoices
 are automatically created in drafts so that you can review them before validation. To create an
-invoice, Odoo Sales offers you 3 options:
+invoice, CoquiAPPs Sales offers you 3 options:
 
 - Regular invoice
 - Down payment (percentage)
@@ -28,7 +28,7 @@ payments.
 
 .. image:: down_payment/down_payment_1.png
    :align: center
-   :alt: How can you do a down payment on Odoo Sales?
+   :alt: How can you do a down payment on CoquiAPPs Sales?
 
 .. important::
    When you request your first down payment, a new product called **Down payment** will be created.
@@ -48,7 +48,7 @@ payment (as you can see below).
 
 .. image:: down_payment/down_payment_2.png
    :align: center
-   :alt: What is a basic sales flow using down payments on Odoo Sales (1)?
+   :alt: What is a basic sales flow using down payments on CoquiAPPs Sales (1)?
 
 There, you can post the invoice and register the payment of your customer. But, we all know that in
 real life this flow does not happen immediately. So, for now, you can return to the sales order.
@@ -58,7 +58,7 @@ down payment will be mentioned on both (sales order and draft invoice).
 
 .. image:: down_payment/down_payment_3.png
    :align: center
-   :alt: What is a basic sales flow using down payments on Odoo Sales (2)?
+   :alt: What is a basic sales flow using down payments on CoquiAPPs Sales (2)?
 
 To complete the flow, when the customer wants to pay the rest of his sales order, you must create
 another invoice. Once again, you will have the choice to make another down payment or to deduct all
@@ -66,7 +66,7 @@ the down payments and so, paying the rest of the invoice as a regular invoice.
 
 .. image:: down_payment/down_payment_4.png
    :align: center
-   :alt: What is a basic sales flow using down payments on Odoo Sales (3)?
+   :alt: What is a basic sales flow using down payments on CoquiAPPs Sales (3)?
 
 This flow is also possible with a down payment taking into account a fixed amount.
 
@@ -85,7 +85,7 @@ From the products list, search for the **Down Payment** product.
 
 .. image:: down_payment/down_payment_5.png
    :align: center
-   :alt: Creation of a down payment product on Odoo Sales
+   :alt: Creation of a down payment product on CoquiAPPs Sales
 
 You can edit it and under the **General Information Tab** you will be able to change the customer
 taxes. Now, to change the income account, you will need to install the **Accounting App** to have

@@ -2,11 +2,11 @@
 Google Sign-In Authentication
 =============================
 
-The *Google Sign-In Authentication* is a useful function that allows Odoo users to sign in to their
+The *Google Sign-In Authentication* is a useful function that allows CoquiAPPs users to sign in to their
 database with their Google account.
 
 This is particularly helpful if the organization uses Google Workspace, and wants employees within
-the organization to connect to Odoo using their Google Accounts.
+the organization to connect to CoquiAPPs using their Google Accounts.
 
 .. seealso::
    - :doc:`/applications/productivity/calendar/google`
@@ -17,7 +17,7 @@ the organization to connect to Odoo using their Google Accounts.
 Configuration
 =============
 
-The integration of the Google sign-in function requires configuration both on Google *and* Odoo.
+The integration of the Google sign-in function requires configuration both on Google *and* CoquiAPPs.
 
 .. _google-sign-in/api:
 
@@ -88,19 +88,19 @@ Credentials
       :alt: OAuth client id selection.
 
 #. Select :guilabel:`Web Application` as the :guilabel:`Application Type`. Now, configure the
-   allowed pages on which Odoo will be redirected.
+   allowed pages on which CoquiAPPs will be redirected.
 
    In order to achieve this, in the :guilabel:`Authorized redirect URIs` field, enter the database's
    domain immediately followed by `/auth_oauth/signin`. For example:
-   `https://mydomain.odoo.com/auth_oauth/signin`, then click on :guilabel:`Create`.
+   `https://mydomain.CoquiAPPs.com/auth_oauth/signin`, then click on :guilabel:`Create`.
 
 #. Now that the *OAuth client* has been created, a screen will appear with the :guilabel:`Client ID`
    and :guilabel:`Client Secret`. Copy the :guilabel:`Client ID` for later, as it will be necessary
-   for the configuration in Odoo, which will be covered in the following steps.
+   for the configuration in CoquiAPPs, which will be covered in the following steps.
 
-.. _google-sign-in/auth-odoo:
+.. _google-sign-in/auth-CoquiAPPs:
 
-Google Authentication on Odoo
+Google Authentication on CoquiAPPs
 -----------------------------
 
 .. _google-sign-in/client-id:
@@ -115,25 +115,25 @@ Once the previous steps are complete, two keys are generated on the Google API D
    :align: center
    :alt: Google OAuth Client ID generated.
 
-.. _google-sign-in/odoo-activation:
+.. _google-sign-in/CoquiAPPs-activation:
 
-Odoo activation
+CoquiAPPs activation
 ~~~~~~~~~~~~~~~
 
-#. Go to :menuselection:`Odoo General Settings --> Integrations` and activate :guilabel:`OAuth
+#. Go to :menuselection:`CoquiAPPs General Settings --> Integrations` and activate :guilabel:`OAuth
    Authentication`.
 
    .. note::
-      Odoo may prompt the user to log-in again after this step.
+      CoquiAPPs may prompt the user to log-in again after this step.
 
 #. Go back to :menuselection:`General Settings --> Integrations --> OAuth Authentication`, activate
    the selection and :guilabel:`Save`. Next, return to :menuselection:`General Settings -->
    Integrations --> Google Authentication` and activate the selection. Then fill out the
    :guilabel:`Client ID` with the key from the Google API Dashboard, and :guilabel:`Save`.
 
-   .. image:: google/odoo-client-id.png
+   .. image:: google/CoquiAPPs-client-id.png
       :align: center
-      :alt: Filling out the client id in Odoo settings.
+      :alt: Filling out the client id in CoquiAPPs settings.
 
    .. note::
       Google OAuth2 configuration can also be accessed by clicking on :guilabel:`OAuth Providers`
@@ -141,11 +141,11 @@ Odoo activation
 
 .. _google-sign-in/log-in:
 
-Log in to Odoo with Google
+Log in to CoquiAPPs with Google
 ==========================
 
-To link the Google account to the Odoo profile, click on :guilabel:`Log in with Google` when first
-logging into Odoo.
+To link the Google account to the CoquiAPPs profile, click on :guilabel:`Log in with Google` when first
+logging into CoquiAPPs.
 
    .. image:: google/first-login.png
       :align: center

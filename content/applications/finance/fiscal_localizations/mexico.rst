@@ -12,30 +12,30 @@ Below you can find videos with a general description of the localization, and ho
 Introduction
 ============
 
-Odoo Enterprise users in Mexico have free access to a set of modules that allow them to issue
+CoquiAPPs Enterprise users in Mexico have free access to a set of modules that allow them to issue
 electronic invoices according to the specifications of the SAT for `version 3.3 of the CFDI
 <http://omawww.sat.gob.mx/informacion_fiscal/factura_electronica/Documents/GuiaAnexo20Global.pdf>`_,
 a legal requirement as of January 1, 2018. These modules also add relevant accounting reports (for
 example, the DIOT), and enable foreign trade, with support for associated customs operations.
 
-With the Mexican location in Odoo you will not only be able to comply with the legal requirements to
+With the Mexican location in CoquiAPPs you will not only be able to comply with the legal requirements to
 invoice in Mexico, but also use it as your accounting system, satisfying the normal needs of the
-market. This makes Odoo the perfect solution to manage your business in Mexico.
+market. This makes CoquiAPPs the perfect solution to manage your business in Mexico.
 
 Pre requirements
 ================
 
 Before installing the modules and making the necessary configurations to have the Mexican
-localization in Odoo, it is necessary to meet the following requirements:
+localization in CoquiAPPs, it is necessary to meet the following requirements:
 
 #. Be registered with the SAT and have an RFC.
 #. Have a `Certificate of Digital Seal
    <https://www.gob.mx/sat/acciones-y-programas/certificado-de-sello-digital>`_ (CSD).
-#. Choose a PAC and purchase stamps. Currently the Mexican location in Odoo works with the following
+#. Choose a PAC and purchase stamps. Currently the Mexican location in CoquiAPPs works with the following
    PACs: `Solución Factible <https://solucionfactible.com/>`_, `Quadrum (formerly Finkok)
    <https://cfdiquadrum.com.mx/index.html>`_ and `SW Sapien - Smarter Web <https://sw.com.mx/>`_.
-#. Have knowledge and experience with billing, sales and accounting in Odoo. This documentation
-   contains only the information necessary to enable the use of Odoo in a company based in Mexico.
+#. Have knowledge and experience with billing, sales and accounting in CoquiAPPs. This documentation
+   contains only the information necessary to enable the use of CoquiAPPs in a company based in Mexico.
 
 Modules
 =======
@@ -45,10 +45,10 @@ filter "Apps" and search for ``l10n_mx``.
 
 .. image:: mexico/mx_mo_01.png
    :align: center
-   :alt: Installation of the Mexican localization module in Odoo Apps
+   :alt: Installation of the Mexican localization module in CoquiAPPs Apps
 
 .. note::
-   If you created the database from `www.odoo.com <https://coqui.cloud>`_ and chose "Mexico" as the
+   If you created the database from `www.CoquiAPPs.com <https://coqui.cloud>`_ and chose "Mexico" as the
    country when creating your account, some of the Mexican localization modules will have been
    installed automatically. In that case we observe that some modules have a button that says
    "Install", while others will instead have a label that says "Installed".
@@ -61,16 +61,16 @@ The following modules are necessary for all databases that require Mexican local
      <https://www.gob.mx/cms/uploads/attachment/file/151586/codigo_agrupador.pdf>`_.
 #. | **EDI for Mexico (l10n_mx_edi & l10n_mx_edi_extended)**
    | Necessary for electronic transactions, CFDI 3.3, payment complement, and addenda on invoices.
-#. | **Odoo Mexican localization reports (l10n_mx_reports & l10n_mx_reports_closing)**
+#. | **CoquiAPPs Mexican localization reports (l10n_mx_reports & l10n_mx_reports_closing)**
    | All mandatory reports for electronic accounting. (Requires the accounting application).
 
 The following modules are optional, and should be installed only if they meet a specific
 organization requirement. Installing these modules is not recommended unless you are sure they
 are needed as they add fields that can unnecessarily complicate form filling.
 
-#. | **Odoo Mexico Localization for Stock / Landing (l10n_mx_edi_landing)**
+#. | **CoquiAPPs Mexico Localization for Stock / Landing (l10n_mx_edi_landing)**
    | This module allows managing the requests as part of the shipping costs.
-#. | **Odoo Mexican XML Polizas Export (l10n_mx_xml_polizas)**
+#. | **CoquiAPPs Mexican XML Polizas Export (l10n_mx_xml_polizas)**
    | With this module, you will be able to export your Journal Entries in XML ready to be uploaded
      to the SAT.
 
@@ -83,7 +83,7 @@ Enable electronic invoicing
 Go to :menuselection:`Settings --> Accounting --> Customer Invoices`, and make sure that the option
 **Mexican Electronic Invoicing** is enabled. With this you will be able to generate the signed
 invoice and also generate the signed payment complement, all automatically integrated into the
-normal billing flow in Odoo.
+normal billing flow in CoquiAPPs.
 
 .. image:: mexico/mx_co_01.png
    :align: center
@@ -100,20 +100,20 @@ click on *Update information* under your company name.
 
 .. image:: mexico/mx_co_02.png
    :align: center
-   :alt: Update the company's details in the Settings of Odoo
+   :alt: Update the company's details in the Settings of CoquiAPPs
 
 In the resulting form, put your full address (including zip code), RFC (VAT number), and the rest of
 the data.
 
 .. important::
-   From a legal point of view, a Mexican company must use the local currency (MXN). Therefore, Odoo
+   From a legal point of view, a Mexican company must use the local currency (MXN). Therefore, CoquiAPPs
    does not provide features to manage an alternative configuration. If you want to manage another
    currency, let MXN be the default currency and use a :doc:`pricelist
    </applications/sales/sales/products_prices/prices/pricing>` instead.
 
 .. warning::
    Make sure that in the address, for the Country field, "Mexico" is chosen from the list of
-   countries that Odoo shows, because if it is entered manually there is a risk of creating a "new
+   countries that CoquiAPPs shows, because if it is entered manually there is a risk of creating a "new
    country" in the system, which it will result in errors later when the CFDIs are generated.
 
    .. image:: mexico/mx_co_03.png
@@ -128,14 +128,14 @@ Set the fiscal regime of the company
 ------------------------------------
 
 The following is to indicate what is the fiscal regime of the company that we are configuring, which is
-done through a pre-existing field in Odoo called "Fiscal Regime".
+done through a pre-existing field in CoquiAPPs called "Fiscal Regime".
 
 Go to :menuselection:`Settings --> Accounting --> Electronic Invoicing (MX) --> Fiscal Regime`, and
 select the option that applies to your company from the drop-down list.
 
 .. image:: mexico/mx_co_04.png
    :align: center
-   :alt: Set the Fiscal Regime in Odoo Accounting
+   :alt: Set the Fiscal Regime in CoquiAPPs Accounting
 
 .. tip::
    For the test environment: Select the option **General Law on Legal Persons** from the drop-down
@@ -144,7 +144,7 @@ select the option that applies to your company from the drop-down list.
 Contacts Configuration
 ----------------------
 
-When creating a contact to be invoiced in Odoo, the following information must be configured for
+When creating a contact to be invoiced in CoquiAPPs, the following information must be configured for
 invoice validation: **complete address** (including postal code, city, state, country, etc.) and the
 **VAT** number.
 
@@ -155,7 +155,7 @@ invoice validation: **complete address** (including postal code, city, state, co
 Taxes Configuration
 -------------------
 
-A necessary configuration for electronic invoicing to work correctly in Odoo is to add the factor
+A necessary configuration for electronic invoicing to work correctly in CoquiAPPs is to add the factor
 type associated with sales taxes.
 
 To make this configuration you first have to go to :menuselection:`Accounting --> Configuration -->
@@ -171,14 +171,14 @@ within the field **Factor Type** choose the option *Tasa*.
    :alt: Taxes configuration
 
 Do the same for all the sales taxes that the company needs, either those that come by default in
-Odoo, or those that you add that are necessary for your company bill.
+CoquiAPPs, or those that you add that are necessary for your company bill.
 
 .. tip::
    For the 0% VAT tax, select the option :guilabel:`Tasa` within the :guilabel:`Factor Type` field.
    For the 0% VAT **exempt** tax, select the option :guilabel:`Exento` instead of :guilabel:`Tasa`
    within the :guilabel:`Factor Type` field.
 
-When registering a payment, Odoo will carry out the movement of taxes from the **Cash Basis
+When registering a payment, CoquiAPPs will carry out the movement of taxes from the **Cash Basis
 Transition Account** to the account set in the **Definition** tab. For such movement, a tax base
 account will be used ("Base Imponible de Impuestos en Base a Flujo de Efectivo" - **do not eliminate
 this account**) in the Journal Entry when reclassifying taxes.
@@ -204,12 +204,12 @@ a bulk import.
 PAC Configuration to sign invoices
 ----------------------------------
 
-Another important step to configure electronic invoicing in Odoo is to enter the PAC which you are
+Another important step to configure electronic invoicing in CoquiAPPs is to enter the PAC which you are
 working with and the credentials. That way, electronic invoicing will be enabled.
 
 .. warning::
    Remember that you must register directly with the PAC of your choice before you start creating
-   invoices from Odoo. We have the following PACs available: `Quadrum
+   invoices from CoquiAPPs. We have the following PACs available: `Quadrum
    <https://cfdiquadrum.com.mx/index.html>`_, `Solución Factible <https://solucionfactible.com/>`_
    and `SW Sapien - Smarter Web <https://sw.com.mx/>`_.
 
@@ -255,11 +255,11 @@ Workflows
 Electronic invoicing
 --------------------
 
-The invoicing process in Odoo is based on `Annex 20
+The invoicing process in CoquiAPPs is based on `Annex 20
 <http://omawww.sat.gob.mx/tramitesyservicios/Paginas/anexo_20_version3-3.htm>`_ version 3.3 of
 electronic invoicing of the SAT.
 
-To start invoicing from Odoo, an invoice must be created using the standard invoicing flow, that is,
+To start invoicing from CoquiAPPs, an invoice must be created using the standard invoicing flow, that is,
 either from a sales order or from the invoice menu in the Accounting application.
 
 The invoice will be stamped after clicking on *Validate*, before that the status is still in draft
@@ -275,7 +275,7 @@ the invoice in the attached image. There you can find your XML sent to the SAT a
 stamping, that is, if it was validated or not.
 
 To send the stamped invoice to your client, you can send the XML together with the PDF file directly
-from Odoo, by clicking the *Send and Print* button. You can also download the PDF file directly to
+from CoquiAPPs, by clicking the *Send and Print* button. You can also download the PDF file directly to
 your computer by clicking the *Print* button and selecting the desired option.
 
 .. tip::
@@ -287,7 +287,7 @@ Invoicing Special Cases
 Foreign Trade Invoice
 ~~~~~~~~~~~~~~~~~~~~~
 
-The foreign trade invoicing process in Odoo is based on the corresponding `SAT regulation
+The foreign trade invoicing process in CoquiAPPs is based on the corresponding `SAT regulation
 <http://omawww.sat.gob.mx/tramitesyservicios/Paginas/complemento_comercio_exterior.htm>`_. SAT
 electronic invoicing version is 3.3.
 
@@ -422,10 +422,10 @@ Assign Pedimentos
 ~~~~~~~~~~~~~~~~~
 
 If your company imports products and you need to add the **Pedimentos** number in your invoices, you
-can also configure Odoo to record the process.
+can also configure CoquiAPPs to record the process.
 
 First, go to :menuselection:`Apps`, remove the "Apps" filter and search for ``Mexico``, ``mx`` or
-``l10n_mx``. Then, install **Odoo Mexico Localization for Stock / Landing module
+``l10n_mx``. Then, install **CoquiAPPs Mexico Localization for Stock / Landing module
 (l10n_mx_edi_landing)**.
 
 .. image:: mexico/mx_ft_10.png
@@ -468,9 +468,9 @@ Landed Costs`. There you will find the option to attach the Pedimentos number.
 Payment Terms
 ~~~~~~~~~~~~~
 
-The **Payment Terms** are already configured in Odoo when installing the Mexican localization, this
+The **Payment Terms** are already configured in CoquiAPPs when installing the Mexican localization, this
 means that if you go to :menuselection:`Accounting --> Configuration --> Payment Terms`, you will
-find the default list in Odoo.
+find the default list in CoquiAPPs.
 
 .. image:: mexico/mx_ft_13.png
    :align: center
@@ -483,7 +483,7 @@ PPD Payments
 ************
 
 To configure PPD payments (payment in installments or deferred) it is only necessary to choose a
-date expiration date for your invoice and Odoo will detect if it is after the first day of the
+date expiration date for your invoice and CoquiAPPs will detect if it is after the first day of the
 following month (in this case no payment term is set - with the payment term you can also stipulate
 if it will be PPDo PUE).
 
@@ -499,11 +499,11 @@ Payments
 
 `According to the SAT documentation
 <https://www.sat.gob.mx/consultas/92764/comprobante-de-recepcion-de-pagos>`_, there may be 2 types
-of payments: **PUE** or **PPD**. In both cases the payment process in Odoo is the same, the
+of payments: **PUE** or **PPD**. In both cases the payment process in CoquiAPPs is the same, the
 difference of whether the payment is PUE or PPD lies in the payment term of the invoice - as
 indicated in the previous point in the **Payment Terms**.
 
-If the payment is a PPD type, Odoo will generate the corresponding payment complement automatically
+If the payment is a PPD type, CoquiAPPs will generate the corresponding payment complement automatically
 when you *Confirm* it. If the payment is PUE, the payment complement will not be generated. The type
 of payment is visible from the invoice in the field called **Payment Policy** and takes the invoice
 date and the due date as parameters.
@@ -607,7 +607,7 @@ Process to create advance in Mexico
 #. Issuance of the electronic invoice with the *Egreso* type. (CFDI Origin: 07 | Invoice_total,
    point 2)
 
-Steps to follow in Odoo
+Steps to follow in CoquiAPPs
 ***********************
 
 #. Preparation: Create the product
@@ -625,7 +625,7 @@ The Down Payment product must be type *Service* and must use the **NSPSC Product
    :align: center
    :alt: Down payment product
 
-Add the down payment product as default to be used from the Odoo configurations.
+Add the down payment product as default to be used from the CoquiAPPs configurations.
 
 .. image:: mexico/mx_ft_23.png
    :align: center
@@ -867,11 +867,11 @@ must be asked to accept the cancellation, for this the following steps must be f
 
 #. Click on *Request EDI Cancellation* to inform the SAT that you want to cancel the invoice, in
    this case the client has to enter the SAT webpage and approve it. (The status of the **Electronic
-   invoicing** field in Odoo changes to *To Cancel*)
+   invoicing** field in CoquiAPPs changes to *To Cancel*)
 #. When the client (Receiver / Customer) approves the Cancellation in their SAT portal it is now
    possible to Change the invoice to Draft and then click on *Cancel entry*.
-#. Odoo synchronizes with the SAT to update the status of the **Electronic invoicing** with a
-   scheduled action, Invoices canceled in the SAT will be canceled in Odoo.
+#. CoquiAPPs synchronizes with the SAT to update the status of the **Electronic invoicing** with a
+   scheduled action, Invoices canceled in the SAT will be canceled in CoquiAPPs.
 
 .. image:: mexico/mx_ft_54.png
    :align: center
@@ -885,11 +885,11 @@ until the end customer / Recipient approves the cancellation in the SAT.
    :align: center
    :alt: Check estado del PAC
 
-Once canceled in the SAT, Odoo will synchronize the status of the SAT through scheduled actions that
-are executed every day to synchronize the statuses of the SAT, Electronic invoicing and Odoo (this
+Once canceled in the SAT, CoquiAPPs will synchronize the status of the SAT through scheduled actions that
+are executed every day to synchronize the statuses of the SAT, Electronic invoicing and CoquiAPPs (this
 scheduled action can be executed manually by entering with developer mode).
 
-If the invoice is canceled in the SAT, in Odoo it is also canceled, which allows you to switch the
+If the invoice is canceled in the SAT, in CoquiAPPs it is also canceled, which allows you to switch the
 invoice to draft and finally cancel the invoice (*cancel entry*).
 
 .. image:: mexico/mx_ft_56.png
@@ -917,7 +917,7 @@ Problem
 *******
 
 If the invoice is from the previous month and the period is closed, the income has already been
-declared in Financial Reports and to the government. In Odoo, when canceling an invoice, the journal
+declared in Financial Reports and to the government. In CoquiAPPs, when canceling an invoice, the journal
 entry is eliminated as if the income already reported had not existed, this represents a fiscal
 problem because the income was already declared in the previous month.
 
@@ -954,7 +954,7 @@ Solution
 Close accounting period each month (Best Practice Mexican Localization)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If the accounting period is closed due to the blocking dates, Odoo will not allow to modify or add
+If the accounting period is closed due to the blocking dates, CoquiAPPs will not allow to modify or add
 accounting entries of a date corresponding to that accounting period.
 
 .. image:: mexico/mx_ft_62.png
@@ -964,7 +964,7 @@ accounting entries of a date corresponding to that accounting period.
 Cancel invoice in the SAT
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If the accounting period is closed, and the invoice was canceled in the SAT, the status in Odoo will
+If the accounting period is closed, and the invoice was canceled in the SAT, the status in CoquiAPPs will
 be published while the **Electronic invoicing** status will be *Sent* and the SAT status is
 *Cancelled*.
 
@@ -1028,7 +1028,7 @@ Functional Consultant prior to performing this action).
 Electronic Accounting
 ---------------------
 
-Accounting for Mexico in Odoo is composed of 3 reports:
+Accounting for Mexico in CoquiAPPs is composed of 3 reports:
 
 #. Electronic Chart of Accounts (Called and displayed as COA).
 #. Electronic Trial Balance.
@@ -1094,7 +1094,7 @@ automatically generated and can be exported to XML using the button on the top *
    :align: center
    :alt: Electronic verification balance
 
-All normal analysis and listed functions are available here as well as any normal Odoo Report.
+All normal analysis and listed functions are available here as well as any normal CoquiAPPs Report.
 
 DIOT Report (Requires Accounting App)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1157,7 +1157,7 @@ Declaration of Operations with Third Parties.
    `official information
    <http://www.sat.gob.mx/fichas_tematicas/declaraciones_informativas/Paginas/declaracion_informativa_terceros.aspx>`_
 
-How to generate this report in Odoo?
+How to generate this report in CoquiAPPs?
 ************************************
 
 #. Go to :menuselection:`Accounting --> Reports --> Mexico --> Transactions with third partied
@@ -1195,10 +1195,10 @@ Important considerations about your supplier and invoice data for DIOT
      :align: center
      :alt: DIOT configuration
 
-- There are 3 VAT options for this report, 16%, 0% and exempt, one invoice line in Odoo is
+- There are 3 VAT options for this report, 16%, 0% and exempt, one invoice line in CoquiAPPs is
   considered exempt if there is no tax on it, the other 2 taxes are already configured correctly.
 - Remember that to pay an invoice that represents a prepayment, you must first request the invoice
-  and then pay it and properly reconcile the payment following the standard Odoo procedure.
+  and then pay it and properly reconcile the payment following the standard CoquiAPPs procedure.
 - You do not need to fill in all your partner data to try to generate the supplier invoice, you
   can correct this information when you generate the report.
 - Remember that this report only shows vendor invoices that were actually paid.
@@ -1213,7 +1213,7 @@ process to see that all your partners are configured correctly.
    :align: center
    :alt: DIOT Error
 
-Closing Fiscal Period in Odoo
+Closing Fiscal Period in CoquiAPPs
 -----------------------------
 
 Before proceeding to the close of the fiscal year, there are some steps that you should normally
@@ -1232,7 +1232,7 @@ Year-end checklist
 - Run a **Tax Report**, and verify that your tax information is correct.
 - Reconcile all accounts on your **Balance Sheet**
 
-  - Compare your bank balances in Odoo against the current bank balances on your statements. Use
+  - Compare your bank balances in CoquiAPPs against the current bank balances on your statements. Use
     the report **Bank Reconciliation** to help you with this.
   - Reconcile all cash and bank account transactions by running your **Old Accounts Receivable**
     and **Old Accounts Payable** reports
@@ -1256,7 +1256,7 @@ Year-end checklist
 
 If your accountant is on the year-end audit, they will want to have copies of the balance sheet
 items (such as loans, bank accounts, prepayments, sales tax reports, etc ...) to compare against.
-your balances in Odoo.
+your balances in CoquiAPPs.
 
 During this process, it is a good practice setting the **Closing Date for Non-Advisers** to the
 last day of the preceding financial year, which is set under the accounting settings. In this
@@ -1270,12 +1270,12 @@ auditing the books.
 Accounting Closing Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In Odoo there is no need to make a specific year-end entry to close the reporting income accounts
+In CoquiAPPs there is no need to make a specific year-end entry to close the reporting income accounts
 . The result of the exercise is automatically calculated in the account type (Current Year
 Earnings) and the difference between Income - Expenses will be accumulated to calculate it.
 
 The reports are created in real-time, which means that the **Income Report** corresponds directly
-to the closing date of the year that you specify in Odoo. In addition, at any time that you
+to the closing date of the year that you specify in CoquiAPPs. In addition, at any time that you
 generate the **Income Report**, the start date will correspond to the start date of the **Fiscal
 Year** and the account balances will all be 0.
 
@@ -1325,7 +1325,7 @@ Multi-currency (Requires Accounting application)
 In Mexico, almost all companies send and receive payments in different currencies. If you want to
 do this you can enable the use of multi-currency. You should also enable synchronization with the
 **Mexican Bank Service**, as this would allow you to automatically have the exchange rate from the
-SAT without having to manually create this information every day in Odoo.
+SAT without having to manually create this information every day in CoquiAPPs.
 
 Go to settings and enable the multi-currency feature.
 
@@ -1350,7 +1350,7 @@ enable, to enable the Check with xsd feature follow the next steps (with the
 
 .. image:: mexico/mx-xsd-cfdi.png
    :align: center
-   :alt: Download XSD files to CFDI from the Companies list view on Odoo
+   :alt: Download XSD files to CFDI from the Companies list view on CoquiAPPs
 
 Now you can make an invoice with any error (for example a product without
 code which is pretty common) and an explicit error will be shown instead a

@@ -3,7 +3,7 @@ After Sales Features
 ====================
 
 As your business grows, having the right tool to support your helpdesk team on recording, tracking
-and managing issues raised easy and efficiently, is key. Odoo’s Helpdesk application allows you to
+and managing issues raised easy and efficiently, is key. CoquiAPPs’s Helpdesk application allows you to
 generate credit notes, manage returns, products, repairs, grant coupons, and even plan onsite
 interventions from a ticket’s page.
 

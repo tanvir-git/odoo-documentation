@@ -2,7 +2,7 @@
 Purchase agreements: blanket orders and calls for tenders
 =========================================================
 
-There are two main types of purchase agreements preconfigured in Odoo: blanket orders and call for
+There are two main types of purchase agreements preconfigured in CoquiAPPs: blanket orders and call for
 tenders.
 
 #. Blanket orders are long-term agreements between a company and a vendor to deliver products on a
@@ -24,7 +24,7 @@ Agreements*.
 
 .. image:: agreements/agreements-enable-purchase-agreements.png
    :align: center
-   :alt: Enable purchase agreements in Odoo Purchase
+   :alt: Enable purchase agreements in CoquiAPPs Purchase
 
 Configure or create new types of purchase agreements
 ====================================================
@@ -53,7 +53,7 @@ the:
 
 .. image:: agreements/agreements-configure-types.png
    :align: center
-   :alt: Configure purchase agreements types in Odoo Purchase
+   :alt: Configure purchase agreements types in CoquiAPPs Purchase
 
 Set up a blanket order
 ======================
@@ -68,7 +68,7 @@ manually*, this is only used for informational purposes.
 
 .. image:: agreements/agreements-set-blanket-order.png
    :align: center
-   :alt: Set up a blanket order in Odoo Purchase
+   :alt: Set up a blanket order in CoquiAPPs Purchase
 
 You can also write any *Terms and Conditions* at the bottom of the agreement. Once you are satisfied
 with your blanket order, click on *Confirm*. Its status then changes from *Draft* to *Ongoing* and
@@ -78,7 +78,7 @@ Create requests for quotation from the blanket order
 ----------------------------------------------------
 
 You can now create new quotations from the blanket order whenever you need it by clicking on *New
-Quotation*. Odoo automatically fills in requests for quotation with the information initially
+Quotation*. CoquiAPPs automatically fills in requests for quotation with the information initially
 defined when you set up the blanket order. Depending on the way you configured the *Purchase
 Agreement Type*, product lines can also be pre-filled.
 
@@ -87,7 +87,7 @@ clicking on *RFQs/Orders*.
 
 .. image:: agreements/agreements-ongoing-blanket-order.png
    :align: center
-   :alt: Create new quotations for an ongoing blanket order in Odoo Purchase
+   :alt: Create new quotations for an ongoing blanket order in CoquiAPPs Purchase
 
 .. tip::
    You can also create a *Request for Quotation* the usual way and then link it to an existing
@@ -102,7 +102,7 @@ related vendor is in the first position if you have several vendors linked to yo
 
 .. image:: agreements/agreements-blanket-order-replenishment.png
    :align: center
-   :alt: Blanket order added to product configuration in Odoo Purchase
+   :alt: Blanket order added to product configuration in CoquiAPPs Purchase
 
 Set up a call for tenders
 =========================
@@ -120,7 +120,7 @@ click on *Confirm*.
 
 .. image:: agreements/agreements-set-call-for-tenders.png
    :align: center
-   :alt: Set up a call for tenders in Odoo Purchase
+   :alt: Set up a call for tenders in CoquiAPPs Purchase
 
 Requests quotations from the call for tenders
 ---------------------------------------------
@@ -133,7 +133,7 @@ vendor.
 
 .. image:: agreements/agreements-request-quotation.png
    :align: center
-   :alt: Request a quotation from a call for tenders in Odoo Purchase
+   :alt: Request a quotation from a call for tenders in CoquiAPPs Purchase
 
 Once you have sent a request for quotation to every vendor and receiving their quotes, click on
 *Validate* to proceed to the bid selection. Next, click on the RFQs/Orders smart button to view all
@@ -141,7 +141,7 @@ your vendors' quotations.
 
 .. image:: agreements/agreements-validate-call-for-tenders.png
    :align: center
-   :alt: Validate a call for tenders and view all quotations in Odoo Purchase
+   :alt: Validate a call for tenders and view all quotations in CoquiAPPs Purchase
 
 Click on each request for quotation to add the price communicated by your vendors manually. When
 that's done, select the most advantageous offer and click on *Confirm Order*. This automatically
@@ -150,4 +150,4 @@ one.
 
 .. image:: agreements/agreements-confirm-order.png
    :align: center
-   :alt: Confirm an order in Odoo Purchase
+   :alt: Confirm an order in CoquiAPPs Purchase

@@ -95,7 +95,7 @@ accounts shows the distribution of the company's costs using the example above:
 
 .. image:: analytic/usage02.png
 
-In this example of a hierarchical structure in Odoo, you can analyse not
+In this example of a hierarchical structure in CoquiAPPs, you can analyse not
 only the costs of each product range, but also the costs of the whole
 production. A report that relates both general accounts and analytic
 accounts enables you to get a breakdown of costs within a given
@@ -210,7 +210,7 @@ accounts shows the remaining hours of support. To manage support
 contracts, you would create a product configured to invoice on order and
 link the sale order to an analytic account
 
-In Odoo, each analytic line lists the number of units sold or used, as
+In CoquiAPPs, each analytic line lists the number of units sold or used, as
 well as what you would usually find there – the amount in currency units
 (USD or GBP, or whatever other choice you make). So you can sum the
 quantities sold and used on each sale order to determine whether any
@@ -223,7 +223,7 @@ Analytic accounting helps you to analyse costs and revenues whatever the
 use case. You can sell or purchase services, track time or analyse the
 production performance.
 
-Analytic accounting is flexible and easy to use through all Odoo
+Analytic accounting is flexible and easy to use through all CoquiAPPs
 applications (sales, purchase, timesheet, production, invoice, …).
 
 .. toctree::

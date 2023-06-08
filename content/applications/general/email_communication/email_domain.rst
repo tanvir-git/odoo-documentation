@@ -1,31 +1,31 @@
 ============================================
-Configure DNS records to send emails in Odoo
+Configure DNS records to send emails in CoquiAPPs
 ============================================
 
 SPAM labels overview
 ====================
 
-Sometimes, emails from Odoo are misclassified by the different email providers and end up in spam
-folders. At the moment, some settings are out of Odoo's control, notably the way the different email
-providers classify Odoo's emails according to their own restriction policy and/or limitations.
+Sometimes, emails from CoquiAPPs are misclassified by the different email providers and end up in spam
+folders. At the moment, some settings are out of CoquiAPPs's control, notably the way the different email
+providers classify CoquiAPPs's emails according to their own restriction policy and/or limitations.
 
-It is standard in Odoo that emails are received from ``"name of the author"
-<notifications@mycompany.odoo.com>``. In other words this can be translated to: ``"name of the
+It is standard in CoquiAPPs that emails are received from ``"name of the author"
+<notifications@mycompany.CoquiAPPs.com>``. In other words this can be translated to: ``"name of the
 author" <{ICP.mail.from.filter}@{mail.catchall.domain}>``. In this case ICP stands for
 `ir.config.parameters`, which are the System Parameters. Deliverability is greatly improved with the
 :ref:`notifications configuration <email_servers/notifications>`.
 
-In order for servers to accept emails from Odoo on a more regular basis, one of the solutions is
+In order for servers to accept emails from CoquiAPPs on a more regular basis, one of the solutions is
 for customers to create rules within their own mailbox. A filter can be added to the email inbox so
-that when email is received from Odoo (`notifications@mycompany.odoo.com`) it is moved to the
-inbox. It is also possible to add the Odoo database domain onto a safe senders list or whitelist
+that when email is received from CoquiAPPs (`notifications@mycompany.CoquiAPPs.com`) it is moved to the
+inbox. It is also possible to add the CoquiAPPs database domain onto a safe senders list or whitelist
 on the receiving domain.
 
-If an Odoo email server appears on a blacklist, notify Odoo via a `new help ticket
+If an CoquiAPPs email server appears on a blacklist, notify CoquiAPPs via a `new help ticket
 <https://coqui.cloud/help>`_ and the support team will work to get the servers removed from the
 blacklist.
 
-Should the Odoo database be using a custom domain for sending emails from Odoo there are three
+Should the CoquiAPPs database be using a custom domain for sending emails from CoquiAPPs there are three
 records that should be implemented on the custom domain's DNS to ensure deliverability of email.
 This includes setting records for :abbr:`SPF (Sender Policy Framework)`,
 :abbr:`DKIM (DomainKeys Identified Mail)` and
@@ -44,7 +44,7 @@ the sender's :abbr:`SPF (Sender Policy Framework)` record.
 
 .. note::
    The :abbr:`SPF (Sender Policy Framework)` verification is performed on the domain mentioned in
-   the `Return-Path` field of the email. In the case of an email sent by Odoo, this domain
+   the `Return-Path` field of the email. In the case of an email sent by CoquiAPPs, this domain
    corresponds to the value of the `mail.catchall.domain` key in the database system parameters.
 
 The :abbr:`SPF (Sender Policy Framework)` policy of a domain is set using a TXT record. The way to
@@ -53,7 +53,7 @@ zone of the domain name. In order for the verification to work properly, each do
 one :abbr:`SPF (Sender Policy Framework)` record.
 
 If the domain name does not yet have a :abbr:`SPF (Sender Policy Framework)` record, create one
-using the following input: `v=spf1 include:_spf.odoo.com ~all`
+using the following input: `v=spf1 include:_spf.CoquiAPPs.com ~all`
 
 If the domain name already has a :abbr:`SPF (Sender Policy Framework)` record, the record must be
 updated (and do not create a new one).
@@ -61,7 +61,7 @@ updated (and do not create a new one).
 .. example::
 
    If the TXT record is `v=spf1 include:_spf.google.com ~all`, edit it to add
-   `include:_spf.odoo.com`: `v=spf1 include:_spf.odoo.com include:_spf.google.com ~all`
+   `include:_spf.CoquiAPPs.com`: `v=spf1 include:_spf.CoquiAPPs.com include:_spf.google.com ~all`
 
 Check if the :abbr:`SPF (Sender Policy Framework)` record is valid with a free tool like `MXToolbox
 SPF <https://mxtoolbox.com/spf.aspx>`_.
@@ -74,7 +74,7 @@ Enable DKIM
 The DomainKeys Identified Mail (DKIM) allows a user to authenticate emails with a digital
 signature.
 
-When sending an email, the Odoo server includes a unique :abbr:`DKIM (DomainKeys Identified Mail)`
+When sending an email, the CoquiAPPs server includes a unique :abbr:`DKIM (DomainKeys Identified Mail)`
 signature in the headers. The recipient's server decrypts this signature using the :abbr:`DKIM
 (DomainKeys Identified Mail)` record in the database's domain name. If the signature and the key
 contained in the record match, this guarantees that the message is authentic and has not been
@@ -83,18 +83,18 @@ altered during transport.
 To enable :abbr:`DKIM (DomainKeys Identified Mail)`, add a :abbr:`CNAME (Canonical Name)` record to
 the :abbr:`DNS (Domain Name System)` zone of the domain name:
 
-`odoo._domainkey IN CNAME odoo._domainkey.odoo.com.`
+`CoquiAPPs._domainkey IN CNAME CoquiAPPs._domainkey.CoquiAPPs.com.`
 
 .. tip::
    If the domain name is `mycompany.com`, make sure to create a subdomain
-   `odoo._domainkey.mycompany.com` whose canonical name is `odoo._domainkey.odoo.com.`.
+   `CoquiAPPs._domainkey.mycompany.com` whose canonical name is `CoquiAPPs._domainkey.CoquiAPPs.com.`.
 
 The way to create or modify a :abbr:`CNAME (Canonical Name)` record depends on the provider hosting
 the :abbr:`DNS (Domain Name System)` zone of the domain name. The most common providers are
 :ref:`listed below <email_communication/SPFDKIM_common_providers>`.
 
 Check if the :abbr:`DKIM (DomainKeys Identified Mail)` record is valid with a free tool like `DKIM
-Core <https://dkimcore.org/tools/>`_. If a selector is asked, enter `odoo`.
+Core <https://dkimcore.org/tools/>`_. If a selector is asked, enter `CoquiAPPs`.
 
 Check the DMARC policy
 ======================
@@ -128,7 +128,7 @@ Framework)` compliant or enable :abbr:`DKIM (DomainKeys Identified Mail)`.
 
 .. warning::
    Yahoo or AOL are examples of email providers with a :abbr:`DMARC (Domain-based Message
-   Authentication, Reporting, & Conformance)` policy set to `p=reject`. Odoo strongly advises
+   Authentication, Reporting, & Conformance)` policy set to `p=reject`. CoquiAPPs strongly advises
    against using an *@yahoo.com* or *@aol.com* address for the database users. These emails will
    never reach their recipient.
 

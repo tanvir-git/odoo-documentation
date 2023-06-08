@@ -2,7 +2,7 @@
 Add subscription products
 =========================
 
-To properly sell your subscriptions using our amazing **Odoo Subscriptions** application, you must
+To properly sell your subscriptions using our amazing **CoquiAPPs Subscriptions** application, you must
 follow these steps:
 
 1. **Create your own subscription templates**
@@ -24,23 +24,23 @@ internal reference.
 
 .. image:: subscription_products/subscription-products-configuration.png
   :align: center
-  :alt: View of a subscription product form in Odoo Subscriptions
+  :alt: View of a subscription product form in CoquiAPPs Subscriptions
 
 .. note::
    In the Sales tab, underneath the Subscriptions section, make sure the *Subscription products*
-   option is activated. In fact, if you create a subscription product from the **Odoo Subscriptions**
+   option is activated. In fact, if you create a subscription product from the **CoquiAPPs Subscriptions**
    application, this option is selected by default. However, if you create a product from another
    application, it is not the case.
 
    .. image:: subscription_products/subscription-products-form.png
      :align: center
-     :alt: View of a subscription product form in Odoo Subscriptions
+     :alt: View of a subscription product form in CoquiAPPs Subscriptions
 
    You can also choose the subscription templates you want to use.
 
    .. image:: subscription_products/subscription-products-using-subscription-templates.png
      :align: center
-     :alt: View of a subscription product form in Odoo Subscriptions
+     :alt: View of a subscription product form in CoquiAPPs Subscriptions
 
 .. important::
    Be sure to check out our documentation on how to create, edit and manage your own

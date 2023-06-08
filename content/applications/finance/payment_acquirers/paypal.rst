@@ -4,10 +4,10 @@ Paypal
 
 `Paypal <https://www.paypal.com/>`_ is available and popular worldwide. It doesn't charge any
 subscription fee, and creating an account is very easy. That's why we recommend it for starters in
-Odoo. It works as a seamless flow where the customer is routed to the Paypal website to register the
+CoquiAPPs. It works as a seamless flow where the customer is routed to the Paypal website to register the
 payment.
 
-Settings in Odoo
+Settings in CoquiAPPs
 ================
 
 .. seealso::
@@ -16,7 +16,7 @@ Settings in Odoo
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials** to connect with your PayPal account, which comprise:
+CoquiAPPs needs your **API Credentials** to connect with your PayPal account, which comprise:
 
 - **Email**: your login email address in Paypal.
 - **PDT Identity Token**: the key used to verify the authenticity of transactions.
@@ -32,7 +32,7 @@ token by following the configuration step :ref:`paypal/enable-pdt`.
 
 .. important::
    If you are trying Paypal as a test, using a :ref:`Paypal Sandbox account <paypal/testing>`,
-   change the **State** to *Test Mode*. We recommend doing this on a test Odoo database rather than
+   change the **State** to *Test Mode*. We recommend doing this on a test CoquiAPPs database rather than
    on your main database.
 
 Fees tab
@@ -42,7 +42,7 @@ You can charge extra fees to your customers for paying with Paypal to cover the 
 Paypal charges you. Once redirected to Paypal, your customer sees an extra amount applied to the
 order amount.
 
-To activate this, go to Paypal configuration's :guilabel:`Fees` tab in Odoo and activate
+To activate this, go to Paypal configuration's :guilabel:`Fees` tab in CoquiAPPs and activate
 :guilabel:`Add Extra Fees`.
 
 You can refer to `Paypal Fees <https://www.paypal.com/webapps/mpp/paypal-fees>`_ to set up fees.
@@ -54,7 +54,7 @@ You can refer to `Paypal Fees <https://www.paypal.com/webapps/mpp/paypal-fees>`_
 Settings in Paypal
 ==================
 
-First, set up your Paypal account to build a seamless customer experience with Odoo.
+First, set up your Paypal account to build a seamless customer experience with CoquiAPPs.
 
 Log into your PayPal account and open the account settings. Then, go to :menuselection:`Account menu
 --> Account settings --> Website payments`.
@@ -62,15 +62,15 @@ Log into your PayPal account and open the account settings. Then, go to :menusel
 Enable Auto Return
 ------------------
 
-The *Auto Return* feature automatically redirects your customers to Odoo once the payment is
+The *Auto Return* feature automatically redirects your customers to CoquiAPPs once the payment is
 processed.
 
 From the *Website payments* settings page, go to :menuselection:`Website preferences --> Update -->
-Auto return for website payments` and select **On**. Enter the address of your Odoo database (e.g.,
-`https://yourcompany.odoo.com`) in the **Return URL** field.
+Auto return for website payments` and select **On**. Enter the address of your CoquiAPPs database (e.g.,
+`https://yourcompany.CoquiAPPs.com`) in the **Return URL** field.
 
 .. note::
-   Any URL will do the job. Odoo only needs the setting to be enabled since it uses another URL.
+   Any URL will do the job. CoquiAPPs only needs the setting to be enabled since it uses another URL.
 
 .. _paypal/enable-pdt:
 
@@ -97,7 +97,7 @@ Payment Messages Format
 
 Suppose you use accented characters (or anything else than primary Latin characters) for your
 customer names or addresses. In that case, you **must** configure the encoding format of the payment
-request sent by Odoo to Paypal. Otherwise, some transactions fail without notice.
+request sent by CoquiAPPs to Paypal. Otherwise, some transactions fail without notice.
 
 To do so, go to `your production account <https://www.paypal.com/cgi-bin/customerprofileweb
 ?cmd=_profile-language-encoding>`_. Then, click *More Options* and set the two default encoding
@@ -121,7 +121,7 @@ Test environment
 Configuration
 -------------
 
-Thanks to Paypal Sandbox accounts, you can test the entire payment flow in Odoo.
+Thanks to Paypal Sandbox accounts, you can test the entire payment flow in CoquiAPPs.
 
 Log into the `Paypal Developer Site <https://developer.paypal.com/>`_ using your Paypal
 credentials, which creates two sandbox accounts:
@@ -132,10 +132,10 @@ credentials, which creates two sandbox accounts:
    `pp.merch01-buyer@example.com <mailto:pp.merch01-buyer@example.com>`_).
 
 Log into Paypal Sandbox using the merchant account and follow the same configuration instructions.
-Enter your sandbox credentials in Odoo and ensure Paypal is set on *Test Mode*. We recommend doing
-this on a test Odoo database rather than your main database.
+Enter your sandbox credentials in CoquiAPPs and ensure Paypal is set on *Test Mode*. We recommend doing
+this on a test CoquiAPPs database rather than your main database.
 
-Run a test transaction from Odoo using the sandbox personal account.
+Run a test transaction from CoquiAPPs using the sandbox personal account.
 
 .. seealso::
    - :doc:`../payment_acquirers`

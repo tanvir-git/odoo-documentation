@@ -101,7 +101,7 @@ the AFIP.
 In order to enable communication with the AFIP, the first step is to request a
 :guilabel:`Digital Certificate` if you do not have one already.
 
-#. :guilabel:`Generate Certificate Sign Request (Odoo)`. When this option is selected, a file with
+#. :guilabel:`Generate Certificate Sign Request (CoquiAPPs)`. When this option is selected, a file with
    extension `.csr` (certificate signing request) is generated to be used in the AFIP portal to
    request the certificate.
 
@@ -112,8 +112,8 @@ In order to enable communication with the AFIP, the first step is to request a
    described in `this document <https://drive.google.com/file/d/17OKX2lNWd1bjUt3NxfqcCKBkBh-Xlpo-/
    view>`_ to get a certificate.
 
-#. :guilabel:`Upload Certificate and Private Key (Odoo)`. Once the certificate is generated, upload
-   it to Odoo using the :guilabel:`Pencil` icon next to the field :guilabel:`Certificado` and select
+#. :guilabel:`Upload Certificate and Private Key (CoquiAPPs)`. Once the certificate is generated, upload
+   it to CoquiAPPs using the :guilabel:`Pencil` icon next to the field :guilabel:`Certificado` and select
    the corresponding file.
 
    .. image:: argentina/upload-certificate-private-key.png
@@ -122,7 +122,7 @@ In order to enable communication with the AFIP, the first step is to request a
 .. tip::
    In case you need to configure the Homologation Certificate, please refer to the AFIP official
    documentation: `Homologation Certificate
-   <http://www.afip.gob.ar/ws/documentacion/certificados.asp>`_. Furthermore, Odoo allows the user
+   <http://www.afip.gob.ar/ws/documentacion/certificados.asp>`_. Furthermore, CoquiAPPs allows the user
    to test electronic invoicing locally without a Homologation Certificate. The following message
    will be in the chatter when testing locally:
 
@@ -143,10 +143,10 @@ in the **Partner form**. Information is essential for most transactions. There a
 
 .. image:: argentina/identification-types.png
    :align: center
-   :alt: A list of AR Localization document types in Odoo, as defined by AFIP.
+   :alt: A list of AR Localization document types in CoquiAPPs, as defined by AFIP.
 
 .. note::
-   The complete list of :guilabel:`Identification Types` defined by the AFIP is included in Odoo,
+   The complete list of :guilabel:`Identification Types` defined by the AFIP is included in CoquiAPPs,
    but only the common ones are active.
 
 AFIP responsibility type
@@ -168,7 +168,7 @@ financial account and configuration, e.g., 73 taxes for :guilabel:`Responsable I
 
 .. image:: argentina/automatic-tax-configuration.png
    :align: center
-   :alt: A list of AR Localization taxes with financial amount and configuration in Odoo.
+   :alt: A list of AR Localization taxes with financial amount and configuration in CoquiAPPs.
 
 Taxes types
 ***********
@@ -183,12 +183,12 @@ Special taxes
 *************
 
 Some Argentinean taxes are not commonly used for all companies, and those less common options are
-labeled as inactive in Odoo by default. Before creating a new tax, be sure to check if that tax is
+labeled as inactive in CoquiAPPs by default. Before creating a new tax, be sure to check if that tax is
 not already included as inactive.
 
 .. image:: argentina/special-inactive-taxes.png
    :align: center
-   :alt: A list showing less common Argentinean tax options, which are labeled as inactive in Odoo
+   :alt: A list showing less common Argentinean tax options, which are labeled as inactive in CoquiAPPs
          by default.
 
 .. _document-types:
@@ -213,7 +213,7 @@ not need to fill anything on this view:
 
 .. image:: argentina/default-document-type-info.png
    :align: center
-   :alt: A list of document types in Odoo.
+   :alt: A list of document types in CoquiAPPs.
 
 .. note::
    There are several :guilabel:`Document Types` types that are inactive by default, but can be
@@ -274,7 +274,7 @@ The AFIP POS defines the following:
 
 .. image:: argentina/sales-journal.png
    :align: center
-   :alt: A AFIP POS System field which is available on Sales journals in Odoo.
+   :alt: A AFIP POS System field which is available on Sales journals in CoquiAPPs.
 
 Web services
 ************
@@ -314,7 +314,7 @@ Here are some useful fields to know when working with web services:
 Sequences
 ~~~~~~~~~
 
-For the first invoice, Odoo synchronizes with the AFIP automatically and displays the last sequence
+For the first invoice, CoquiAPPs synchronizes with the AFIP automatically and displays the last sequence
 used.
 
 .. note::
@@ -441,7 +441,7 @@ POS System **Expo Voucher - Web Service** so that the proper document type(s) ca
    :alt: Exporation journal.
 
 When the customer selected in the invoice is configured with an AFIP responsibility type
-:guilabel:`Cliente / Proveedor del Exterior` - :guilabel:`Ley N° 19.640`, Odoo automatically
+:guilabel:`Cliente / Proveedor del Exterior` - :guilabel:`Ley N° 19.640`, CoquiAPPs automatically
 assigns the:
 
 - Journal related to the exportation Web Service;
@@ -452,7 +452,7 @@ assigns the:
 
 .. image:: argentina/export-invoice.png
    :align: center
-   :alt: Export invoice fields autofilled in Odoo.
+   :alt: Export invoice fields autofilled in CoquiAPPs.
 
 .. note::
    The Exportation Documents require Incoterms to be enabled and configured, which can be found in
@@ -574,7 +574,7 @@ the button :guilabel:`Consult Invoice` button in AFIP.
    :alt: Details of invoice consulted in AFIP.
 
 It is also possible to retrieve the last number used in AFIP for a specific document type and POS
-Number as a reference for any possible issues on the sequence synchronization between Odoo and
+Number as a reference for any possible issues on the sequence synchronization between CoquiAPPs and
 AFIP.
 
 .. image:: argentina/consult-last-invoice-number.png
@@ -621,11 +621,11 @@ Argentinean Localization --> Validate document in the AFIP`, considering the fol
    :align: center
    :alt: Verify Vendor Bills validity in AFIP.
 
-Validate vendor bills in Odoo
+Validate vendor bills in CoquiAPPs
 *****************************
 
 With the vendor validation settings enabled, a new button shows up on the vendor bills inside of
-Odoo, labeled :guilabel:`Verify on AFIP`, which is located next to the :guilabel:`AFIP
+CoquiAPPs, labeled :guilabel:`Verify on AFIP`, which is located next to the :guilabel:`AFIP
 Authorization code` field.
 
 .. image:: argentina/verify-on-afip.png

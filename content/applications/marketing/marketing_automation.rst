@@ -8,7 +8,7 @@ Marketing Automation
 ====================
 
 .. seealso::
-   - `Odoo Tutorials: Marketing <https://coqui.cloud/slides/marketing-27>`_
+   - `CoquiAPPs Tutorials: Marketing <https://coqui.cloud/slides/marketing-27>`_
 
 .. toctree::
    :titlesonly:

@@ -2,7 +2,7 @@
 Amazon Connector Features
 =========================
 
-The **Amazon Connector** synchronizes the orders between Amazon and your Odoo database, which
+The **Amazon Connector** synchronizes the orders between Amazon and your CoquiAPPs database, which
 reduces considerably the amount of time spent on your Amazon Seller Central dashboard, making your
 daily routine a lot easier.
 
@@ -11,16 +11,16 @@ Supported Features
 
 The connector is able to:
 
-- Synchronize (Amazon to Odoo) all confirmed orders (both FBA and FBM) and their order items which
+- Synchronize (Amazon to CoquiAPPs) all confirmed orders (both FBA and FBM) and their order items which
   include:
 
   - the product’s name, description and quantity
   - the shipping costs for the product
   - the gift wrapping charges
 
-- Create on Odoo any missing partner related to an order (contact types supported: contact and
+- Create on CoquiAPPs any missing partner related to an order (contact types supported: contact and
   delivery).
-- Notify Amazon of a shipping confirmed on Odoo (FBM) in order to get paid.
+- Notify Amazon of a shipping confirmed on CoquiAPPs (FBM) in order to get paid.
 
 - Support multiple seller accounts.
 - Support multiple marketplaces per seller account.

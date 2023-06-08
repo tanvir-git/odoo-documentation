@@ -16,21 +16,21 @@ stage(s)* of that team.
 .. image:: ratings/ratings_on_tickets.png
    :align: center
    :alt: Overview of the settings page of a helpdesk team emphasizing the rating on ticket feature
-         in Odoo Helpdesk
+         in CoquiAPPs Helpdesk
 
 To edit the email template and the stage(s) set as the closing ones, go to the Kanban view of your
 helpdesk team and click on *Settings*, then on *Edit Stage*.
 
 .. image:: ratings/edit_stage.png
    :align: center
-   :alt: Overview of a helpdesk team kanban view emphasizing the menu edit stage in Odoo Helpdesk
+   :alt: Overview of a helpdesk team kanban view emphasizing the menu edit stage in CoquiAPPs Helpdesk
 
 Now, once a ticket reaches the stage(s) designated as the *Closing Stage*, an email is sent to the
 customer.
 
 .. image:: ratings/email_customer_feedback.png
    :align: center
-   :alt: View of a standard helpdesk customer review email template for Odoo Helpdesk
+   :alt: View of a standard helpdesk customer review email template for CoquiAPPs Helpdesk
 
 Ratings can be seen on the chatter of each ticket, under the *See Customer Satisfaction* link on the
 main dashboard, and through *Reporting*.
@@ -45,7 +45,7 @@ its ratings.
 .. image:: ratings/customer_portal.png
    :align: center
    :alt: View of the helpdesk ticket from a user’s portal emphasizing the link to the helpdesk team
-         in Odoo Helpdesk
+         in CoquiAPPs Helpdesk
 
 .. seealso::
    - :doc:`../advanced/close_tickets`

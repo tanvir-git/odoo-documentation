@@ -17,9 +17,9 @@ Create an API user
 
 Log into your Ogone account and head to the :guilabel:`Configuration` tab.
 
-You need to create an **API user** to be used in the creation of transactions from Odoo. While you
+You need to create an **API user** to be used in the creation of transactions from CoquiAPPs. While you
 can use your main account to do so, using an **API user** ensures that if the credentials used in
-Odoo are leaked, no access to your Ogone configuration is possible. Additionally, passwords for
+CoquiAPPs are leaked, no access to your Ogone configuration is possible. Additionally, passwords for
 **API users** do not need to be updated regularly, unlike normal users.
 
 To create an **API user**, go to :menuselection:`Configuration --> Users` and click on
@@ -39,23 +39,23 @@ After the creation of the user, you are required to generate a password. Save th
    If you already have an user set up, make sure it is activated without any error. If not, simply
    click the :guilabel:`Activate(Errors)` button to reset the user.
 
-Set up Ogone for Odoo
+Set up Ogone for CoquiAPPs
 ---------------------
 
-Ogone must now be configured to accept payments from Odoo. Head to :menuselection:`Configuration -->
+Ogone must now be configured to accept payments from CoquiAPPs. Head to :menuselection:`Configuration -->
 Technical Information --> Global Security Parameters`, select :guilabel:`SHA-1` as
 :guilabel:`Hash Algorithm` and :guilabel:`UTF-8` as :guilabel:`character encoding`. Then, go to the
 :guilabel:`Data and Origin verification` tab of the same page and leave the URL field of the
 :guilabel:`e-Commerce and Alias Gateway` section blank.
 
 .. tip::
-   If you need to use another algorithm, such as `sha-256` or `sha-512`, within Odoo, activate the
+   If you need to use another algorithm, such as `sha-256` or `sha-512`, within CoquiAPPs, activate the
    :ref:`developer mode <developer-mode>` and go to :menuselection:`General Settings -->
    Technical --> System Parameters`. From here, search for `payment_ogone.hash_function` and change
    the value line to the desired algorithm (`sha-256` or `sha-512`).
 
 You are now required to generate **SHA-IN** passphrases. **SHA-IN** and **SHA-OUT** passphrases are
-used to digitally sign the transaction requests and responses between Odoo and Ogone. By using these
+used to digitally sign the transaction requests and responses between CoquiAPPs and Ogone. By using these
 secret passphrases and the `sha-1` algorithm, both systems can ensure that the information they
 receive from the other was not altered or tampered with.
 
@@ -64,7 +64,7 @@ Enter the same **SHA-IN** passphrase in both :guilabel:`Checks for e-Commerce & 
 
 Your **SHA-IN** and **SHA-OUT** passphrases should be different, and between 16 and 32 characters
 long. Make sure to use the same **SHA-IN** and **SHA-OUT** passphrases throughout the entire Ogone
-configuration, as Odoo only allows a single **SHA-IN** and single **SHA-OUT** passphrase.
+configuration, as CoquiAPPs only allows a single **SHA-IN** and single **SHA-OUT** passphrase.
 
 In order to retrieve the **SHA-OUT** key, log into your Ogone account, go to
 :menuselection:`Configuration --> Technical Information --> Transaction feedback --> All
@@ -75,7 +75,7 @@ When done, head to :menuselection:`Configuration --> Technical Information --> T
 and check the following options:
 
 - The :guilabel:`URL` fields for :guilabel:`HTTP redirection in the browser` can be left empty, as
-  Odoo will specify these URLs for every transaction request.
+  CoquiAPPs will specify these URLs for every transaction request.
 - :guilabel:`I would like to receive transaction feedback parameters on the redirection URLs`:
   should be checked.
 - :guilabel:`Direct HTTP server-to-server request`: should to be set to `Online but switch to a
@@ -95,10 +95,10 @@ To allow your customers to save their credit card credentials for future use, he
 how the user can have its card details saved, for how long the information is saved, if a checkbox
 to save the card information should be displayed, etc.
 
-Settings in Odoo
+Settings in CoquiAPPs
 ================
 
-To set up Ogone in Odoo, head to :menuselection:`Accounting --> Configuration --> Payment Acquirers`
+To set up Ogone in CoquiAPPs, head to :menuselection:`Accounting --> Configuration --> Payment Acquirers`
 and open the Ogone acquirer. In the :guilabel:`Credentials` tab, enter the **PSPID** of your Ogone
 account, and fill out the other fields as configured in your :ref:`Ogone portal <ogone/ogone>`.
 
@@ -106,4 +106,4 @@ account, and fill out the other fields as configured in your :ref:`Ogone portal 
    If you wish to run tests with Ogone, within the accounting app, go to
    :menuselection:`Configuration --> Payment Acquirers`. Click on :guilabel:`Ogone`, enable
    :guilabel:`Test Mode` and enter your credentials in the :guilabel:`Credentials` tab. We recommend
-   doing this on an Odoo test database, rather than on your main database.
+   doing this on an CoquiAPPs test database, rather than on your main database.

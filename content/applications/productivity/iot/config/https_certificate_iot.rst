@@ -21,7 +21,7 @@ known as *Secure Sockets Layer* (SSL).
 particular provider is who they say they are.
 
 .. note::
-   In this documentation and throughout Odoo the term "HTTPS certificate" will be used to define the
+   In this documentation and throughout CoquiAPPs the term "HTTPS certificate" will be used to define the
    fact that the :abbr:`SSL (Secure Sockets Layer)` certificate is valid and allows a :abbr:`HTTPS
    (Hypertext Transfer Protocol Secure)` connection.
 
@@ -49,7 +49,7 @@ Internet of Things (IoT) eligibility
 
  #. The database should be a **production** instance. The database instance should not be a copy, a
     duplicate, a staging, or a development environment.
- #. The Odoo subscription must:
+ #. The CoquiAPPs subscription must:
 
      - Have an :guilabel:`IoT Box Subscription` line.
      - :guilabel:`Status` must be :guilabel:`In Progress`.
@@ -59,7 +59,7 @@ Internet of Things (IoT) eligibility
 
     .. figure:: https_certificate_iot/sub-example-in-progress.png
        :align: center
-       :alt: Odoo.com portal subscriptions filtered by "in progress".
+       :alt: CoquiAPPs.com portal subscriptions filtered by "in progress".
 
        In this case, both subscriptions are considered "in progress" as the :guilabel:`Filter By\:
        In Progress` was used.
@@ -84,7 +84,7 @@ specific error will code be given on the :abbr:`IoT (Internet of Things)` box ho
 -------------------------------
 
 Reason:
-    The configuration regarding the server is missing. In other words, the Odoo instance is not
+    The configuration regarding the server is missing. In other words, the CoquiAPPs instance is not
     connected with the IoT box.
 
 Solution:
@@ -134,7 +134,7 @@ Reason:
 Solution:
     .. warning::
        Consult with your system or network administrator should this issue arise. This error code
-       depends on the network infrastructure and goes beyond :doc:`Odoo support's service scope
+       depends on the network infrastructure and goes beyond :doc:`CoquiAPPs support's service scope
        </services/support/what_can_i_expect>`.
 
 `ERR_IOT_HTTPS_LOAD_REQUEST_STATUS`
@@ -175,12 +175,12 @@ How to ensure that the HTTPS certificate is correct
 
 If the certificate has been applied successfully, a new :abbr:`HTTPS (Hypertext Transfer Protocol
 Secure)` :abbr:`URL (Uniform Resource Locator)` for the :abbr:`IoT (Internet of Things)` box ending
-with `.odoo-iot.com` will appear on the Odoo database, inside of the :menuselection:`IoT`
+with `.CoquiAPPs-iot.com` will appear on the CoquiAPPs database, inside of the :menuselection:`IoT`
 application on that specific device's form.
 
-.. image:: https_certificate_iot/odoo-new-domain.png
+.. image:: https_certificate_iot/CoquiAPPs-new-domain.png
    :align: center
-   :alt: Odoo IoT app IoT box with .odoo-iot.com domain.
+   :alt: CoquiAPPs IoT app IoT box with .CoquiAPPs-iot.com domain.
 
 When navigating to the :abbr:`URL (Uniform Resource Locator)` in a browser a secured :abbr:`HTTPS
 (Hypertext Transfer Protocol Secure)` connection will be established.
@@ -203,7 +203,7 @@ Domain Name System (DNS) issue
 ==============================
 
 If the :abbr:`IoT (Internet of Things)` box can be accessed from its :abbr:`IP (Intrernet Protocol)`
-address but not the Odoo assigned domain: `.odoo-iot.com`; then the :abbr:`IoT (Internet of Things)`
+address but not the CoquiAPPs assigned domain: `.CoquiAPPs-iot.com`; then the :abbr:`IoT (Internet of Things)`
 box is likely running into a :abbr:`DNS (Domain Name System)` issue. On some browsers, it will give
 an error code mentioning :abbr:`DNS (Domain Name System)` (like `DNS_PROBE_FINISHED_NXDOMAIN`).
 
@@ -256,5 +256,5 @@ Domain Name System (DNS) issue solution
 
    .. warning::
       Consult with your system or network administrator should this issue arise. This error code
-      depends on the network infrastructure, and it goes beyond :doc:`Odoo support's service scope
+      depends on the network infrastructure, and it goes beyond :doc:`CoquiAPPs support's service scope
       </services/support/what_can_i_expect>`.

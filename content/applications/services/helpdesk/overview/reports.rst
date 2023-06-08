@@ -9,7 +9,7 @@ meet your customer’s expectations.
 Cases
 =====
 
-Some examples of the reports Odoo Helpdesk can generate include:
+Some examples of the reports CoquiAPPs Helpdesk can generate include:
 
 - The number of tickets *grouped by* team and ticket type.
 
@@ -20,7 +20,7 @@ Some examples of the reports Odoo Helpdesk can generate include:
 
 .. image:: reports/report_team_ticket_type.png
    :align: center
-   :alt: View of a helpdesk ticket analysis by team and ticket type in Odoo Helpdesk
+   :alt: View of a helpdesk ticket analysis by team and ticket type in CoquiAPPs Helpdesk
 
 - The number of tickets closed per day, per team.
 
@@ -29,7 +29,7 @@ performance. Identify productivity levels to understand how many requests they a
 
 .. image:: reports/report_close_date_team.png
    :align: center
-   :alt: View of a helpdesk ticket analysis by team and close date in Odoo Helpdesk
+   :alt: View of a helpdesk ticket analysis by team and close date in CoquiAPPs Helpdesk
 
 .. tip::
    Filter it by *Assignee* to see Key Performance Indicators (KPI) per agent.
@@ -42,7 +42,7 @@ customers not only expect fast responses but they also want their issues to be h
 .. image:: reports/report_time_to_close.png
    :align: center
    :alt: View of helpdesk ticket analysis of the hours to close by ticket type and team in
-         Odoo Helpdesk
+         CoquiAPPs Helpdesk
 
 Save filters
 ============
@@ -53,7 +53,7 @@ needed. To do so, set the groups, filters, and measures needed. Then, go to *Fav
 .. image:: reports/favorites.png
    :align: center
    :alt: View of helpdesk ticket analysis emphasizing the option to add a filter as a favorite one
-         in Odoo Helpdesk
+         in CoquiAPPs Helpdesk
 
 .. seealso::
    - :doc:`receiving_tickets`

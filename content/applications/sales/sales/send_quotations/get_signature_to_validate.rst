@@ -2,7 +2,7 @@
 Get a signature to confirm an order
 ===================================
 
-Online signatures are like electronic "fingerprints". By using them on Odoo, you will get
+Online signatures are like electronic "fingerprints". By using them on CoquiAPPs, you will get
 automatic orders confirmation. You and your customers will save a lot of time by using this
 feature compared to a traditional process.
 
@@ -15,7 +15,7 @@ feature.
 .. image:: get_signature_to_validate/signature_1.png
    :align: center
    :class: img-thumbnail
-   :alt: How to enable online signature on Odoo Sales?
+   :alt: How to enable online signature on CoquiAPPs Sales?
 
 .. note::
    If you are familiar with this documentation: :doc:`quote_template`, you can activate or not the
@@ -25,7 +25,7 @@ feature.
    .. image:: get_signature_to_validate/signature_2.png
       :align: center
       :class: img-thumbnail
-      :alt: How to enable online signature on Odoo Sales?
+      :alt: How to enable online signature on CoquiAPPs Sales?
 
 Confirm an order with a signature
 =================================
@@ -38,10 +38,10 @@ of an automated signature:
 .. image:: get_signature_to_validate/signature_3.png
    :align: center
    :class: img-thumbnail
-   :alt: How to confirm an order with a signature on Odoo Sales?
+   :alt: How to confirm an order with a signature on CoquiAPPs Sales?
 
 Once signed, you will have the possibility to choose your payment methods. Then, when the quotation
-will be paid and confirmed, a delivery order will be created automatically by Odoo.
+will be paid and confirmed, a delivery order will be created automatically by CoquiAPPs.
 
 .. tip::
    Be careful that delivery orders are only generated for storable products and if the

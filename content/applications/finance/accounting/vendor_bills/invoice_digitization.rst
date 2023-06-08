@@ -5,14 +5,14 @@ Invoice digitization with optical character recognition (OCR)
 **Invoice digitization** is the process of automatically encoding traditional paper invoices into
 vendor bills and customer invoices forms in your accounting.
 
-Odoo uses :abbr:`OCR (optical character recognition)` and artificial intelligence technologies to
+CoquiAPPs uses :abbr:`OCR (optical character recognition)` and artificial intelligence technologies to
 recognize the content of the documents. Vendor bills and customer invoices forms are automatically
 created and populated based on the scanned invoices.
 
 .. seealso::
-   - `Test Odoo's invoice digitization <https://coqui.cloud/app/invoice-automation>`_
+   - `Test CoquiAPPs's invoice digitization <https://coqui.cloud/app/invoice-automation>`_
    - :doc:`/applications/general/in_app_purchase`.
-   - `Odoo Tutorials: Invoice Digitization with OCR
+   - `CoquiAPPs Tutorials: Invoice Digitization with OCR
      <https://coqui.cloud/slides/slide/digitize-bills-with-ocr-1712>`_.
 
 .. note::
@@ -50,7 +50,7 @@ You can modify the email alias of a journal by going to :menuselection:`Accounti
 modifying the :guilabel:`Email Alias` field.
 
 If you use the :doc:`Documents <../../documents>` app, you can send your scanned invoices to the
-:guilabel:`Finance` workspace (e.g., `inbox-financial@example.odoo.com`).
+:guilabel:`Finance` workspace (e.g., `inbox-financial@example.CoquiAPPs.com`).
 
 Invoice digitization
 ====================
@@ -67,12 +67,12 @@ Pricing
 | The **invoice digitization** is an In-App Purchase (IAP) service that requires prepaid credits to
   work. Digitizing one document consumes one credit.
 | To buy credits, go to :menuselection:`Accounting --> Configuration --> Settings --> Digitization`
-  and click on :guilabel:`Buy credits`, or go to :menuselection:`Settings --> Odoo IAP` and click on
+  and click on :guilabel:`Buy credits`, or go to :menuselection:`Settings --> CoquiAPPs IAP` and click on
   :guilabel:`View My Services`.
 
 .. important::
-   - If you are on Odoo Online and have the Enterprise version, you benefit from free trial credits
+   - If you are on CoquiAPPs Online and have the Enterprise version, you benefit from free trial credits
      to test the feature.
 
 .. seealso::
-   - `Our Privacy Policy <https://iap.odoo.com/privacy#header_6>`_.
+   - `Our Privacy Policy <https://iap.CoquiAPPs.com/privacy#header_6>`_.

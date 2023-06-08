@@ -6,7 +6,7 @@ Process deliveries in three steps
 
 Some companies process large amounts of deliveries every day, many of which include multiple
 products or require special packaging. To make this efficient, a packing step is needed before
-shipping out products. For this, Odoo has a three step process for delivering goods.
+shipping out products. For this, CoquiAPPs has a three step process for delivering goods.
 
 In the default three-step delivery process, products that are part of a delivery order are picked in
 the warehouse according to their removal strategy, and brought to a packing zone. After the items
@@ -17,7 +17,7 @@ business.
 Configuration
 =============
 
-Odoo is configured by default to :ref:`receive and deliver goods in one step
+CoquiAPPs is configured by default to :ref:`receive and deliver goods in one step
 <inventory/receipts_delivery_one_step>`, so the settings need to be changed in order to utilize
 three step deliveries. First, make sure the *Multi-Step Routes* option is enabled in
 :menuselection:`Inventory --> Configuration --> Settings --> Warehouse`. Note that activating
@@ -82,7 +82,7 @@ click the :guilabel:`1 To Process` smart button in the :guilabel:`Pick` kanban c
    :align: center
    :alt: The pick order can be seen in the Inventory Kanban view.
 
-Click on the picking to process. If the product is in stock, Odoo will automatically reserve the
+Click on the picking to process. If the product is in stock, CoquiAPPs will automatically reserve the
 product. Click :guilabel:`Validate` to mark the picking as done, and complete the transfer to the
 :guilabel:`Packing Zone`. Then the packing order will be ready. Since the documents are linked, the
 products which have been previously picked are automatically reserved on the packing order.

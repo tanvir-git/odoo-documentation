@@ -28,7 +28,7 @@ Compatible check stationery for printing checks
 United States
 -------------
 
-For the United States, Odoo supports by default the check formats of:
+For the United States, CoquiAPPs supports by default the check formats of:
 
 - **Quickbooks & Quicken**: check on top, stubs in the middle and bottom;
 - **Peachtree**: check in the middle, stubs on top and bottom;

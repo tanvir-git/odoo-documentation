@@ -4,16 +4,16 @@
 Expenses
 ========
 
-**Odoo Expenses** streamlines the management of expenses. Employees can submit their expenses;
+**CoquiAPPs Expenses** streamlines the management of expenses. Employees can submit their expenses;
 managers can approve them; accountants can record them and process the payments.
 
 .. seealso::
-   - `Odoo Expenses: product page <https://coqui.cloud/app/expenses>`_
+   - `CoquiAPPs Expenses: product page <https://coqui.cloud/app/expenses>`_
 
 How to set expense types
 ========================
 
-The first step to track expenses is to configure the expense types (managed as products in Odoo)
+The first step to track expenses is to configure the expense types (managed as products in CoquiAPPs)
 that your company allows, from the *Configuration* menu.
 When a specific expense is reimbursed at a fixed price, set a cost on the product.
 Otherwise keep the cost at 0.0 and employees will report the real cost per expense.
@@ -38,7 +38,7 @@ Here are some examples:
   * Cost: 0.0
 
 Don't forget to set an expense tax on each expense type
-(and an account if you use Odoo Accounting).
+(and an account if you use CoquiAPPs Accounting).
 It's usually a good practice to use a tax that is configured
 with :ref:`Tax Included in Price <taxes/included-in-price>`.
 That way, employees report expenses with
@@ -83,7 +83,7 @@ Let your employees record their expenses from a simple email.
 Make a snapshot of the receipt and send it by email, or simply forward a bill!
 
 The only thing to do is setting up an email alias in
-:menuselection:`Expenses --> Configuration --> Settings` (e.g. *expenses* @mycompany.odoo.com).
+:menuselection:`Expenses --> Configuration --> Settings` (e.g. *expenses* @mycompany.CoquiAPPs.com).
 For security purposes, only authenticated employee emails
 (cfr. *Work Email* in employee detail form) are accepted.
 
@@ -152,7 +152,7 @@ To do so, the user must have following access rights:
     If you get a related blocking message when posting, click the employee,
     go to *Personal Information* tab and select/create the contact of your employee
     in the address book.
-    A contact has been automatically created if this person is using Odoo.
+    A contact has been automatically created if this person is using CoquiAPPs.
 
 How to reimburse employees
 ==========================
@@ -161,7 +161,7 @@ You can now see all the expense reports to reimburse in
 :menuselection:`Expenses --> Accountant --> Expense Reports To Pay`.
 To record the payment or pay by check, click *Register a Payment*.
 
-See how you can easily manage the payment process in Odoo:
+See how you can easily manage the payment process in CoquiAPPs:
 
 * :doc:`accounting/payments/pay_checks`
 * :doc:`accounting/payments/pay_sepa`

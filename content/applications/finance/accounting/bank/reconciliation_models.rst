@@ -34,7 +34,7 @@ reconciliation. Each button corresponds to a reconciliation model.
 
 .. image:: reconciliation_models/reconciliation_models_button.png
    :align: center
-   :alt: Example of a reconciliation model with a write-off button in Odoo Accounting.
+   :alt: Example of a reconciliation model with a write-off button in CoquiAPPs Accounting.
 
 .. _reconciliation_models_suggestion:
 
@@ -47,7 +47,7 @@ reconciliation model.
 
 .. image:: reconciliation_models/reconciliation_models_suggestion.png
    :align: center
-   :alt: Example of a reconciliation model that suggests counterpart values in Odoo Accounting.
+   :alt: Example of a reconciliation model that suggests counterpart values in CoquiAPPs Accounting.
 
 .. _reconciliation_models_match:
 
@@ -61,7 +61,7 @@ on a set of rules defined in the reconciliation model.
 .. image:: reconciliation_models/reconciliation_models_match.png
    :align: center
    :alt: Example of a reconciliation model that matches existing invoices and bills automatically
-         in Odoo Accounting.
+         in CoquiAPPs Accounting.
 
 Configuration
 =============
@@ -72,7 +72,7 @@ Configuration --> Banks: Reconciliation Models`. Alternatively, you can also ope
 
 .. image:: reconciliation_models/reconciliation_models_overview.png
    :align: center
-   :alt: Open the reconciliation model menu from the overview dashboard in Odoo Accounting.
+   :alt: Open the reconciliation model menu from the overview dashboard in CoquiAPPs Accounting.
 
 .. important::
    The first entry, :guilabel:`Invoices Matching Rule`, is responsible for the current matching of
@@ -106,7 +106,7 @@ Depending on the :guilabel:`Type` of model you choose, different options are ava
 
 .. image:: reconciliation_models/reconciliation_models_conditions.png
    :align: center
-   :alt: Conditions for the reconciliation model to be applied in Odoo Accounting.
+   :alt: Conditions for the reconciliation model to be applied in CoquiAPPs Accounting.
 
 Counterpart values
 ------------------
@@ -117,7 +117,7 @@ second time.
 
 .. image:: reconciliation_models/reconciliation_models_counterparts.png
    :align: center
-   :alt: Counterparts values of a reconciliation model in Odoo Accounting.
+   :alt: Counterparts values of a reconciliation model in CoquiAPPs Accounting.
 
 .. seealso::
 

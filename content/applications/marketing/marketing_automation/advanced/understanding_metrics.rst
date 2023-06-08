@@ -3,26 +3,26 @@ Understanding metrics
 =====================
 
 Metrics are detailed statistics that measure the progress (and success) of marketing campaigns.
-When creating marketing activities in a workflow, Odoo will visually display various metrics
+When creating marketing activities in a workflow, CoquiAPPs will visually display various metrics
 related to the campaign with graphs and data.
 
 Consider the following example:
 
 .. image:: understanding_metrics/commercial-prospection-campaign-example.png
    :align: center
-   :alt: An example of a marketing automation campaign in Odoo.
+   :alt: An example of a marketing automation campaign in CoquiAPPs.
 
 In this case, the :guilabel:`Target` of this campaign is set to :guilabel:`Lead/Opportunity` and
 was narrowed down to only focus on the Leads (or Opportunities) whose :guilabel:`Tag Name` contain
 a value of `product` and they *also* have an email address set up in the database.
 
-Beneath the filter nodes, Odoo will display how many records in the database fall into the
+Beneath the filter nodes, CoquiAPPs will display how many records in the database fall into the
 previously-specified criteria filter. In this example, there are 18 records in the database that
 match the criteria.
 
 .. image:: understanding_metrics/marketing-automation-lead-filters.png
    :align: center
-   :alt: Lead generation filters used to refine records on marketing automation campaigns in Odoo.
+   :alt: Lead generation filters used to refine records on marketing automation campaigns in CoquiAPPs.
 
 At the top of the marketing automation form, there are a series of smart buttons. The
 :guilabel:`Participations` smart button in this example indicates that, out of those 18 records, 25
@@ -34,7 +34,7 @@ interacted with the campaign in one way or another.
    changes in opportunity records (deletions, additions, adjustments) may occur. This means there
    will be real-time updates to the number of :guilabel:`Records`, but such updates do *not* change
    the number of :guilabel:`Participants`, as the metric *will not* exclude opportunities that have
-   already been set as :guilabel:`Participants` before - Odoo will just add new ones. That's why
+   already been set as :guilabel:`Participants` before - CoquiAPPs will just add new ones. That's why
    the number of :guilabel:`Records` can be different from the number of :guilabel:`Participants`
    from time to time.
 
@@ -72,7 +72,7 @@ of participants. If a participant does *not* match the conditions, it will be ad
    :align: center
    :alt: Overview showing participants who do or do not match filtering criteria on an activity.
 
-Hovering over the graph, Odoo displays the number of successful and rejected participants, per day,
+Hovering over the graph, CoquiAPPs displays the number of successful and rejected participants, per day,
 over the last 15 days.
 
 .. note::

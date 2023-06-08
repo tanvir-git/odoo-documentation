@@ -2,7 +2,7 @@
 Connect a screen
 ================
 
-In Odoo, an :abbr:`IoT (Internet of Things)` Box can be connected to a screen display. After being
+In CoquiAPPs, an :abbr:`IoT (Internet of Things)` Box can be connected to a screen display. After being
 connected, the screen can be used to display a :abbr:`PoS (Point of Sale)` order to a client.
 
 .. image:: screen/screen-pos-client-display.png

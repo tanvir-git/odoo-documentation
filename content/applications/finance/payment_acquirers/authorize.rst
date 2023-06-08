@@ -14,7 +14,7 @@ Configuration
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials & Keys** to connect with your Authorize.Net account, which
+CoquiAPPs needs your **API Credentials & Keys** to connect with your Authorize.Net account, which
 comprise:
 
 - **API Login ID**: The ID solely used to identify the account with Authorize.Net.
@@ -24,15 +24,15 @@ comprise:
 
 To retrieve them, log into your Authorize.Net account, go to :menuselection:`Account --> Settings
 --> Security Settings --> API Credentials & Keys`, generate your **Transaction Key** and
-**Signature Key**, and paste them on the related fields in Odoo. Then, click on **Generate Client
+**Signature Key**, and paste them on the related fields in CoquiAPPs. Then, click on **Generate Client
 Key**.
 
 .. important::
    If you are trying Authorize.Net as a test, with a *sandbox account*, change the :guilabel:`State`
-   to :guilabel:`Test Mode`. We recommend doing this on a test Odoo database, rather than on your
+   to :guilabel:`Test Mode`. We recommend doing this on a test CoquiAPPs database, rather than on your
    main database.
 
-   If you set :guilabel:`Test Mode` on Odoo and use an authorize.net account instead of a
+   If you set :guilabel:`Test Mode` on CoquiAPPs and use an authorize.net account instead of a
    sandbox.authorize.net account, it results in the following error: *The merchant login ID or
    password is invalid or the account is inactive*.
 

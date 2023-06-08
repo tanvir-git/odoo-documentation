@@ -6,7 +6,7 @@ ISR (In-payment Slip with Reference number)
 ===========================================
 
 The ISRs are payment slips used in Switzerland. You can print them
-directly from Odoo. On the customer invoices, there is a new button
+directly from CoquiAPPs. On the customer invoices, there is a new button
 called *Print ISR*.
 
 .. image:: switzerland/switzerland00.png
@@ -47,7 +47,7 @@ Settings* tab. In the **Communication Standard** field, select *Switzerland*, an
 
 .. image:: switzerland/switzerland-isr-reference.png
    :align: center
-   :alt: Configure your Journal to display your ISR as payment reference on your invoices in Odoo
+   :alt: Configure your Journal to display your ISR as payment reference on your invoices in CoquiAPPs
 
 Currency Rate Live Update
 =========================
@@ -67,7 +67,7 @@ Starting from the 1st January 2018, new reduced VAT rates will be
 applied in Switzerland. The normal 8.0% rate will switch to 7.7% and the
 specific rate for the hotel sector will switch from 3.8% to 3.7%.
 
-How to update your taxes in Odoo Enterprise (Odoo Online or On-premise)?
+How to update your taxes in CoquiAPPs Enterprise (CoquiAPPs Online or On-premise)?
 ------------------------------------------------------------------------
 
 If you have the V11.1 version, all the work is already been done, you
@@ -106,7 +106,7 @@ The creation of such taxes should be done in the following manner:
       VAT Form: grid 342 tax
 
 You'll find below, as examples, the correct configuration for all taxes
-included in Odoo by default
+included in CoquiAPPs by default
 
 +-------------------------------------------------+------------+------------------------+--------------------------------------+-----------------+---------------------------------------------------------------------------+
 | **Tax Name**                                    | **Rate**   | **Label on Invoice**   | **Tax Group (effective from V10)**   | **Tax Scope**   | **Tag**                                                                   |
@@ -137,7 +137,7 @@ included in Odoo by default
 +-------------------------------------------------+------------+------------------------+--------------------------------------+-----------------+---------------------------------------------------------------------------+
 
 If you have questions or remarks, please contact our support using
-odoo.com/help.
+CoquiAPPs.com/help.
 
 .. tip::
     Don't forget to update your fiscal positions. If you have a version

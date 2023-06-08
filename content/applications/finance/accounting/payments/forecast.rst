@@ -2,12 +2,12 @@
 Forecast future bills to pay
 ============================
 
-In Odoo, you can manage payments by setting automatic **Payments Terms** and **follow-ups**.
+In CoquiAPPs, you can manage payments by setting automatic **Payments Terms** and **follow-ups**.
 
 Configuration: payment terms
 ============================
 
-In order to track vendor conditions, we use **Payment Terms** in Odoo. They allow keeping track of
+In order to track vendor conditions, we use **Payment Terms** in CoquiAPPs. They allow keeping track of
 due dates on invoices. Examples of **Payment Terms** are:
 
 -  50% within 30 days
@@ -17,12 +17,12 @@ To create them, go to :menuselection:`Accounting --> Configuration --> Invoicing
 click on :guilabel:`Create` to add new terms or click existing ones to modify them.
 
 .. seealso::
-   `Odoo Tutorials: Payment Terms
+   `CoquiAPPs Tutorials: Payment Terms
    <https://coqui.cloud/slides/slide/payment-terms-1679?fullscreen=1>`_
 
 Once **Payment Terms** are defined, you can assign them to your vendor by default. To do so, go to
 :menuselection:`Vendors --> Vendors`, select a vendor, click the :guilabel:`Sales & Purchase` tab,
-and select a specific **Payment Term**. This way, every time you purchase from this vendor, Odoo
+and select a specific **Payment Term**. This way, every time you purchase from this vendor, CoquiAPPs
 automatically proposes the chosen Payment Term.
 
 .. note::

@@ -18,7 +18,7 @@ Payment acquirers (credit cards, online payments)
    payment_acquirers/sips
    payment_acquirers/stripe
 
-Odoo embeds several **payment acquirers** that allow your customers to pay on their *Customer
+CoquiAPPs embeds several **payment acquirers** that allow your customers to pay on their *Customer
 Portals* or your *eCommerce website*. They can pay sales orders, invoices, or subscriptions with
 recurring payments with their favorite payment methods such as **Credit Cards**.
 
@@ -31,11 +31,11 @@ trust.
    :alt: Pay online in the customer portal and select which payment acquirer to use.
 
 .. note::
-   Odoo apps delegate the handling of sensitive information to the certified payment acquirer so
+   CoquiAPPs apps delegate the handling of sensitive information to the certified payment acquirer so
    that you don't ever have to worry about PCI compliance.
 
-   This means that no sensitive information (such as credit card numbers) is stored on Odoo servers
-   or Odoo databases hosted elsewhere. Instead, Odoo apps use a unique reference number to the data
+   This means that no sensitive information (such as credit card numbers) is stored on CoquiAPPs servers
+   or CoquiAPPs databases hosted elsewhere. Instead, CoquiAPPs apps use a unique reference number to the data
    stored safely in the payment acquirers' systems.
 
 .. _payment_acquirers/supported_acquirers:
@@ -63,7 +63,7 @@ Online payment acquirers
      - :ref:`Manual capture <payment_acquirers/features/manual_capture>`
      - :ref:`Refunds <payment_acquirers/features/refund>`
    * - :doc:`Adyen <payment_acquirers/adyen>`
-     - Odoo
+     - CoquiAPPs
      - |V|
      -
      - Full and partial
@@ -73,7 +73,7 @@ Online payment acquirers
      -
      -
    * - :doc:`Authorize.Net <payment_acquirers/authorize>`
-     - Odoo
+     - CoquiAPPs
      - |V|
      - Full only
      -
@@ -133,7 +133,7 @@ Bank payments
 -------------
 
 - | :doc:`Wire Transfer <payment_acquirers/wire_transfer>`
-  | When selected, Odoo displays your payment information with a payment reference. You have to
+  | When selected, CoquiAPPs displays your payment information with a payment reference. You have to
     approve the payment manually once you have received it on your bank account.
 - | :doc:`SEPA Direct Debit <../finance/accounting/payments/batch_sdd>`
   | Your customers can sign a SEPA Direct Debit mandate online and get their bank account charged
@@ -154,7 +154,7 @@ Save cards for later
 --------------------
 
 If your payment acquirer supports this feature, customers can choose to save their card details as a
-**payment token** in Odoo. When they do, they will not have to enter their card details again when
+**payment token** in CoquiAPPs. When they do, they will not have to enter their card details again when
 making a subsequent payment. This is particularly useful for the eCommerce conversion rate and for
 subscriptions that use recurring payments.
 
@@ -162,7 +162,7 @@ Enable this feature by navigating to the :guilabel:`Configuration` tab from your
 and by ticking the :guilabel:`Allow Saving Payment Methods` checkbox.
 
 .. note::
-   You remain fully PCI-compliant when you enable this feature because Odoo does not store the card
+   You remain fully PCI-compliant when you enable this feature because CoquiAPPs does not store the card
    details directly. Instead, it creates a payment token that only holds a reference to the card
    details stored on the payment acquirer's server.
 
@@ -200,7 +200,7 @@ TRANSACTION` button.
    - The funds are likely not reserved forever. After a certain time, they may be automatically
      released back to the customer's payment method. Refer to your payment acquirer's documentation
      for the exact reservation duration.
-   - Odoo does not support this feature for all payment acquirers but some allow the manual capture
+   - CoquiAPPs does not support this feature for all payment acquirers but some allow the manual capture
      from their website interface.
 
 .. _payment_acquirers/features/refund:
@@ -208,7 +208,7 @@ TRANSACTION` button.
 Refunds
 -------
 
-If your payment acquirer supports this feature, you can refund payments directly from Odoo. It does
+If your payment acquirer supports this feature, you can refund payments directly from CoquiAPPs. It does
 not need to be enabled first. To refund a customer payment, navigate to it and click on the
 :guilabel:`REFUND` button.
 
@@ -217,7 +217,7 @@ not need to be enabled first. To refund a customer payment, navigate to it and c
      optionally be refunded too. These acquirers have the value **Full and partial** in the
      :ref:`table above <payment_acquirers/online_acquirers>`. The acquirers that only support
      refunding the full amount have the value **Full only**.
-   - Odoo does not support this feature for all payment acquirers but some allow to refund payments
+   - CoquiAPPs does not support this feature for all payment acquirers but some allow to refund payments
      from their website interface.
 
 .. _payment_acquirers/configuration:
@@ -241,11 +241,11 @@ state from *Disabled* to *Enabled*.
 
 .. image:: payment_acquirers/activation.png
    :align: center
-   :alt: Click on install, then on activate to make the payment acquirer available on Odoo.
+   :alt: Click on install, then on activate to make the payment acquirer available on CoquiAPPs.
 
 .. warning::
    We recommend using the *Test Mode* on a duplicated database or a test database. The Test Mode is
-   meant to be used with your test/sandbox credentials, but Odoo generates Sales Orders and Invoices
+   meant to be used with your test/sandbox credentials, but CoquiAPPs generates Sales Orders and Invoices
    as usual. It isn't always possible to cancel an invoice, and this could create some issues with
    your invoices numbering if you were to test your payment acquirers on your main database.
 
@@ -255,7 +255,7 @@ Credentials tab
 ~~~~~~~~~~~~~~~
 
 If not done yet, go to the online payment provider website, create an account, and make sure to have
-the credentials required for third-party use. Odoo requires these credentials to communicate with
+the credentials required for third-party use. CoquiAPPs requires these credentials to communicate with
 the payment acquirer.
 
 The form in this section is specific to the payment acquirer you are configuring. Please refer to

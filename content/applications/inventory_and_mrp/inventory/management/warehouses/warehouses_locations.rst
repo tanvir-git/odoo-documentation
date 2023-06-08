@@ -8,15 +8,15 @@ Terminology
 Warehouse
 ---------
 
-In Odoo, a **Warehouse** is the actual building/place in which a company's items are stocked.
-Multiple warehouses can be set up in Odoo and the user can create moves between warehouses.
+In CoquiAPPs, a **Warehouse** is the actual building/place in which a company's items are stocked.
+Multiple warehouses can be set up in CoquiAPPs and the user can create moves between warehouses.
 
 Location
 --------
 
 A **Location** is a specific space within the warehouse. It can be a sublocation of the warehouse
 (a shelf, a floor, an aisle, and so on). Therefore, a location is part of one warehouse only and it
-is not possible to link one location to multiple warehouses. In Odoo, as many locations can be
+is not possible to link one location to multiple warehouses. In CoquiAPPs, as many locations can be
 configured as needed under one warehouse.
 
 There are three types of locations:
@@ -34,7 +34,7 @@ There are three types of locations:
   products (**Inventory Loss**), or accounting for products that are on their way to the warehouse
   (**Procurements**).
 
-In Odoo, locations are structured hierarchically. Locations can be structured as a tree, dependent
+In CoquiAPPs, locations are structured hierarchically. Locations can be structured as a tree, dependent
 on a parent-child relationship. This gives more detailed levels of analysis of the stock operations
 and the organization of the warehouses.
 
@@ -46,7 +46,7 @@ To activate locations, go to :menuselection:`Configuration --> Settings` and ena
 
 .. image:: warehouses_locations/storage-location-warehouse-setting.png
    :align: center
-   :alt: Enable the storage location feature in Odoo Inventory settings.
+   :alt: Enable the storage location feature in CoquiAPPs Inventory settings.
 
 .. important::
    To manage several routes within the warehouses, also enable :guilabel:`Multi-Step Routes` and
@@ -63,10 +63,10 @@ characters maximum.
 
 .. image:: warehouses_locations/create-new-warehouse.png
    :align: center
-   :alt: Short name field of a warehouse on Odoo Inventory.
+   :alt: Short name field of a warehouse on CoquiAPPs Inventory.
 
 .. important::
-   The :guilabel:`Short Name` appears on transfer orders and other warehouse documents. Odoo
+   The :guilabel:`Short Name` appears on transfer orders and other warehouse documents. CoquiAPPs
    recommends using an understandable one like "WH/[first letters of location]".
 
 Now, go back to the :guilabel:`Inventory` dashboard. There, new operations related to the newly
@@ -90,4 +90,4 @@ Then, fill out a :guilabel:`Location Name` and a :guilabel:`Parent Location` and
 
 .. image:: warehouses_locations/create-new-location.png
    :align: center
-   :alt: Create a new warehouse location in Odoo Inventory.
+   :alt: Create a new warehouse location in CoquiAPPs Inventory.

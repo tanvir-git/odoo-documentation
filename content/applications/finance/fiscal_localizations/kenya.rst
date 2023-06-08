@@ -41,7 +41,7 @@ your taxes to the **Kenya Revenue Authority (KRA)** using the Tremol G03 Control
 
 .. image:: kenya/modules.png
    :align: center
-   :alt: The three modules for the Kenya Fiscal Localization Package on Odoo
+   :alt: The three modules for the Kenya Fiscal Localization Package on CoquiAPPs
 
 Kenyan TIMS integration
 =======================
@@ -52,7 +52,7 @@ comply with TIMS. The goal is to reduce VAT fraud, increase tax revenue, and inc
 through standardization, validation, and transmission of invoices to KRA on a real-time or near
 real-time basis.
 
-All VAT-registered taxpayers should use a **compliant tax register**. Odoo decided to develop the
+All VAT-registered taxpayers should use a **compliant tax register**. CoquiAPPs decided to develop the
 integration of the **Tremol G03 Control Unit (type C)**, which can be run locally through USB. This
 device validates invoices to ensure financial documents meet the new regulations and send the
 validated tax invoices directly to KRA. Installing a proxy server that provides a gateway between
@@ -61,7 +61,7 @@ users and the internet is required.
 Installing the proxy server on a Windows device
 -----------------------------------------------
 
-Go to `odoo.com/download <https://coqui.cloud/page/download>`_, fill out the required information
+Go to `CoquiAPPs.com/download <https://coqui.cloud/page/download>`_, fill out the required information
 and click :guilabel:`Download`.
 
 .. image:: kenya/download.png
@@ -69,9 +69,9 @@ and click :guilabel:`Download`.
    :alt: Install the Proxy Server on a Windows device
 
 Once it is loaded on your computer, a wizard opens. You have to read and agree with the terms of the
-agreement. On the next page, select the :guilabel:`type of install: Odoo IoT`. Then, click
+agreement. On the next page, select the :guilabel:`type of install: CoquiAPPs IoT`. Then, click
 :guilabel:`Next` and :guilabel:`Install`. Once completed, click :guilabel:`Next`. Check the
-:guilabel:`Start Odoo` box to be redirected to Odoo automatically, and then click :guilabel:`Finish`.
+:guilabel:`Start CoquiAPPs` box to be redirected to CoquiAPPs automatically, and then click :guilabel:`Finish`.
 
 A new page opens, confirming your :doc:`IoT Box <../../productivity/iot/config/connect>` is up and
 running. Connect your physical device **Tremol G03 Control Unit (type C)** to your laptop via USB.

@@ -46,10 +46,10 @@ localization:
 e-Invoice system
 ================
 
-Odoo is compliant with the **Indian Goods and Services Tax (GST) e-Invoice system** requirements.
+CoquiAPPs is compliant with the **Indian Goods and Services Tax (GST) e-Invoice system** requirements.
 
 .. important::
-   Indian e-invoicing is available from Odoo 15.0. If needed, :doc:`upgrade
+   Indian e-invoicing is available from CoquiAPPs 15.0. If needed, :doc:`upgrade
    </administration/upgrade>` your database.
 
 Setup
@@ -61,7 +61,7 @@ NIC e-Invoice registration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You must register on the :abbr:`NIC (National Informatics Centre)` e-Invoice portal to get your
-**API credentials**. You need these credentials to :ref:`configure your Odoo Accounting app
+**API credentials**. You need these credentials to :ref:`configure your CoquiAPPs Accounting app
 <india/e-invoicing-configuration>`.
 
 #. Log in to the `NIC e-Invoice portal <https://einvoice1.gst.gov.in/>`_ by clicking
@@ -71,7 +71,7 @@ You must register on the :abbr:`NIC (National Informatics Centre)` e-Invoice por
       If you are already registered on the NIC portal, you can use the same login credentials.
 
    .. image:: india/e-invoice-system-login.png
-      :alt: Register Odoo ERP system on e-invoice web portal
+      :alt: Register CoquiAPPs ERP system on e-invoice web portal
 
 #. From the dashboard, go to :menuselection:`API Registration --> User Credentials --> Create API
    User`;
@@ -86,10 +86,10 @@ You must register on the :abbr:`NIC (National Informatics Centre)` e-Invoice por
 
 .. _india/e-invoicing-configuration:
 
-Configuration in Odoo
+Configuration in CoquiAPPs
 ~~~~~~~~~~~~~~~~~~~~~
 
-To enable the e-Invoice service in Odoo, go to :menuselection:`Accounting --> Configuration -->
+To enable the e-Invoice service in CoquiAPPs, go to :menuselection:`Accounting --> Configuration -->
 Settings --> Indian Electronic Invoicing`, and enter the :guilabel:`Username` and
 :guilabel:`Password` previously set for the API.
 
@@ -116,7 +116,7 @@ Workflow
 Invoice validation
 ~~~~~~~~~~~~~~~~~~
 
-Once an invoice is validated, a confirmation message is displayed at the top. Odoo automatically
+Once an invoice is validated, a confirmation message is displayed at the top. CoquiAPPs automatically
 uploads the JSON-signed file of validated invoices to the NIC e-Invoice portal after some time. If
 you want to process the invoice immediately, click :guilabel:`Process now`.
 
@@ -161,7 +161,7 @@ Cancel`.
 .. note::
    - If you want to abort the cancellation before processing the invoice, then click :guilabel:`Call
      Off EDI Cancellation`.
-   - Once you request to cancel the e-Invoice, Odoo automatically submits the JSON-signed file to
+   - Once you request to cancel the e-Invoice, CoquiAPPs automatically submits the JSON-signed file to
      the NIC e-Invoice portal. You can click :guilabel:`Process now` if you want to process the
      invoice immediately.
 
@@ -195,10 +195,10 @@ E-Way bill
 Setup
 -----
 
-Odoo is compliant with the **Indian Goods and Services Tax (GST) E-waybill system** requirements.
+CoquiAPPs is compliant with the **Indian Goods and Services Tax (GST) E-waybill system** requirements.
 
 .. important::
-   Indian E-waybill is available from Odoo 15.0. If needed, :doc:`upgrade </administration/upgrade>`
+   Indian E-waybill is available from CoquiAPPs 15.0. If needed, :doc:`upgrade </administration/upgrade>`
    your database.
 
 .. _india/e-waybill-api:
@@ -207,7 +207,7 @@ API registration on NIC E-Way bill
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You must register on the :abbr:`NIC (National Informatics Centre)` E-Way bill portal to create your
-**API credentials**. You need these credentials to :ref:`configure your Odoo Accounting app
+**API credentials**. You need these credentials to :ref:`configure your CoquiAPPs Accounting app
 <india/e-waybill-configuration>`.
 
 #. Log in to the `NIC E-Way bill portal <https://ewaybillgst.gov.in/>`_ by clicking
@@ -229,7 +229,7 @@ You must register on the :abbr:`NIC (National Informatics Centre)` E-Way bill po
 
 .. _india/e-waybill-configuration:
 
-Configuration in Odoo
+Configuration in CoquiAPPs
 ~~~~~~~~~~~~~~~~~~~~~
 
 To set up the E-Way bill service, go to :menuselection:`Accounting --> Configuration --> Settings
@@ -237,7 +237,7 @@ To set up the E-Way bill service, go to :menuselection:`Accounting --> Configura
 :guilabel:`Password`.
 
 .. image:: india/e-waybill-configuration.png
-   :alt: E-way bill setup odoo
+   :alt: E-way bill setup CoquiAPPs
 
 .. _india/e-waybill-workflow:
 
@@ -269,7 +269,7 @@ displayed.
 
 .. note::
    - You can find the JSON-signed file in the attached files in the chatter.
-   - Odoo automatically uploads the JSON-signed file to the government portal after some time. Click
+   - CoquiAPPs automatically uploads the JSON-signed file to the government portal after some time. Click
      :guilabel:`Process now` if you want to process the invoice immediately.
 
 Invoice PDF report
@@ -300,6 +300,6 @@ fill out the :guilabel:`Cancel reason` and :guilabel:`Cancel remarks` fields. Th
 .. note::
    - If you want to abort the cancellation before processing the invoice, click :guilabel:`Call Off
      EDI Cancellation`.
-   - Once you request to cancel the E-Way bill, Odoo automatically submits the JSON-signed file to
+   - Once you request to cancel the E-Way bill, CoquiAPPs automatically submits the JSON-signed file to
      the government portal. You can click :guilabel:`Process Now` if you want to process the invoice
      immediately.

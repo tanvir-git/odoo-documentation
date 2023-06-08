@@ -15,7 +15,7 @@ Set up teams
 
 .. image:: getting_started/helpdesk_teams_view.png
    :align: center
-   :alt: View of the helpdesk teams page in Odoo Helpdesk
+   :alt: View of the helpdesk teams page in CoquiAPPs Helpdesk
 
 Team’s productivity and visibility
 ----------------------------------
@@ -33,7 +33,7 @@ person:
 .. image:: getting_started/productivity_visibility.png
    :align: center
    :alt: View of a helpdesk team settings page emphasizing the productivity and visibility features
-         in Odoo Helpdesk
+         in CoquiAPPs Helpdesk
 
 | For the *Random* and *Balanced* assignment methods, you can set the *Team Members* among
   whom tickets are assigned. Leave the field empty to include all employees (with the proper
@@ -50,7 +50,7 @@ edit stages as you need and set specific teams to use certain stages under *Team
 
 .. image:: getting_started/stages_teams.png
    :align: center
-   :alt: View of a stage’s setting page emphasizing the option to add teams in Odoo Helpdesk
+   :alt: View of a stage’s setting page emphasizing the option to add teams in CoquiAPPs Helpdesk
 
 Stages can be shared between one or multiple teams, allowing you to adapt the pipeline to your
 individual needs. They also apply a visibility and access rule, as other teams are not able to see
@@ -58,7 +58,7 @@ or use the stage.
 
 .. image:: getting_started/helpdesk_kanbanview.png
    :align: center
-   :alt: View of a team’s kanban view in Odoo Helpdesk
+   :alt: View of a team’s kanban view in CoquiAPPs Helpdesk
 
 .. seealso::
    - :doc:`/applications/general/users`

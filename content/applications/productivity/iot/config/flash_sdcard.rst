@@ -27,7 +27,7 @@ Upgrade with Etcher
 Go to Balena’s website and download `Etcher <https://www.balena.io/>`__.
 It’s a free and open-source utility used for burning image files.
 Install and launch it. Download the latest image from `nightly
-<http://nightly.odoo.com/master/iotbox/>`__.
+<http://nightly.CoquiAPPs.com/master/iotbox/>`__.
 
 Then, open *Etcher* and select *Flash from file*, find the image you just
 downloaded. Insert the IoT Box SD card into your computer and select it.

@@ -2,7 +2,7 @@
 Connect a Camera
 ================
 
-When using your *IoT Box* in Odoo, you could need to use a camera. As
+When using your *IoT Box* in CoquiAPPs, you could need to use a camera. As
 it can be done in a few steps, this device is really easy to configure.
 Then, you can use it in your manufacturing process and link it to a
 control point. Doing so will allow you to take pictures when you reach

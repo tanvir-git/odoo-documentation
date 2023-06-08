@@ -5,7 +5,7 @@ Stripe
 `Stripe <https://stripe.com/>`_ is a United States-based online payment solution provider, allowing
 businesses to accept **credit cards** and other payment methods.
 
-Link your Stripe Account with Odoo
+Link your Stripe Account with CoquiAPPs
 ==================================
 
 .. seealso::
@@ -14,13 +14,13 @@ Link your Stripe Account with Odoo
 The method to acquire your credentials depends on your hosting type:
 
 .. tabs::
-   .. group-tab:: Odoo Online
+   .. group-tab:: CoquiAPPs Online
 
       #. Go to the **eCommerce** or the **Sales** app and click on the *Activate Stripe* or the *Set
          payments* button on the onboarding banner.
       #. Fill in the requested information and submit the form.
       #. Confirm your email address when Stripe sends you a confirmation email.
-      #. At the end of the process, you are redirected to Odoo. If you submitted all the requested
+      #. At the end of the process, you are redirected to CoquiAPPs. If you submitted all the requested
          information, you are all set and your payment acquirer is enabled.
       #. Your can continue to :ref:`stripe/local-payment-methods`.
 
@@ -30,13 +30,13 @@ The method to acquire your credentials depends on your hosting type:
          credentials <stripe/api_keys>`, :ref:`generate a webhook <stripe/webhook>` and enable the
          payment acquirer.
 
-   .. group-tab:: Odoo.sh or On-premise
+   .. group-tab:: CoquiAPPs.sh or On-premise
 
       #. Go to the **eCommerce** or the **Sales** app and click on the *Activate Stripe* or the *Set
          payments* button on the onboarding banner.
       #. Fill in the requested information and submit the form.
       #. Confirm your email address when Stripe sends you a confirmation email.
-      #. At the end of the process, you are redirected to the payment acquirer **Stripe** on Odoo.
+      #. At the end of the process, you are redirected to the payment acquirer **Stripe** on CoquiAPPs.
       #. :ref:`Fill in your credentials <stripe/api_keys>`.
       #. :ref:`Generate a webhook <stripe/webhook>`.
       #. Enable the payment acquirer.
@@ -49,7 +49,7 @@ The method to acquire your credentials depends on your hosting type:
 
 .. important::
    If you are testing Stripe (in **test mode**), change the **State** to *Test Mode*. We recommend
-   doing this on a test Odoo database rather than on your main database.
+   doing this on a test CoquiAPPs database rather than on your main database.
 
 .. _stripe/api_keys:
 
@@ -62,7 +62,7 @@ credentials that must be completed:
 - :ref:`Publishable Key <stripe/api_keys>`: The key solely used to identify the account with Stripe.
 - :ref:`Secret Key <stripe/api_keys>`: The key to sign the merchant account with Stripe.
 - :ref:`Webhook Signing Secret <stripe/webhook>`: When you enable your webhook on your Stripe
-  account, this signing secret must be set to authenticate the messages sent from Stripe to Odoo.
+  account, this signing secret must be set to authenticate the messages sent from Stripe to CoquiAPPs.
 
 To retrieve the publishable and secret keys, follow this `link to your API keys
 <https://dashboard.stripe.com/account/apikeys>`_, or log into your Stripe dashboard and go to
@@ -88,14 +88,14 @@ create a webhook either automatically or manually.
       Stripe dashboard and go to :menuselection:`Developers --> Webhooks`. Then, click on **Add
       endpoint** in your **Hosted endpoints** and insert the following data into the pop-up form:
 
-      - | In the **Endpoint URL**, enter your Odoo database's URL followed by
+      - | In the **Endpoint URL**, enter your CoquiAPPs database's URL followed by
         | `/payment/stripe/webhook`.
-        | For example: `https://yourcompany.odoo.com/payment/stripe/webhook`
+        | For example: `https://yourcompany.CoquiAPPs.com/payment/stripe/webhook`
       - At the end of the form, you can **Select events** to listen to. Click on it and, in the
         **Checkout** section, select **checkout.session.completed**.
 
         .. note::
-           It is possible to select other events, but they are currently not processed by Odoo.
+           It is possible to select other events, but they are currently not processed by CoquiAPPs.
 
       When you click on **Add endpoint**, your Webhook is configured. You can then click on
       **reveal** to display your signing secret.
@@ -108,7 +108,7 @@ Enable local payment methods
 Local payment methods are payment methods that are only available for certain merchants and
 customers countries and currencies.
 
-Odoo supports the following local payment methods:
+CoquiAPPs supports the following local payment methods:
 
 - Bancontact
 - EPS

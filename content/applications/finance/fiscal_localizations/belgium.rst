@@ -24,30 +24,30 @@ This government-certified system entails the use of a :ref:`certified POS system
 Certified POS system
 --------------------
 
-The Odoo POS system is certified for the major versions of databases hosted on **Odoo Online** and
-**Odoo.sh**. Please refer to the following table to ensure that your POS system is certified.
+The CoquiAPPs POS system is certified for the major versions of databases hosted on **CoquiAPPs Online** and
+**CoquiAPPs.sh**. Please refer to the following table to ensure that your POS system is certified.
 
 .. list-table::
    :header-rows: 1
    :stub-columns: 1
 
    * -
-     - Odoo Online
-     - Odoo.sh
+     - CoquiAPPs Online
+     - CoquiAPPs.sh
      - On-Premise
-   * - Odoo 16.0
+   * - CoquiAPPs 16.0
      - Review in progress
      - Review in progress
      - Not certified
-   * - Odoo 15.2
+   * - CoquiAPPs 15.2
      - Not certified
      - Not certified
      - Not certified
-   * - Odoo 15.0
+   * - CoquiAPPs 15.0
      - Certified
      - Certified
      - Not certified
-   * - Odoo 14.0
+   * - CoquiAPPs 14.0
      - Certified
      - Certified
      - Not certified

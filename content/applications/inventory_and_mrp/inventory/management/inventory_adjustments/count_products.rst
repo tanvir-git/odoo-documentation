@@ -8,7 +8,7 @@ due to theft, damages, human errors, or other factors. As such, inventory adjust
 to reconcile the differences, and ensure that the recorded counts in the database match the actual
 counts in the warehouse.
 
-In Odoo, inventory adjustments can be accessed through :menuselection:`Inventory --> Operations -->
+In CoquiAPPs, inventory adjustments can be accessed through :menuselection:`Inventory --> Operations -->
 Inventory Adjustments`.
 
 The :guilabel:`Inventory Adjustments` page shows all products that are currently in stock. Each
@@ -61,7 +61,7 @@ recorded in the product's inventory adjustment history.
    Sometimes a count occurs, but can not be applied in the database right away. In the time between
    the actual count and applying the inventory adjustment, product moves can occur. In that case,
    the :guilabel:`On Hand Quantity` in the database can change and will not be consistent with the
-   counted quantity. As an extra caution measure, Odoo will ask for confirmation before applying
+   counted quantity. As an extra caution measure, CoquiAPPs will ask for confirmation before applying
    the inventory adjustment.
 
 Plan counts

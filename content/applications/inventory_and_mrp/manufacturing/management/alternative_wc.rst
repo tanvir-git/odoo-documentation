@@ -7,7 +7,7 @@ for manufacturing companies. Although in practice, employees can manufacture the
 work center instead of waiting for one to be available, it's not always simple to have visibility
 on which work center is busy and plan resources accordingly in real-time.
 
-With Odoo, you can configure alternative work centers to solve this issue. This automatically
+With CoquiAPPs, you can configure alternative work centers to solve this issue. This automatically
 checks which work center is busy and which equivalent ones are free, and schedules orders and
 maintenance accordingly.
 
@@ -21,7 +21,7 @@ the :guilabel:`Work Orders` feature and hit :guilabel:`Save`.
 
 .. image:: alternative_wc/work-orders-setting.png
    :align: center
-   :alt: Work order settings ticked in Odoo Manufacturing.
+   :alt: Work order settings ticked in CoquiAPPs Manufacturing.
 
 Now, go to :menuselection:`Configuration --> Work Centers` and create two new work centers. Add the
 second work center as an alternative to the first one and vice versa.

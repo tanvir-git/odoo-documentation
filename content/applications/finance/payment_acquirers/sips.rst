@@ -14,7 +14,7 @@ Configuration
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials** to connect with your SIPS account, which comprise:
+CoquiAPPs needs your **API Credentials** to connect with your SIPS account, which comprise:
 
 - **Merchant ID**: The ID solely used to identify the merchant account with SIPS.
 - **Secret Key**: The key to sign the merchant account with SIPS.
@@ -26,7 +26,7 @@ You can copy your credentials from your SIPS environment info documentation, in 
 
 .. important::
    If you are trying SIPS as a test, with the *TEST* credentials, change the **State** to *Test
-   Mode*. We recommend doing this on a test Odoo database, rather than on your main database.
+   Mode*. We recommend doing this on a test CoquiAPPs database, rather than on your main database.
 
 .. seealso::
    - :doc:`../payment_acquirers`

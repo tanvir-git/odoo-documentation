@@ -27,7 +27,7 @@ pro-forma invoice.
 .. image:: proforma/proforma02.png
     :align: center
 
-When you click on send, Odoo will send an email with the pro-forma
+When you click on send, CoquiAPPs will send an email with the pro-forma
 invoice in attachment.
 
 .. image:: proforma/proforma03.png

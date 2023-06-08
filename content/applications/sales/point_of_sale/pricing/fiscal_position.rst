@@ -2,7 +2,7 @@
 Tax rates (fiscal positions)
 ============================
 
-In Odoo, *Fiscal Positions* let you apply different taxes based on
+In CoquiAPPs, *Fiscal Positions* let you apply different taxes based on
 the customer location. In a *Point of Sale*, such as a restaurant, it can
 be used to apply different taxes depending if the customer eats in or
 takes away.

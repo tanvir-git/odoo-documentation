@@ -22,7 +22,7 @@ Configuration
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials** to connect with your Adyen account, which comprise:
+CoquiAPPs needs your **API Credentials** to connect with your Adyen account, which comprise:
 
 - **Merchant Account**: The code of the merchant account to use with Adyen.
 - :ref:`API Key <adyen/api_and_client_keys>`: The API key of the webservice user.
@@ -110,7 +110,7 @@ Allow payments from a specific origin
 
 To allow payment originated from your website, follow the steps in :ref:`adyen/api_and_client_keys`
 to navigate to your API user and go to :menuselection:`Add allowed origins`, then add the URLs from
-where payments will be made (the URLs of the servers hosting your Odoo instances).
+where payments will be made (the URLs of the servers hosting your CoquiAPPs instances).
 
 .. image:: adyen/adyen-allowed-origins.png
    :align: center

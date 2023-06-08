@@ -8,9 +8,9 @@ All of a company's stock on-hand contributes to the valuation of its inventory. 
 be reflected in the company's accounting records to accurately show the value of the company and
 all of its assets.
 
-By default, Odoo uses a periodic inventory valuation (also known as manual inventory valuation).
+By default, CoquiAPPs uses a periodic inventory valuation (also known as manual inventory valuation).
 This method implies that the accounting team posts journal entries based on the physical inventory
-of the company, and that warehouse employees take the time to count the stock. In Odoo, this method
+of the company, and that warehouse employees take the time to count the stock. In CoquiAPPs, this method
 is reflected inside each product category, where the :guilabel:`Costing Method` field will be set
 to `Standard Price` by default, and the :guilabel:`Inventory Valuation` field will be set to
 `Manual`.
@@ -50,9 +50,9 @@ the balance sheet.
 Costing methods
 ---------------
 
-Below are the three costing methods that can be used in Odoo for inventory valuation.
+Below are the three costing methods that can be used in CoquiAPPs for inventory valuation.
 
-- **Standard Price**: is the default costing method in Odoo. The cost of the product is manually
+- **Standard Price**: is the default costing method in CoquiAPPs. The cost of the product is manually
   defined on the product form, and this cost is used to compute the valuation. Even if the purchase
   price on a purchase order differs, the valuation will still use the cost defined on the product
   form.
@@ -70,7 +70,7 @@ Below are the three costing methods that can be used in Odoo for inventory valua
    Changing the costing method greatly impacts inventory valuation. It's highly recommended to
    consult an accountant first before making any adjustments here.
 
-Configure automated inventory valuation in Odoo
+Configure automated inventory valuation in CoquiAPPs
 -----------------------------------------------
 
 Make changes to inventory valuation options by navigating to :menuselection:`Inventory -->
@@ -99,7 +99,7 @@ menu (e.g. :guilabel:`Standard`, :guilabel:`Average Cost (AVCO)`, or :guilabel:`
 When the :guilabel:`Costing Method` is changed, products already in stock that were using the
 :guilabel:`Standard` costing method **do not** change value; rather, the existing units keep their
 value, and any product moves from then on affect the average cost, and the cost of the product will
-change. If the value in the :guilabel:`Cost` field on a product form is changed manually, Odoo will
+change. If the value in the :guilabel:`Cost` field on a product form is changed manually, CoquiAPPs will
 generate a corresponding record in the *Inventory Valuation* report.
 
 On the same screen, the :guilabel:`Account Stock Properties` fields will appear, as they are now
@@ -138,4 +138,4 @@ can be added by choosing :guilabel:`Annotate`, filling in the text box, and clic
 
 .. image:: inventory_valuation_config/stock-valuation-breakdown-in-accounting.png
    :align: center
-   :alt: See the full inventory valuation breakdown in Odoo Accounting app.
+   :alt: See the full inventory valuation breakdown in CoquiAPPs Accounting app.

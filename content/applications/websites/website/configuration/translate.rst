@@ -2,7 +2,7 @@
 Translations
 ============
 
-In addition to creating great modern websites, Odoo gives you the
+In addition to creating great modern websites, CoquiAPPs gives you the
 possibility to translate it in different languages.
 
 Process

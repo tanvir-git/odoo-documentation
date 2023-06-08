@@ -2,13 +2,13 @@
 Documents
 =========
 
-**Odoo Documents** allows you to store, view and manage files within Odoo.
+**CoquiAPPs Documents** allows you to store, view and manage files within CoquiAPPs.
 
-You can upload any type of file (max 64MB per file on Odoo Online), and organize them in various
+You can upload any type of file (max 64MB per file on CoquiAPPs Online), and organize them in various
 workspaces.
 
 .. seealso::
-   - `Odoo Documents: product page <https://coqui.cloud/app/documents>`_
+   - `CoquiAPPs Documents: product page <https://coqui.cloud/app/documents>`_
 
 Workflow actions
 ================
@@ -27,7 +27,7 @@ on *Create*.
 
 .. image:: documents/access-workflow-actions.png
    :align: center
-   :alt: Workflow actions smart button in Odoo Documents
+   :alt: Workflow actions smart button in CoquiAPPs Documents
 
 .. note::
    An action applies to all *Child Workspaces* under the *Parent Workspace* you selected.
@@ -53,7 +53,7 @@ There are three basic types of conditions you can set:
 
 .. image:: documents/basic-condition-example.png
    :align: center
-   :alt: Example of a workflow action's basic condition in Odoo Documents
+   :alt: Example of a workflow action's basic condition in CoquiAPPs Documents
 
 .. tip::
    If you don't set any conditions, the action button appears for all files located inside the
@@ -63,7 +63,7 @@ Advanced condition type: domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. important::
-   It is recommended to have some knowledge of Odoo development to properly configure *Domain*
+   It is recommended to have some knowledge of CoquiAPPs development to properly configure *Domain*
    filters.
 
 To access the *Domain* condition, the :ref:`developer mode <developer-mode>` needs to be activated.
@@ -71,7 +71,7 @@ Once that's done, select the *Domain* condition type, and click on *Add Filter*.
 
 .. image:: documents/activate-domain-condition.png
    :align: center
-   :alt: Activating the domain condition type in Odoo Documents
+   :alt: Activating the domain condition type in CoquiAPPs Documents
 
 To create a rule, you typically select a field, an operator, and a value. For example, if you want
 to add a workflow action to all the PDF files inside a workspace, set the field to *Mime Type*, the
@@ -79,7 +79,7 @@ operator to *contains*, and the value to *pdf*.
 
 .. image:: documents/domain-condition-example.png
    :align: center
-   :alt: Example of a workflow action's domain condition in Odoo Documents
+   :alt: Example of a workflow action's domain condition in CoquiAPPs Documents
 
 Click on *Add node* (plus-circle icon) and *Add branch* (ellipsis icon) to add conditions and
 sub-conditions. You can then specify if your rule should match *ALL* or *ANY* conditions. You can
@@ -87,7 +87,7 @@ also edit the rule directly using the *Code editor*.
 
 .. image:: documents/use-domain-condition.png
    :align: center
-   :alt: Add a node or a branch to a workflow action's condition in Odoo Documents
+   :alt: Add a node or a branch to a workflow action's condition in CoquiAPPs Documents
 
 Configure the actions
 ---------------------
@@ -120,4 +120,4 @@ Select the *Actions* tab to set up your action. You can simultaneously:
 
 .. image:: documents/workflow-action-example.png
    :align: center
-   :alt: Example of a workflow action Odoo Documents
+   :alt: Example of a workflow action CoquiAPPs Documents

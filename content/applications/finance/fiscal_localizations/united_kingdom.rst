@@ -26,7 +26,7 @@ Reports` modules to get all the features of the UK localization.
 
 .. image:: united_kingdom/uk.png
    :align: center
-   :alt: Odoo uk packages
+   :alt: CoquiAPPs uk packages
 
 .. note::
    - Only UK-based companies can submit reports to HMRC.
@@ -78,7 +78,7 @@ The **UK - Accounting Reports** module enables you to comply with the `HM Revenu
 
 .. important::
    If your periodic submission is more than three months late, it is no longer possible to submit
-   it through Odoo, as Odoo only retrieves open bonds from the last three months. Your submission
+   it through CoquiAPPs, as CoquiAPPs only retrieves open bonds from the last three months. Your submission
    has to be done manually by contacting HMRC.
 
 Register your company to HMRC before the first submission

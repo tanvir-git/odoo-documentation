@@ -22,7 +22,7 @@ Go to :menuselection:`Accounting --> Settings --> Customer Invoices`, then enabl
 *Save*. Once the Intrastat has been activated you are able to choose the **Default incoterm**.
 
 .. important::
-   If you created your Odoo database prior to **January 13, 2022**, please :ref:`upgrade
+   If you created your CoquiAPPs database prior to **January 13, 2022**, please :ref:`upgrade
    <general/upgrade>` the ``account_intrastat`` module to add the new transaction codes and
    :ref:`install <general/install>` the ``account_intrastat_expiry`` module to archive the old
    codes.

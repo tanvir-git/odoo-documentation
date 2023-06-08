@@ -2,7 +2,7 @@
 Cash reconciliation
 ===================
 
-By default in Odoo, payments registered in the **cash journal** are automatically reconciled with an
+By default in CoquiAPPs, payments registered in the **cash journal** are automatically reconciled with an
 **outstanding account** and their related invoices or bills marked as *In Payment* until they are
 reconciled with a bank statement. It is possible to :ref:`bypass <cash-reconciliation-bypass>` the
 *In Payment* status for cash transactions, therefore removing the need to reconcile with a bank

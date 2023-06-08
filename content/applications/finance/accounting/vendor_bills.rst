@@ -4,13 +4,13 @@
 Vendor bills
 ============
 
-Once vendor bills are registered in Odoo, you can easily pay vendors for
+Once vendor bills are registered in CoquiAPPs, you can easily pay vendors for
 the correct amount and at the right time (not too late, not too early;
-depending on your vendor policy). Odoo also offers reports to track your
+depending on your vendor policy). CoquiAPPs also offers reports to track your
 aged payable balances.
 
 If you want to control vendor bills received from your vendors, you can
-use the Odoo Purchase application that allows you to control and
+use the CoquiAPPs Purchase application that allows you to control and
 pre-complete them automatically based on past purchase orders.
 
 From Vendor Bill to Payment
@@ -34,12 +34,12 @@ prices.
 
 Save the invoice to update the pre tax and tax amounts at the bottom of
 the screen. You will most likely need to configure the prices of your
-products without taxes as Odoo will compute the tax for you.
+products without taxes as CoquiAPPs will compute the tax for you.
 
 .. note::
-    On the bottom left corner, Odoo shows a summary table of all taxes on the vendor bill.
+    On the bottom left corner, CoquiAPPs shows a summary table of all taxes on the vendor bill.
     In several countries, different methods are accepted to round the totals (round per line,
-    or round globally). The default rounding method in Odoo is to round the final prices
+    or round globally). The default rounding method in CoquiAPPs is to round the final prices
     per line (as you may have different taxes per product. E.g. Alcohol and cigarettes).
     However if your vendor has a different tax amount on their bill, you can change the
     amount in the bottom left table to adjust and match.
@@ -80,10 +80,10 @@ To create a payment for an open vendor bill directly, you can click on **Registe
 Payment** at the top of the form.
 
 From there, you select the payment method (i.e. Checking account, credit
-card, check, etc…) and the amount you wish to pay. By default, Odoo will
+card, check, etc…) and the amount you wish to pay. By default, CoquiAPPs will
 propose the entire remaining balance on the bill for payment. In the
 memo field, we recommend you set the vendor invoice number as a
-reference (Odoo will auto fill this field from the from the vendor bill
+reference (CoquiAPPs will auto fill this field from the from the vendor bill
 if set it correctly).
 
 .. image:: vendor_bills/vendor_bill06.png
@@ -96,12 +96,12 @@ if set it correctly).
 Printing vendor Checks
 ----------------------
 
-If you choose to pay your vendor bills by check, Odoo offers a method to
-do so directly from your vendor payments within Odoo. Whether you do so
+If you choose to pay your vendor bills by check, CoquiAPPs offers a method to
+do so directly from your vendor payments within CoquiAPPs. Whether you do so
 on a daily basis or prefer to do so at the end of the week, you can
 print in checks in batches.
 
-If you have checks to print, Odoo's accounting dashboard acts as a to do
+If you have checks to print, CoquiAPPs's accounting dashboard acts as a to do
 list and reminds you of how many checks you have left to be printed.
 
 .. image:: vendor_bills/vendor_bill02.png
@@ -110,7 +110,7 @@ By selecting the amount of checks to be printed, you can dive right into
 a list of all payments that are ready to be processed.
 
 Select all the checks you wish to print (use the first checkbox to
-select them all) and set the action to **Print Checks**. Odoo will ask you
+select them all) and set the action to **Print Checks**. CoquiAPPs will ask you
 to set the next check number in the sequence and will then print all the
 checks at once.
 

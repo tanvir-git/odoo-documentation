@@ -2,7 +2,7 @@
 Connect a Measurement Tool
 ==========================
 
-With Odoo’s *IoT Box*, it is possible to connect measurement tools to
+With CoquiAPPs’s *IoT Box*, it is possible to connect measurement tools to
 your database. Find the list of supported devices here: `Supported
 devices <https://coqui.cloud/page/iot-hardware>`__,.
 
@@ -10,7 +10,7 @@ Connect in USB
 ==============
 
 To add a device connected by USB, just plug the USB cable in the *IoT
-Box*, and the device should appear in your Odoo database.
+Box*, and the device should appear in your CoquiAPPs database.
 
 .. image:: measurement_tool/measurement_tool_01.png
    :align: center

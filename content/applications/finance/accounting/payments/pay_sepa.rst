@@ -30,7 +30,7 @@ Non-EEA territories:
 - Jersey;
 - Isle of Man.
 
-When paying a bill in Odoo, you can select SEPA mandates as a payment option. At the day's end,
+When paying a bill in CoquiAPPs, you can select SEPA mandates as a payment option. At the day's end,
 you can generate the SEPA file containing all bank wire transfers and send it to the bank.
 
 By default, the file follows the SEPA Credit Transfer **'pain.001.001.03'** specifications. This is
@@ -38,7 +38,7 @@ a well-defined standard among banks. However, for Swiss and German companies, ot
 **'pain.001.001.03.ch.02'** for Switzerland and **'pain.001.003.03'** for Germany.
 
 Once the payments are processed by your bank, you can directly import the account statement in
-Odoo. The bank reconciliation process will seamlessly match the SEPA orders you sent to your bank
+CoquiAPPs. The bank reconciliation process will seamlessly match the SEPA orders you sent to your bank
 with actual bank statements.
 
 Configuration
@@ -74,10 +74,10 @@ Vendors --> Payments`. When creating your payment, select :guilabel:`SEPA Credit
 :guilabel:`Payment Method`.
 
 The first time you pay a vendor with SEPA, you have to fill in the :guilabel:`Recipient Bank
-Account` field with the bank name, IBAN, and BIC (Bank Identifier Code). Odoo automatically verifies
+Account` field with the bank name, IBAN, and BIC (Bank Identifier Code). CoquiAPPs automatically verifies
 if the IBAN format is respected.
 
-For future payments to this vendor, Odoo will automatically suggest you the bank account, but it
+For future payments to this vendor, CoquiAPPs will automatically suggest you the bank account, but it
 remains possible to select a new one.
 
 Once your payment is registered, do not forget to confirm it. You can also pay vendor bills from the

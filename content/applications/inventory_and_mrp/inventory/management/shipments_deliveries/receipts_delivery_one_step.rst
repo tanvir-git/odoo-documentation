@@ -6,7 +6,7 @@ Process receipts and deliveries in one step
 
 By default, incoming shipments are configured to be received directly into stock, and outgoing
 shipments are configured to be delivered directly from stock to the customer; the default setting
-for warehouses in Odoo is one step receipts and deliveries.
+for warehouses in CoquiAPPs is one step receipts and deliveries.
 
 .. note::
    Incoming and outgoing shipments do not need to be configured with the same steps. For example,

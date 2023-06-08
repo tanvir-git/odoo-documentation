@@ -5,7 +5,7 @@ Process receipts in three steps
 .. _inventory/receipts_three_steps:
 
 Some companies require a quality control process before receiving goods from suppliers. To
-accomplish this, Odoo has a three-step process for receiving goods.
+accomplish this, CoquiAPPs has a three-step process for receiving goods.
 
 In the three-step receipt process, products are received in an input area, then transferred to a
 quality area for inspection. Products that pass the quality inspection are then transferred into
@@ -15,7 +15,7 @@ quality area and into stock.
 Configuration
 =============
 
-Odoo is configured by default to :ref:`receive and deliver goods in one step
+CoquiAPPs is configured by default to :ref:`receive and deliver goods in one step
 <inventory/receipts_delivery_one_step>`, so the settings need to be changed in order to utilize
 three-step receipts. First, make sure the *Multi-Step Routes* option is enabled in
 :menuselection:`Inventory --> Configuration --> Settings --> Warehouse`. Note that activating

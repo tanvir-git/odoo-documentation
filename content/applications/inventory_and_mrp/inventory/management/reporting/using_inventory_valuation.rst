@@ -6,7 +6,7 @@ Using inventory valuation
 stock. Once determined, the inventory valuation amount is then incorporated into a company's overall
 value.
 
-In Odoo, this process can be conducted manually— by warehouse employees physically counting the
+In CoquiAPPs, this process can be conducted manually— by warehouse employees physically counting the
 products— or automatically through the database.
 
 .. seealso::
@@ -63,7 +63,7 @@ along with their quantities and valuation. In the example of 10 tables being pur
    :align: center
    :alt: Stock valuation page depicting the products within a shipment.
 
-In Odoo, automatic inventory valuation records are also recorded in the *Accounting* app. To access
+In CoquiAPPs, automatic inventory valuation records are also recorded in the *Accounting* app. To access
 these accounting entries, navigate to :menuselection:`Accounting --> Journal Entries`, and look for
 inventory valuation entries with the `STJ` prefix in the :guilabel:`Journal` and :guilabel:`Number`
 columns, respectively.
@@ -104,7 +104,7 @@ Update product unit price
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For any company: lead times, supply chain failures, and other risk factors can contribute to
-invisible costs. Although Odoo attempts to accurately represent the stock value, *manual valuation*
+invisible costs. Although CoquiAPPs attempts to accurately represent the stock value, *manual valuation*
 serves as an additional tool to update the unit price of products.
 
 .. important::

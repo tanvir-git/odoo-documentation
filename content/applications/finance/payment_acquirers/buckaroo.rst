@@ -14,7 +14,7 @@ Configuration
 Credentials tab
 ---------------
 
-Odoo needs your **API Credentials** to connect with your Buckaroo account, which comprise:
+CoquiAPPs needs your **API Credentials** to connect with your Buckaroo account, which comprise:
 
 - :ref:`Website Key <buckaroo/website_key>`: The key solely used to identify the website with
   Buckaroo.
@@ -41,7 +41,7 @@ In order to retrieve the Website Key, log into your Buckaroo account, go to
 
 .. important::
    If you are trying Buckaroo in a test account, change the **State** to *Test Mode*. We
-   recommend doing this on a test Odoo database, rather than on your main database.
+   recommend doing this on a test CoquiAPPs database, rather than on your main database.
 
 .. seealso::
    - :doc:`../payment_acquirers`
