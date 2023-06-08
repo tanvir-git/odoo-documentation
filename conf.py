@@ -16,8 +16,8 @@ _logger = logging.getLogger(__name__)
 #=== General configuration ===#
 
 # General information about the project.
-project = 'Odoo'
-copyright = 'Odoo S.A.'
+project = 'CoquiAPPs'
+copyright = 'CoquiCloud'
 
 # `version` is the version info for the project being documented, acts as replacement for |version|,
 # also used in various other places throughout the built documents.
@@ -482,3 +482,4 @@ def _generate_alternate_urls(app, pagename, templatename, context, doctree):
     _canonicalize()
     _versionize()
     _localize()
+

@@ -1,7 +1,7 @@
 :nosearch:
 
 ==================
-Odoo Documentation
+CoquiAPPs Documentation
 ==================
 
 
